@@ -25,9 +25,19 @@ if [[ -z "$CREDENTIALS" ]]; then
   cd $(dirname $0)/../..
 fi
 
+mkdir ./etc
+mkdir ./foobar
+
+echo pwd
+
+
+npm i
+npm run api-extractor
+npm run api-documenter
+
 # Generate the data for the devsite tarball
 dir="$(cd "$(dirname "$0")"; pwd)"
-. "$dir/.kokoro/release/generate-devsite.sh"
+. "$dir/generate-devsite.sh"
 
 npm i json@9.0.6 -g
 
