@@ -1,0 +1,17 @@
+{
+  "name": "cloud-rad",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "api-extractor": "api-extractor run --local",
+    "api-documenter": "api-documenter yaml --input-folder=temp"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@microsoft/api-documenter": "7.11.0",
+    "@microsoft/api-extractor": "7.8.2-pr1796.0"
+  }
+}
