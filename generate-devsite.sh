@@ -61,8 +61,8 @@ NAME=$(ls temp | sed s/.api.json*//)
 rm ./yaml/$NAME.yml
 
 ## Copy everything to devsite
-mkdir ./_devsite
-mkdir ./_devsite/$NAME
+mkdir -p ./_devsite
+mkdir -p ./_devsite/$NAME
 
 cp ./yaml/$NAME/* ./_devsite/$NAME || :
 cp ./yaml/toc.yml ./_devsite/toc.yml
