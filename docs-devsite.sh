@@ -26,18 +26,20 @@ if [[ -z "$CREDENTIALS" ]]; then
 fi
 
 mkdir ./etc
-mkdir ./foobar
 
-echo pwd
+echo "$(pwd)"
 
+PATH=node_modules/cloud-rad
 
-npm i
-npm run api-extractor
-npm run api-documenter
+npm --prefix PATH install
+npm --prefix PATH run api-extractor
+npm --prefix PATH run api-documenter
 
 # Generate the data for the devsite tarball
 dir="$(cd "$(dirname "$0")"; pwd)"
 . "$dir/generate-devsite.sh"
+
+echo "$dir"
 
 npm i json@9.0.6 -g
 
