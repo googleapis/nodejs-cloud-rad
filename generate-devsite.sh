@@ -17,11 +17,16 @@
 # Create files to be uploaded to devsite. 
 # When running locally, run `docfx --serve` in ./yaml/ after this script
 
-mkdir ./etc
+echo "$(pwd)"
+echo in "generate-devsite.sh"
 
-npm install
-npm run api-extractor
-npm run api-documenter
+mkdir -p ./etc
+  
+RAD_PATH=node_modules/cloud-rad
+
+npm install --prefix RAD_PATH
+npm run --prefix RAD_PATH api-extractor
+npm run --prefix RAD_PATH api-documenter
 
 # Clean up TOC
 # Delete SharePoint item, see https://github.com/microsoft/rushstack/issues/1229
