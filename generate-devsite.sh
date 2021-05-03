@@ -21,12 +21,12 @@ echo "$(pwd)"
 echo in "generate-devsite.sh"
 
 mkdir -p ./etc
-  
+
 RAD_PATH=node_modules/cloud-rad
 
-npm install --prefix RAD_PATH
-npm run --prefix RAD_PATH api-extractor
-npm run --prefix RAD_PATH api-documenter
+#npm install --prefix $RAD_PATH
+npm run --prefix $RAD_PATH api-extractor
+npm run --prefix $RAD_PATH api-documenter
 
 # Clean up TOC
 # Delete SharePoint item, see https://github.com/microsoft/rushstack/issues/1229
