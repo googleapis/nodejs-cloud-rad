@@ -28,6 +28,8 @@ RAD_PATH=node_modules/cloud-rad
 npm run --prefix $RAD_PATH api-extractor
 npm run --prefix $RAD_PATH api-documenter
 
+cp -r $RAD_PATH/yaml yaml
+
 # Clean up TOC
 # Delete SharePoint item, see https://github.com/microsoft/rushstack/issues/1229
 sed -i -e '1,3d' ./yaml/toc.yml
