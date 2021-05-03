@@ -25,15 +25,15 @@ if [[ -z "$CREDENTIALS" ]]; then
   cd $(dirname $0)/../..
 fi
 
-mkdir ./etc
+mkdir -p ./etc
 
 echo "$(pwd)"
 
 PATH=node_modules/cloud-rad
 
-npm --prefix PATH install
-npm --prefix PATH run api-extractor
-npm --prefix PATH run api-documenter
+npm install --prefix PATH
+npm run --prefix PATH api-extractor
+npm run --prefix PATH api-documenter
 
 # Generate the data for the devsite tarball
 dir="$(cd "$(dirname "$0")"; pwd)"
