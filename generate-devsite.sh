@@ -17,8 +17,6 @@
 # Create files to be uploaded to devsite. 
 # When running locally, run `docfx --serve` in ./yaml/ after this script
 
-echo "$(pwd)"
-echo in "generate-devsite.sh"
 
 mkdir -p ./etc
 
@@ -69,4 +67,3 @@ cp ./yaml/toc.yml ./_devsite/toc.yml
 
 ## readme is not allowed as filename
 cp ./README.md ./_devsite/index.md
-

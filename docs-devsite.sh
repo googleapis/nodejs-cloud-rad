@@ -45,14 +45,14 @@ echo "$dir"
 npm i json@9.0.6 -g
 
 
-name=$(cat package.json | json name)
-echo $name
+# remove @google-cloud/ from package name
+name=$(cat package.json | json name | sed 's/^.*\///')
 
 # create docs.metadata, based on package.json and .repo-metadata.json.
 pip install -U pip
 python3 -m pip install --user gcp-docuploader
 python3 -m docuploader create-metadata \
-  --name=$(cat package.json | json name) \
+  --name=$(name) \
   --version=$(cat package.json | json version) \
   --language=$(cat .repo-metadata.json | json language) \
   --distribution-name=$(cat .repo-metadata.json | json distribution_name) \
