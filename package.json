@@ -1,6 +1,6 @@
 {
   "name": "cloud-rad",
-  "version": "1.0.3",
+  "version": "0.2.0",
   "description": "",
   "main": "index.js",
   "bin": {
