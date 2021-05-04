@@ -25,26 +25,12 @@ if [[ -z "$CREDENTIALS" ]]; then
   cd $(dirname $0)/../..
 fi
 
-# mkdir -p ./etc
-
-# echo "$(pwd)"
-
-# RAD_PATH=node_modules/cloud-rad
-
-# npm install --prefix RAD_PATH
-# npm run --prefix RAD_PATH api-extractor
-# npm run --prefix RAD_PATH api-documenter
-
 # Generate the data for the devsite tarball
 dir="$(cd "$(dirname "$0")"; pwd)"
-echo "$dir"
-
 . "$dir/../cloud-rad/generate-devsite.sh"
 
 
 npm i json@9.0.6 -g
-
-
 # remove @google-cloud/ from package name
 name=$(cat package.json | json name | sed 's/^.*\///')
 

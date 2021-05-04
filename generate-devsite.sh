@@ -20,13 +20,8 @@
 
 mkdir -p ./etc
 
-RAD_PATH=node_modules/cloud-rad
-
-#npm install --prefix $RAD_PATH
-npm run --prefix $RAD_PATH api-extractor
-npm run --prefix $RAD_PATH api-documenter
-
-cp -r $RAD_PATH/yaml yaml
+npx api-extractor run --local --config node_modules/cloud-rad/api-extractor.json
+npx api-documenter yaml --input-folder=temp
 
 # Clean up TOC
 # Delete SharePoint item, see https://github.com/microsoft/rushstack/issues/1229
@@ -53,6 +48,8 @@ sed -i -e '5a\
 
 
 NAME=$(ls temp | sed s/.api.json*//)
+echo "###"
+echo $NAME
 
 ## Delete the default overvew page,
 ## otherwise anchors are added and they break left nav
