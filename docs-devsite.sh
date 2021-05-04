@@ -52,7 +52,7 @@ name=$(cat package.json | json name | sed 's/^.*\///')
 pip install -U pip
 python3 -m pip install --user gcp-docuploader
 python3 -m docuploader create-metadata \
-  --name=$(name) \
+  --name=$name \
   --version=$(cat package.json | json version) \
   --language=$(cat .repo-metadata.json | json language) \
   --distribution-name=$(cat .repo-metadata.json | json distribution_name) \
