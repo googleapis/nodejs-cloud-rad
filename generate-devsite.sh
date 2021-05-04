@@ -20,7 +20,8 @@
 
 mkdir -p ./etc
 
-npx api-extractor run --local --config node_modules/cloud-rad/api-extractor.json
+cp node_modules/cloud-rad/api-extractor.json .
+npx api-extractor run --local
 npx api-documenter yaml --input-folder=temp
 
 # Clean up TOC

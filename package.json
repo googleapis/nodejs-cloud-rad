@@ -7,9 +7,7 @@
     "cloud-rad": "./docs-devsite.sh"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "api-extractor": "api-extractor run --local",
-    "api-documenter": "api-documenter yaml --input-folder=../../temp"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
