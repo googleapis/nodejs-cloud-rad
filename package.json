@@ -1,5 +1,5 @@
 {
-  "name": "cloud-rad",
+  "name": "@google-cloud/cloud-rad",
   "version": "0.2.0",
   "description": "",
   "main": "index.js",
@@ -10,7 +10,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Google Inc",
   "license": "Apache-2.0",
   "dependencies": {
     "@microsoft/api-documenter": "7.11.0",
