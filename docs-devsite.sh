@@ -27,7 +27,7 @@ fi
 
 # Generate the data for the devsite tarball
 dir="$(cd "$(dirname "$0")"; pwd)"
-. "$dir/../cloud-rad/generate-devsite.sh"
+. "$dir/../@google-cloud/cloud-rad/generate-devsite.sh"
 
 
 npm i json@9.0.6 -g

@@ -20,7 +20,7 @@
 
 mkdir -p ./etc
 
-cp node_modules/cloud-rad/api-extractor.json .
+cp node_modules/@google-cloud/cloud-rad/api-extractor.json .
 npx api-extractor run --local
 npx api-documenter yaml --input-folder=temp
 
