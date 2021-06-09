@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": "googleapis/cloud-rad",
   "bin": {
-    "cloud-rad": "./docs-devsite.sh"
+    "cloud-rad": "./main.sh"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
