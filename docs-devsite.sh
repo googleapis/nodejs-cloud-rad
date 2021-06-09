@@ -16,13 +16,27 @@
 
 set -eo pipefail
 
-# build jsdocs (Python is installed on the Node 10 docker image).
 if [[ -z "$CREDENTIALS" ]]; then
   # if CREDENTIALS are explicitly set, assume we're testing locally
   # and don't set NPM_CONFIG_PREFIX.
   export NPM_CONFIG_PREFIX=${HOME}/.npm-global
   export PATH="$PATH:${NPM_CONFIG_PREFIX}/bin"
   cd $(dirname $0)/../..
+fi
+
+if [ "$#" -eq 1  ]; then
+  echo "Generating reference documentation for tag $1"
+else 
+  echo "Generating reference documentation for current head"
+fi
+
+exit 0
+
+if git rev-parse $1 >/dev/null 2>&1
+then
+    echo "Found tag"
+else
+    echo "Tag not found"
 fi
 
 # Generate the data for the devsite tarball
