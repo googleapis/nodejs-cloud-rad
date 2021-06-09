@@ -27,6 +27,7 @@ fi
 if [ -n $VERSION ]
 then
   echo "Checking out $VERSION."
+  git diff
   git checkout $VERSION
 fi
 
