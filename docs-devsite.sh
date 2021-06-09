@@ -30,21 +30,6 @@ then
   git checkout $VERSION
 fi
 
-if [ "$#" -eq 1  ]; then
-  tag=$1
-  echo "Generating reference documentation for version $tag"
-  if [ $(git tag -l "$tag") ]
-  then
-    echo "Checking out $tag."
-    git checkout $tag
-  else
-    echo "$tag not found. Exiting."
-    exit 1
-  fi
-else 
-  echo "Generating reference documentation for current head."
-fi
-
 # Generate the data for the devsite tarball
 dir="$(cd "$(dirname "$0")"; pwd)"
 . "$dir/../@google-cloud/cloud-rad/generate-devsite.sh"
