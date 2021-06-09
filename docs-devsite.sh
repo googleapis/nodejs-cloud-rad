@@ -24,6 +24,12 @@ if [[ -z "$CREDENTIALS" ]]; then
   cd $(dirname $0)/../..
 fi
 
+if [ -n $VERSION ]
+then
+  echo "Checking out $VERSION."
+  git checkout $VERSION
+fi
+
 if [ "$#" -eq 1  ]; then
   tag=$1
   echo "Generating reference documentation for version $tag"
