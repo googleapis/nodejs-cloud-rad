@@ -25,18 +25,18 @@ if [[ -z "$CREDENTIALS" ]]; then
 fi
 
 if [ "$#" -eq 1  ]; then
-  echo "Generating reference documentation for tag $1"
+  tag=$1
+  echo "Generating reference documentation for version $tag"
+  if [ $(git tag -l "$tag") ]
+  then
+    echo "Checking out $tag."
+    git checkout $tag
+  else
+    echo "$tag not found. Exiting."
+    exit 1
+  fi
 else 
-  echo "Generating reference documentation for current head"
-fi
-
-exit 0
-
-if git rev-parse $1 >/dev/null 2>&1
-then
-    echo "Found tag"
-else
-    echo "Tag not found"
+  echo "Generating reference documentation for current head."
 fi
 
 # Generate the data for the devsite tarball

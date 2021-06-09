@@ -21,8 +21,8 @@
 mkdir -p ./etc
 
 cp node_modules/@google-cloud/cloud-rad/api-extractor.json .
-npx api-extractor run --local
-npx api-documenter yaml --input-folder=temp
+npx @microsoft/api-extractor run --local
+npx @microsoft/api-documenter yaml --input-folder=temp
 
 # Clean up TOC
 # Delete SharePoint item, see https://github.com/microsoft/rushstack/issues/1229
@@ -49,8 +49,6 @@ sed -i -e '5a\
 
 
 NAME=$(ls temp | sed s/.api.json*//)
-echo "###"
-echo $NAME
 
 ## Delete the default overvew page,
 ## otherwise anchors are added and they break left nav
