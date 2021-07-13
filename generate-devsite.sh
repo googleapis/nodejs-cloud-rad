@@ -47,6 +47,8 @@ sed -i -e '5a\
  \ \ \ \ \ \ \ homepage: index.md
 ' ./yaml/toc.yml
 
+# Fix multile block that lack `>`
+perl -0pei "s/^\s*uid: ('@.*\n)((^\s*@.*\n){2,})/uid: >-\n\1\2/mg" ./yaml/toc.yml
 
 NAME=$(ls temp | sed s/.api.json*//)
 
