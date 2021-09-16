@@ -43,6 +43,7 @@ name=$(cat package.json | json name | sed 's/^.*\///')
 # create docs.metadata, based on package.json and .repo-metadata.json.
 pip install -U pip
 python3 -m pip install --user gcp-docuploader
+python3 -m pip install --user six
 python3 -m docuploader create-metadata \
   --name=$name \
   --version=$(cat package.json | json version) \
