@@ -22,6 +22,13 @@ mkdir -p ./etc
 
 cp node_modules/@google-cloud/cloud-rad/api-extractor.json .
 npx @microsoft/api-extractor run --local
+
+# install api-documenter deps manually because we're using a forked subdirectory
+cd node_modules/@microsoft/api-documenter/
+npm install
+npm run build
+cd ../../..
+
 npx @microsoft/api-documenter yaml --input-folder=temp
 
 # Clean up TOC
