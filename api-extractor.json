@@ -331,17 +331,12 @@
      * DEFAULT VALUE: See api-extractor-defaults.json for the complete table of extractorMessageReporting mappings
      */
     "extractorMessageReporting": {
-      "default": {
-        "logLevel": "warning",
-        // "addToApiReportFile": false
+      "ae-missing-release-tag": {
+        "logLevel": "none"
       },
-
-      // "ae-extra-release-tag": {
-      //   "logLevel": "warning",
-      //   "addToApiReportFile": true
-      // },
-      //
-      // . . .
+    "ae-forgotten-export": {
+      "logLevel": "none"
+    }
     },
 
     /**
@@ -355,15 +350,42 @@
       "default": {
         "logLevel": "warning",
         // "addToApiReportFile": false
+      },
+      "tsdoc-escape-right-brace": {
+        "logLevel": "none",
+        "addToApiReportFile": true
+      },
+      "tsdoc-param-tag-missing-hyphen": {
+        "logLevel": "none",
+        "addToApiReportFile": true
+      },
+      "tsdoc-param-tag-with-invalid-type": {
+        "logLevel": "none",
+        "addToApiReportFile": true
+      },
+      "tsdoc-param-tag-with-invalid-optional-name": {
+        "logLevel": "none",
+        "addToApiReportFile": true
+      },
+      "tsdoc-malformed-inline-tag": {
+        "logLevel": "none",
+        "addToApiReportFile": true
+      },
+      "tsdoc-undefined-tag": {
+        "logLevel": "none",
+        "addToApiReportFile": true
+      },
+      "tsdoc-param-tag-with-invalid-name": {
+        "logLevel": "none",
+        "addToApiReportFile": true
+      },
+      "tsdoc-at-sign-in-word": {
+        "logLevel": "none",
+        "addToApiReportFile": true
       }
-
-      // "tsdoc-link-tag-unescaped-text": {
-      //   "logLevel": "warning",
-      //   "addToApiReportFile": true
-      // },
+      // tsdoc-at-sign-in-word
       //
       // . . .
     }
   }
-
 }
