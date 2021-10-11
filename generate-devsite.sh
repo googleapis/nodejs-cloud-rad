@@ -39,27 +39,33 @@ if [[ $(wc -l <./yaml/toc.yml) -le 3 ]] ; then
 ' ./yaml/toc.yml
 fi
 
-# Add overview section
+# Add Quickstart section, same as README
 sed -i -e '4a\
- \ \ \ \ \ - name: Overview
+ \ \ \ \ \ - name: Quickstart
 ' ./yaml/toc.yml
 sed -i -e '5a\
  \ \ \ \ \ \ \ homepage: index.md
 ' ./yaml/toc.yml
 
 
+# Add package overview section
+sed -i -e '6a\
+ \ \ \ \ \ - name: Overview
+' ./yaml/toc.yml
+sed -i -e '7a\
+ \ \ \ \ \ \ \ homepage: overview.html
+' ./yaml/toc.yml
+
 NAME=$(ls temp | sed s/.api.json*//)
-
-## Delete the default overvew page,
-## otherwise anchors are added and they break left nav
-rm ./yaml/$NAME.yml
-
 ## Copy everything to devsite
 mkdir -p ./_devsite
 mkdir -p ./_devsite/$NAME
 
 cp ./yaml/$NAME/* ./_devsite/$NAME || :
 cp ./yaml/toc.yml ./_devsite/toc.yml
+
+## Rename the default overview page,
+mv ./yaml/$NAME.yml ./_devsite/overview.yml
 
 ## readme is not allowed as filename
 cp ./README.md ./_devsite/index.md
