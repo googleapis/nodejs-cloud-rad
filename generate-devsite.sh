@@ -44,10 +44,9 @@ sed -i -e '4a\
  \ \ \ \ \ - name: Quickstart
 ' ./yaml/toc.yml
 sed -i -e '5a\
- \ \ \ \ \ \ \ homepage: quickstart.md
+ \ \ \ \ \ \ \ homepage: index.md
 ' ./yaml/toc.yml
 
-NAME=$(ls temp | sed s/.api.json*//)
 
 # Add package overview section
 sed -i -e '6a\
@@ -57,6 +56,7 @@ sed -i -e '7a\
  \ \ \ \ \ \ \ homepage: overview.html
 ' ./yaml/toc.yml
 
+NAME=$(ls temp | sed s/.api.json*//)
 ## Copy everything to devsite
 mkdir -p ./_devsite
 mkdir -p ./_devsite/$NAME
@@ -65,8 +65,7 @@ cp ./yaml/$NAME/* ./_devsite/$NAME || :
 cp ./yaml/toc.yml ./_devsite/toc.yml
 
 ## Rename the default overview page,
-## otherwise anchors are added and they break left nav
 mv ./yaml/$NAME.yml ./_devsite/overview.yml
 
 ## readme is not allowed as filename
-cp ./README.md ./_devsite/quickstart.md
+cp ./README.md ./_devsite/index.md
