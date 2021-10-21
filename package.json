@@ -13,7 +13,7 @@
   "author": "Google Inc",
   "license": "Apache-2.0",
   "dependencies": {
-    "@microsoft/api-documenter": "https://gitpkg.now.sh/fhinkel/rushstack/apps/api-documenter?fhinkel-example-tag",
+    "@microsoft/api-documenter": "https://gitpkg.now.sh/googleapis/rushstack/apps/api-documenter",
     "@microsoft/api-extractor": "^7.18.9"
   }
 }
