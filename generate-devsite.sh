@@ -51,7 +51,7 @@ sed -i -e '4a\
  \ \ \ \ \ - name: Quickstart
 ' ./yaml/toc.yml
 sed -i -e '5a\
- \ \ \ \ \ \ \ homepage: quickstart.md
+ \ \ \ \ \ \ \ homepage: index.md
 ' ./yaml/toc.yml
 
 NAME=$(ls temp | sed s/.api.json*//)
@@ -75,4 +75,4 @@ cp ./yaml/toc.yml ./_devsite/toc.yml
 mv ./yaml/$NAME.yml ./_devsite/overview.yml
 
 ## readme is not allowed as filename
-cp ./README.md ./_devsite/quickstart.md
+cp ./README.md ./_devsite/index.md
