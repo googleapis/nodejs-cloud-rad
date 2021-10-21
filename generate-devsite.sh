@@ -54,7 +54,6 @@ sed -i -e '5a\
  \ \ \ \ \ \ \ homepage: index.md
 ' ./yaml/toc.yml
 
-NAME=$(ls temp | sed s/.api.json*//)
 
 # Add package overview section
 sed -i -e '6a\
@@ -64,6 +63,7 @@ sed -i -e '7a\
  \ \ \ \ \ \ \ homepage: overview.html
 ' ./yaml/toc.yml
 
+NAME=$(ls temp | sed s/.api.json*//)
 ## Copy everything to devsite
 mkdir -p ./_devsite
 mkdir -p ./_devsite/$NAME
