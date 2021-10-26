@@ -1,6 +1,6 @@
 {
   "name": "@google-cloud/cloud-rad",
-  "version": "0.2.5",
+  "version": "0.2.7",
   "description": "",
   "main": "index.js",
   "repository": "googleapis/cloud-rad",
@@ -13,7 +13,7 @@
   "author": "Google Inc",
   "license": "Apache-2.0",
   "dependencies": {
-    "@microsoft/api-documenter": "7.11.0",
-    "@microsoft/api-extractor": "7.8.2-pr1796.0"
+    "@microsoft/api-documenter": "https://gitpkg.now.sh/googleapis/rushstack/apps/api-documenter",
+    "@microsoft/api-extractor": "^7.18.9"
   }
 }
