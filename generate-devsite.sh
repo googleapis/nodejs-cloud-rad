@@ -29,7 +29,7 @@ npx @microsoft/api-extractor run --local
 
 # install api-documenter deps manually because we're using a forked subdirectory
 cd node_modules/@microsoft/api-documenter/
-npm install
+npm install --legacy-peer-deps
 npm run build
 cd ../../..
 
