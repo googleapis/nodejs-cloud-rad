@@ -20,12 +20,16 @@
 
 mkdir -p ./etc
 
+# replace markdown code examples with html, see b/204924531
+dir="$(cd "$(dirname "$0")"; pwd)"
+node "$dir/../@google-cloud/cloud-rad/prettyPrint.js"
+
 cp node_modules/@google-cloud/cloud-rad/api-extractor.json .
 npx @microsoft/api-extractor run --local
 
 # install api-documenter deps manually because we're using a forked subdirectory
 cd node_modules/@microsoft/api-documenter/
-npm install
+npm install --legacy-peer-deps
 npm run build
 cd ../../..
 
