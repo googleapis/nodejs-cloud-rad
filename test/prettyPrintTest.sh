@@ -1,8 +1,9 @@
-cp fixtures/index.d.ts build
+mkdir yaml
+cp fixtures/bigquery.yml yaml
 node ../prettyPrint.js
-diff fixtures/index.d.ts-pretty build/index.d.ts
+diff fixtures/bigquery.yml-pretty yaml/bigquery.yml
 
-if cmp -s "build/index.d.ts" "fixtures/index.d.ts-pretty"; then
+if cmp -s "yaml/bigquery.yml" "fixtures/bigquery.yml-pretty"; then
     printf 'Test passed\n'
 else
     printf 'Test failed\n'
