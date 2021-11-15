@@ -15,10 +15,10 @@ async function processLineByLine(file) {
 
   const data = [];
   let insideCodeBlock = false;
-  const FENCING = /^(\s*)\* ```/;
+  const FENCING = /^(\s*)```$/;
 
-  const OPENING_TAG = '* <pre class="prettyprint"><code>';
-  const CLOSING_TAG = '* </pre></code>';
+  const OPENING_TAG = '<pre class="prettyprint"><code>';
+  const CLOSING_TAG = '</pre></code>';
 
   for await (const line of rl) {
     const match = line.match(FENCING);
@@ -39,9 +39,9 @@ async function processLineByLine(file) {
 }
 
 const main = async () => {
-  const path = 'build/';
+  const path = 'yaml/';
   try {
-    const files = glob.sync(`${path}/**/*.ts`, {
+    const files = glob.sync(`${path}/**/*.yml`, {
       ignore: ['node_modules'],
     });
     for (const file of files) {
