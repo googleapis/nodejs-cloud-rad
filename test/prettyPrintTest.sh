@@ -7,3 +7,4 @@ if cmp -s "build/index.d.ts" "fixtures/index.d.ts-pretty"; then
 else
     printf 'Test failed\n'
 fi
+
