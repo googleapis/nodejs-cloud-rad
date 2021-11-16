@@ -44,9 +44,12 @@ sed -i -e 's/^    //' ./yaml/toc.yml
 sed -i -e '/name: I[A-Z]/{N;d;}' ./yaml/toc.yml
 sed -i -e '/^ *\@google-cloud.*:interface/d' ./yaml/toc.yml
 
+echo "deleting lines with :interface"
 # Delete uids with :interface and line before
 # See https://www.theunixschool.com/2012/06/sed-25-examples-to-delete-line-or.html
 sed -i -e -n '/:interface/{s/.*//;x;d;};x;p;${x;p;}' ./yaml/toc.yml
+
+echo "delete blank lines from last sed command"
 # Delete blank lines from last sed command
 sed -i -e '/^$/d' ./yaml/toc.yml
 
