@@ -19,5 +19,6 @@ node.owlbot_main(templates_excludes=[
   ".kokoro/**",
   ".github/workflows/**",
   ".trampolinerc",
-  ".mocharc.js"
+  ".mocharc.js",
+  ".github/release-trigger.yml",
 ])
