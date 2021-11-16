@@ -21,4 +21,5 @@ node.owlbot_main(templates_excludes=[
   ".trampolinerc",
   ".mocharc.js",
   ".github/release-trigger.yml",
+  ".github/release-please.yml",
 ])
