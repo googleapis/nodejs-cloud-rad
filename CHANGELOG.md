@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.3.1](https://www.github.com/googleapis/nodejs-cloud-rad/compare/v0.3.0...v0.3.1) (2021-11-16)
+
+
+### Bug Fixes
+
+* use pretty print after api-extractor ([#22](https://www.github.com/googleapis/nodejs-cloud-rad/issues/22)) ([c4b1f0f](https://www.github.com/googleapis/nodejs-cloud-rad/commit/c4b1f0f174940cfa17131d1d9f5089d757ff205f))
+
 ## [0.3.0](https://www.github.com/googleapis/nodejs-cloud-rad/compare/v0.2.8...v0.3.0) (2021-11-15)
 
 
