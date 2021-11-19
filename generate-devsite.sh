@@ -24,6 +24,10 @@ mkdir -p ./etc
 cp node_modules/@google-cloud/cloud-rad/api-extractor.json .
 npx @microsoft/api-extractor run --local
 
+# copy the common.api.json file as it is used as a base class
+cp node_modules/@google-cloud/cloud-rad/common.api.json temp
+
+
 # install api-documenter deps manually because we're using a forked subdirectory
 cd node_modules/@microsoft/api-documenter/
 npm install --legacy-peer-deps
