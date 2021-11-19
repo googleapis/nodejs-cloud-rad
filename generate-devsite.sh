@@ -45,16 +45,11 @@ node "$dir/../@google-cloud/cloud-rad/prettyPrint.js"
 # # Delete SharePoint item, see https://github.com/microsoft/rushstack/issues/1229
 # sed -i -e '1,3d' ./yaml/toc.yml
 # sed -i -e 's/^    //' ./yaml/toc.yml
-# # Delete interfaces from TOC (name and uid)
-# sed -i -e '/name: I[A-Z]/{N;d;}' ./yaml/toc.yml
-# sed -i -e '/^ *\@google-cloud.*:interface/d' ./yaml/toc.yml
 
-# echo "deleting lines with :interface"
 # # Delete uids with :interface and line before
 # # See https://www.theunixschool.com/2012/06/sed-25-examples-to-delete-line-or.html
 # sed -i -n -e '/:interface/{s/.*//;x;d;};x;p;${x;p;}' ./yaml/toc.yml
 
-# echo "delete blank lines from last sed command"
 # # Delete blank lines from last sed command
 # sed -i -e '/^$/d' ./yaml/toc.yml
 
@@ -82,6 +77,16 @@ sed -i -e '6a\
 sed -i -e '7a\
  \ \ \ \ \ \ \ homepage: overview.html
 ' ./yaml/toc.yml
+
+# We add common.api.json to temp for base class references
+
+numberOfFiles=$(ls temp | wc -l)
+
+# When generating the docs for nodejs-common itself, there will only 
+# be one file in temp. Otherwise, delete common.api.json
+if [[ $numberOfFiles -ge 2 ]]; then
+  rm temp/common.api.json
+fi
 
 NAME=$(ls temp | sed s/.api.json*//)
 ## Copy everything to devsite
