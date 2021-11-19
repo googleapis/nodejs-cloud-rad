@@ -88,6 +88,10 @@ if [[ $numberOfFiles -ge 2 ]]; then
   rm temp/common.api.json
 fi
 
+# add href for external classes, see b/195674809
+dir="$(cd "$(dirname "$0")"; pwd)"
+node "$dir/../@google-cloud/cloud-rad/addLinks.js"
+
 NAME=$(ls temp | sed s/.api.json*//)
 ## Copy everything to devsite
 mkdir -p ./_devsite
