@@ -40,21 +40,21 @@ npx @microsoft/api-documenter yaml --input-folder=temp
 dir="$(cd "$(dirname "$0")"; pwd)"
 node "$dir/../@google-cloud/cloud-rad/prettyPrint.js"
 
+# remove common and auth from toc
+dir="$(cd "$(dirname "$0")"; pwd)"
+node "$dir/../@google-cloud/cloud-rad/deleteCommon.js"
+
+# remove interfaces from toc
+dir="$(cd "$(dirname "$0")"; pwd)"
+node "$dir/../@google-cloud/cloud-rad/removeInterface.js"
+
 # Clean up TOC
 # Delete SharePoint item, see https://github.com/microsoft/rushstack/issues/1229
 sed -i -e '1,3d' ./yaml/toc.yml
 # Shift everything to the left
 sed -i -e 's/^    //' ./yaml/toc.yml
 
-# Delete uids with :interface and line before
-# See https://www.theunixschool.com/2012/06/sed-25-examples-to-delete-line-or.html
-sed -i -n -e '/:interface/{s/.*//;x;d;};x;p;${x;p;}' ./yaml/toc.yml
-
-# Delete blank lines from last sed command
-sed -i -e '/^$/d' ./yaml/toc.yml
-
-
-## Add "items:" to short toc for overview file
+# Add "items:" to short toc for overview file
 if [[ $(wc -l <./yaml/toc.yml) -le 3 ]] ; then
   sed -i -e '3a\
  \ \ \ items:

@@ -25,7 +25,7 @@ async function processLineByLine(file) {
     if (match) {
       const whitespace = match[1];
       const interface = match[2];
-      console.log(interface);
+      // console.log(interface);
       let url = COMMON_URL + interface.toLowerCase();
       //  - uid: '@google-cloud/common!ServiceOptions:interface'
       //    name: ServiceOptions
@@ -38,7 +38,7 @@ async function processLineByLine(file) {
     if (match) {
       const whitespace = match[1];
       const interface = match[2];
-      console.log(interface);
+      // console.log(interface);
       let url = AUTH_URL + interface.toLowerCase();
       // - uid: 'google-auth-library!GoogleAuthOptions:interface'
       //   href: https://cloud.google.com/nodejs/docs/reference/google-auth-library/latest/google-auth-library/googleauthoptions
