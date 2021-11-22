@@ -15,16 +15,18 @@ async function processLineByLine(file) {
 
   const data = [];
   const COMMON = /^(\s)*- uid: '@google-cloud\/common\!(.*):interface'/;
-  const URL = `https://cloud.google.com/nodejs/docs/reference/common/latest/common/`;
+  const AUTH = /^(\s)*- uid: 'google-auth-library\!(.*):interface'/;
+  const COMMON_URL = `https://cloud.google.com/nodejs/docs/reference/common/latest/common/`;
+  const AUTH_URL = `https://cloud.google.com/nodejs/docs/reference/google-auth-library/latest/google-auth-library`;
 
   for await (const line of rl) {
     data.push(line);
-    const match = line.match(COMMON);
+    let match = line.match(COMMON);
     if (match) {
       const whitespace = match[1];
       const interface = match[2];
       console.log(interface);
-      let url = URL + interface.toLowerCase();
+      let url = COMMON_URL + interface.toLowerCase();
       //  - uid: '@google-cloud/common!ServiceOptions:interface'
       //    name: ServiceOptions
       //    href: https://cloud.google.com/nodejs/docs/reference/common/latest/common/serviceoptions
@@ -32,7 +34,22 @@ async function processLineByLine(file) {
       //  Add three whitespaces for `- ` before href
       data.push(`${whitespace}   href: ${url}`);
     }
+    match = line.match(AUTH);
+    if (match) {
+      const whitespace = match[1];
+      const interface = match[2];
+      console.log(interface);
+      let url = AUTH_URL + interface.toLowerCase();
+      // - uid: 'google-auth-library!GoogleAuthOptions:interface'
+      //   href: https://cloud.google.com/nodejs/docs/reference/google-auth-library/latest/google-auth-library/googleauthoptions
+      //   name: GoogleAuthOptions
+      //
+      //  Add three whitespaces for `- ` before href
+      data.push(`${whitespace}   href: ${url}`);
+    }
   }
+
+
 
   fs.writeFileSync(file, data.join('\n'), 'utf-8');
 }
