@@ -14,14 +14,14 @@ async function processLineByLine(file) {
   // ('\r\n') in input.txt as a single line break.
 
   const data = [];
-  const COMMON = /^(\s)- name: common$/;
-  const AUTH = /^(\s)- name: google-auth-library$/;
+  const COMMON = /^(\s*)- name: common$/;
+  const AUTH = /^(\s*)- name: google-auth-library$/;
   let insideDeleteBlock = false;
   let whitespace = '';
 
   for await (const line of rl) {
     if(insideDeleteBlock) {
-      let re = new RegExp(`${whitespace}- name:`);
+      let re = new RegExp(`^${whitespace}- name:`);
       const match = line.match(re);
       if(match) {
         insideDeleteBlock = false;

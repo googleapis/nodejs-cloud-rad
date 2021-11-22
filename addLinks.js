@@ -17,7 +17,7 @@ async function processLineByLine(file) {
   const COMMON = /^(\s)*- uid: '@google-cloud\/common\!(.*):interface'/;
   const AUTH = /^(\s)*- uid: 'google-auth-library\!(.*):interface'/;
   const COMMON_URL = `https://cloud.google.com/nodejs/docs/reference/common/latest/common/`;
-  const AUTH_URL = `https://cloud.google.com/nodejs/docs/reference/google-auth-library/latest/google-auth-library`;
+  const AUTH_URL = `https://cloud.google.com/nodejs/docs/reference/google-auth-library/latest/google-auth-library/`;
 
   for await (const line of rl) {
     data.push(line);
