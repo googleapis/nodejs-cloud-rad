@@ -25,6 +25,7 @@ cp node_modules/@google-cloud/cloud-rad/api-extractor.json .
 npx @microsoft/api-extractor run --local
 
 # copy the common.api.json file as it is used as a base class
+# If cloud-rad is running for common, the copied file will be overwritten by api-extractor
 cp node_modules/@google-cloud/cloud-rad/api-extractor-configs/common.api.json temp
 cp node_modules/@google-cloud/cloud-rad/api-extractor-configs/google-auth-library.api.json temp
 
@@ -42,7 +43,7 @@ node "$dir/../@google-cloud/cloud-rad/prettyPrint.js"
 
 # remove common and auth from toc
 dir="$(cd "$(dirname "$0")"; pwd)"
-node "$dir/../@google-cloud/cloud-rad/deleteCommon.js"
+node "$dir/../@google-cloud/cloud-rad/deleteBaseClasses.js"
 
 # remove interfaces from toc
 dir="$(cd "$(dirname "$0")"; pwd)"
@@ -78,12 +79,11 @@ sed -i -e '7a\
  \ \ \ \ \ \ \ homepage: overview.html
 ' ./yaml/toc.yml
 
-# We add common.api.json to temp for base class references
 
-numberOfFiles=$(ls temp | wc -l)
-
+# We add common.api.json abd google-auth-library.api.json to temp for base class references.
 # When generating the docs for nodejs-common or auth itself, there will only 
 # be two files in temp. Otherwise, delete common.api.json and auth.
+numberOfFiles=$(ls temp | wc -l)
 if [[ $numberOfFiles -ge 3 ]]; then
   rm temp/common.api.json
   rm temp/google-auth-library.api.json
