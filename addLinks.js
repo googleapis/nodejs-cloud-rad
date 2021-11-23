@@ -14,8 +14,8 @@ async function processLineByLine(file) {
   // ('\r\n') in input.txt as a single line break.
 
   const data = [];
-  const COMMON = /^(\s)*- uid: '@google-cloud\/common\!(.*):interface'/;
-  const AUTH = /^(\s)*- uid: 'google-auth-library\!(.*):interface'/;
+  const COMMON = /^(\s*)- uid: '@google-cloud\/common\!(.*):interface'/;
+  const AUTH = /^(\s*)- uid: 'google-auth-library\!(.*):interface'/;
   const COMMON_URL = `https://cloud.google.com/nodejs/docs/reference/common/latest/common/`;
   const AUTH_URL = `https://cloud.google.com/nodejs/docs/reference/google-auth-library/latest/google-auth-library/`;
 
@@ -31,8 +31,8 @@ async function processLineByLine(file) {
       //    name: ServiceOptions
       //    href: https://cloud.google.com/nodejs/docs/reference/common/latest/common/serviceoptions
       //
-      //  Add three whitespaces for `- ` before href
-      data.push(`${whitespace}   href: ${url}`);
+      //  Add two whitespaces for `- ` before href
+      data.push(`${whitespace}  href: ${url}`);
     }
     match = line.match(AUTH);
     if (match) {
@@ -44,8 +44,8 @@ async function processLineByLine(file) {
       //   href: https://cloud.google.com/nodejs/docs/reference/google-auth-library/latest/google-auth-library/googleauthoptions
       //   name: GoogleAuthOptions
       //
-      //  Add three whitespaces for `- ` before href
-      data.push(`${whitespace}   href: ${url}`);
+      //  Add two whitespaces for `- ` before href
+      data.push(`${whitespace}  href: ${url}`);
     }
   }
 
