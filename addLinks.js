@@ -14,8 +14,8 @@ async function processLineByLine(file) {
   // ('\r\n') in input.txt as a single line break.
 
   const data = [];
-  const COMMON = /^(\s*)- uid: '@google-cloud\/common\!(.*):interface'/;
-  const AUTH = /^(\s*)- uid: 'google-auth-library\!(.*):interface'/;
+  const COMMON = /^(\s*)- uid: '@google-cloud\/common\![\~]?(.*):(interface|class|type)'/;
+  const AUTH = /^(\s*)- uid: 'google-auth-library\![\~]?(.*):(interface|class|type)'/;
   const COMMON_URL = `https://cloud.google.com/nodejs/docs/reference/common/latest/common/`;
   const AUTH_URL = `https://cloud.google.com/nodejs/docs/reference/google-auth-library/latest/google-auth-library/`;
 
