@@ -40,7 +40,7 @@ name=$(cat package.json | json name | sed 's/^.*\///')
 dir="$(cd "$(dirname "$0")"; pwd)"
 if [ "$name" == "common" ]; then
   . "$dir/../@google-cloud/cloud-rad/generate-devsite-base-classes.sh"
-elif [ "$name" == "google-auth-library"]; then
+elif [ "$name" == "google-auth-library" ]; then
   . "$dir/../@google-cloud/cloud-rad/generate-devsite-base-classes.sh"
 else 
   . "$dir/../@google-cloud/cloud-rad/generate-devsite.sh"
