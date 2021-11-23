@@ -31,14 +31,20 @@ then
   git checkout $VERSION
 fi
 
-# Generate the data for the devsite tarball
-dir="$(cd "$(dirname "$0")"; pwd)"
-. "$dir/../@google-cloud/cloud-rad/generate-devsite.sh"
-
 
 npm i json@9.0.6 -g
 # remove @google-cloud/ from package name
 name=$(cat package.json | json name | sed 's/^.*\///')
+
+# Generate the data for the devsite tarball
+dir="$(cd "$(dirname "$0")"; pwd)"
+if [ "$name" == "common" ]; then
+  . "$dir/../@google-cloud/cloud-rad/generate-devsite-base-classes.sh"
+elif [ "$name" == "google-auth-library"]; then
+  . "$dir/../@google-cloud/cloud-rad/generate-devsite-base-classes.sh"
+else 
+  . "$dir/../@google-cloud/cloud-rad/generate-devsite.sh"
+fi
 
 # create docs.metadata, based on package.json and .repo-metadata.json.
 pip install -U pip

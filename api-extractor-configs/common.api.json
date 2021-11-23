@@ -1,0 +1,4756 @@
+{
+  "metadata": {
+    "toolPackage": "@microsoft/api-extractor",
+    "toolVersion": "7.18.19",
+    "schemaVersion": 1004,
+    "oldestForwardsCompatibleVersion": 1001,
+    "tsdocConfig": {
+      "$schema": "https://developer.microsoft.com/json-schemas/tsdoc/v0/tsdoc.schema.json",
+      "noStandardTags": true,
+      "tagDefinitions": [
+        {
+          "tagName": "@alpha",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@beta",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@defaultValue",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@decorator",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@deprecated",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@eventProperty",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@example",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@experimental",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@inheritDoc",
+          "syntaxKind": "inline"
+        },
+        {
+          "tagName": "@internal",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@label",
+          "syntaxKind": "inline"
+        },
+        {
+          "tagName": "@link",
+          "syntaxKind": "inline",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@override",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@packageDocumentation",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@param",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@privateRemarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@public",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@readonly",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@remarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@returns",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@sealed",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@see",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@throws",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@typeParam",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@virtual",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@betaDocumentation",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@internalRemarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@preapproved",
+          "syntaxKind": "modifier"
+        }
+      ],
+      "supportForTags": {
+        "@alpha": true,
+        "@beta": true,
+        "@defaultValue": true,
+        "@decorator": true,
+        "@deprecated": true,
+        "@eventProperty": true,
+        "@example": true,
+        "@experimental": true,
+        "@inheritDoc": true,
+        "@internal": true,
+        "@label": true,
+        "@link": true,
+        "@override": true,
+        "@packageDocumentation": true,
+        "@param": true,
+        "@privateRemarks": true,
+        "@public": true,
+        "@readonly": true,
+        "@remarks": true,
+        "@returns": true,
+        "@sealed": true,
+        "@see": true,
+        "@throws": true,
+        "@typeParam": true,
+        "@virtual": true,
+        "@betaDocumentation": true,
+        "@internalRemarks": true,
+        "@preapproved": true
+      }
+    }
+  },
+  "kind": "Package",
+  "canonicalReference": "@google-cloud/common!",
+  "docComment": "",
+  "name": "@google-cloud/common",
+  "members": [
+    {
+      "kind": "EntryPoint",
+      "canonicalReference": "@google-cloud/common!",
+      "name": "",
+      "members": [
+        {
+          "kind": "Interface",
+          "canonicalReference": "@google-cloud/common!Abortable:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface Abortable "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "Abortable",
+          "members": [
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@google-cloud/common!Abortable#abort:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "abort(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "abort"
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@google-cloud/common!AbortableDuplex:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type AbortableDuplex = "
+            },
+            {
+              "kind": "Reference",
+              "text": "Duplexify",
+              "canonicalReference": "@google-cloud/common!Duplexify:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " & "
+            },
+            {
+              "kind": "Reference",
+              "text": "Abortable",
+              "canonicalReference": "@google-cloud/common!Abortable:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "AbortableDuplex",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 4
+          }
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@google-cloud/common!ApiError:class",
+          "docComment": "/**\n * Custom error type for API errors.\n *\n * @param errorBody - Error object.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class ApiError extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "Error",
+              "canonicalReference": "!Error:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ApiError",
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "@google-cloud/common!ApiError:constructor(1)",
+              "docComment": "/**\n * Constructs a new instance of the `ApiError` class\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(errorMessage: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "errorMessage",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "Constructor",
+              "canonicalReference": "@google-cloud/common!ApiError:constructor(2)",
+              "docComment": "/**\n * Constructs a new instance of the `ApiError` class\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(errorBody: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "GoogleErrorBody",
+                  "canonicalReference": "@google-cloud/common!GoogleErrorBody:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 2,
+              "parameters": [
+                {
+                  "parameterName": "errorBody",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@google-cloud/common!ApiError#code:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "code?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "code",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@google-cloud/common!ApiError.createMultiErrorMessage:member(1)",
+              "docComment": "/**\n * Pieces together an error message by combining all unique error messages returned from a single GoogleError\n *\n * @private\n *\n * @param err - The original error.\n *\n * @param errors - Inner errors, if any.\n *\n * @returns {string}\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "static createMultiErrorMessage(err: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "GoogleErrorBody",
+                  "canonicalReference": "@google-cloud/common!GoogleErrorBody:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", errors?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "GoogleInnerError",
+                  "canonicalReference": "@google-cloud/common!GoogleInnerError:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": true,
+              "returnTypeTokenRange": {
+                "startIndex": 6,
+                "endIndex": 7
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "err",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "parameterName": "errors",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 5
+                  }
+                }
+              ],
+              "name": "createMultiErrorMessage"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@google-cloud/common!ApiError#errors:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "errors?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "GoogleInnerError",
+                  "canonicalReference": "@google-cloud/common!GoogleInnerError:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "errors",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@google-cloud/common!ApiError#response:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "response?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "r."
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Response",
+                  "canonicalReference": "teeny-request!Response:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "response",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "isStatic": false
+            }
+          ],
+          "extendsTokenRange": {
+            "startIndex": 1,
+            "endIndex": 3
+          },
+          "implementsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@google-cloud/common!BodyResponseCallback:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface BodyResponseCallback "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "BodyResponseCallback",
+          "members": [
+            {
+              "kind": "CallSignature",
+              "canonicalReference": "@google-cloud/common!BodyResponseCallback:call(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "(err: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Error",
+                  "canonicalReference": "!Error:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ApiError",
+                  "canonicalReference": "@google-cloud/common!ApiError:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | null"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", body?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResponseBody",
+                  "canonicalReference": "@google-cloud/common!ResponseBody:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", res?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "r."
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Response",
+                  "canonicalReference": "teeny-request!Response:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "returnTypeTokenRange": {
+                "startIndex": 11,
+                "endIndex": 12
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "err",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 5
+                  }
+                },
+                {
+                  "parameterName": "body",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 6,
+                    "endIndex": 7
+                  }
+                },
+                {
+                  "parameterName": "res",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 8,
+                    "endIndex": 10
+                  }
+                }
+              ]
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@google-cloud/common!DecorateRequestOptions:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface DecorateRequestOptions extends "
+            },
+            {
+              "kind": "Content",
+              "text": "r."
+            },
+            {
+              "kind": "Reference",
+              "text": "CoreOptions",
+              "canonicalReference": "teeny-request!CoreOptions:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "DecorateRequestOptions",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@google-cloud/common!DecorateRequestOptions#autoPaginate:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "autoPaginate?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "autoPaginate",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@google-cloud/common!DecorateRequestOptions#autoPaginateVal:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "autoPaginateVal?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "autoPaginateVal",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@google-cloud/common!DecorateRequestOptions#interceptors_:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "interceptors_?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Interceptor",
+                  "canonicalReference": "@google-cloud/common!Interceptor:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "interceptors_",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@google-cloud/common!DecorateRequestOptions#maxRetries:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "maxRetries?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "maxRetries",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@google-cloud/common!DecorateRequestOptions#objectMode:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "objectMode?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "objectMode",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@google-cloud/common!DecorateRequestOptions#shouldReturnStream:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "shouldReturnStream?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "shouldReturnStream",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@google-cloud/common!DecorateRequestOptions#uri:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "uri: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "uri",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 4
+            }
+          ]
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@google-cloud/common!DeleteCallback:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface DeleteCallback "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "DeleteCallback",
+          "members": [
+            {
+              "kind": "CallSignature",
+              "canonicalReference": "@google-cloud/common!DeleteCallback:call(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "(err: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Error",
+                  "canonicalReference": "!Error:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | null"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", apiResponse?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "r."
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Response",
+                  "canonicalReference": "teeny-request!Response:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "returnTypeTokenRange": {
+                "startIndex": 7,
+                "endIndex": 8
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "err",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 3
+                  }
+                },
+                {
+                  "parameterName": "apiResponse",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 4,
+                    "endIndex": 6
+                  }
+                }
+              ]
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@google-cloud/common!ExistsCallback:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ExistsCallback "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ExistsCallback",
+          "members": [
+            {
+              "kind": "CallSignature",
+              "canonicalReference": "@google-cloud/common!ExistsCallback:call(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "(err: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Error",
+                  "canonicalReference": "!Error:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | null"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", exists?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "returnTypeTokenRange": {
+                "startIndex": 6,
+                "endIndex": 7
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "err",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 3
+                  }
+                },
+                {
+                  "parameterName": "exists",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 4,
+                    "endIndex": 5
+                  }
+                }
+              ]
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@google-cloud/common!GetConfig:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface GetConfig "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "GetConfig",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@google-cloud/common!GetConfig#autoCreate:member",
+              "docComment": "/**\n * Create the object if it doesn't already exist.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "autoCreate?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "autoCreate",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@google-cloud/common!InstanceResponseCallback:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface InstanceResponseCallback<T> "
+            }
+          ],
+          "releaseTag": "Public",
+          "typeParameters": [
+            {
+              "typeParameterName": "T",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "name": "InstanceResponseCallback",
+          "members": [
+            {
+              "kind": "CallSignature",
+              "canonicalReference": "@google-cloud/common!InstanceResponseCallback:call(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "(err: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ApiError",
+                  "canonicalReference": "@google-cloud/common!ApiError:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | null"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", instance?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "T | null"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", apiResponse?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "r."
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Response",
+                  "canonicalReference": "teeny-request!Response:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "returnTypeTokenRange": {
+                "startIndex": 9,
+                "endIndex": 10
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "err",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 3
+                  }
+                },
+                {
+                  "parameterName": "instance",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 4,
+                    "endIndex": 5
+                  }
+                },
+                {
+                  "parameterName": "apiResponse",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 6,
+                    "endIndex": 8
+                  }
+                }
+              ]
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@google-cloud/common!Interceptor:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface Interceptor "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "Interceptor",
+          "members": [
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@google-cloud/common!Interceptor#request:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "request(opts: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "r."
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Options",
+                  "canonicalReference": "teeny-request!Options:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "DecorateRequestOptions",
+                  "canonicalReference": "@google-cloud/common!DecorateRequestOptions:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 4,
+                "endIndex": 5
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "opts",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 3
+                  }
+                }
+              ],
+              "name": "request"
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@google-cloud/common!Metadata:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type Metadata = "
+            },
+            {
+              "kind": "Content",
+              "text": "any"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "Metadata",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@google-cloud/common!MetadataCallback:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type MetadataCallback = "
+            },
+            {
+              "kind": "Content",
+              "text": "(err: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Error",
+              "canonicalReference": "!Error:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | null, metadata?: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Metadata",
+              "canonicalReference": "@google-cloud/common!Metadata:type"
+            },
+            {
+              "kind": "Content",
+              "text": ", apiResponse?: r."
+            },
+            {
+              "kind": "Reference",
+              "text": "Response",
+              "canonicalReference": "teeny-request!Response:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ") => void"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "MetadataCallback",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 8
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@google-cloud/common!MetadataResponse:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type MetadataResponse = "
+            },
+            {
+              "kind": "Content",
+              "text": "["
+            },
+            {
+              "kind": "Reference",
+              "text": "Metadata",
+              "canonicalReference": "@google-cloud/common!Metadata:type"
+            },
+            {
+              "kind": "Content",
+              "text": ", r."
+            },
+            {
+              "kind": "Reference",
+              "text": "Response",
+              "canonicalReference": "teeny-request!Response:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "]"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "MetadataResponse",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 6
+          }
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@google-cloud/common!Methods:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface Methods "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "Methods",
+          "members": [
+            {
+              "kind": "IndexSignature",
+              "canonicalReference": "@google-cloud/common!Methods:index(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "[methodName: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "]: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "{\n        reqOpts?: r."
+                },
+                {
+                  "kind": "Reference",
+                  "text": "CoreOptions",
+                  "canonicalReference": "teeny-request!CoreOptions:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";\n    } | boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "methodName",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                }
+              ]
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@google-cloud/common!Operation:class",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class Operation<T = "
+            },
+            {
+              "kind": "Content",
+              "text": "any"
+            },
+            {
+              "kind": "Content",
+              "text": "> extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "ServiceObject",
+              "canonicalReference": "@google-cloud/common!~ServiceObject:class"
+            },
+            {
+              "kind": "Content",
+              "text": "<T> "
+            }
+          ],
+          "releaseTag": "Public",
+          "typeParameters": [
+            {
+              "typeParameterName": "T",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "name": "Operation",
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "@google-cloud/common!Operation:constructor(1)",
+              "docComment": "/**\n * An Operation object allows you to interact with APIs that take longer to process things.\n *\n * @constructor  @alias module:common/operation\n *\n * @param config - Configuration object.\n *\n * @param  - {module:common/service|module:common/serviceObject|module:common/grpcService|module:common/grpcServiceObject} config.parent - The parent object.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(config: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ServiceObjectConfig",
+                  "canonicalReference": "@google-cloud/common!ServiceObjectConfig:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "config",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@google-cloud/common!Operation#completeListeners:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "completeListeners: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "completeListeners",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@google-cloud/common!Operation#hasActiveListeners:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "hasActiveListeners: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "hasActiveListeners",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@google-cloud/common!Operation#listenForEvents_:member(1)",
+              "docComment": "/**\n * Begin listening for events on the operation. This method keeps track of how many \"complete\" listeners are registered and removed, making sure polling is handled automatically.\n *\n * As long as there is one active \"complete\" listener, the connection is open. When there are no more listeners, the polling stops.\n *\n * @private\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected listenForEvents_(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "listenForEvents_"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@google-cloud/common!Operation#poll_:member(1)",
+              "docComment": "/**\n * Poll for a status update. Returns null for an incomplete status, and metadata for a complete status.\n *\n * @private\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected poll_(callback: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "MetadataCallback",
+                  "canonicalReference": "@google-cloud/common!MetadataCallback:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "callback",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                }
+              ],
+              "name": "poll_"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@google-cloud/common!Operation#promise:member(1)",
+              "docComment": "/**\n * Wraps the `complete` and `error` events in a Promise.\n *\n * @return {Promise}\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "promise(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<unknown>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "promise"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@google-cloud/common!Operation#startPolling_:member(1)",
+              "docComment": "/**\n * Poll `getMetadata` to check the operation's status. This runs a loop to ping the API on an interval.\n *\n * Note: This method is automatically called once a \"complete\" event handler is registered on the operation.\n *\n * @private\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected startPolling_(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<void>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "startPolling_"
+            }
+          ],
+          "extendsTokenRange": {
+            "startIndex": 3,
+            "endIndex": 5
+          },
+          "implementsTokenRanges": []
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@google-cloud/common!ResponseBody:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type ResponseBody = "
+            },
+            {
+              "kind": "Content",
+              "text": "any"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ResponseBody",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@google-cloud/common!ResponseCallback:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ResponseCallback "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ResponseCallback",
+          "members": [
+            {
+              "kind": "CallSignature",
+              "canonicalReference": "@google-cloud/common!ResponseCallback:call(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "(err?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Error",
+                  "canonicalReference": "!Error:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | null"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", apiResponse?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "r."
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Response",
+                  "canonicalReference": "teeny-request!Response:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "returnTypeTokenRange": {
+                "startIndex": 7,
+                "endIndex": 8
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "err",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 3
+                  }
+                },
+                {
+                  "parameterName": "apiResponse",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 4,
+                    "endIndex": 6
+                  }
+                }
+              ]
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@google-cloud/common!Service:class",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class Service "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "Service",
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "@google-cloud/common!Service:constructor(1)",
+              "docComment": "/**\n * Service is a base class, meant to be inherited from by a \"service,\" like BigQuery or Storage.\n *\n * This handles making authenticated requests by exposing a `makeReq_` function.\n *\n * @constructor  @alias module:common/service\n *\n * @param config - Configuration object.\n *\n * @param  - {string} config.baseUrl - The base URL to make API requests to.\n *\n * @param  - {string[]} config.scopes - The scopes required for the request.\n *\n * @param options - [Configuration object](#/docs).\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(config: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ServiceConfig",
+                  "canonicalReference": "@google-cloud/common!ServiceConfig:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", options?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ServiceOptions",
+                  "canonicalReference": "@google-cloud/common!ServiceOptions:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "config",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "parameterName": "options",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@google-cloud/common!Service#apiEndpoint:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly apiEndpoint: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "apiEndpoint",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@google-cloud/common!Service#authClient:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "authClient: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "GoogleAuth",
+                  "canonicalReference": "google-auth-library!GoogleAuth:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "authClient",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@google-cloud/common!Service#baseUrl:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "baseUrl: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "baseUrl",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@google-cloud/common!Service#getProjectId:member(1)",
+              "docComment": "/**\n * Get and update the Service's project ID.\n *\n * @param callback - The callback function.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "getProjectId(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<string>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "getProjectId"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@google-cloud/common!Service#getProjectId:member(2)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "getProjectId(callback: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(err: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Error",
+                  "canonicalReference": "!Error:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | null, projectId?: string) => void"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 2,
+              "parameters": [
+                {
+                  "parameterName": "callback",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 4
+                  }
+                }
+              ],
+              "name": "getProjectId"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@google-cloud/common!Service#getProjectIdAsync:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected getProjectIdAsync(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<string>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "getProjectIdAsync"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@google-cloud/common!Service#getRequestInterceptors:member(1)",
+              "docComment": "/**\n * Return the user's custom request interceptors.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "getRequestInterceptors(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Function",
+                  "canonicalReference": "!Function:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "getRequestInterceptors"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@google-cloud/common!Service#interceptors:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "interceptors: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Interceptor",
+                  "canonicalReference": "@google-cloud/common!Interceptor:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "interceptors",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@google-cloud/common!Service#makeAuthenticatedRequest:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "makeAuthenticatedRequest: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "MakeAuthenticatedRequest",
+                  "canonicalReference": "@google-cloud/common!MakeAuthenticatedRequest:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "makeAuthenticatedRequest",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@google-cloud/common!Service#projectId:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "projectId: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "projectId",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@google-cloud/common!Service#providedUserAgent:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "providedUserAgent?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "providedUserAgent",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@google-cloud/common!Service#request:member(1)",
+              "docComment": "/**\n * Make an authenticated API request.\n *\n * @param reqOpts - Request options that are passed to `request`.\n *\n * @param  - {string} reqOpts.uri - A URI relative to the baseUrl.\n *\n * @param callback - The callback function passed to `request`.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "request(reqOpts: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "DecorateRequestOptions",
+                  "canonicalReference": "@google-cloud/common!DecorateRequestOptions:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", callback: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "BodyResponseCallback",
+                  "canonicalReference": "@google-cloud/common!BodyResponseCallback:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "reqOpts",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "parameterName": "callback",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  }
+                }
+              ],
+              "name": "request"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@google-cloud/common!Service#requestStream:member(1)",
+              "docComment": "/**\n * Make an authenticated API request.\n *\n * @param reqOpts - Request options that are passed to `request`.\n *\n * @param  - {string} reqOpts.uri - A URI relative to the baseUrl.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "requestStream(reqOpts: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "DecorateRequestOptions",
+                  "canonicalReference": "@google-cloud/common!DecorateRequestOptions:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "r."
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Request",
+                  "canonicalReference": "teeny-request!Request:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 5
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "reqOpts",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                }
+              ],
+              "name": "requestStream"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@google-cloud/common!Service#timeout:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "timeout?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "timeout",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            }
+          ],
+          "implementsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@google-cloud/common!ServiceConfig:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ServiceConfig "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ServiceConfig",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@google-cloud/common!ServiceConfig#apiEndpoint:member",
+              "docComment": "/**\n * The API Endpoint to use when connecting to the service. Example: storage.googleapis.com\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "apiEndpoint: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "apiEndpoint",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@google-cloud/common!ServiceConfig#authClient:member",
+              "docComment": "/**\n * Reuse an existing GoogleAuth client instead of creating a new one.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "authClient?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "GoogleAuth",
+                  "canonicalReference": "google-auth-library!GoogleAuth:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "authClient",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@google-cloud/common!ServiceConfig#baseUrl:member",
+              "docComment": "/**\n * The base URL to make API requests to.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "baseUrl: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "baseUrl",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@google-cloud/common!ServiceConfig#packageJson:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "packageJson: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "PackageJson",
+                  "canonicalReference": "@google-cloud/common!PackageJson:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "packageJson",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@google-cloud/common!ServiceConfig#projectIdRequired:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "projectIdRequired?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "projectIdRequired",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@google-cloud/common!ServiceConfig#scopes:member",
+              "docComment": "/**\n * The scopes required for the request.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "scopes: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "scopes",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@google-cloud/common!ServiceObject:class",
+          "docComment": "/**\n * ServiceObject is a base class, meant to be inherited from by a \"service object,\" like a BigQuery dataset or Storage bucket.\n *\n * Most of the time, these objects share common functionality; they can be created or deleted, and you can get or set their metadata.\n *\n * By inheriting from this class, a service object will be extended with these shared behaviors. Note that any method can be overridden when the service object requires specific behavior.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "declare class ServiceObject<T = "
+            },
+            {
+              "kind": "Content",
+              "text": "any"
+            },
+            {
+              "kind": "Content",
+              "text": "> extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "EventEmitter",
+              "canonicalReference": "!EventEmitter:class"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "typeParameters": [
+            {
+              "typeParameterName": "T",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "name": "ServiceObject",
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "@google-cloud/common!ServiceObject:constructor(1)",
+              "docComment": "/**\n * Constructs a new instance of the `ServiceObject` class\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(config: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ServiceObjectConfig",
+                  "canonicalReference": "@google-cloud/common!ServiceObjectConfig:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "config",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@google-cloud/common!ServiceObject#baseUrl:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "baseUrl?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "baseUrl",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@google-cloud/common!ServiceObject#create:member(1)",
+              "docComment": "/**\n * Create the object.\n *\n * @param options - Configuration object.\n *\n * @param callback - The callback function.\n *\n * @param  - {?error} callback.err - An error returned while making this request.\n *\n * @param  - {object} callback.instance - The instance.\n *\n * @param  - {object} callback.apiResponse - The full API response.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "create(options?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "CreateOptions",
+                  "canonicalReference": "@google-cloud/common!CreateOptions:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "CreateResponse",
+                  "canonicalReference": "@google-cloud/common!CreateResponse:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<T>>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 7
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "options",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                }
+              ],
+              "name": "create"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@google-cloud/common!ServiceObject#create:member(2)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "create(options: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "CreateOptions",
+                  "canonicalReference": "@google-cloud/common!CreateOptions:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", callback: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "CreateCallback",
+                  "canonicalReference": "@google-cloud/common!CreateCallback:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<T>"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 6,
+                "endIndex": 7
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 2,
+              "parameters": [
+                {
+                  "parameterName": "options",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "parameterName": "callback",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 5
+                  }
+                }
+              ],
+              "name": "create"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@google-cloud/common!ServiceObject#create:member(3)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "create(callback: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "CreateCallback",
+                  "canonicalReference": "@google-cloud/common!CreateCallback:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<T>"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 4,
+                "endIndex": 5
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 3,
+              "parameters": [
+                {
+                  "parameterName": "callback",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 3
+                  }
+                }
+              ],
+              "name": "create"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@google-cloud/common!ServiceObject#delete:member(1)",
+              "docComment": "/**\n * Delete the object.\n *\n * @param callback - The callback function.\n *\n * @param  - {?error} callback.err - An error returned while making this request.\n *\n * @param  - {object} callback.apiResponse - The full API response.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "delete(options?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "DeleteOptions",
+                  "canonicalReference": "@google-cloud/common!DeleteOptions:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<[r."
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Response",
+                  "canonicalReference": "teeny-request!Response:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "]>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 7
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "options",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                }
+              ],
+              "name": "delete"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@google-cloud/common!ServiceObject#delete:member(2)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "delete(options: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "DeleteOptions",
+                  "canonicalReference": "@google-cloud/common!DeleteOptions:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", callback: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "DeleteCallback",
+                  "canonicalReference": "@google-cloud/common!DeleteCallback:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 2,
+              "parameters": [
+                {
+                  "parameterName": "options",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "parameterName": "callback",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  }
+                }
+              ],
+              "name": "delete"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@google-cloud/common!ServiceObject#delete:member(3)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "delete(callback: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "DeleteCallback",
+                  "canonicalReference": "@google-cloud/common!DeleteCallback:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 3,
+              "parameters": [
+                {
+                  "parameterName": "callback",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                }
+              ],
+              "name": "delete"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@google-cloud/common!ServiceObject#exists:member(1)",
+              "docComment": "/**\n * Check if the object exists.\n *\n * @param callback - The callback function.\n *\n * @param  - {?error} callback.err - An error returned while making this request.\n *\n * @param  - {boolean} callback.exists - Whether the object exists or not.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "exists(options?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ExistsOptions",
+                  "canonicalReference": "@google-cloud/common!ExistsOptions:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<[boolean]>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 5
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "options",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                }
+              ],
+              "name": "exists"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@google-cloud/common!ServiceObject#exists:member(2)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "exists(options: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ExistsOptions",
+                  "canonicalReference": "@google-cloud/common!ExistsOptions:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", callback: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ExistsCallback",
+                  "canonicalReference": "@google-cloud/common!ExistsCallback:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 2,
+              "parameters": [
+                {
+                  "parameterName": "options",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "parameterName": "callback",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  }
+                }
+              ],
+              "name": "exists"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@google-cloud/common!ServiceObject#exists:member(3)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "exists(callback: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ExistsCallback",
+                  "canonicalReference": "@google-cloud/common!ExistsCallback:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 3,
+              "parameters": [
+                {
+                  "parameterName": "callback",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                }
+              ],
+              "name": "exists"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@google-cloud/common!ServiceObject#get:member(1)",
+              "docComment": "/**\n * Get the object if it exists. Optionally have the object created if an options object is provided with `autoCreate: true`.\n *\n * @param options - The configuration object that will be used to create the object if necessary.\n *\n * @param  - {boolean} options.autoCreate - Create the object if it doesn't already exist.\n *\n * @param callback - The callback function.\n *\n * @param  - {?error} callback.err - An error returned while making this request.\n *\n * @param  - {object} callback.instance - The instance.\n *\n * @param  - {object} callback.apiResponse - The full API response.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get(options?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "GetOrCreateOptions",
+                  "canonicalReference": "@google-cloud/common!~GetOrCreateOptions:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "GetResponse",
+                  "canonicalReference": "@google-cloud/common!GetResponse:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<T>>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 7
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "options",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                }
+              ],
+              "name": "get"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@google-cloud/common!ServiceObject#get:member(2)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get(callback: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "InstanceResponseCallback",
+                  "canonicalReference": "@google-cloud/common!InstanceResponseCallback:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<T>"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 4,
+                "endIndex": 5
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 2,
+              "parameters": [
+                {
+                  "parameterName": "callback",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 3
+                  }
+                }
+              ],
+              "name": "get"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@google-cloud/common!ServiceObject#get:member(3)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get(options: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "GetOrCreateOptions",
+                  "canonicalReference": "@google-cloud/common!~GetOrCreateOptions:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", callback: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "InstanceResponseCallback",
+                  "canonicalReference": "@google-cloud/common!InstanceResponseCallback:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<T>"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 6,
+                "endIndex": 7
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 3,
+              "parameters": [
+                {
+                  "parameterName": "options",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "parameterName": "callback",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 5
+                  }
+                }
+              ],
+              "name": "get"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@google-cloud/common!ServiceObject#getMetadata:member(1)",
+              "docComment": "/**\n * Get the metadata of this object.\n *\n * @param callback - The callback function.\n *\n * @param  - {?error} callback.err - An error returned while making this request.\n *\n * @param  - {object} callback.metadata - The metadata for this object.\n *\n * @param  - {object} callback.apiResponse - The full API response.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "getMetadata(options?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "GetMetadataOptions",
+                  "canonicalReference": "@google-cloud/common!GetMetadataOptions:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "MetadataResponse",
+                  "canonicalReference": "@google-cloud/common!MetadataResponse:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 7
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "options",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                }
+              ],
+              "name": "getMetadata"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@google-cloud/common!ServiceObject#getMetadata:member(2)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "getMetadata(options: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "GetMetadataOptions",
+                  "canonicalReference": "@google-cloud/common!GetMetadataOptions:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", callback: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "MetadataCallback",
+                  "canonicalReference": "@google-cloud/common!MetadataCallback:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 2,
+              "parameters": [
+                {
+                  "parameterName": "options",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "parameterName": "callback",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  }
+                }
+              ],
+              "name": "getMetadata"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@google-cloud/common!ServiceObject#getMetadata:member(3)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "getMetadata(callback: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "MetadataCallback",
+                  "canonicalReference": "@google-cloud/common!MetadataCallback:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 3,
+              "parameters": [
+                {
+                  "parameterName": "callback",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                }
+              ],
+              "name": "getMetadata"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@google-cloud/common!ServiceObject#getRequestInterceptors:member(1)",
+              "docComment": "/**\n * Return the user's custom request interceptors.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "getRequestInterceptors(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Function",
+                  "canonicalReference": "!Function:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "getRequestInterceptors"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@google-cloud/common!ServiceObject#id:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "id?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "id",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@google-cloud/common!ServiceObject#interceptors:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "interceptors: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Interceptor",
+                  "canonicalReference": "@google-cloud/common!Interceptor:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "interceptors",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@google-cloud/common!ServiceObject#metadata:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "metadata: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Metadata",
+                  "canonicalReference": "@google-cloud/common!Metadata:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "metadata",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@google-cloud/common!ServiceObject#methods:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected methods: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Methods",
+                  "canonicalReference": "@google-cloud/common!Methods:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "methods",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@google-cloud/common!ServiceObject#parent:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "parent: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ServiceObjectParent",
+                  "canonicalReference": "@google-cloud/common!ServiceObjectParent:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "parent",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@google-cloud/common!ServiceObject#pollIntervalMs:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "pollIntervalMs?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "pollIntervalMs",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@google-cloud/common!ServiceObject#request:member(1)",
+              "docComment": "/**\n * Make an authenticated API request.\n *\n * @param reqOpts - Request options that are passed to `request`.\n *\n * @param  - {string} reqOpts.uri - A URI relative to the baseUrl.\n *\n * @param callback - The callback function passed to `request`.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "request(reqOpts: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "DecorateRequestOptions",
+                  "canonicalReference": "@google-cloud/common!DecorateRequestOptions:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "RequestResponse",
+                  "canonicalReference": "@google-cloud/common!RequestResponse:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 7
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "reqOpts",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                }
+              ],
+              "name": "request"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@google-cloud/common!ServiceObject#request:member(2)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "request(reqOpts: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "DecorateRequestOptions",
+                  "canonicalReference": "@google-cloud/common!DecorateRequestOptions:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", callback: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "BodyResponseCallback",
+                  "canonicalReference": "@google-cloud/common!BodyResponseCallback:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 2,
+              "parameters": [
+                {
+                  "parameterName": "reqOpts",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "parameterName": "callback",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  }
+                }
+              ],
+              "name": "request"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@google-cloud/common!ServiceObject#requestStream:member(1)",
+              "docComment": "/**\n * Make an authenticated API request.\n *\n * @param reqOpts - Request options that are passed to `request`.\n *\n * @param  - {string} reqOpts.uri - A URI relative to the baseUrl.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "requestStream(reqOpts: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "DecorateRequestOptions",
+                  "canonicalReference": "@google-cloud/common!DecorateRequestOptions:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "r."
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Request",
+                  "canonicalReference": "teeny-request!Request:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 5
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "reqOpts",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                }
+              ],
+              "name": "requestStream"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@google-cloud/common!ServiceObject#setMetadata:member(1)",
+              "docComment": "/**\n * Set the metadata for this object.\n *\n * @param metadata - The metadata to set on this object.\n *\n * @param options - Configuration options.\n *\n * @param callback - The callback function.\n *\n * @param  - {?error} callback.err - An error returned while making this request.\n *\n * @param  - {object} callback.apiResponse - The full API response.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "setMetadata(metadata: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Metadata",
+                  "canonicalReference": "@google-cloud/common!Metadata:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", options?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "SetMetadataOptions",
+                  "canonicalReference": "@google-cloud/common!SetMetadataOptions:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "SetMetadataResponse",
+                  "canonicalReference": "@google-cloud/common!SetMetadataResponse:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 9
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "metadata",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "parameterName": "options",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  }
+                }
+              ],
+              "name": "setMetadata"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@google-cloud/common!ServiceObject#setMetadata:member(2)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "setMetadata(metadata: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Metadata",
+                  "canonicalReference": "@google-cloud/common!Metadata:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", callback: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "MetadataCallback",
+                  "canonicalReference": "@google-cloud/common!MetadataCallback:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 2,
+              "parameters": [
+                {
+                  "parameterName": "metadata",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "parameterName": "callback",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  }
+                }
+              ],
+              "name": "setMetadata"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@google-cloud/common!ServiceObject#setMetadata:member(3)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "setMetadata(metadata: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Metadata",
+                  "canonicalReference": "@google-cloud/common!Metadata:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", options: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "SetMetadataOptions",
+                  "canonicalReference": "@google-cloud/common!SetMetadataOptions:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", callback: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "MetadataCallback",
+                  "canonicalReference": "@google-cloud/common!MetadataCallback:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 7,
+                "endIndex": 8
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 3,
+              "parameters": [
+                {
+                  "parameterName": "metadata",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "parameterName": "options",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  }
+                },
+                {
+                  "parameterName": "callback",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  }
+                }
+              ],
+              "name": "setMetadata"
+            }
+          ],
+          "extendsTokenRange": {
+            "startIndex": 3,
+            "endIndex": 5
+          },
+          "implementsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@google-cloud/common!ServiceObjectConfig:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ServiceObjectConfig "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ServiceObjectConfig",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@google-cloud/common!ServiceObjectConfig#baseUrl:member",
+              "docComment": "/**\n * The base URL to make API requests to.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "baseUrl?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "baseUrl",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@google-cloud/common!ServiceObjectConfig#createMethod:member",
+              "docComment": "/**\n * The method which creates this object.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "createMethod?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Function",
+                  "canonicalReference": "!Function:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "createMethod",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@google-cloud/common!ServiceObjectConfig#id:member",
+              "docComment": "/**\n * The identifier of the object. For example, the name of a Storage bucket or Pub/Sub topic.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "id?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "id",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@google-cloud/common!ServiceObjectConfig#methods:member",
+              "docComment": "/**\n * A map of each method name that should be inherited.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "methods?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Methods",
+                  "canonicalReference": "@google-cloud/common!Methods:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "methods",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@google-cloud/common!ServiceObjectConfig#parent:member",
+              "docComment": "/**\n * The parent service instance. For example, an instance of Storage if the object is Bucket.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "parent: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ServiceObjectParent",
+                  "canonicalReference": "@google-cloud/common!ServiceObjectParent:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "parent",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@google-cloud/common!ServiceObjectConfig#pollIntervalMs:member",
+              "docComment": "/**\n * For long running operations, how often should the client poll for completion.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "pollIntervalMs?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "pollIntervalMs",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@google-cloud/common!ServiceObjectParent:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ServiceObjectParent "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ServiceObjectParent",
+          "members": [
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@google-cloud/common!ServiceObjectParent#getRequestInterceptors:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "getRequestInterceptors(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Function",
+                  "canonicalReference": "!Function:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "getRequestInterceptors"
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@google-cloud/common!ServiceObjectParent#interceptors:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "interceptors: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Interceptor",
+                  "canonicalReference": "@google-cloud/common!Interceptor:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "interceptors",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              }
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@google-cloud/common!ServiceObjectParent#request:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "request(reqOpts: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "DecorateRequestOptions",
+                  "canonicalReference": "@google-cloud/common!DecorateRequestOptions:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", callback: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "BodyResponseCallback",
+                  "canonicalReference": "@google-cloud/common!BodyResponseCallback:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "reqOpts",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "parameterName": "callback",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  }
+                }
+              ],
+              "name": "request"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@google-cloud/common!ServiceObjectParent#requestStream:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "requestStream(reqOpts: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "DecorateRequestOptions",
+                  "canonicalReference": "@google-cloud/common!DecorateRequestOptions:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "r."
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Request",
+                  "canonicalReference": "teeny-request!Request:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 5
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "reqOpts",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                }
+              ],
+              "name": "requestStream"
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@google-cloud/common!ServiceOptions:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ServiceOptions extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "GoogleAuthOptions",
+              "canonicalReference": "google-auth-library!GoogleAuthOptions:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ServiceOptions",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@google-cloud/common!ServiceOptions#authClient:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "authClient?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "GoogleAuth",
+                  "canonicalReference": "google-auth-library!GoogleAuth:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "authClient",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@google-cloud/common!ServiceOptions#email:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "email?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "email",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@google-cloud/common!ServiceOptions#interceptors_:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "interceptors_?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Interceptor",
+                  "canonicalReference": "@google-cloud/common!Interceptor:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "interceptors_",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@google-cloud/common!ServiceOptions#timeout:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "timeout?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "timeout",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@google-cloud/common!ServiceOptions#token:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "token?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "token",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@google-cloud/common!ServiceOptions#useAuthWithCustomEndpoint:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "useAuthWithCustomEndpoint?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "useAuthWithCustomEndpoint",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@google-cloud/common!ServiceOptions#userAgent:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "userAgent?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "userAgent",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 3
+            }
+          ]
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@google-cloud/common!SetMetadataResponse:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type SetMetadataResponse = "
+            },
+            {
+              "kind": "Content",
+              "text": "["
+            },
+            {
+              "kind": "Reference",
+              "text": "Metadata",
+              "canonicalReference": "@google-cloud/common!Metadata:type"
+            },
+            {
+              "kind": "Content",
+              "text": "]"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "SetMetadataResponse",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 4
+          }
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@google-cloud/common!StreamRequestOptions:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface StreamRequestOptions extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "DecorateRequestOptions",
+              "canonicalReference": "@google-cloud/common!DecorateRequestOptions:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "StreamRequestOptions",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@google-cloud/common!StreamRequestOptions#shouldReturnStream:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "shouldReturnStream: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "true"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "shouldReturnStream",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 3
+            }
+          ]
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@google-cloud/common!util:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "util: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Util",
+              "canonicalReference": "@google-cloud/common!Util:class"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "util",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        }
+      ]
+    }
+  ]
+}
