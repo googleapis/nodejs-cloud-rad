@@ -49,6 +49,10 @@ node "$dir/../@google-cloud/cloud-rad/deleteBaseClasses.js"
 dir="$(cd "$(dirname "$0")"; pwd)"
 node "$dir/../@google-cloud/cloud-rad/removeInterface.js"
 
+# remove protos from toc
+dir="$(cd "$(dirname "$0")"; pwd)"
+node "$dir/../@google-cloud/cloud-rad/removeProtos.js"
+
 # Clean up TOC
 # Delete SharePoint item, see https://github.com/microsoft/rushstack/issues/1229
 sed -i -e '1,3d' ./yaml/toc.yml
