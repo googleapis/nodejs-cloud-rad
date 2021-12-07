@@ -18,15 +18,26 @@ async function processLineByLine(file) {
 
   // - name: Action
   // uid: '@google-cloud/spanner!protos.google.iam.v1.BindingDelta.Action:enum'
+  //
+  // or
+  //
+  // - name: CompressionCodec
+  // uid: >-
+  // @google-cloud/bigquery-storage!protos.google.cloud...CompressionCodec:enum
   for await (const line of rl) {
     let match = line.match(PROTOS);
     if (match) {
+      // Handle triple entries
+      if (line.match(/^\s*@google-cloud/)) {
+        let uidStart = data.pop();
+        if (uidStart.trim() === 'uid: >-') {
+          throw new Error('invalid triple entry');
+        }
+      }
       data.pop(); // delete previous line
       continue; // skip current line
     }
-    
     data.push(line);
-
   }
 
   fs.writeFileSync(file, data.join('\n'), 'utf-8');
