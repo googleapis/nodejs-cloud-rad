@@ -30,7 +30,7 @@ async function processLineByLine(file) {
       // Handle triple entries
       if (line.match(/^\s*@google-cloud/)) {
         let uidStart = data.pop();
-        if (uidStart.trim() === 'uid: >-') {
+        if (uidStart.trim() !== 'uid: >-') {
           throw new Error('invalid triple entry');
         }
       }

@@ -1,6 +1,6 @@
 {
   "name": "@google-cloud/cloud-rad",
-  "version": "0.2.13",
+  "version": "0.2.15",
   "description": "",
   "main": "index.js",
   "repository": "googleapis/cloud-rad",
