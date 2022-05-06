@@ -16,6 +16,7 @@ import synthtool.languages.node as node
 
 node.owlbot_main(templates_excludes=[
   "README.md",
+  "workflows/ci.yaml"
   ".kokoro/**",
   ".github/workflows/**",
   ".trampolinerc",
