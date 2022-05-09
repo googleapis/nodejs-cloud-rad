@@ -15,5 +15,8 @@
   "dependencies": {
     "@microsoft/api-documenter": "https://gitpkg.now.sh/googleapis/rushstack/apps/api-documenter?main",
     "@microsoft/api-extractor": "^7.18.9"
+  },
+  "engines": {
+    "node": ">=12"
   }
 }
