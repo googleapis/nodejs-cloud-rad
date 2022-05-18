@@ -14,6 +14,7 @@
 
 import synthtool.languages.node as node
 
+# Remove sync-repo-settings once we add tests
 node.owlbot_main(templates_excludes=[
   "README.md",
   ".kokoro/**",
@@ -22,4 +23,5 @@ node.owlbot_main(templates_excludes=[
   ".mocharc.js",
   ".github/release-trigger.yml",
   ".github/release-please.yml",
+  ".github/sync-repo-settings.yaml"
 ])
