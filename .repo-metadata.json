@@ -1,6 +1,6 @@
 {
   "codeowner_team": "@googleapis/cx-eng",
-  "library_type": "GAPIC_AUTO",
+  "library_type": "OTHER",
   "client_documentation": "",
   "release_level": "stable"
 }
