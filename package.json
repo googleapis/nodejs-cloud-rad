@@ -14,7 +14,7 @@
   "license": "Apache-2.0",
   "dependencies": {
     "@microsoft/api-documenter": "https://gitpkg.now.sh/googleapis/rushstack/apps/api-documenter?main",
-    "@microsoft/api-extractor": "^7.18.9"
+    "@microsoft/api-extractor": "~7.19.0"
   },
   "engines": {
     "node": ">=12.0.0"
