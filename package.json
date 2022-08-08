@@ -1,6 +1,6 @@
 {
   "name": "@google-cloud/cloud-rad",
-  "version": "0.2.15",
+  "version": "0.2.19",
   "description": "",
   "main": "index.js",
   "repository": "googleapis/cloud-rad",
@@ -8,15 +8,20 @@
     "cloud-rad": "./main.sh"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "author": "Google Inc",
   "license": "Apache-2.0",
   "dependencies": {
-    "@microsoft/api-documenter": "https://gitpkg.now.sh/googleapis/rushstack/apps/api-documenter?main",
+    "@googleapis/api-documenter": "~7.13.0",
     "@microsoft/api-extractor": "~7.19.0"
   },
   "engines": {
     "node": ">=12.0.0"
+  },
+  "devDependencies": {
+    "json": "^9.0.6",
+    "mocha": "^10.0.0",
+    "snap-shot-it": "^7.9.6"
   }
 }

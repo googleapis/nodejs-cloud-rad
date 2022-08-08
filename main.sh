@@ -46,25 +46,27 @@ else
   . "$dir/../@google-cloud/cloud-rad/generate-devsite.sh"
 fi
 
-# create docs.metadata, based on package.json and .repo-metadata.json.
-pip install -U pip
-python3 -m pip install --user gcp-docuploader
-python3 -m docuploader create-metadata \
-  --name=$name \
-  --version=$(cat package.json | json version) \
-  --language=$(cat .repo-metadata.json | json language) \
-  --distribution-name=$(cat .repo-metadata.json | json distribution_name) \
-  --product-page=$(cat .repo-metadata.json | json product_documentation) \
-  --github-repository=$(cat .repo-metadata.json | json repo) \
-  --issue-tracker=$(cat .repo-metadata.json | json issue_tracker)
-cp docs.metadata ./_devsite/docs.metadata
+if [[ -z "$NO_UPLOAD" ]]; then
+  # create docs.metadata, based on package.json and .repo-metadata.json.
+  pip install -U pip
+  python3 -m pip install --user gcp-docuploader
+  python3 -m docuploader create-metadata \
+    --name=$name \
+    --version=$(cat package.json | json version) \
+    --language=$(cat .repo-metadata.json | json language) \
+    --distribution-name=$(cat .repo-metadata.json | json distribution_name) \
+    --product-page=$(cat .repo-metadata.json | json product_documentation) \
+    --github-repository=$(cat .repo-metadata.json | json repo) \
+    --issue-tracker=$(cat .repo-metadata.json | json issue_tracker)
+  cp docs.metadata ./_devsite/docs.metadata
 
-# deploy the docs.
-if [[ -z "$CREDENTIALS" ]]; then
-  CREDENTIALS=${KOKORO_KEYSTORE_DIR}/73713_docuploader_service_account
-fi
-if [[ -z "$BUCKET" ]]; then
-  BUCKET=docs-staging-v2
-fi
+  # deploy the docs.
+  if [[ -z "$CREDENTIALS" ]]; then
+    CREDENTIALS=${KOKORO_KEYSTORE_DIR}/73713_docuploader_service_account
+  fi
+  if [[ -z "$BUCKET" ]]; then
+    BUCKET=docs-staging-v2
+  fi
 
-python3 -m docuploader upload ./_devsite --destination-prefix docfx --credentials $CREDENTIALS --staging-bucket $BUCKET
+  python3 -m docuploader upload ./_devsite --destination-prefix docfx --credentials $CREDENTIALS --staging-bucket $BUCKET
+fi
