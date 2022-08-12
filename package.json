@@ -8,7 +8,7 @@
     "cloud-rad": "./main.sh"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "env NO_UPLOAD=1 mocha"
   },
   "author": "Google Inc",
   "license": "Apache-2.0",
