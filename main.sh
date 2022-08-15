@@ -46,6 +46,11 @@ else
   . "$dir/../@google-cloud/cloud-rad/generate-devsite.sh"
 fi
 
+if [[ -n "$NO_UPLOAD" ]]; then
+  echo "Generated documentation will not be uploaded."
+  exit 0
+fi
+
 # create docs.metadata, based on package.json and .repo-metadata.json.
 pip install -U pip
 python3 -m pip install --user gcp-docuploader
