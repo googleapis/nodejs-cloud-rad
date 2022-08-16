@@ -20,7 +20,7 @@
     "node": ">=12.0.0"
   },
   "devDependencies": {
-    "json": "^9.0.6",
+    "json": "^11.0.0",
     "mocha": "^10.0.0",
     "snap-shot-it": "^7.9.6"
   }
