@@ -1,6 +1,6 @@
 {
   "codeowner_team": "@googleapis/cx-eng",
   "library_type": "OTHER",
-  "client_documentation": "",
+  "client_documentation": "https://www.npmjs.com/package/@google-cloud/cloud-rad",
   "release_level": "stable"
 }
