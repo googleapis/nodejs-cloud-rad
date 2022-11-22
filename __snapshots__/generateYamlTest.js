@@ -460,7 +460,7 @@ items:
       - typeScript
     type: typealias
     syntax:
-      content: declare type CloudDeployClient = v1.CloudDeployClient;
+      content: type CloudDeployClient = v1.CloudDeployClient;
       return:
         type:
           - '@google-cloud/deploy!CloudDeployClient~0:complex'
