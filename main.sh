@@ -24,6 +24,10 @@ if [[ -z "$CREDENTIALS" ]]; then
   cd $(dirname $0)/../..
 fi
 
+if [[ -n "$MONO_REPO_CWD" ]]; then
+  cd $MONO_REPO_CWD
+fi
+
 if [[ -n "$VERSION" ]]; then
   echo "Checking out $VERSION."
   git diff
