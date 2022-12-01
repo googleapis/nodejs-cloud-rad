@@ -24,8 +24,7 @@ if [[ -z "$CREDENTIALS" ]]; then
   cd $(dirname $0)/../..
 fi
 
-if [ -n $VERSION ]
-then
+if [[ -n "$VERSION" ]]; then
   echo "Checking out $VERSION."
   git diff
   git checkout $VERSION
