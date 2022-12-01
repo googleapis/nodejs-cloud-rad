@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": "googleapis/cloud-rad",
   "bin": {
-    "cloud-rad": ". main.sh"
+    "cloud-rad": ". ./main.sh"
   },
   "scripts": {
     "test": "env NO_UPLOAD=1 mocha"
