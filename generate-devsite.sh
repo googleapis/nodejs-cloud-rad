@@ -37,20 +37,20 @@ echo "npx @googleapis/api-documenter@^7 yaml --input-folder=temp"
 npx @googleapis/api-documenter@^7 yaml --input-folder=temp
 
 # replace markdown code examples with html, see b/204924531
-echo "pretty-print"
-pretty-print
+echo "node $(npm root)/@google-cloud/cloud-rad/prettyPrint.js"
+node "$(npm root)/@google-cloud/cloud-rad/prettyPrint.js"
 
 # remove common and auth from toc
-echo "delete-base-classes"
-delete-base-classes
+echo "node $(npm root)/@google-cloud/cloud-rad/deleteBaseClasses.js"
+node "$(npm root)/@google-cloud/cloud-rad/deleteBaseClasses.js"
 
 # remove interfaces from toc
-echo "remove-interface"
-remove-interface
+echo "node $(npm root)/@google-cloud/cloud-rad/removeInterface.js"
+node "$(npm root)/@google-cloud/cloud-rad/removeInterface.js"
 
 # remove protos from toc
-echo "remove-protos"
-remove-protos
+echo "node $(npm root)/@google-cloud/cloud-rad/removeProtos.js"
+node "$(npm root)/@google-cloud/cloud-rad/removeProtos.js"
 
 # Clean up TOC
 # Delete SharePoint item, see https://github.com/microsoft/rushstack/issues/1229
@@ -95,8 +95,8 @@ if [[ $numberOfFiles -ge 3 ]]; then
 fi
 
 # add href for external classes, see b/195674809
-echo "add-links"
-add-links
+echo "node $(npm root)/@google-cloud/cloud-rad/removeProtos.js"
+node "$(npm root)/@google-cloud/cloud-rad/addLinks.js"
 
 NAME=$(ls temp | sed s/.api.json*//)
 ## Copy everything to devsite

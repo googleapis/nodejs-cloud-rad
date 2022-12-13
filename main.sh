@@ -36,14 +36,14 @@ name=$(cat package.json | json name | sed 's/^.*\///')
 
 # Generate the data for the devsite tarball
 if [ "$name" == "common" ]; then
- echo ". generate-devsite-base-classes"
-  . generate-devsite-base-classes
+  echo ". $(npm root)/@google-cloud/cloud-rad/generate-devsite-base-classes.sh"
+  . "$(npm root)/@google-cloud/cloud-rad/generate-devsite-base-classes.sh"
 elif [ "$name" == "google-auth-library" ]; then
- echo ". generate-devsite-base-classes"
-  . generate-devsite-base-classes
+  echo ". $(npm root)/@google-cloud/cloud-rad/generate-devsite-base-classes.sh"
+  . "$(npm root)/@google-cloud/cloud-rad/generate-devsite-base-classes.sh"
 else 
  echo ". generate-devsite"
-  . generate-devsite
+  . "$(npm root)/@google-cloud/cloud-rad/generate-devsite.sh"
 fi
 
 if [[ -n "$NO_UPLOAD" ]]; then

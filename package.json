@@ -1,18 +1,11 @@
 {
   "name": "@google-cloud/cloud-rad",
-  "version": "0.4.13-experimental",
+  "version": "0.4.15-experimental",
   "description": "",
   "main": "index.js",
   "repository": "googleapis/cloud-rad",
   "bin": {
-    "cloud-rad": "./main.sh",
-    "generate-devsite": "./generate-devsite.sh",
-    "generate-deviste-base-classes": "./generate-devsite-base-classes.sh",
-    "pretty-print": "./prettyPrint.js",
-    "delete-base-classes": "./deleteBaseClasses.js",
-    "remove-interface": "./removeInterface.js",
-    "remove-protos": "./removeProtos.js",
-    "add-links": "./addLinks.js"
+    "cloud-rad": "./main.sh"
   },
   "scripts": {
     "test": "env NO_UPLOAD=1 mocha"
