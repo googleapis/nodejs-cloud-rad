@@ -26,8 +26,6 @@ cp "$(npm root)/@google-cloud/cloud-rad/api-extractor.json" .
 echo "npx @microsoft/api-extractor run --local"
 npx @microsoft/api-extractor run --local
 
-echo "mkdir temp"
-mkdir temp
 # copy the common.api.json file as it is used as a base class
 # If cloud-rad is running for common, the copied file will be overwritten by api-extractor
 echo "cp $(npm root)/@google-cloud/cloud-rad/api-extractor-configs/common.api.json temp"
