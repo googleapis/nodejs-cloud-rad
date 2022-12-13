@@ -36,13 +36,13 @@ name=$(cat package.json | json name | sed 's/^.*\///')
 
 # Generate the data for the devsite tarball
 if [ "$name" == "common" ]; then
- echo "calling generate devsite base classes"
+ echo ". generate-devsite-base-classes"
   . generate-devsite-base-classes
 elif [ "$name" == "google-auth-library" ]; then
- echo "calling generate devsite base classes"
+ echo ". generate-devsite-base-classes"
   . generate-devsite-base-classes
 else 
- echo "calling generate devsite"
+ echo ". generate-devsite"
   . generate-devsite
 fi
 
@@ -51,7 +51,6 @@ if [[ -n "$NO_UPLOAD" ]]; then
   exit 0
 fi
 
-echo "python commands"
 # create docs.metadata, based on package.json and .repo-metadata.json.
 pip install -U pip
 python3 -m pip install --user gcp-docuploader
