@@ -18,32 +18,45 @@
 # When running locally, run `docfx --serve` in ./yaml/ after this script
 
 
+echo "mkdir -p ./etc"
 mkdir -p ./etc
 
+echo "cp $(npm root)/@google-cloud/cloud-rad/api-extractor.json ."
 cp "$(npm root)/@google-cloud/cloud-rad/api-extractor.json" .
+echo "npx @microsoft/api-extractor run --local"
 npx @microsoft/api-extractor run --local
 
+echo "mkdir temp"
+mkdir temp
 # copy the common.api.json file as it is used as a base class
 # If cloud-rad is running for common, the copied file will be overwritten by api-extractor
+echo "cp $(npm root)/@google-cloud/cloud-rad/api-extractor-configs/common.api.json temp"
 cp "$(npm root)/@google-cloud/cloud-rad/api-extractor-configs/common.api.json" temp
+echo "cp $(npm root)/@google-cloud/cloud-rad/api-extractor-configs/google-auth-library.api.json temp"
 cp "$(npm root)/@google-cloud/cloud-rad/api-extractor-configs/google-auth-library.api.json" temp
 
+echo "npx @googleapis/api-documenter@^7 yaml --input-folder=temp"
 npx @googleapis/api-documenter@^7 yaml --input-folder=temp
 
 # replace markdown code examples with html, see b/204924531
+echo "pretty-print"
 pretty-print
 
 # remove common and auth from toc
+echo "delete-base-classes"
 delete-base-classes
 
 # remove interfaces from toc
+echo "remove-interface"
 remove-interface
 
 # remove protos from toc
+echo "remove-protos"
 remove-protos
 
 # Clean up TOC
 # Delete SharePoint item, see https://github.com/microsoft/rushstack/issues/1229
+echo "sed commands"
 sed -i -e '1,3d' ./yaml/toc.yml
 # Shift everything to the left
 sed -i -e 's/^    //' ./yaml/toc.yml
@@ -78,23 +91,31 @@ sed -i -e '7a\
 # be two files in temp. Otherwise, delete common.api.json and auth.
 numberOfFiles=$(ls temp | wc -l)
 if [[ $numberOfFiles -ge 3 ]]; then
+  echo "rm temp/common.api.json"
   rm temp/common.api.json
   rm temp/google-auth-library.api.json
 fi
 
 # add href for external classes, see b/195674809
+echo "add-links"
 add-links
 
 NAME=$(ls temp | sed s/.api.json*//)
 ## Copy everything to devsite
+echo "mkdir -p ./_devsite"
 mkdir -p ./_devsite
+echo "mkdir -p ./_devsite/$NAME"
 mkdir -p ./_devsite/$NAME
 
+echo "cp ./yaml/$NAME/* ./_devsite/$NAME || :"
 cp ./yaml/$NAME/* ./_devsite/$NAME || :
+echo "cp ./yaml/toc.yml ./_devsite/toc.yml"
 cp ./yaml/toc.yml ./_devsite/toc.yml
 
 ## Rename the default overview page,
+echo "mv ./yaml/$NAME.yml ./_devsite/overview.yml"
 mv ./yaml/$NAME.yml ./_devsite/overview.yml
 
 ## readme is not allowed as filename
+echo "cp ./README.md ./_devsite/index.md"
 cp ./README.md ./_devsite/index.md
