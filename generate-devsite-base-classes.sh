@@ -21,17 +21,15 @@
 mkdir -p ./etc
 
 
-cp node_modules/@google-cloud/cloud-rad/api-extractor.json .
+cp "$(npm root)/@google-cloud/cloud-rad/api-extractor.json" .
 npx @microsoft/api-extractor run --local
 npx @googleapis/api-documenter@^7 yaml --input-folder=temp
 
 # replace markdown code examples with html, see b/204924531
-dir="$(cd "$(dirname "$0")"; pwd)"
-node "$dir/../@google-cloud/cloud-rad/prettyPrint.js"
+pretty-print
 
 # remove interfaces from toc
-dir="$(cd "$(dirname "$0")"; pwd)"
-node "$dir/../@google-cloud/cloud-rad/removeInterface.js"
+remove-interface
 
 # Clean up TOC
 # Delete SharePoint item, see https://github.com/microsoft/rushstack/issues/1229

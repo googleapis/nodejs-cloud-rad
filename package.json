@@ -1,11 +1,18 @@
 {
   "name": "@google-cloud/cloud-rad",
-  "version": "0.2.19",
+  "version": "0.4.12-experimental",
   "description": "",
   "main": "index.js",
   "repository": "googleapis/cloud-rad",
   "bin": {
-    "cloud-rad": "./main.sh"
+    "cloud-rad": "./main.sh",
+    "generate-devsite": "./generate-devsite.sh",
+    "generate-deviste-base-classes": "./generate-devsite-base-classes.sh",
+    "pretty-print": "./prettyPrint.js",
+    "delete-base-classes": "./deleteBaseClasses.js",
+    "remove-interface": "./removeInterface.js",
+    "remove-protos": "./removeProtos.js",
+    "add-links": "./addLinks.js"
   },
   "scripts": {
     "test": "env NO_UPLOAD=1 mocha"
@@ -14,7 +21,8 @@
   "license": "Apache-2.0",
   "dependencies": {
     "@googleapis/api-documenter": "~7.13.0",
-    "@microsoft/api-extractor": "~7.19.0"
+    "@microsoft/api-extractor": "~7.19.0",
+    "glob": "^8.0.3"
   },
   "engines": {
     "node": ">=12.0.0"

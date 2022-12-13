@@ -20,32 +20,27 @@
 
 mkdir -p ./etc
 
-
-cp node_modules/@google-cloud/cloud-rad/api-extractor.json .
+cp "$(npm root)/@google-cloud/cloud-rad/api-extractor.json" .
 npx @microsoft/api-extractor run --local
 
 # copy the common.api.json file as it is used as a base class
 # If cloud-rad is running for common, the copied file will be overwritten by api-extractor
-cp node_modules/@google-cloud/cloud-rad/api-extractor-configs/common.api.json temp
-cp node_modules/@google-cloud/cloud-rad/api-extractor-configs/google-auth-library.api.json temp
+cp "$(npm root)/@google-cloud/cloud-rad/api-extractor-configs/common.api.json" temp
+cp "$(npm root)/@google-cloud/cloud-rad/api-extractor-configs/google-auth-library.api.json" temp
 
 npx @googleapis/api-documenter@^7 yaml --input-folder=temp
 
 # replace markdown code examples with html, see b/204924531
-dir="$(cd "$(dirname "$0")"; pwd)"
-node "$dir/../@google-cloud/cloud-rad/prettyPrint.js"
+pretty-print
 
 # remove common and auth from toc
-dir="$(cd "$(dirname "$0")"; pwd)"
-node "$dir/../@google-cloud/cloud-rad/deleteBaseClasses.js"
+delete-base-classes
 
 # remove interfaces from toc
-dir="$(cd "$(dirname "$0")"; pwd)"
-node "$dir/../@google-cloud/cloud-rad/removeInterface.js"
+remove-interface
 
 # remove protos from toc
-dir="$(cd "$(dirname "$0")"; pwd)"
-node "$dir/../@google-cloud/cloud-rad/removeProtos.js"
+remove-protos
 
 # Clean up TOC
 # Delete SharePoint item, see https://github.com/microsoft/rushstack/issues/1229
@@ -88,8 +83,7 @@ if [[ $numberOfFiles -ge 3 ]]; then
 fi
 
 # add href for external classes, see b/195674809
-dir="$(cd "$(dirname "$0")"; pwd)"
-node "$dir/../@google-cloud/cloud-rad/addLinks.js"
+add-links
 
 NAME=$(ls temp | sed s/.api.json*//)
 ## Copy everything to devsite
