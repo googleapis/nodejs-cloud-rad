@@ -33,8 +33,9 @@ cp "$(npm root)/@google-cloud/cloud-rad/api-extractor-configs/common.api.json" t
 echo "cp $(npm root)/@google-cloud/cloud-rad/api-extractor-configs/google-auth-library.api.json temp"
 cp "$(npm root)/@google-cloud/cloud-rad/api-extractor-configs/google-auth-library.api.json" temp
 
-echo "node $(npm root)/@google-cloud/cloud-rad/node_modules/@googleapis/api-documenter/bin/api-documenter yaml --input-folder=temp"
-node $(npm root)/@google-cloud/cloud-rad/node_modules/@googleapis/api-documenter/bin/api-documenter yaml --input-folder=temp
+echo "node $(npm root)/@googleapis/api-documenter/bin/api-documenter yaml --input-folder=temp"
+# npm i @googleapis/api-documenter
+node "$(npm root)/@googleapis/api-documenter/bin/api-documenter" yaml --input-folder=temp
 
 # replace markdown code examples with html, see b/204924531
 echo "node $(npm root)/@google-cloud/cloud-rad/prettyPrint.js"
