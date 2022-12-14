@@ -30,7 +30,7 @@ before(function () {
   // Copy over nodejs-deploy library from Github
   executeCmd("git clone --branch release-v1.0.0 https://github.com/googleapis/nodejs-deploy.git " + nodejsDeployDir)
   // Install local version of cloud-rad command and generate yaml.
-  executeCmd("cd " + nodejsDeployDir + "; npm i; npm i ../..; npx @google-cloud/cloud-rad")
+  executeCmd("cd " + nodejsDeployDir + "; npm i --no-save @google-cloud/cloud-rad; . ./node_modules/.bin/cloud-rad cloud-rad")
 })
 
 describe('cloud-rad docfx generator', () => {
