@@ -33,7 +33,7 @@ cp "$(npm root)/@google-cloud/cloud-rad/api-extractor-configs/common.api.json" t
 echo "cp $(npm root)/@google-cloud/cloud-rad/api-extractor-configs/google-auth-library.api.json temp"
 cp "$(npm root)/@google-cloud/cloud-rad/api-extractor-configs/google-auth-library.api.json" temp
 
-echo "npx @googleapis/api-documenter@^7 yaml --input-folder=temp"
+echo "node $(npm root)/@google-cloud/cloud-rad/node_modules/@googleapis/api-documenter/bin/api-documenter yaml --input-folder=temp"
 node $(npm root)/@google-cloud/cloud-rad/node_modules/@googleapis/api-documenter/bin/api-documenter yaml --input-folder=temp
 
 # replace markdown code examples with html, see b/204924531
