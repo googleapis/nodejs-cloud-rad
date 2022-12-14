@@ -34,7 +34,6 @@ echo "cp $(npm root)/@google-cloud/cloud-rad/api-extractor-configs/google-auth-l
 cp "$(npm root)/@google-cloud/cloud-rad/api-extractor-configs/google-auth-library.api.json" temp
 
 echo "node $(npm root)/@googleapis/api-documenter/bin/api-documenter yaml --input-folder=temp"
-# npm i @googleapis/api-documenter
 node "$(npm root)/@googleapis/api-documenter/bin/api-documenter" yaml --input-folder=temp
 
 # replace markdown code examples with html, see b/204924531
@@ -55,7 +54,6 @@ node "$(npm root)/@google-cloud/cloud-rad/removeProtos.js"
 
 # Clean up TOC
 # Delete SharePoint item, see https://github.com/microsoft/rushstack/issues/1229
-echo "sed commands"
 sed -i -e '1,3d' ./yaml/toc.yml
 # Shift everything to the left
 sed -i -e 's/^    //' ./yaml/toc.yml
