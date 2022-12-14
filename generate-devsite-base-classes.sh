@@ -23,7 +23,9 @@ mkdir -p ./etc
 
 cp "$(npm root)/@google-cloud/cloud-rad/api-extractor.json" .
 npx @microsoft/api-extractor run --local
-npx @googleapis/api-documenter@^7 yaml --input-folder=temp
+
+api-documenter yaml --input-folder=temp
+# node $(npm root)/@google-cloud/cloud-rad/node_modules/@googleapis/api-documenter/bin/api-documenter yaml --input-folder=temp
 
 # replace markdown code examples with html, see b/204924531
 node "$(npm root)/@google-cloud/cloud-rad/prettyPrint.js"
