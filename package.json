@@ -1,6 +1,6 @@
 {
   "name": "@google-cloud/cloud-rad",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "",
   "main": "index.js",
   "repository": "googleapis/cloud-rad",
@@ -8,7 +8,7 @@
     "cloud-rad": "./main.sh"
   },
   "scripts": {
-    "test": "env NO_UPLOAD=1 mocha"
+    "test": "env NO_UPLOAD=1 mocha --timeout=5000"
   },
   "author": "Google Inc",
   "license": "Apache-2.0",
