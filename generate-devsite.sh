@@ -18,34 +18,39 @@
 # When running locally, run `docfx --serve` in ./yaml/ after this script
 
 
+echo "mkdir -p ./etc"
 mkdir -p ./etc
 
-
-cp node_modules/@google-cloud/cloud-rad/api-extractor.json .
+echo "cp $(npm root)/@google-cloud/cloud-rad/api-extractor.json ."
+cp "$(npm root)/@google-cloud/cloud-rad/api-extractor.json" .
+echo "npx @microsoft/api-extractor run --local"
 npx @microsoft/api-extractor run --local
 
 # copy the common.api.json file as it is used as a base class
 # If cloud-rad is running for common, the copied file will be overwritten by api-extractor
-cp node_modules/@google-cloud/cloud-rad/api-extractor-configs/common.api.json temp
-cp node_modules/@google-cloud/cloud-rad/api-extractor-configs/google-auth-library.api.json temp
+echo "cp $(npm root)/@google-cloud/cloud-rad/api-extractor-configs/common.api.json temp"
+cp "$(npm root)/@google-cloud/cloud-rad/api-extractor-configs/common.api.json" temp
+echo "cp $(npm root)/@google-cloud/cloud-rad/api-extractor-configs/google-auth-library.api.json temp"
+cp "$(npm root)/@google-cloud/cloud-rad/api-extractor-configs/google-auth-library.api.json" temp
 
-npx @googleapis/api-documenter@^7 yaml --input-folder=temp
+echo "node $(npm root)/@googleapis/api-documenter/bin/api-documenter yaml --input-folder=temp"
+node "$(npm root)/@googleapis/api-documenter/bin/api-documenter" yaml --input-folder=temp
 
 # replace markdown code examples with html, see b/204924531
-dir="$(cd "$(dirname "$0")"; pwd)"
-node "$dir/../@google-cloud/cloud-rad/prettyPrint.js"
+echo "node $(npm root)/@google-cloud/cloud-rad/prettyPrint.js"
+node "$(npm root)/@google-cloud/cloud-rad/prettyPrint.js"
 
 # remove common and auth from toc
-dir="$(cd "$(dirname "$0")"; pwd)"
-node "$dir/../@google-cloud/cloud-rad/deleteBaseClasses.js"
+echo "node $(npm root)/@google-cloud/cloud-rad/deleteBaseClasses.js"
+node "$(npm root)/@google-cloud/cloud-rad/deleteBaseClasses.js"
 
 # remove interfaces from toc
-dir="$(cd "$(dirname "$0")"; pwd)"
-node "$dir/../@google-cloud/cloud-rad/removeInterface.js"
+echo "node $(npm root)/@google-cloud/cloud-rad/removeInterface.js"
+node "$(npm root)/@google-cloud/cloud-rad/removeInterface.js"
 
 # remove protos from toc
-dir="$(cd "$(dirname "$0")"; pwd)"
-node "$dir/../@google-cloud/cloud-rad/removeProtos.js"
+echo "node $(npm root)/@google-cloud/cloud-rad/removeProtos.js"
+node "$(npm root)/@google-cloud/cloud-rad/removeProtos.js"
 
 # Clean up TOC
 # Delete SharePoint item, see https://github.com/microsoft/rushstack/issues/1229
@@ -83,24 +88,31 @@ sed -i -e '7a\
 # be two files in temp. Otherwise, delete common.api.json and auth.
 numberOfFiles=$(ls temp | wc -l)
 if [[ $numberOfFiles -ge 3 ]]; then
+  echo "rm temp/common.api.json"
   rm temp/common.api.json
   rm temp/google-auth-library.api.json
 fi
 
 # add href for external classes, see b/195674809
-dir="$(cd "$(dirname "$0")"; pwd)"
-node "$dir/../@google-cloud/cloud-rad/addLinks.js"
+echo "node $(npm root)/@google-cloud/cloud-rad/removeProtos.js"
+node "$(npm root)/@google-cloud/cloud-rad/addLinks.js"
 
 NAME=$(ls temp | sed s/.api.json*//)
 ## Copy everything to devsite
+echo "mkdir -p ./_devsite"
 mkdir -p ./_devsite
+echo "mkdir -p ./_devsite/$NAME"
 mkdir -p ./_devsite/$NAME
 
+echo "cp ./yaml/$NAME/* ./_devsite/$NAME || :"
 cp ./yaml/$NAME/* ./_devsite/$NAME || :
+echo "cp ./yaml/toc.yml ./_devsite/toc.yml"
 cp ./yaml/toc.yml ./_devsite/toc.yml
 
 ## Rename the default overview page,
+echo "mv ./yaml/$NAME.yml ./_devsite/overview.yml"
 mv ./yaml/$NAME.yml ./_devsite/overview.yml
 
 ## readme is not allowed as filename
+echo "cp ./README.md ./_devsite/index.md"
 cp ./README.md ./_devsite/index.md

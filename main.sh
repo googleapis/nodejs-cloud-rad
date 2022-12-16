@@ -21,11 +21,6 @@ if [[ -z "$CREDENTIALS" ]]; then
   # and don't set NPM_CONFIG_PREFIX.
   export NPM_CONFIG_PREFIX=${HOME}/.npm-global
   export PATH="$PATH:${NPM_CONFIG_PREFIX}/bin"
-  cd $(dirname $0)/../..
-fi
-
-if [[ -n "$MONO_REPO_CWD" ]]; then
-  cd $MONO_REPO_CWD
 fi
 
 if [[ -n "$VERSION" ]]; then
@@ -40,13 +35,15 @@ npm i json@9.0.6 -g
 name=$(cat package.json | json name | sed 's/^.*\///')
 
 # Generate the data for the devsite tarball
-dir="$(cd "$(dirname "$0")"; pwd)"
 if [ "$name" == "common" ]; then
-  . "$dir/../@google-cloud/cloud-rad/generate-devsite-base-classes.sh"
+  echo ". $(npm root)/@google-cloud/cloud-rad/generate-devsite-base-classes.sh"
+  . "$(npm root)/@google-cloud/cloud-rad/generate-devsite-base-classes.sh"
 elif [ "$name" == "google-auth-library" ]; then
-  . "$dir/../@google-cloud/cloud-rad/generate-devsite-base-classes.sh"
+  echo ". $(npm root)/@google-cloud/cloud-rad/generate-devsite-base-classes.sh"
+  . "$(npm root)/@google-cloud/cloud-rad/generate-devsite-base-classes.sh"
 else 
-  . "$dir/../@google-cloud/cloud-rad/generate-devsite.sh"
+ echo ". generate-devsite"
+  . "$(npm root)/@google-cloud/cloud-rad/generate-devsite.sh"
 fi
 
 if [[ -n "$NO_UPLOAD" ]]; then
