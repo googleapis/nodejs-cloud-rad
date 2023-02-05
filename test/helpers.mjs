@@ -19,7 +19,6 @@ import fs from 'fs-extra';
 import klaw from 'klaw';
 import {matchesGlobs} from '../lib/util.mjs';
 import os from 'os';
-import yaml from 'yaml';
 
 export async function createTmpDir() {
   const systemTmpDir = await fs.realpath(os.tmpdir());
