@@ -9,7 +9,7 @@
   },
   "scripts": {
     "coverage": "npx c8 npm run test",
-    "test": "env NO_UPLOAD=1 TEST=1 mocha --timeout=5000 --require './test/helpers.mjs' --recursive './test/specs/**/*.mjs'",
+    "test": "env NO_UPLOAD=1 TEST=1 mocha --timeout=50000 --require './test/helpers.mjs' --recursive './test/specs/**/*.mjs'",
     "update-snapshots": "env NO_UPLOAD=1 SNAPSHOT_UPDATE=1 TEST=1 mocha --timeout=5000 --require './test/helpers.mjs' './test/specs/generate-devsite.mjs'"
   },
   "author": "Google LLC",

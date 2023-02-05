@@ -14,7 +14,6 @@
   limitations under the License.
 */
 import {strict as assert} from 'assert';
-import {execa} from 'execa';
 import fs from 'fs-extra';
 import generateDevsite from '../../generate-devsite.mjs';
 import {mochaHooks} from '../helpers.mjs';
@@ -27,7 +26,6 @@ let checkSnapshot = () => {};
 before(async () => {
   if (!process.env.SNAPSHOT_UPDATE) {
     // We want to compare the output with the snapshots, not update snapshots.
-    process.env.SNAPSHOT_UPDATE = 0;
     checkSnapshot = snapshot => {
       // The saved snapshot starts and ends with extra newline characters.
       const value = `\n${snapshot.value}\n`;
