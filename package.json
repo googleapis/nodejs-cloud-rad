@@ -5,23 +5,33 @@
   "main": "index.js",
   "repository": "googleapis/cloud-rad",
   "bin": {
-    "cloud-rad": "./main.sh"
+    "cloud-rad": "./main.mjs"
   },
   "scripts": {
-    "test": "env NO_UPLOAD=1 mocha --timeout=5000"
+    "coverage": "npx c8 npm run test",
+    "test": "env NO_UPLOAD=1 TEST=1 mocha --timeout=5000 --require './test/helpers.mjs' --recursive './test/specs/**/*.mjs'",
+    "update-snapshots": "env NO_UPLOAD=1 SNAPSHOT_UPDATE=1 TEST=1 mocha --timeout=5000 --require './test/helpers.mjs' './test/specs/generate-devsite.mjs'"
   },
-  "author": "Google Inc",
+  "author": "Google LLC",
   "license": "Apache-2.0",
   "dependencies": {
     "@googleapis/api-documenter": "~7.13.0",
     "@microsoft/api-extractor": "~7.19.0",
-    "glob": "^8.0.3"
+    "execa": "^6.1.0",
+    "fs-extra": "^11.1.0",
+    "glob": "^8.1.0",
+    "js-yaml": "^4.1.0",
+    "minimatch": "^6.1.6"
   },
   "engines": {
     "node": ">=12.0.0"
   },
   "devDependencies": {
+    "c8": "^7.12.0",
+    "eslint": "^8.32.0",
+    "gts": "^3.1.1",
     "json": "^11.0.0",
+    "klaw": "^4.1.0",
     "mocha": "^10.0.0",
     "snap-shot-it": "^7.9.6"
   }
