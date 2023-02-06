@@ -137,4 +137,33 @@ describe('process YAML', () => {
 
     assert.equal(data.items[0].uid, '@google-cloud/storage!');
   });
+
+  it('adds a YamlMime comment to non-TOC files', async () => {
+    let data;
+    const processor = {
+      globPatterns: ['**/*.yml'],
+      process: ({obj}) => Promise.resolve(obj),
+    };
+
+    await processYaml(metadata, [processor]);
+    data = await fs.readFile(
+      join(tmpDir, 'yaml', 'bigquery', 'bigquery.yml'),
+      'utf8'
+    );
+
+    assert(data.startsWith('### YamlMime:UniversalReference\n') === true);
+  });
+
+  it('does not add a YamlMime comment to TOC files', async () => {
+    let data;
+    const processor = {
+      globPatterns: ['**/*.yml'],
+      process: ({obj}) => Promise.resolve(obj),
+    };
+
+    await processYaml(metadata, [processor]);
+    data = await fs.readFile(join(tmpDir, 'yaml', 'toc.yml'), 'utf8');
+
+    assert(data.startsWith('### YamlMime:UniversalReference\n') === false);
+  });
 });

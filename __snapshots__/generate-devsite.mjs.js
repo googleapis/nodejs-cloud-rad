@@ -209,6 +209,7 @@ See [LICENSE](https://github.com/googleapis/nodejs-deploy/blob/main/LICENSE)
 `
 
 exports['cloud-rad docfx generator generates an overview.yml file 1'] = `
+### YamlMime:UniversalReference
 items:
   - uid: '@google-cloud/deploy!'
     name: '@google-cloud/deploy'
@@ -1573,6 +1574,7 @@ references:
 `
 
 exports['cloud-rad docfx generator handles example tags 1'] = `
+### YamlMime:UniversalReference
 items:
   - uid: '@google-cloud/deploy!v1.CloudDeployClient:class'
     summary: >-
@@ -7410,6 +7412,7 @@ references:
 `
 
 exports['cloud-rad docfx generator generates an enum page 1'] = `
+### YamlMime:UniversalReference
 items:
   - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.ExecutionConfig.ExecutionEnvironmentUsage:enum'
     summary: ExecutionEnvironmentUsage enum.
@@ -7450,6 +7453,7 @@ items:
 `
 
 exports['cloud-rad docfx generator generates an interface page 1'] = `
+### YamlMime:UniversalReference
 items:
   - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.Release.ITargetRender:interface'
     summary: Properties of a TargetRender.
@@ -7486,6 +7490,7 @@ items:
 `
 
 exports['cloud-rad docfx generator generates a class page 1'] = `
+### YamlMime:UniversalReference
 items:
   - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.ApproveRolloutResponse:class'
     summary: Represents an ApproveRolloutResponse.
@@ -7795,6 +7800,7 @@ references:
 `
 
 exports['cloud-rad docfx generator generates dependency pages 1'] = `
+### YamlMime:UniversalReference
 items:
   - uid: '@google-cloud/deploy!protos.google.rpc.Status:class'
     summary: Represents a Status.
