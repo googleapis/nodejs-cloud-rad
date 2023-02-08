@@ -51,7 +51,7 @@ export function globResults(fixturePath, globPatterns) {
 export const mochaHooks = {
   async beforeAll() {
     // Give ourselves a generous timeout for setup tasks.
-    this.timeout(75000);
+    this.timeout(150000);
 
     // Clone nodejs-deploy; install its dependencies; and build it.
     // TODO(jefesaurus): Use git-subtree instead of cloning on each run.

@@ -51,7 +51,7 @@ afterEach(async () => {
 
 describe('copy YAML', () => {
   it('creates the _devsite directory', async () => {
-    assert.equal(await fs.pathExists(join(tmpDir, '_devsite')), true);
+    assert(await fs.pathExists(join(tmpDir, '_devsite')));
   });
 
   it('copies the package data to _devsite', async () => {

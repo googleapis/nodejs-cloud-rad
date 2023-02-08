@@ -17,7 +17,7 @@
 */
 import {execa} from 'execa';
 import fs from 'fs-extra';
-import generateDevsite from './generate-devsite.mjs';
+import generateDevsite from './lib/generate-devsite.mjs';
 import {join} from 'path';
 
 // Creates docs.metadata, based on package.json and .repo-metadata.json.
@@ -72,10 +72,7 @@ function deploy() {
 (async () => {
   await generateDevsite();
 
-  // TODO(jefesaurus): Can we make this the default? That would create a better
-  // experience for anyone outside of the Cloud RAD team who wants to run the
-  // tool.
-  if (process.env.NO_UPLOAD) {
+  if (!process.env.UPLOAD) {
     console.log('Generated documentation will not be uploaded.');
     process.exit(0);
   } else {
