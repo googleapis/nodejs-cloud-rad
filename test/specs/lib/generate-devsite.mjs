@@ -15,10 +15,10 @@
 */
 import {strict as assert} from 'assert';
 import fs from 'fs-extra';
-import generateDevsite from '../../lib/generate-devsite.mjs';
-import {mochaHooks} from '../helpers.mjs';
+import generateDevsite from '../../../lib/generate-devsite.mjs';
+import {mochaHooks} from '../../helpers.mjs';
 import {join} from 'path';
-import snapshots from '../../__snapshots__/generate-devsite.mjs.js';
+import snapshots from '../../../__snapshots__/generate-devsite.mjs.js';
 import takeSnapshot from 'snap-shot-it';
 
 let checkSnapshot = () => {};
