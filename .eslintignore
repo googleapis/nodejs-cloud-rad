@@ -1,6 +1,5 @@
 **/node_modules
-__snapshots__
-.coverage
+**/coverage
 test/fixtures
 build/
 docs/
