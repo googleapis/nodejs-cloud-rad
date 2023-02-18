@@ -12,16 +12,33 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+import synthtool as s
 import synthtool.languages.node as node
 
+s.replace(
+    ".eslintignore",
+    "**/coverage",
+    """__snapshots__
+    .coverage""",
+)
+
+s.replace(
+    ".nycrc",
+    'karma.conf.js",',
+    """karma.conf.js\",
+    \".prettierrc.js\",""",
+)
+
 # Remove sync-repo-settings once we add tests
-node.owlbot_main(templates_excludes=[
-  "README.md",
-  ".kokoro/**",
-  ".github/workflows/**",
-  ".trampolinerc",
-  ".mocharc.js",
-  ".github/release-trigger.yml",
-  ".github/release-please.yml",
-  ".github/sync-repo-settings.yaml"
-])
+node.owlbot_main(
+    templates_excludes=[
+        "README.md",
+        ".kokoro/**",
+        ".github/workflows/**",
+        ".trampolinerc",
+        ".mocharc.js",
+        ".github/release-trigger.yml",
+        ".github/release-please.yml",
+        ".github/sync-repo-settings.yaml",
+    ]
+)
