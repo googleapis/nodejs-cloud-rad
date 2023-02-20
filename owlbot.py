@@ -31,14 +31,14 @@ node.owlbot_main(
 
 s.replace(
     ".eslintignore",
-    "**/coverage",
+    "\*\*/coverage",
     """__snapshots__
 .coverage""",
 )
 
 s.replace(
     ".nycrc",
-    "karma.conf.js\",",
+    "karma\.conf\.js\",",
     """karma.conf.js",
     ".prettierrc.js",""",
 )
