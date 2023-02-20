@@ -16,6 +16,7 @@
     ".jsdoc.js",
     "**/.jsdoc.js",
     "karma.conf.js",
+    ".prettierrc.js",
     "webpack-tests.config.js",
     "webpack.config.js"
   ],
