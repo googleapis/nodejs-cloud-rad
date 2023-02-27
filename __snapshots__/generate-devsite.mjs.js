@@ -9,6 +9,7 @@ items:
         homepage: overview.html
       - name: CloudDeployClient
         uid: '@google-cloud/deploy!v1.CloudDeployClient:class'
+
 `
 
 exports['cloud-rad docfx generator generates an index.md file 1'] = `
@@ -1569,6 +1570,7 @@ references:
     name: protos.google.type.IDate
   - uid: '@google-cloud/deploy!v1.CloudDeployClient:class'
     name: v1.CloudDeployClient
+
 `
 
 exports['cloud-rad docfx generator handles example tags 1'] = `
@@ -1723,9 +1725,9 @@ items:
         - id: opts
           description: ''
           type:
-            - 'google-gax!ClientOptions:interface'
+            - google-gax!ClientOptions:interface
   - uid: '@google-cloud/deploy!v1.CloudDeployClient.apiEndpoint:member'
-    summary: 'The DNS address for this API service - same as servicePath(), exists for compatibility reasons.'
+    summary: The DNS address for this API service - same as servicePath(), exists for compatibility reasons.
     name: apiEndpoint
     fullName: apiEndpoint
     langs:
@@ -1734,8 +1736,8 @@ items:
     syntax:
       content: 'static get apiEndpoint(): string;'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#approveRollout:member(1)'
-    name: 'approveRollout(request, options)'
-    fullName: 'approveRollout(request, options)'
+    name: approveRollout(request, options)
+    fullName: approveRollout(request, options)
     langs:
       - typeScript
     type: method
@@ -1758,10 +1760,10 @@ items:
         - id: options
           description: ''
           type:
-            - 'google-gax!CallOptions:interface'
+            - google-gax!CallOptions:interface
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#approveRollout:member(2)'
-    name: 'approveRollout(request, options, callback)'
-    fullName: 'approveRollout(request, options, callback)'
+    name: approveRollout(request, options, callback)
+    fullName: approveRollout(request, options, callback)
     langs:
       - typeScript
     type: method
@@ -1782,14 +1784,14 @@ items:
         - id: options
           description: ''
           type:
-            - 'google-gax!CallOptions:interface'
+            - google-gax!CallOptions:interface
         - id: callback
           description: ''
           type:
             - '@google-cloud/deploy!v1.CloudDeployClient#approveRollout~3:complex'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#approveRollout:member(3)'
-    name: 'approveRollout(request, callback)'
-    fullName: 'approveRollout(request, callback)'
+    name: approveRollout(request, callback)
+    fullName: approveRollout(request, callback)
     langs:
       - typeScript
     type: method
@@ -1821,8 +1823,8 @@ items:
       content: 'auth: gax.GoogleAuth;'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#buildPath:member(1)'
     summary: Return a fully-qualified build resource name string.
-    name: 'buildPath(project, location, build)'
-    fullName: 'buildPath(project, location, build)'
+    name: buildPath(project, location, build)
+    fullName: buildPath(project, location, build)
     langs:
       - typeScript
     type: method
@@ -2100,8 +2102,8 @@ items:
             }>;
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#clusterPath:member(1)'
     summary: Return a fully-qualified cluster resource name string.
-    name: 'clusterPath(project, location, cluster)'
-    fullName: 'clusterPath(project, location, cluster)'
+    name: clusterPath(project, location, cluster)
+    fullName: clusterPath(project, location, cluster)
     langs:
       - typeScript
     type: method
@@ -2126,8 +2128,8 @@ items:
             - string
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#configPath:member(1)'
     summary: Return a fully-qualified config resource name string.
-    name: 'configPath(project, location)'
-    fullName: 'configPath(project, location)'
+    name: configPath(project, location)
+    fullName: configPath(project, location)
     langs:
       - typeScript
     type: method
@@ -2147,8 +2149,8 @@ items:
           type:
             - string
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#createDeliveryPipeline:member(1)'
-    name: 'createDeliveryPipeline(request, options)'
-    fullName: 'createDeliveryPipeline(request, options)'
+    name: createDeliveryPipeline(request, options)
+    fullName: createDeliveryPipeline(request, options)
     langs:
       - typeScript
     type: method
@@ -2172,10 +2174,10 @@ items:
         - id: options
           description: ''
           type:
-            - 'google-gax!CallOptions:interface'
+            - google-gax!CallOptions:interface
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#createDeliveryPipeline:member(2)'
-    name: 'createDeliveryPipeline(request, options, callback)'
-    fullName: 'createDeliveryPipeline(request, options, callback)'
+    name: createDeliveryPipeline(request, options, callback)
+    fullName: createDeliveryPipeline(request, options, callback)
     langs:
       - typeScript
     type: method
@@ -2197,14 +2199,14 @@ items:
         - id: options
           description: ''
           type:
-            - 'google-gax!CallOptions:interface'
+            - google-gax!CallOptions:interface
         - id: callback
           description: ''
           type:
             - '@google-cloud/deploy!v1.CloudDeployClient#createDeliveryPipeline~3:complex'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#createDeliveryPipeline:member(3)'
-    name: 'createDeliveryPipeline(request, callback)'
-    fullName: 'createDeliveryPipeline(request, callback)'
+    name: createDeliveryPipeline(request, callback)
+    fullName: createDeliveryPipeline(request, callback)
     langs:
       - typeScript
     type: method
@@ -2228,8 +2230,8 @@ items:
           type:
             - '@google-cloud/deploy!v1.CloudDeployClient#createDeliveryPipeline~5:complex'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#createRelease:member(1)'
-    name: 'createRelease(request, options)'
-    fullName: 'createRelease(request, options)'
+    name: createRelease(request, options)
+    fullName: createRelease(request, options)
     langs:
       - typeScript
     type: method
@@ -2252,10 +2254,10 @@ items:
         - id: options
           description: ''
           type:
-            - 'google-gax!CallOptions:interface'
+            - google-gax!CallOptions:interface
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#createRelease:member(2)'
-    name: 'createRelease(request, options, callback)'
-    fullName: 'createRelease(request, options, callback)'
+    name: createRelease(request, options, callback)
+    fullName: createRelease(request, options, callback)
     langs:
       - typeScript
     type: method
@@ -2276,14 +2278,14 @@ items:
         - id: options
           description: ''
           type:
-            - 'google-gax!CallOptions:interface'
+            - google-gax!CallOptions:interface
         - id: callback
           description: ''
           type:
             - '@google-cloud/deploy!v1.CloudDeployClient#createRelease~3:complex'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#createRelease:member(3)'
-    name: 'createRelease(request, callback)'
-    fullName: 'createRelease(request, callback)'
+    name: createRelease(request, callback)
+    fullName: createRelease(request, callback)
     langs:
       - typeScript
     type: method
@@ -2306,8 +2308,8 @@ items:
           type:
             - '@google-cloud/deploy!v1.CloudDeployClient#createRelease~5:complex'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#createRollout:member(1)'
-    name: 'createRollout(request, options)'
-    fullName: 'createRollout(request, options)'
+    name: createRollout(request, options)
+    fullName: createRollout(request, options)
     langs:
       - typeScript
     type: method
@@ -2330,10 +2332,10 @@ items:
         - id: options
           description: ''
           type:
-            - 'google-gax!CallOptions:interface'
+            - google-gax!CallOptions:interface
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#createRollout:member(2)'
-    name: 'createRollout(request, options, callback)'
-    fullName: 'createRollout(request, options, callback)'
+    name: createRollout(request, options, callback)
+    fullName: createRollout(request, options, callback)
     langs:
       - typeScript
     type: method
@@ -2354,14 +2356,14 @@ items:
         - id: options
           description: ''
           type:
-            - 'google-gax!CallOptions:interface'
+            - google-gax!CallOptions:interface
         - id: callback
           description: ''
           type:
             - '@google-cloud/deploy!v1.CloudDeployClient#createRollout~3:complex'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#createRollout:member(3)'
-    name: 'createRollout(request, callback)'
-    fullName: 'createRollout(request, callback)'
+    name: createRollout(request, callback)
+    fullName: createRollout(request, callback)
     langs:
       - typeScript
     type: method
@@ -2384,8 +2386,8 @@ items:
           type:
             - '@google-cloud/deploy!v1.CloudDeployClient#createRollout~5:complex'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#createTarget:member(1)'
-    name: 'createTarget(request, options)'
-    fullName: 'createTarget(request, options)'
+    name: createTarget(request, options)
+    fullName: createTarget(request, options)
     langs:
       - typeScript
     type: method
@@ -2408,10 +2410,10 @@ items:
         - id: options
           description: ''
           type:
-            - 'google-gax!CallOptions:interface'
+            - google-gax!CallOptions:interface
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#createTarget:member(2)'
-    name: 'createTarget(request, options, callback)'
-    fullName: 'createTarget(request, options, callback)'
+    name: createTarget(request, options, callback)
+    fullName: createTarget(request, options, callback)
     langs:
       - typeScript
     type: method
@@ -2432,14 +2434,14 @@ items:
         - id: options
           description: ''
           type:
-            - 'google-gax!CallOptions:interface'
+            - google-gax!CallOptions:interface
         - id: callback
           description: ''
           type:
             - '@google-cloud/deploy!v1.CloudDeployClient#createTarget~3:complex'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#createTarget:member(3)'
-    name: 'createTarget(request, callback)'
-    fullName: 'createTarget(request, callback)'
+    name: createTarget(request, callback)
+    fullName: createTarget(request, callback)
     langs:
       - typeScript
     type: method
@@ -2462,8 +2464,8 @@ items:
           type:
             - '@google-cloud/deploy!v1.CloudDeployClient#createTarget~5:complex'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#deleteDeliveryPipeline:member(1)'
-    name: 'deleteDeliveryPipeline(request, options)'
-    fullName: 'deleteDeliveryPipeline(request, options)'
+    name: deleteDeliveryPipeline(request, options)
+    fullName: deleteDeliveryPipeline(request, options)
     langs:
       - typeScript
     type: method
@@ -2487,10 +2489,10 @@ items:
         - id: options
           description: ''
           type:
-            - 'google-gax!CallOptions:interface'
+            - google-gax!CallOptions:interface
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#deleteDeliveryPipeline:member(2)'
-    name: 'deleteDeliveryPipeline(request, options, callback)'
-    fullName: 'deleteDeliveryPipeline(request, options, callback)'
+    name: deleteDeliveryPipeline(request, options, callback)
+    fullName: deleteDeliveryPipeline(request, options, callback)
     langs:
       - typeScript
     type: method
@@ -2512,14 +2514,14 @@ items:
         - id: options
           description: ''
           type:
-            - 'google-gax!CallOptions:interface'
+            - google-gax!CallOptions:interface
         - id: callback
           description: ''
           type:
             - '@google-cloud/deploy!v1.CloudDeployClient#deleteDeliveryPipeline~3:complex'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#deleteDeliveryPipeline:member(3)'
-    name: 'deleteDeliveryPipeline(request, callback)'
-    fullName: 'deleteDeliveryPipeline(request, callback)'
+    name: deleteDeliveryPipeline(request, callback)
+    fullName: deleteDeliveryPipeline(request, callback)
     langs:
       - typeScript
     type: method
@@ -2542,8 +2544,8 @@ items:
           type:
             - '@google-cloud/deploy!v1.CloudDeployClient#deleteDeliveryPipeline~5:complex'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#deleteTarget:member(1)'
-    name: 'deleteTarget(request, options)'
-    fullName: 'deleteTarget(request, options)'
+    name: deleteTarget(request, options)
+    fullName: deleteTarget(request, options)
     langs:
       - typeScript
     type: method
@@ -2566,10 +2568,10 @@ items:
         - id: options
           description: ''
           type:
-            - 'google-gax!CallOptions:interface'
+            - google-gax!CallOptions:interface
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#deleteTarget:member(2)'
-    name: 'deleteTarget(request, options, callback)'
-    fullName: 'deleteTarget(request, options, callback)'
+    name: deleteTarget(request, options, callback)
+    fullName: deleteTarget(request, options, callback)
     langs:
       - typeScript
     type: method
@@ -2590,14 +2592,14 @@ items:
         - id: options
           description: ''
           type:
-            - 'google-gax!CallOptions:interface'
+            - google-gax!CallOptions:interface
         - id: callback
           description: ''
           type:
             - '@google-cloud/deploy!v1.CloudDeployClient#deleteTarget~3:complex'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#deleteTarget:member(3)'
-    name: 'deleteTarget(request, callback)'
-    fullName: 'deleteTarget(request, callback)'
+    name: deleteTarget(request, callback)
+    fullName: deleteTarget(request, callback)
     langs:
       - typeScript
     type: method
@@ -2621,8 +2623,8 @@ items:
             - '@google-cloud/deploy!v1.CloudDeployClient#deleteTarget~5:complex'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#deliveryPipelinePath:member(1)'
     summary: Return a fully-qualified deliveryPipeline resource name string.
-    name: 'deliveryPipelinePath(project, location, deliveryPipeline)'
-    fullName: 'deliveryPipelinePath(project, location, deliveryPipeline)'
+    name: deliveryPipelinePath(project, location, deliveryPipeline)
+    fullName: deliveryPipelinePath(project, location, deliveryPipeline)
     langs:
       - typeScript
     type: method
@@ -2654,8 +2656,8 @@ items:
     syntax:
       content: 'descriptors: Descriptors;'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#getConfig:member(1)'
-    name: 'getConfig(request, options)'
-    fullName: 'getConfig(request, options)'
+    name: getConfig(request, options)
+    fullName: getConfig(request, options)
     langs:
       - typeScript
     type: method
@@ -2678,10 +2680,10 @@ items:
         - id: options
           description: ''
           type:
-            - 'google-gax!CallOptions:interface'
+            - google-gax!CallOptions:interface
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#getConfig:member(2)'
-    name: 'getConfig(request, options, callback)'
-    fullName: 'getConfig(request, options, callback)'
+    name: getConfig(request, options, callback)
+    fullName: getConfig(request, options, callback)
     langs:
       - typeScript
     type: method
@@ -2702,14 +2704,14 @@ items:
         - id: options
           description: ''
           type:
-            - 'google-gax!CallOptions:interface'
+            - google-gax!CallOptions:interface
         - id: callback
           description: ''
           type:
             - '@google-cloud/deploy!v1.CloudDeployClient#getConfig~3:complex'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#getConfig:member(3)'
-    name: 'getConfig(request, callback)'
-    fullName: 'getConfig(request, callback)'
+    name: getConfig(request, callback)
+    fullName: getConfig(request, callback)
     langs:
       - typeScript
     type: method
@@ -2732,8 +2734,8 @@ items:
           type:
             - '@google-cloud/deploy!v1.CloudDeployClient#getConfig~5:complex'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#getDeliveryPipeline:member(1)'
-    name: 'getDeliveryPipeline(request, options)'
-    fullName: 'getDeliveryPipeline(request, options)'
+    name: getDeliveryPipeline(request, options)
+    fullName: getDeliveryPipeline(request, options)
     langs:
       - typeScript
     type: method
@@ -2757,10 +2759,10 @@ items:
         - id: options
           description: ''
           type:
-            - 'google-gax!CallOptions:interface'
+            - google-gax!CallOptions:interface
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#getDeliveryPipeline:member(2)'
-    name: 'getDeliveryPipeline(request, options, callback)'
-    fullName: 'getDeliveryPipeline(request, options, callback)'
+    name: getDeliveryPipeline(request, options, callback)
+    fullName: getDeliveryPipeline(request, options, callback)
     langs:
       - typeScript
     type: method
@@ -2781,14 +2783,14 @@ items:
         - id: options
           description: ''
           type:
-            - 'google-gax!CallOptions:interface'
+            - google-gax!CallOptions:interface
         - id: callback
           description: ''
           type:
             - '@google-cloud/deploy!v1.CloudDeployClient#getDeliveryPipeline~3:complex'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#getDeliveryPipeline:member(3)'
-    name: 'getDeliveryPipeline(request, callback)'
-    fullName: 'getDeliveryPipeline(request, callback)'
+    name: getDeliveryPipeline(request, callback)
+    fullName: getDeliveryPipeline(request, callback)
     langs:
       - typeScript
     type: method
@@ -2840,8 +2842,8 @@ items:
           type:
             - '@google-cloud/deploy!v1.CloudDeployClient#getProjectId~1:complex'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#getRelease:member(1)'
-    name: 'getRelease(request, options)'
-    fullName: 'getRelease(request, options)'
+    name: getRelease(request, options)
+    fullName: getRelease(request, options)
     langs:
       - typeScript
     type: method
@@ -2864,10 +2866,10 @@ items:
         - id: options
           description: ''
           type:
-            - 'google-gax!CallOptions:interface'
+            - google-gax!CallOptions:interface
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#getRelease:member(2)'
-    name: 'getRelease(request, options, callback)'
-    fullName: 'getRelease(request, options, callback)'
+    name: getRelease(request, options, callback)
+    fullName: getRelease(request, options, callback)
     langs:
       - typeScript
     type: method
@@ -2888,14 +2890,14 @@ items:
         - id: options
           description: ''
           type:
-            - 'google-gax!CallOptions:interface'
+            - google-gax!CallOptions:interface
         - id: callback
           description: ''
           type:
             - '@google-cloud/deploy!v1.CloudDeployClient#getRelease~3:complex'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#getRelease:member(3)'
-    name: 'getRelease(request, callback)'
-    fullName: 'getRelease(request, callback)'
+    name: getRelease(request, callback)
+    fullName: getRelease(request, callback)
     langs:
       - typeScript
     type: method
@@ -2918,8 +2920,8 @@ items:
           type:
             - '@google-cloud/deploy!v1.CloudDeployClient#getRelease~5:complex'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#getRollout:member(1)'
-    name: 'getRollout(request, options)'
-    fullName: 'getRollout(request, options)'
+    name: getRollout(request, options)
+    fullName: getRollout(request, options)
     langs:
       - typeScript
     type: method
@@ -2942,10 +2944,10 @@ items:
         - id: options
           description: ''
           type:
-            - 'google-gax!CallOptions:interface'
+            - google-gax!CallOptions:interface
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#getRollout:member(2)'
-    name: 'getRollout(request, options, callback)'
-    fullName: 'getRollout(request, options, callback)'
+    name: getRollout(request, options, callback)
+    fullName: getRollout(request, options, callback)
     langs:
       - typeScript
     type: method
@@ -2966,14 +2968,14 @@ items:
         - id: options
           description: ''
           type:
-            - 'google-gax!CallOptions:interface'
+            - google-gax!CallOptions:interface
         - id: callback
           description: ''
           type:
             - '@google-cloud/deploy!v1.CloudDeployClient#getRollout~3:complex'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#getRollout:member(3)'
-    name: 'getRollout(request, callback)'
-    fullName: 'getRollout(request, callback)'
+    name: getRollout(request, callback)
+    fullName: getRollout(request, callback)
     langs:
       - typeScript
     type: method
@@ -2996,8 +2998,8 @@ items:
           type:
             - '@google-cloud/deploy!v1.CloudDeployClient#getRollout~5:complex'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#getTarget:member(1)'
-    name: 'getTarget(request, options)'
-    fullName: 'getTarget(request, options)'
+    name: getTarget(request, options)
+    fullName: getTarget(request, options)
     langs:
       - typeScript
     type: method
@@ -3020,10 +3022,10 @@ items:
         - id: options
           description: ''
           type:
-            - 'google-gax!CallOptions:interface'
+            - google-gax!CallOptions:interface
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#getTarget:member(2)'
-    name: 'getTarget(request, options, callback)'
-    fullName: 'getTarget(request, options, callback)'
+    name: getTarget(request, options, callback)
+    fullName: getTarget(request, options, callback)
     langs:
       - typeScript
     type: method
@@ -3044,14 +3046,14 @@ items:
         - id: options
           description: ''
           type:
-            - 'google-gax!CallOptions:interface'
+            - google-gax!CallOptions:interface
         - id: callback
           description: ''
           type:
             - '@google-cloud/deploy!v1.CloudDeployClient#getTarget~3:complex'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#getTarget:member(3)'
-    name: 'getTarget(request, callback)'
-    fullName: 'getTarget(request, callback)'
+    name: getTarget(request, callback)
+    fullName: getTarget(request, callback)
     langs:
       - typeScript
     type: method
@@ -3107,8 +3109,8 @@ items:
                 [name: string]: Function;
             };
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#listDeliveryPipelines:member(1)'
-    name: 'listDeliveryPipelines(request, options)'
-    fullName: 'listDeliveryPipelines(request, options)'
+    name: listDeliveryPipelines(request, options)
+    fullName: listDeliveryPipelines(request, options)
     langs:
       - typeScript
     type: method
@@ -3132,10 +3134,10 @@ items:
         - id: options
           description: ''
           type:
-            - 'google-gax!CallOptions:interface'
+            - google-gax!CallOptions:interface
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#listDeliveryPipelines:member(2)'
-    name: 'listDeliveryPipelines(request, options, callback)'
-    fullName: 'listDeliveryPipelines(request, options, callback)'
+    name: listDeliveryPipelines(request, options, callback)
+    fullName: listDeliveryPipelines(request, options, callback)
     langs:
       - typeScript
     type: method
@@ -3157,14 +3159,14 @@ items:
         - id: options
           description: ''
           type:
-            - 'google-gax!CallOptions:interface'
+            - google-gax!CallOptions:interface
         - id: callback
           description: ''
           type:
             - '@google-cloud/deploy!v1.CloudDeployClient#listDeliveryPipelines~3:complex'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#listDeliveryPipelines:member(3)'
-    name: 'listDeliveryPipelines(request, callback)'
-    fullName: 'listDeliveryPipelines(request, callback)'
+    name: listDeliveryPipelines(request, callback)
+    fullName: listDeliveryPipelines(request, callback)
     langs:
       - typeScript
     type: method
@@ -3196,8 +3198,8 @@ items:
       - >-
         const iterable = client.listDeliveryPipelinesAsync(request); for await (const response of iterable) { // process
         response }
-    name: 'listDeliveryPipelinesAsync(request, options)'
-    fullName: 'listDeliveryPipelinesAsync(request, options)'
+    name: listDeliveryPipelinesAsync(request, options)
+    fullName: listDeliveryPipelinesAsync(request, options)
     langs:
       - typeScript
     type: method
@@ -3226,11 +3228,11 @@ items:
             Call options. See [CallOptions](https://googleapis.dev/nodejs/google-gax/latest/interfaces/CallOptions.html)
             for more details.
           type:
-            - 'google-gax!CallOptions:interface'
+            - google-gax!CallOptions:interface
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#listDeliveryPipelinesStream:member(1)'
-    summary: 'Equivalent to \`method.name.toCamelCase()\`<!-- -->, but returns a NodeJS Stream object.'
-    name: 'listDeliveryPipelinesStream(request, options)'
-    fullName: 'listDeliveryPipelinesStream(request, options)'
+    summary: Equivalent to \`method.name.toCamelCase()\`<!-- -->, but returns a NodeJS Stream object.
+    name: listDeliveryPipelinesStream(request, options)
+    fullName: listDeliveryPipelinesStream(request, options)
     langs:
       - typeScript
     type: method
@@ -3258,10 +3260,10 @@ items:
             Call options. See [CallOptions](https://googleapis.dev/nodejs/google-gax/latest/interfaces/CallOptions.html)
             for more details.
           type:
-            - 'google-gax!CallOptions:interface'
+            - google-gax!CallOptions:interface
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#listReleases:member(1)'
-    name: 'listReleases(request, options)'
-    fullName: 'listReleases(request, options)'
+    name: listReleases(request, options)
+    fullName: listReleases(request, options)
     langs:
       - typeScript
     type: method
@@ -3284,10 +3286,10 @@ items:
         - id: options
           description: ''
           type:
-            - 'google-gax!CallOptions:interface'
+            - google-gax!CallOptions:interface
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#listReleases:member(2)'
-    name: 'listReleases(request, options, callback)'
-    fullName: 'listReleases(request, options, callback)'
+    name: listReleases(request, options, callback)
+    fullName: listReleases(request, options, callback)
     langs:
       - typeScript
     type: method
@@ -3309,14 +3311,14 @@ items:
         - id: options
           description: ''
           type:
-            - 'google-gax!CallOptions:interface'
+            - google-gax!CallOptions:interface
         - id: callback
           description: ''
           type:
             - '@google-cloud/deploy!v1.CloudDeployClient#listReleases~3:complex'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#listReleases:member(3)'
-    name: 'listReleases(request, callback)'
-    fullName: 'listReleases(request, callback)'
+    name: listReleases(request, callback)
+    fullName: listReleases(request, callback)
     langs:
       - typeScript
     type: method
@@ -3348,8 +3350,8 @@ items:
       - >-
         const iterable = client.listReleasesAsync(request); for await (const response of iterable) { // process response
         }
-    name: 'listReleasesAsync(request, options)'
-    fullName: 'listReleasesAsync(request, options)'
+    name: listReleasesAsync(request, options)
+    fullName: listReleasesAsync(request, options)
     langs:
       - typeScript
     type: method
@@ -3378,11 +3380,11 @@ items:
             Call options. See [CallOptions](https://googleapis.dev/nodejs/google-gax/latest/interfaces/CallOptions.html)
             for more details.
           type:
-            - 'google-gax!CallOptions:interface'
+            - google-gax!CallOptions:interface
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#listReleasesStream:member(1)'
-    summary: 'Equivalent to \`method.name.toCamelCase()\`<!-- -->, but returns a NodeJS Stream object.'
-    name: 'listReleasesStream(request, options)'
-    fullName: 'listReleasesStream(request, options)'
+    summary: Equivalent to \`method.name.toCamelCase()\`<!-- -->, but returns a NodeJS Stream object.
+    name: listReleasesStream(request, options)
+    fullName: listReleasesStream(request, options)
     langs:
       - typeScript
     type: method
@@ -3410,10 +3412,10 @@ items:
             Call options. See [CallOptions](https://googleapis.dev/nodejs/google-gax/latest/interfaces/CallOptions.html)
             for more details.
           type:
-            - 'google-gax!CallOptions:interface'
+            - google-gax!CallOptions:interface
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#listRollouts:member(1)'
-    name: 'listRollouts(request, options)'
-    fullName: 'listRollouts(request, options)'
+    name: listRollouts(request, options)
+    fullName: listRollouts(request, options)
     langs:
       - typeScript
     type: method
@@ -3436,10 +3438,10 @@ items:
         - id: options
           description: ''
           type:
-            - 'google-gax!CallOptions:interface'
+            - google-gax!CallOptions:interface
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#listRollouts:member(2)'
-    name: 'listRollouts(request, options, callback)'
-    fullName: 'listRollouts(request, options, callback)'
+    name: listRollouts(request, options, callback)
+    fullName: listRollouts(request, options, callback)
     langs:
       - typeScript
     type: method
@@ -3461,14 +3463,14 @@ items:
         - id: options
           description: ''
           type:
-            - 'google-gax!CallOptions:interface'
+            - google-gax!CallOptions:interface
         - id: callback
           description: ''
           type:
             - '@google-cloud/deploy!v1.CloudDeployClient#listRollouts~3:complex'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#listRollouts:member(3)'
-    name: 'listRollouts(request, callback)'
-    fullName: 'listRollouts(request, callback)'
+    name: listRollouts(request, callback)
+    fullName: listRollouts(request, callback)
     langs:
       - typeScript
     type: method
@@ -3500,8 +3502,8 @@ items:
       - >-
         const iterable = client.listRolloutsAsync(request); for await (const response of iterable) { // process response
         }
-    name: 'listRolloutsAsync(request, options)'
-    fullName: 'listRolloutsAsync(request, options)'
+    name: listRolloutsAsync(request, options)
+    fullName: listRolloutsAsync(request, options)
     langs:
       - typeScript
     type: method
@@ -3530,11 +3532,11 @@ items:
             Call options. See [CallOptions](https://googleapis.dev/nodejs/google-gax/latest/interfaces/CallOptions.html)
             for more details.
           type:
-            - 'google-gax!CallOptions:interface'
+            - google-gax!CallOptions:interface
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#listRolloutsStream:member(1)'
-    summary: 'Equivalent to \`method.name.toCamelCase()\`<!-- -->, but returns a NodeJS Stream object.'
-    name: 'listRolloutsStream(request, options)'
-    fullName: 'listRolloutsStream(request, options)'
+    summary: Equivalent to \`method.name.toCamelCase()\`<!-- -->, but returns a NodeJS Stream object.
+    name: listRolloutsStream(request, options)
+    fullName: listRolloutsStream(request, options)
     langs:
       - typeScript
     type: method
@@ -3562,10 +3564,10 @@ items:
             Call options. See [CallOptions](https://googleapis.dev/nodejs/google-gax/latest/interfaces/CallOptions.html)
             for more details.
           type:
-            - 'google-gax!CallOptions:interface'
+            - google-gax!CallOptions:interface
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#listTargets:member(1)'
-    name: 'listTargets(request, options)'
-    fullName: 'listTargets(request, options)'
+    name: listTargets(request, options)
+    fullName: listTargets(request, options)
     langs:
       - typeScript
     type: method
@@ -3588,10 +3590,10 @@ items:
         - id: options
           description: ''
           type:
-            - 'google-gax!CallOptions:interface'
+            - google-gax!CallOptions:interface
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#listTargets:member(2)'
-    name: 'listTargets(request, options, callback)'
-    fullName: 'listTargets(request, options, callback)'
+    name: listTargets(request, options, callback)
+    fullName: listTargets(request, options, callback)
     langs:
       - typeScript
     type: method
@@ -3613,14 +3615,14 @@ items:
         - id: options
           description: ''
           type:
-            - 'google-gax!CallOptions:interface'
+            - google-gax!CallOptions:interface
         - id: callback
           description: ''
           type:
             - '@google-cloud/deploy!v1.CloudDeployClient#listTargets~3:complex'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#listTargets:member(3)'
-    name: 'listTargets(request, callback)'
-    fullName: 'listTargets(request, callback)'
+    name: listTargets(request, callback)
+    fullName: listTargets(request, callback)
     langs:
       - typeScript
     type: method
@@ -3652,8 +3654,8 @@ items:
       - >-
         const iterable = client.listTargetsAsync(request); for await (const response of iterable) { // process response
         }
-    name: 'listTargetsAsync(request, options)'
-    fullName: 'listTargetsAsync(request, options)'
+    name: listTargetsAsync(request, options)
+    fullName: listTargetsAsync(request, options)
     langs:
       - typeScript
     type: method
@@ -3682,11 +3684,11 @@ items:
             Call options. See [CallOptions](https://googleapis.dev/nodejs/google-gax/latest/interfaces/CallOptions.html)
             for more details.
           type:
-            - 'google-gax!CallOptions:interface'
+            - google-gax!CallOptions:interface
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#listTargetsStream:member(1)'
-    summary: 'Equivalent to \`method.name.toCamelCase()\`<!-- -->, but returns a NodeJS Stream object.'
-    name: 'listTargetsStream(request, options)'
-    fullName: 'listTargetsStream(request, options)'
+    summary: Equivalent to \`method.name.toCamelCase()\`<!-- -->, but returns a NodeJS Stream object.
+    name: listTargetsStream(request, options)
+    fullName: listTargetsStream(request, options)
     langs:
       - typeScript
     type: method
@@ -3714,11 +3716,11 @@ items:
             Call options. See [CallOptions](https://googleapis.dev/nodejs/google-gax/latest/interfaces/CallOptions.html)
             for more details.
           type:
-            - 'google-gax!CallOptions:interface'
+            - google-gax!CallOptions:interface
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#locationPath:member(1)'
     summary: Return a fully-qualified location resource name string.
-    name: 'locationPath(project, location)'
-    fullName: 'locationPath(project, location)'
+    name: locationPath(project, location)
+    fullName: locationPath(project, location)
     langs:
       - typeScript
     type: method
@@ -4307,8 +4309,8 @@ items:
             - string
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#releasePath:member(1)'
     summary: Return a fully-qualified release resource name string.
-    name: 'releasePath(project, location, deliveryPipeline, release)'
-    fullName: 'releasePath(project, location, deliveryPipeline, release)'
+    name: releasePath(project, location, deliveryPipeline, release)
+    fullName: releasePath(project, location, deliveryPipeline, release)
     langs:
       - typeScript
     type: method
@@ -4337,8 +4339,8 @@ items:
             - string
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#rolloutPath:member(1)'
     summary: Return a fully-qualified rollout resource name string.
-    name: 'rolloutPath(project, location, deliveryPipeline, release, rollout)'
-    fullName: 'rolloutPath(project, location, deliveryPipeline, release, rollout)'
+    name: rolloutPath(project, location, deliveryPipeline, release, rollout)
+    fullName: rolloutPath(project, location, deliveryPipeline, release, rollout)
     langs:
       - typeScript
     type: method
@@ -4391,8 +4393,8 @@ items:
       content: 'static get servicePath(): string;'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#targetPath:member(1)'
     summary: Return a fully-qualified target resource name string.
-    name: 'targetPath(project, location, target)'
-    fullName: 'targetPath(project, location, target)'
+    name: targetPath(project, location, target)
+    fullName: targetPath(project, location, target)
     langs:
       - typeScript
     type: method
@@ -4416,8 +4418,8 @@ items:
           type:
             - string
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#updateDeliveryPipeline:member(1)'
-    name: 'updateDeliveryPipeline(request, options)'
-    fullName: 'updateDeliveryPipeline(request, options)'
+    name: updateDeliveryPipeline(request, options)
+    fullName: updateDeliveryPipeline(request, options)
     langs:
       - typeScript
     type: method
@@ -4441,10 +4443,10 @@ items:
         - id: options
           description: ''
           type:
-            - 'google-gax!CallOptions:interface'
+            - google-gax!CallOptions:interface
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#updateDeliveryPipeline:member(2)'
-    name: 'updateDeliveryPipeline(request, options, callback)'
-    fullName: 'updateDeliveryPipeline(request, options, callback)'
+    name: updateDeliveryPipeline(request, options, callback)
+    fullName: updateDeliveryPipeline(request, options, callback)
     langs:
       - typeScript
     type: method
@@ -4466,14 +4468,14 @@ items:
         - id: options
           description: ''
           type:
-            - 'google-gax!CallOptions:interface'
+            - google-gax!CallOptions:interface
         - id: callback
           description: ''
           type:
             - '@google-cloud/deploy!v1.CloudDeployClient#updateDeliveryPipeline~3:complex'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#updateDeliveryPipeline:member(3)'
-    name: 'updateDeliveryPipeline(request, callback)'
-    fullName: 'updateDeliveryPipeline(request, callback)'
+    name: updateDeliveryPipeline(request, callback)
+    fullName: updateDeliveryPipeline(request, callback)
     langs:
       - typeScript
     type: method
@@ -4497,8 +4499,8 @@ items:
           type:
             - '@google-cloud/deploy!v1.CloudDeployClient#updateDeliveryPipeline~5:complex'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#updateTarget:member(1)'
-    name: 'updateTarget(request, options)'
-    fullName: 'updateTarget(request, options)'
+    name: updateTarget(request, options)
+    fullName: updateTarget(request, options)
     langs:
       - typeScript
     type: method
@@ -4521,10 +4523,10 @@ items:
         - id: options
           description: ''
           type:
-            - 'google-gax!CallOptions:interface'
+            - google-gax!CallOptions:interface
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#updateTarget:member(2)'
-    name: 'updateTarget(request, options, callback)'
-    fullName: 'updateTarget(request, options, callback)'
+    name: updateTarget(request, options, callback)
+    fullName: updateTarget(request, options, callback)
     langs:
       - typeScript
     type: method
@@ -4545,14 +4547,14 @@ items:
         - id: options
           description: ''
           type:
-            - 'google-gax!CallOptions:interface'
+            - google-gax!CallOptions:interface
         - id: callback
           description: ''
           type:
             - '@google-cloud/deploy!v1.CloudDeployClient#updateTarget~3:complex'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#updateTarget:member(3)'
-    name: 'updateTarget(request, callback)'
-    fullName: 'updateTarget(request, callback)'
+    name: updateTarget(request, callback)
+    fullName: updateTarget(request, callback)
     langs:
       - typeScript
     type: method
@@ -4584,8 +4586,8 @@ items:
       content: 'warn: (code: string, message: string, warnType?: string) => void;'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#workerPoolPath:member(1)'
     summary: Return a fully-qualified workerPool resource name string.
-    name: 'workerPoolPath(project, location, workerPool)'
-    fullName: 'workerPoolPath(project, location, workerPool)'
+    name: workerPoolPath(project, location, workerPool)
+    fullName: workerPoolPath(project, location, workerPool)
     langs:
       - typeScript
     type: method
@@ -4609,7 +4611,7 @@ items:
           type:
             - string
 references:
-  - uid: 'google-gax!ClientOptions:interface'
+  - uid: google-gax!ClientOptions:interface
     name: ClientOptions
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#approveRollout~0:complex'
     name: |-
@@ -4663,7 +4665,7 @@ references:
       - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IApproveRolloutRequest:interface'
         name: google.cloud.deploy.v1.IApproveRolloutRequest
         fullName: google.cloud.deploy.v1.IApproveRolloutRequest
-  - uid: 'google-gax!CallOptions:interface'
+  - uid: google-gax!CallOptions:interface
     name: CallOptions
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#approveRollout~2:complex'
     name: protos.google.cloud.deploy.v1.IApproveRolloutRequest
@@ -4682,7 +4684,7 @@ references:
       Callback<protos.google.cloud.deploy.v1.IApproveRolloutResponse,
       protos.google.cloud.deploy.v1.IApproveRolloutRequest | null | undefined, {} | null | undefined>
     spec.typeScript:
-      - uid: 'google-gax!Callback:interface'
+      - uid: google-gax!Callback:interface
         name: Callback
         fullName: Callback
       - name: <protos.
@@ -4714,7 +4716,7 @@ references:
       Callback<protos.google.cloud.deploy.v1.IApproveRolloutResponse,
       protos.google.cloud.deploy.v1.IApproveRolloutRequest | null | undefined, {} | null | undefined>
     spec.typeScript:
-      - uid: 'google-gax!Callback:interface'
+      - uid: google-gax!Callback:interface
         name: Callback
         fullName: Callback
       - name: <protos.
@@ -4742,7 +4744,7 @@ references:
         fullName: Promise
       - name: <
         fullName: <
-      - uid: 'google-gax!LROperation:interface'
+      - uid: google-gax!LROperation:interface
         name: LROperation
         fullName: LROperation
       - name: <protos.
@@ -4758,15 +4760,15 @@ references:
       - name: '>>'
         fullName: '>>'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#checkCreateReleaseProgress~0:complex'
-    name: 'Promise<LROperation<protos.google.cloud.deploy.v1.Release, protos.google.cloud.deploy.v1.OperationMetadata>>'
-    fullName: 'Promise<LROperation<protos.google.cloud.deploy.v1.Release, protos.google.cloud.deploy.v1.OperationMetadata>>'
+    name: Promise<LROperation<protos.google.cloud.deploy.v1.Release, protos.google.cloud.deploy.v1.OperationMetadata>>
+    fullName: Promise<LROperation<protos.google.cloud.deploy.v1.Release, protos.google.cloud.deploy.v1.OperationMetadata>>
     spec.typeScript:
       - uid: '!Promise:interface'
         name: Promise
         fullName: Promise
       - name: <
         fullName: <
-      - uid: 'google-gax!LROperation:interface'
+      - uid: google-gax!LROperation:interface
         name: LROperation
         fullName: LROperation
       - name: <protos.
@@ -4782,15 +4784,15 @@ references:
       - name: '>>'
         fullName: '>>'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#checkCreateRolloutProgress~0:complex'
-    name: 'Promise<LROperation<protos.google.cloud.deploy.v1.Rollout, protos.google.cloud.deploy.v1.OperationMetadata>>'
-    fullName: 'Promise<LROperation<protos.google.cloud.deploy.v1.Rollout, protos.google.cloud.deploy.v1.OperationMetadata>>'
+    name: Promise<LROperation<protos.google.cloud.deploy.v1.Rollout, protos.google.cloud.deploy.v1.OperationMetadata>>
+    fullName: Promise<LROperation<protos.google.cloud.deploy.v1.Rollout, protos.google.cloud.deploy.v1.OperationMetadata>>
     spec.typeScript:
       - uid: '!Promise:interface'
         name: Promise
         fullName: Promise
       - name: <
         fullName: <
-      - uid: 'google-gax!LROperation:interface'
+      - uid: google-gax!LROperation:interface
         name: LROperation
         fullName: LROperation
       - name: <protos.
@@ -4806,15 +4808,15 @@ references:
       - name: '>>'
         fullName: '>>'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#checkCreateTargetProgress~0:complex'
-    name: 'Promise<LROperation<protos.google.cloud.deploy.v1.Target, protos.google.cloud.deploy.v1.OperationMetadata>>'
-    fullName: 'Promise<LROperation<protos.google.cloud.deploy.v1.Target, protos.google.cloud.deploy.v1.OperationMetadata>>'
+    name: Promise<LROperation<protos.google.cloud.deploy.v1.Target, protos.google.cloud.deploy.v1.OperationMetadata>>
+    fullName: Promise<LROperation<protos.google.cloud.deploy.v1.Target, protos.google.cloud.deploy.v1.OperationMetadata>>
     spec.typeScript:
       - uid: '!Promise:interface'
         name: Promise
         fullName: Promise
       - name: <
         fullName: <
-      - uid: 'google-gax!LROperation:interface'
+      - uid: google-gax!LROperation:interface
         name: LROperation
         fullName: LROperation
       - name: <protos.
@@ -4830,15 +4832,15 @@ references:
       - name: '>>'
         fullName: '>>'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#checkDeleteDeliveryPipelineProgress~0:complex'
-    name: 'Promise<LROperation<protos.google.protobuf.Empty, protos.google.cloud.deploy.v1.OperationMetadata>>'
-    fullName: 'Promise<LROperation<protos.google.protobuf.Empty, protos.google.cloud.deploy.v1.OperationMetadata>>'
+    name: Promise<LROperation<protos.google.protobuf.Empty, protos.google.cloud.deploy.v1.OperationMetadata>>
+    fullName: Promise<LROperation<protos.google.protobuf.Empty, protos.google.cloud.deploy.v1.OperationMetadata>>
     spec.typeScript:
       - uid: '!Promise:interface'
         name: Promise
         fullName: Promise
       - name: <
         fullName: <
-      - uid: 'google-gax!LROperation:interface'
+      - uid: google-gax!LROperation:interface
         name: LROperation
         fullName: LROperation
       - name: <protos.
@@ -4854,15 +4856,15 @@ references:
       - name: '>>'
         fullName: '>>'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#checkDeleteTargetProgress~0:complex'
-    name: 'Promise<LROperation<protos.google.protobuf.Empty, protos.google.cloud.deploy.v1.OperationMetadata>>'
-    fullName: 'Promise<LROperation<protos.google.protobuf.Empty, protos.google.cloud.deploy.v1.OperationMetadata>>'
+    name: Promise<LROperation<protos.google.protobuf.Empty, protos.google.cloud.deploy.v1.OperationMetadata>>
+    fullName: Promise<LROperation<protos.google.protobuf.Empty, protos.google.cloud.deploy.v1.OperationMetadata>>
     spec.typeScript:
       - uid: '!Promise:interface'
         name: Promise
         fullName: Promise
       - name: <
         fullName: <
-      - uid: 'google-gax!LROperation:interface'
+      - uid: google-gax!LROperation:interface
         name: LROperation
         fullName: LROperation
       - name: <protos.
@@ -4890,7 +4892,7 @@ references:
         fullName: Promise
       - name: <
         fullName: <
-      - uid: 'google-gax!LROperation:interface'
+      - uid: google-gax!LROperation:interface
         name: LROperation
         fullName: LROperation
       - name: <protos.
@@ -4906,15 +4908,15 @@ references:
       - name: '>>'
         fullName: '>>'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#checkUpdateTargetProgress~0:complex'
-    name: 'Promise<LROperation<protos.google.cloud.deploy.v1.Target, protos.google.cloud.deploy.v1.OperationMetadata>>'
-    fullName: 'Promise<LROperation<protos.google.cloud.deploy.v1.Target, protos.google.cloud.deploy.v1.OperationMetadata>>'
+    name: Promise<LROperation<protos.google.cloud.deploy.v1.Target, protos.google.cloud.deploy.v1.OperationMetadata>>
+    fullName: Promise<LROperation<protos.google.cloud.deploy.v1.Target, protos.google.cloud.deploy.v1.OperationMetadata>>
     spec.typeScript:
       - uid: '!Promise:interface'
         name: Promise
         fullName: Promise
       - name: <
         fullName: <
-      - uid: 'google-gax!LROperation:interface'
+      - uid: google-gax!LROperation:interface
         name: LROperation
         fullName: LROperation
       - name: <protos.
@@ -4961,7 +4963,7 @@ references:
         fullName: |-
           <[
                   
-      - uid: 'google-gax!LROperation:interface'
+      - uid: google-gax!LROperation:interface
         name: LROperation
         fullName: LROperation
       - name: <protos.
@@ -5019,12 +5021,12 @@ references:
       protos.google.cloud.deploy.v1.IOperationMetadata>, protos.google.longrunning.IOperation | null | undefined, {} |
       null | undefined>
     spec.typeScript:
-      - uid: 'google-gax!Callback:interface'
+      - uid: google-gax!Callback:interface
         name: Callback
         fullName: Callback
       - name: <
         fullName: <
-      - uid: 'google-gax!LROperation:interface'
+      - uid: google-gax!LROperation:interface
         name: LROperation
         fullName: LROperation
       - name: <protos.
@@ -5063,12 +5065,12 @@ references:
       protos.google.cloud.deploy.v1.IOperationMetadata>, protos.google.longrunning.IOperation | null | undefined, {} |
       null | undefined>
     spec.typeScript:
-      - uid: 'google-gax!Callback:interface'
+      - uid: google-gax!Callback:interface
         name: Callback
         fullName: Callback
       - name: <
         fullName: <
-      - uid: 'google-gax!LROperation:interface'
+      - uid: google-gax!LROperation:interface
         name: LROperation
         fullName: LROperation
       - name: <protos.
@@ -5111,7 +5113,7 @@ references:
         fullName: |-
           <[
                   
-      - uid: 'google-gax!LROperation:interface'
+      - uid: google-gax!LROperation:interface
         name: LROperation
         fullName: LROperation
       - name: <protos.
@@ -5167,12 +5169,12 @@ references:
       Callback<LROperation<protos.google.cloud.deploy.v1.IRelease, protos.google.cloud.deploy.v1.IOperationMetadata>,
       protos.google.longrunning.IOperation | null | undefined, {} | null | undefined>
     spec.typeScript:
-      - uid: 'google-gax!Callback:interface'
+      - uid: google-gax!Callback:interface
         name: Callback
         fullName: Callback
       - name: <
         fullName: <
-      - uid: 'google-gax!LROperation:interface'
+      - uid: google-gax!LROperation:interface
         name: LROperation
         fullName: LROperation
       - name: <protos.
@@ -5209,12 +5211,12 @@ references:
       Callback<LROperation<protos.google.cloud.deploy.v1.IRelease, protos.google.cloud.deploy.v1.IOperationMetadata>,
       protos.google.longrunning.IOperation | null | undefined, {} | null | undefined>
     spec.typeScript:
-      - uid: 'google-gax!Callback:interface'
+      - uid: google-gax!Callback:interface
         name: Callback
         fullName: Callback
       - name: <
         fullName: <
-      - uid: 'google-gax!LROperation:interface'
+      - uid: google-gax!LROperation:interface
         name: LROperation
         fullName: LROperation
       - name: <protos.
@@ -5257,7 +5259,7 @@ references:
         fullName: |-
           <[
                   
-      - uid: 'google-gax!LROperation:interface'
+      - uid: google-gax!LROperation:interface
         name: LROperation
         fullName: LROperation
       - name: <protos.
@@ -5313,12 +5315,12 @@ references:
       Callback<LROperation<protos.google.cloud.deploy.v1.IRollout, protos.google.cloud.deploy.v1.IOperationMetadata>,
       protos.google.longrunning.IOperation | null | undefined, {} | null | undefined>
     spec.typeScript:
-      - uid: 'google-gax!Callback:interface'
+      - uid: google-gax!Callback:interface
         name: Callback
         fullName: Callback
       - name: <
         fullName: <
-      - uid: 'google-gax!LROperation:interface'
+      - uid: google-gax!LROperation:interface
         name: LROperation
         fullName: LROperation
       - name: <protos.
@@ -5355,12 +5357,12 @@ references:
       Callback<LROperation<protos.google.cloud.deploy.v1.IRollout, protos.google.cloud.deploy.v1.IOperationMetadata>,
       protos.google.longrunning.IOperation | null | undefined, {} | null | undefined>
     spec.typeScript:
-      - uid: 'google-gax!Callback:interface'
+      - uid: google-gax!Callback:interface
         name: Callback
         fullName: Callback
       - name: <
         fullName: <
-      - uid: 'google-gax!LROperation:interface'
+      - uid: google-gax!LROperation:interface
         name: LROperation
         fullName: LROperation
       - name: <protos.
@@ -5403,7 +5405,7 @@ references:
         fullName: |-
           <[
                   
-      - uid: 'google-gax!LROperation:interface'
+      - uid: google-gax!LROperation:interface
         name: LROperation
         fullName: LROperation
       - name: <protos.
@@ -5459,12 +5461,12 @@ references:
       Callback<LROperation<protos.google.cloud.deploy.v1.ITarget, protos.google.cloud.deploy.v1.IOperationMetadata>,
       protos.google.longrunning.IOperation | null | undefined, {} | null | undefined>
     spec.typeScript:
-      - uid: 'google-gax!Callback:interface'
+      - uid: google-gax!Callback:interface
         name: Callback
         fullName: Callback
       - name: <
         fullName: <
-      - uid: 'google-gax!LROperation:interface'
+      - uid: google-gax!LROperation:interface
         name: LROperation
         fullName: LROperation
       - name: <protos.
@@ -5501,12 +5503,12 @@ references:
       Callback<LROperation<protos.google.cloud.deploy.v1.ITarget, protos.google.cloud.deploy.v1.IOperationMetadata>,
       protos.google.longrunning.IOperation | null | undefined, {} | null | undefined>
     spec.typeScript:
-      - uid: 'google-gax!Callback:interface'
+      - uid: google-gax!Callback:interface
         name: Callback
         fullName: Callback
       - name: <
         fullName: <
-      - uid: 'google-gax!LROperation:interface'
+      - uid: google-gax!LROperation:interface
         name: LROperation
         fullName: LROperation
       - name: <protos.
@@ -5549,7 +5551,7 @@ references:
         fullName: |-
           <[
                   
-      - uid: 'google-gax!LROperation:interface'
+      - uid: google-gax!LROperation:interface
         name: LROperation
         fullName: LROperation
       - name: <protos.
@@ -5605,12 +5607,12 @@ references:
       Callback<LROperation<protos.google.protobuf.IEmpty, protos.google.cloud.deploy.v1.IOperationMetadata>,
       protos.google.longrunning.IOperation | null | undefined, {} | null | undefined>
     spec.typeScript:
-      - uid: 'google-gax!Callback:interface'
+      - uid: google-gax!Callback:interface
         name: Callback
         fullName: Callback
       - name: <
         fullName: <
-      - uid: 'google-gax!LROperation:interface'
+      - uid: google-gax!LROperation:interface
         name: LROperation
         fullName: LROperation
       - name: <protos.
@@ -5647,12 +5649,12 @@ references:
       Callback<LROperation<protos.google.protobuf.IEmpty, protos.google.cloud.deploy.v1.IOperationMetadata>,
       protos.google.longrunning.IOperation | null | undefined, {} | null | undefined>
     spec.typeScript:
-      - uid: 'google-gax!Callback:interface'
+      - uid: google-gax!Callback:interface
         name: Callback
         fullName: Callback
       - name: <
         fullName: <
-      - uid: 'google-gax!LROperation:interface'
+      - uid: google-gax!LROperation:interface
         name: LROperation
         fullName: LROperation
       - name: <protos.
@@ -5695,7 +5697,7 @@ references:
         fullName: |-
           <[
                   
-      - uid: 'google-gax!LROperation:interface'
+      - uid: google-gax!LROperation:interface
         name: LROperation
         fullName: LROperation
       - name: <protos.
@@ -5751,12 +5753,12 @@ references:
       Callback<LROperation<protos.google.protobuf.IEmpty, protos.google.cloud.deploy.v1.IOperationMetadata>,
       protos.google.longrunning.IOperation | null | undefined, {} | null | undefined>
     spec.typeScript:
-      - uid: 'google-gax!Callback:interface'
+      - uid: google-gax!Callback:interface
         name: Callback
         fullName: Callback
       - name: <
         fullName: <
-      - uid: 'google-gax!LROperation:interface'
+      - uid: google-gax!LROperation:interface
         name: LROperation
         fullName: LROperation
       - name: <protos.
@@ -5793,12 +5795,12 @@ references:
       Callback<LROperation<protos.google.protobuf.IEmpty, protos.google.cloud.deploy.v1.IOperationMetadata>,
       protos.google.longrunning.IOperation | null | undefined, {} | null | undefined>
     spec.typeScript:
-      - uid: 'google-gax!Callback:interface'
+      - uid: google-gax!Callback:interface
         name: Callback
         fullName: Callback
       - name: <
         fullName: <
-      - uid: 'google-gax!LROperation:interface'
+      - uid: google-gax!LROperation:interface
         name: LROperation
         fullName: LROperation
       - name: <protos.
@@ -5887,7 +5889,7 @@ references:
       Callback<protos.google.cloud.deploy.v1.IConfig, protos.google.cloud.deploy.v1.IGetConfigRequest | null |
       undefined, {} | null | undefined>
     spec.typeScript:
-      - uid: 'google-gax!Callback:interface'
+      - uid: google-gax!Callback:interface
         name: Callback
         fullName: Callback
       - name: <protos.
@@ -5919,7 +5921,7 @@ references:
       Callback<protos.google.cloud.deploy.v1.IConfig, protos.google.cloud.deploy.v1.IGetConfigRequest | null |
       undefined, {} | null | undefined>
     spec.typeScript:
-      - uid: 'google-gax!Callback:interface'
+      - uid: google-gax!Callback:interface
         name: Callback
         fullName: Callback
       - name: <protos.
@@ -6003,7 +6005,7 @@ references:
       Callback<protos.google.cloud.deploy.v1.IDeliveryPipeline,
       protos.google.cloud.deploy.v1.IGetDeliveryPipelineRequest | null | undefined, {} | null | undefined>
     spec.typeScript:
-      - uid: 'google-gax!Callback:interface'
+      - uid: google-gax!Callback:interface
         name: Callback
         fullName: Callback
       - name: <protos.
@@ -6035,7 +6037,7 @@ references:
       Callback<protos.google.cloud.deploy.v1.IDeliveryPipeline,
       protos.google.cloud.deploy.v1.IGetDeliveryPipelineRequest | null | undefined, {} | null | undefined>
     spec.typeScript:
-      - uid: 'google-gax!Callback:interface'
+      - uid: google-gax!Callback:interface
         name: Callback
         fullName: Callback
       - name: <protos.
@@ -6060,14 +6062,14 @@ references:
       - name: <string>
         fullName: <string>
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#getProjectId~1:complex'
-    name: 'Callback<string, undefined, undefined>'
-    fullName: 'Callback<string, undefined, undefined>'
+    name: Callback<string, undefined, undefined>
+    fullName: Callback<string, undefined, undefined>
     spec.typeScript:
-      - uid: 'google-gax!Callback:interface'
+      - uid: google-gax!Callback:interface
         name: Callback
         fullName: Callback
-      - name: '<string, undefined, undefined>'
-        fullName: '<string, undefined, undefined>'
+      - name: <string, undefined, undefined>
+        fullName: <string, undefined, undefined>
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#getRelease~0:complex'
     name: |-
       Promise<[
@@ -6137,7 +6139,7 @@ references:
       Callback<protos.google.cloud.deploy.v1.IRelease, protos.google.cloud.deploy.v1.IGetReleaseRequest | null |
       undefined, {} | null | undefined>
     spec.typeScript:
-      - uid: 'google-gax!Callback:interface'
+      - uid: google-gax!Callback:interface
         name: Callback
         fullName: Callback
       - name: <protos.
@@ -6169,7 +6171,7 @@ references:
       Callback<protos.google.cloud.deploy.v1.IRelease, protos.google.cloud.deploy.v1.IGetReleaseRequest | null |
       undefined, {} | null | undefined>
     spec.typeScript:
-      - uid: 'google-gax!Callback:interface'
+      - uid: google-gax!Callback:interface
         name: Callback
         fullName: Callback
       - name: <protos.
@@ -6253,7 +6255,7 @@ references:
       Callback<protos.google.cloud.deploy.v1.IRollout, protos.google.cloud.deploy.v1.IGetRolloutRequest | null |
       undefined, {} | null | undefined>
     spec.typeScript:
-      - uid: 'google-gax!Callback:interface'
+      - uid: google-gax!Callback:interface
         name: Callback
         fullName: Callback
       - name: <protos.
@@ -6285,7 +6287,7 @@ references:
       Callback<protos.google.cloud.deploy.v1.IRollout, protos.google.cloud.deploy.v1.IGetRolloutRequest | null |
       undefined, {} | null | undefined>
     spec.typeScript:
-      - uid: 'google-gax!Callback:interface'
+      - uid: google-gax!Callback:interface
         name: Callback
         fullName: Callback
       - name: <protos.
@@ -6369,7 +6371,7 @@ references:
       Callback<protos.google.cloud.deploy.v1.ITarget, protos.google.cloud.deploy.v1.IGetTargetRequest | null |
       undefined, {} | null | undefined>
     spec.typeScript:
-      - uid: 'google-gax!Callback:interface'
+      - uid: google-gax!Callback:interface
         name: Callback
         fullName: Callback
       - name: <protos.
@@ -6401,7 +6403,7 @@ references:
       Callback<protos.google.cloud.deploy.v1.ITarget, protos.google.cloud.deploy.v1.IGetTargetRequest | null |
       undefined, {} | null | undefined>
     spec.typeScript:
-      - uid: 'google-gax!Callback:interface'
+      - uid: google-gax!Callback:interface
         name: Callback
         fullName: Callback
       - name: <protos.
@@ -6522,7 +6524,7 @@ references:
       protos.google.cloud.deploy.v1.IListDeliveryPipelinesResponse | null | undefined,
       protos.google.cloud.deploy.v1.IDeliveryPipeline>
     spec.typeScript:
-      - uid: 'google-gax!PaginationCallback:interface'
+      - uid: google-gax!PaginationCallback:interface
         name: PaginationCallback
         fullName: PaginationCallback
       - name: <protos.
@@ -6561,7 +6563,7 @@ references:
       protos.google.cloud.deploy.v1.IListDeliveryPipelinesResponse | null | undefined,
       protos.google.cloud.deploy.v1.IDeliveryPipeline>
     spec.typeScript:
-      - uid: 'google-gax!PaginationCallback:interface'
+      - uid: google-gax!PaginationCallback:interface
         name: PaginationCallback
         fullName: PaginationCallback
       - name: <protos.
@@ -6691,7 +6693,7 @@ references:
       PaginationCallback<protos.google.cloud.deploy.v1.IListReleasesRequest,
       protos.google.cloud.deploy.v1.IListReleasesResponse | null | undefined, protos.google.cloud.deploy.v1.IRelease>
     spec.typeScript:
-      - uid: 'google-gax!PaginationCallback:interface'
+      - uid: google-gax!PaginationCallback:interface
         name: PaginationCallback
         fullName: PaginationCallback
       - name: <protos.
@@ -6728,7 +6730,7 @@ references:
       PaginationCallback<protos.google.cloud.deploy.v1.IListReleasesRequest,
       protos.google.cloud.deploy.v1.IListReleasesResponse | null | undefined, protos.google.cloud.deploy.v1.IRelease>
     spec.typeScript:
-      - uid: 'google-gax!PaginationCallback:interface'
+      - uid: google-gax!PaginationCallback:interface
         name: PaginationCallback
         fullName: PaginationCallback
       - name: <protos.
@@ -6856,7 +6858,7 @@ references:
       PaginationCallback<protos.google.cloud.deploy.v1.IListRolloutsRequest,
       protos.google.cloud.deploy.v1.IListRolloutsResponse | null | undefined, protos.google.cloud.deploy.v1.IRollout>
     spec.typeScript:
-      - uid: 'google-gax!PaginationCallback:interface'
+      - uid: google-gax!PaginationCallback:interface
         name: PaginationCallback
         fullName: PaginationCallback
       - name: <protos.
@@ -6893,7 +6895,7 @@ references:
       PaginationCallback<protos.google.cloud.deploy.v1.IListRolloutsRequest,
       protos.google.cloud.deploy.v1.IListRolloutsResponse | null | undefined, protos.google.cloud.deploy.v1.IRollout>
     spec.typeScript:
-      - uid: 'google-gax!PaginationCallback:interface'
+      - uid: google-gax!PaginationCallback:interface
         name: PaginationCallback
         fullName: PaginationCallback
       - name: <protos.
@@ -7021,7 +7023,7 @@ references:
       PaginationCallback<protos.google.cloud.deploy.v1.IListTargetsRequest,
       protos.google.cloud.deploy.v1.IListTargetsResponse | null | undefined, protos.google.cloud.deploy.v1.ITarget>
     spec.typeScript:
-      - uid: 'google-gax!PaginationCallback:interface'
+      - uid: google-gax!PaginationCallback:interface
         name: PaginationCallback
         fullName: PaginationCallback
       - name: <protos.
@@ -7058,7 +7060,7 @@ references:
       PaginationCallback<protos.google.cloud.deploy.v1.IListTargetsRequest,
       protos.google.cloud.deploy.v1.IListTargetsResponse | null | undefined, protos.google.cloud.deploy.v1.ITarget>
     spec.typeScript:
-      - uid: 'google-gax!PaginationCallback:interface'
+      - uid: google-gax!PaginationCallback:interface
         name: PaginationCallback
         fullName: PaginationCallback
       - name: <protos.
@@ -7133,7 +7135,7 @@ references:
         fullName: |-
           <[
                   
-      - uid: 'google-gax!LROperation:interface'
+      - uid: google-gax!LROperation:interface
         name: LROperation
         fullName: LROperation
       - name: <protos.
@@ -7191,12 +7193,12 @@ references:
       protos.google.cloud.deploy.v1.IOperationMetadata>, protos.google.longrunning.IOperation | null | undefined, {} |
       null | undefined>
     spec.typeScript:
-      - uid: 'google-gax!Callback:interface'
+      - uid: google-gax!Callback:interface
         name: Callback
         fullName: Callback
       - name: <
         fullName: <
-      - uid: 'google-gax!LROperation:interface'
+      - uid: google-gax!LROperation:interface
         name: LROperation
         fullName: LROperation
       - name: <protos.
@@ -7235,12 +7237,12 @@ references:
       protos.google.cloud.deploy.v1.IOperationMetadata>, protos.google.longrunning.IOperation | null | undefined, {} |
       null | undefined>
     spec.typeScript:
-      - uid: 'google-gax!Callback:interface'
+      - uid: google-gax!Callback:interface
         name: Callback
         fullName: Callback
       - name: <
         fullName: <
-      - uid: 'google-gax!LROperation:interface'
+      - uid: google-gax!LROperation:interface
         name: LROperation
         fullName: LROperation
       - name: <protos.
@@ -7283,7 +7285,7 @@ references:
         fullName: |-
           <[
                   
-      - uid: 'google-gax!LROperation:interface'
+      - uid: google-gax!LROperation:interface
         name: LROperation
         fullName: LROperation
       - name: <protos.
@@ -7339,12 +7341,12 @@ references:
       Callback<LROperation<protos.google.cloud.deploy.v1.ITarget, protos.google.cloud.deploy.v1.IOperationMetadata>,
       protos.google.longrunning.IOperation | null | undefined, {} | null | undefined>
     spec.typeScript:
-      - uid: 'google-gax!Callback:interface'
+      - uid: google-gax!Callback:interface
         name: Callback
         fullName: Callback
       - name: <
         fullName: <
-      - uid: 'google-gax!LROperation:interface'
+      - uid: google-gax!LROperation:interface
         name: LROperation
         fullName: LROperation
       - name: <protos.
@@ -7381,12 +7383,12 @@ references:
       Callback<LROperation<protos.google.cloud.deploy.v1.ITarget, protos.google.cloud.deploy.v1.IOperationMetadata>,
       protos.google.longrunning.IOperation | null | undefined, {} | null | undefined>
     spec.typeScript:
-      - uid: 'google-gax!Callback:interface'
+      - uid: google-gax!Callback:interface
         name: Callback
         fullName: Callback
       - name: <
         fullName: <
-      - uid: 'google-gax!LROperation:interface'
+      - uid: google-gax!LROperation:interface
         name: LROperation
         fullName: LROperation
       - name: <protos.
@@ -7406,9 +7408,10 @@ references:
         fullName: google.longrunning.IOperation
       - name: ' | null | undefined, {} | null | undefined>'
         fullName: ' | null | undefined, {} | null | undefined>'
+
 `
 
-exports['cloud-rad docfx generator generates enum page 1'] = `
+exports['cloud-rad docfx generator generates an enum page 1'] = `
 ### YamlMime:UniversalReference
 items:
   - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.ExecutionConfig.ExecutionEnvironmentUsage:enum'
@@ -7446,9 +7449,10 @@ items:
       - typeScript
     type: field
     numericValue: '1'
+
 `
 
-exports['cloud-rad docfx generator generates interface page 1'] = `
+exports['cloud-rad docfx generator generates an interface page 1'] = `
 ### YamlMime:UniversalReference
 items:
   - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.Release.ITargetRender:interface'
@@ -7482,9 +7486,10 @@ items:
       content: >-
         renderingState?: (google.cloud.deploy.v1.Release.TargetRender.TargetRenderState|keyof typeof
         google.cloud.deploy.v1.Release.TargetRender.TargetRenderState|null);
+
 `
 
-exports['cloud-rad docfx generator generates class page 1'] = `
+exports['cloud-rad docfx generator generates a class page 1'] = `
 ### YamlMime:UniversalReference
 items:
   - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.ApproveRolloutResponse:class'
@@ -7544,8 +7549,8 @@ items:
             - '@google-cloud/deploy!google.cloud.deploy.v1.IApproveRolloutResponse:interface'
   - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.ApproveRolloutResponse.decode:member(1)'
     summary: Decodes an ApproveRolloutResponse message from the specified reader or buffer.
-    name: 'decode(reader, length)'
-    fullName: 'decode(reader, length)'
+    name: decode(reader, length)
+    fullName: decode(reader, length)
     langs:
       - typeScript
     type: method
@@ -7567,7 +7572,7 @@ items:
           type:
             - number
   - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.ApproveRolloutResponse.decodeDelimited:member(1)'
-    summary: 'Decodes an ApproveRolloutResponse message from the specified reader or buffer, length delimited.'
+    summary: Decodes an ApproveRolloutResponse message from the specified reader or buffer, length delimited.
     name: decodeDelimited(reader)
     fullName: decodeDelimited(reader)
     langs:
@@ -7588,8 +7593,8 @@ items:
             - '@google-cloud/deploy!protos.google.cloud.deploy.v1.ApproveRolloutResponse.decodeDelimited~0:complex'
   - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.ApproveRolloutResponse.encode:member(1)'
     summary: Encodes the specified ApproveRolloutResponse message. Does not implicitly  messages.
-    name: 'encode(message, writer)'
-    fullName: 'encode(message, writer)'
+    name: encode(message, writer)
+    fullName: encode(message, writer)
     langs:
       - typeScript
     type: method
@@ -7611,9 +7616,9 @@ items:
           type:
             - '@google-cloud/deploy!protos.google.cloud.deploy.v1.ApproveRolloutResponse.encode~1:complex'
   - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.ApproveRolloutResponse.encodeDelimited:member(1)'
-    summary: 'Encodes the specified ApproveRolloutResponse message, length delimited. Does not implicitly  messages.'
-    name: 'encodeDelimited(message, writer)'
-    fullName: 'encodeDelimited(message, writer)'
+    summary: Encodes the specified ApproveRolloutResponse message, length delimited. Does not implicitly  messages.
+    name: encodeDelimited(message, writer)
+    fullName: encodeDelimited(message, writer)
     langs:
       - typeScript
     type: method
@@ -7669,8 +7674,8 @@ items:
         description: JSON object
   - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.ApproveRolloutResponse.toObject:member(1)'
     summary: Creates a plain object from an ApproveRolloutResponse message. Also converts values to other types if specified.
-    name: 'toObject(message, options)'
-    fullName: 'toObject(message, options)'
+    name: toObject(message, options)
+    fullName: toObject(message, options)
     langs:
       - typeScript
     type: method
@@ -7720,7 +7725,7 @@ references:
     spec.typeScript:
       - name: ($protobuf.
         fullName: ($protobuf.
-      - uid: 'protobufjs!Reader:class'
+      - uid: protobufjs!Reader:class
         name: Reader
         fullName: Reader
       - name: '|'
@@ -7736,7 +7741,7 @@ references:
     spec.typeScript:
       - name: ($protobuf.
         fullName: ($protobuf.
-      - uid: 'protobufjs!Reader:class'
+      - uid: protobufjs!Reader:class
         name: Reader
         fullName: Reader
       - name: '|'
@@ -7752,7 +7757,7 @@ references:
     spec.typeScript:
       - name: $protobuf.
         fullName: $protobuf.
-      - uid: 'protobufjs!Writer:class'
+      - uid: protobufjs!Writer:class
         name: Writer
         fullName: Writer
   - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.ApproveRolloutResponse.encode~1:complex'
@@ -7761,7 +7766,7 @@ references:
     spec.typeScript:
       - name: $protobuf.
         fullName: $protobuf.
-      - uid: 'protobufjs!Writer:class'
+      - uid: protobufjs!Writer:class
         name: Writer
         fullName: Writer
   - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.ApproveRolloutResponse.encodeDelimited~0:complex'
@@ -7770,7 +7775,7 @@ references:
     spec.typeScript:
       - name: $protobuf.
         fullName: $protobuf.
-      - uid: 'protobufjs!Writer:class'
+      - uid: protobufjs!Writer:class
         name: Writer
         fullName: Writer
   - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.ApproveRolloutResponse.encodeDelimited~1:complex'
@@ -7779,7 +7784,7 @@ references:
     spec.typeScript:
       - name: $protobuf.
         fullName: $protobuf.
-      - uid: 'protobufjs!Writer:class'
+      - uid: protobufjs!Writer:class
         name: Writer
         fullName: Writer
   - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.ApproveRolloutResponse.toObject~0:complex'
@@ -7788,9 +7793,10 @@ references:
     spec.typeScript:
       - name: $protobuf.
         fullName: $protobuf.
-      - uid: 'protobufjs!IConversionOptions:interface'
+      - uid: protobufjs!IConversionOptions:interface
         name: IConversionOptions
         fullName: IConversionOptions
+
 `
 
 exports['cloud-rad docfx generator generates dependency pages 1'] = `
@@ -7863,8 +7869,8 @@ items:
             - '@google-cloud/deploy!google.rpc.IStatus:interface'
   - uid: '@google-cloud/deploy!protos.google.rpc.Status.decode:member(1)'
     summary: Decodes a Status message from the specified reader or buffer.
-    name: 'decode(reader, length)'
-    fullName: 'decode(reader, length)'
+    name: decode(reader, length)
+    fullName: decode(reader, length)
     langs:
       - typeScript
     type: method
@@ -7884,7 +7890,7 @@ items:
           type:
             - number
   - uid: '@google-cloud/deploy!protos.google.rpc.Status.decodeDelimited:member(1)'
-    summary: 'Decodes a Status message from the specified reader or buffer, length delimited.'
+    summary: Decodes a Status message from the specified reader or buffer, length delimited.
     name: decodeDelimited(reader)
     fullName: decodeDelimited(reader)
     langs:
@@ -7912,8 +7918,8 @@ items:
       content: 'public details: google.protobuf.IAny[];'
   - uid: '@google-cloud/deploy!protos.google.rpc.Status.encode:member(1)'
     summary: Encodes the specified Status message. Does not implicitly  messages.
-    name: 'encode(message, writer)'
-    fullName: 'encode(message, writer)'
+    name: encode(message, writer)
+    fullName: encode(message, writer)
     langs:
       - typeScript
     type: method
@@ -7933,9 +7939,9 @@ items:
           type:
             - '@google-cloud/deploy!protos.google.rpc.Status.encode~1:complex'
   - uid: '@google-cloud/deploy!protos.google.rpc.Status.encodeDelimited:member(1)'
-    summary: 'Encodes the specified Status message, length delimited. Does not implicitly  messages.'
-    name: 'encodeDelimited(message, writer)'
-    fullName: 'encodeDelimited(message, writer)'
+    summary: Encodes the specified Status message, length delimited. Does not implicitly  messages.
+    name: encodeDelimited(message, writer)
+    fullName: encodeDelimited(message, writer)
     langs:
       - typeScript
     type: method
@@ -7996,8 +8002,8 @@ items:
         description: JSON object
   - uid: '@google-cloud/deploy!protos.google.rpc.Status.toObject:member(1)'
     summary: Creates a plain object from a Status message. Also converts values to other types if specified.
-    name: 'toObject(message, options)'
-    fullName: 'toObject(message, options)'
+    name: toObject(message, options)
+    fullName: toObject(message, options)
     langs:
       - typeScript
     type: method
@@ -8047,7 +8053,7 @@ references:
     spec.typeScript:
       - name: ($protobuf.
         fullName: ($protobuf.
-      - uid: 'protobufjs!Reader:class'
+      - uid: protobufjs!Reader:class
         name: Reader
         fullName: Reader
       - name: '|'
@@ -8063,7 +8069,7 @@ references:
     spec.typeScript:
       - name: ($protobuf.
         fullName: ($protobuf.
-      - uid: 'protobufjs!Reader:class'
+      - uid: protobufjs!Reader:class
         name: Reader
         fullName: Reader
       - name: '|'
@@ -8079,7 +8085,7 @@ references:
     spec.typeScript:
       - name: $protobuf.
         fullName: $protobuf.
-      - uid: 'protobufjs!Writer:class'
+      - uid: protobufjs!Writer:class
         name: Writer
         fullName: Writer
   - uid: '@google-cloud/deploy!protos.google.rpc.Status.encode~1:complex'
@@ -8088,7 +8094,7 @@ references:
     spec.typeScript:
       - name: $protobuf.
         fullName: $protobuf.
-      - uid: 'protobufjs!Writer:class'
+      - uid: protobufjs!Writer:class
         name: Writer
         fullName: Writer
   - uid: '@google-cloud/deploy!protos.google.rpc.Status.encodeDelimited~0:complex'
@@ -8097,7 +8103,7 @@ references:
     spec.typeScript:
       - name: $protobuf.
         fullName: $protobuf.
-      - uid: 'protobufjs!Writer:class'
+      - uid: protobufjs!Writer:class
         name: Writer
         fullName: Writer
   - uid: '@google-cloud/deploy!protos.google.rpc.Status.encodeDelimited~1:complex'
@@ -8106,7 +8112,7 @@ references:
     spec.typeScript:
       - name: $protobuf.
         fullName: $protobuf.
-      - uid: 'protobufjs!Writer:class'
+      - uid: protobufjs!Writer:class
         name: Writer
         fullName: Writer
   - uid: '@google-cloud/deploy!protos.google.rpc.Status.toObject~0:complex'
@@ -8115,7 +8121,8 @@ references:
     spec.typeScript:
       - name: $protobuf.
         fullName: $protobuf.
-      - uid: 'protobufjs!IConversionOptions:interface'
+      - uid: protobufjs!IConversionOptions:interface
         name: IConversionOptions
         fullName: IConversionOptions
+
 `
