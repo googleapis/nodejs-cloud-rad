@@ -86,6 +86,30 @@ describe('process YAML', () => {
     }
   });
 
+  it('runs processors in sequence, and in the correct order', async () => {
+    const processors = [];
+    const result = [];
+
+    // Create four processors, ordered from slowest to fastest.
+    for (let i = 4; i > 0; i--) {
+      processors.push({
+        globPatterns: ['**/toc.yml'],
+        process: ({obj}) => {
+          return new Promise(resolve => {
+            setTimeout(() => {
+              result.push(i);
+              resolve(obj);
+            }, i * 100);
+          });
+        },
+      });
+    }
+
+    await processYaml(metadata, processors);
+
+    assert.deepEqual(result, [4, 3, 2, 1]);
+  });
+
   it('only runs a processor if a file matches one of its glob patterns', async () => {
     const hasMatchesFilepaths = [];
     const hasMatches = {
