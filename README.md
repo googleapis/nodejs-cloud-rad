@@ -12,6 +12,8 @@ npm install --no-save https://github.com/googleapis/nodejs-cloud-rad#main
 npx @google-cloud/cloud-rad 
 ```
 
+Set `NO_UPLOAD=1` to generate the docfx yaml without attempting to upload to Cloud RAD.
+
 Ignore the warnings about `pip`. There should be a `_devsite` folder with yaml files. Install [`docfx`](https://dotnet.github.io/docfx/tutorial/docfx_getting_started.html#2-use-docfx-as-a-command-line-tool). Clone https://github.com/googleapis/doc-templates outside of the client library. 
 
 Create the following `docfx.json` file inside the client library: 
