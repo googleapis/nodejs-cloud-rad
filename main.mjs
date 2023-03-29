@@ -72,7 +72,7 @@ function deploy() {
 (async () => {
   await generateDevsite();
 
-  if (!process.env.UPLOAD) {
+  if (process.env.NO_UPLOAD) {
     console.log('Generated documentation will not be uploaded.');
     process.exit(0);
   } else {
