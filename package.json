@@ -9,8 +9,8 @@
   },
   "scripts": {
     "coverage": "c8 npm run test",
-    "test": "env TEST=1 mocha --timeout=50000 --require './test/helpers.mjs' --recursive './test/specs/**/*.mjs'",
-    "update-snapshots": "env SNAPSHOT_UPDATE=1 TEST=1 mocha --timeout=5000 --require './test/helpers.mjs' './test/specs/generate-devsite.mjs'"
+    "test": "env mocha --timeout=50000 --require './test/helpers.mjs' --recursive './test/specs/**/*.mjs'",
+    "update-snapshots": "env SNAPSHOT_UPDATE=1 mocha --timeout=5000 --require './test/helpers.mjs' './test/specs/generate-devsite.mjs'"
   },
   "author": "Google LLC",
   "license": "Apache-2.0",
