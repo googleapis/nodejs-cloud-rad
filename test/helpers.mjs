@@ -53,23 +53,16 @@ export const mochaHooks = {
     // Give ourselves a generous timeout for setup tasks.
     this.timeout(150000);
 
-    // Clone nodejs-deploy; install its dependencies; and build it.
-    // TODO(jefesaurus): Use git-subtree instead of cloning on each run.
+    // Copy nodejs-deploy to temp dir; install its dependencies; and build it.
     const tmpDir = (mochaHooks._tmpDir = await createTmpDir());
-    await execa(
-      'git',
-      [
-        'clone',
-        '--branch',
-        'release-v1.0.0',
-        'https://github.com/googleapis/nodejs-deploy.git',
-      ],
-      {cwd: tmpDir}
-    );
     const nodeDeployDir = (mochaHooks.nodeDeployDir = join(
       tmpDir,
       'nodejs-deploy'
     ));
+    await fs.copy(
+      join(process.cwd(), 'test', 'fixtures', 'nodejs-deploy'),
+      nodeDeployDir
+    );
     await execa('npm', ['install'], {cwd: nodeDeployDir});
 
     return execa('npm', ['run', 'compile'], {cwd: nodeDeployDir});
