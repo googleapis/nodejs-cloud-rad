@@ -9,6 +9,400 @@ items:
         homepage: overview.html
       - name: CloudDeployClient
         uid: '@google-cloud/deploy!v1.CloudDeployClient:class'
+      - name: Classes
+        items:
+          - name: Annotation
+            uid: '@google-cloud/deploy!protos.google.protobuf.GeneratedCodeInfo.Annotation:class'
+          - name: Any
+            uid: '@google-cloud/deploy!protos.google.protobuf.Any:class'
+          - name: ApproveRolloutRequest
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.ApproveRolloutRequest:class'
+          - name: ApproveRolloutResponse
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.ApproveRolloutResponse:class'
+          - name: BuildArtifact
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.BuildArtifact:class'
+          - name: CancelOperationRequest
+            uid: '@google-cloud/deploy!protos.google.longrunning.CancelOperationRequest:class'
+          - name: CloudDeploy
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.CloudDeploy:class'
+          - name: Config
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.Config:class'
+          - name: CreateDeliveryPipelineRequest
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.CreateDeliveryPipelineRequest:class'
+          - name: CreateReleaseRequest
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.CreateReleaseRequest:class'
+          - name: CreateRolloutRequest
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.CreateRolloutRequest:class'
+          - name: CreateTargetRequest
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.CreateTargetRequest:class'
+          - name: CustomHttpPattern
+            uid: '@google-cloud/deploy!protos.google.api.CustomHttpPattern:class'
+          - name: Date
+            uid: '@google-cloud/deploy!protos.google.type.Date:class'
+          - name: DefaultPool
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.DefaultPool:class'
+          - name: DeleteDeliveryPipelineRequest
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.DeleteDeliveryPipelineRequest:class'
+          - name: DeleteOperationRequest
+            uid: '@google-cloud/deploy!protos.google.longrunning.DeleteOperationRequest:class'
+          - name: DeleteTargetRequest
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.DeleteTargetRequest:class'
+          - name: DeliveryPipeline
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.DeliveryPipeline:class'
+          - name: DescriptorProto
+            uid: '@google-cloud/deploy!protos.google.protobuf.DescriptorProto:class'
+          - name: Duration
+            uid: '@google-cloud/deploy!protos.google.protobuf.Duration:class'
+          - name: Empty
+            uid: '@google-cloud/deploy!protos.google.protobuf.Empty:class'
+          - name: EnumDescriptorProto
+            uid: '@google-cloud/deploy!protos.google.protobuf.EnumDescriptorProto:class'
+          - name: EnumOptions
+            uid: '@google-cloud/deploy!protos.google.protobuf.EnumOptions:class'
+          - name: EnumReservedRange
+            uid: '@google-cloud/deploy!protos.google.protobuf.EnumDescriptorProto.EnumReservedRange:class'
+          - name: EnumValueDescriptorProto
+            uid: '@google-cloud/deploy!protos.google.protobuf.EnumValueDescriptorProto:class'
+          - name: EnumValueOptions
+            uid: '@google-cloud/deploy!protos.google.protobuf.EnumValueOptions:class'
+          - name: ExecutionConfig
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.ExecutionConfig:class'
+          - name: ExtensionRange
+            uid: '@google-cloud/deploy!protos.google.protobuf.DescriptorProto.ExtensionRange:class'
+          - name: ExtensionRangeOptions
+            uid: '@google-cloud/deploy!protos.google.protobuf.ExtensionRangeOptions:class'
+          - name: FieldDescriptorProto
+            uid: '@google-cloud/deploy!protos.google.protobuf.FieldDescriptorProto:class'
+          - name: FieldMask
+            uid: '@google-cloud/deploy!protos.google.protobuf.FieldMask:class'
+          - name: FieldOptions
+            uid: '@google-cloud/deploy!protos.google.protobuf.FieldOptions:class'
+          - name: FileDescriptorProto
+            uid: '@google-cloud/deploy!protos.google.protobuf.FileDescriptorProto:class'
+          - name: FileDescriptorSet
+            uid: '@google-cloud/deploy!protos.google.protobuf.FileDescriptorSet:class'
+          - name: FileOptions
+            uid: '@google-cloud/deploy!protos.google.protobuf.FileOptions:class'
+          - name: GeneratedCodeInfo
+            uid: '@google-cloud/deploy!protos.google.protobuf.GeneratedCodeInfo:class'
+          - name: GetConfigRequest
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.GetConfigRequest:class'
+          - name: GetDeliveryPipelineRequest
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.GetDeliveryPipelineRequest:class'
+          - name: GetOperationRequest
+            uid: '@google-cloud/deploy!protos.google.longrunning.GetOperationRequest:class'
+          - name: GetReleaseRequest
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.GetReleaseRequest:class'
+          - name: GetRolloutRequest
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.GetRolloutRequest:class'
+          - name: GetTargetRequest
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.GetTargetRequest:class'
+          - name: GkeCluster
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.GkeCluster:class'
+          - name: Http
+            uid: '@google-cloud/deploy!protos.google.api.Http:class'
+          - name: HttpRule
+            uid: '@google-cloud/deploy!protos.google.api.HttpRule:class'
+          - name: ListDeliveryPipelinesRequest
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.ListDeliveryPipelinesRequest:class'
+          - name: ListDeliveryPipelinesResponse
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.ListDeliveryPipelinesResponse:class'
+          - name: ListOperationsRequest
+            uid: '@google-cloud/deploy!protos.google.longrunning.ListOperationsRequest:class'
+          - name: ListOperationsResponse
+            uid: '@google-cloud/deploy!protos.google.longrunning.ListOperationsResponse:class'
+          - name: ListReleasesRequest
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.ListReleasesRequest:class'
+          - name: ListReleasesResponse
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.ListReleasesResponse:class'
+          - name: ListRolloutsRequest
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.ListRolloutsRequest:class'
+          - name: ListRolloutsResponse
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.ListRolloutsResponse:class'
+          - name: ListTargetsRequest
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.ListTargetsRequest:class'
+          - name: ListTargetsResponse
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.ListTargetsResponse:class'
+          - name: Location
+            uid: '@google-cloud/deploy!protos.google.protobuf.SourceCodeInfo.Location:class'
+          - name: MessageOptions
+            uid: '@google-cloud/deploy!protos.google.protobuf.MessageOptions:class'
+          - name: MethodDescriptorProto
+            uid: '@google-cloud/deploy!protos.google.protobuf.MethodDescriptorProto:class'
+          - name: MethodOptions
+            uid: '@google-cloud/deploy!protos.google.protobuf.MethodOptions:class'
+          - name: NamePart
+            uid: '@google-cloud/deploy!protos.google.protobuf.UninterpretedOption.NamePart:class'
+          - name: OneofDescriptorProto
+            uid: '@google-cloud/deploy!protos.google.protobuf.OneofDescriptorProto:class'
+          - name: OneofOptions
+            uid: '@google-cloud/deploy!protos.google.protobuf.OneofOptions:class'
+          - name: Operation
+            uid: '@google-cloud/deploy!protos.google.longrunning.Operation:class'
+          - name: OperationInfo
+            uid: '@google-cloud/deploy!protos.google.longrunning.OperationInfo:class'
+          - name: OperationMetadata
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.OperationMetadata:class'
+          - name: Operations
+            uid: '@google-cloud/deploy!protos.google.longrunning.Operations:class'
+          - name: PipelineCondition
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.PipelineCondition:class'
+          - name: PipelineReadyCondition
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.PipelineReadyCondition:class'
+          - name: PrivatePool
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.PrivatePool:class'
+          - name: Release
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.Release:class'
+          - name: ReservedRange
+            uid: '@google-cloud/deploy!protos.google.protobuf.DescriptorProto.ReservedRange:class'
+          - name: ResourceDescriptor
+            uid: '@google-cloud/deploy!protos.google.api.ResourceDescriptor:class'
+          - name: ResourceReference
+            uid: '@google-cloud/deploy!protos.google.api.ResourceReference:class'
+          - name: Rollout
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.Rollout:class'
+          - name: SerialPipeline
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.SerialPipeline:class'
+          - name: ServiceDescriptorProto
+            uid: '@google-cloud/deploy!protos.google.protobuf.ServiceDescriptorProto:class'
+          - name: ServiceOptions
+            uid: '@google-cloud/deploy!protos.google.protobuf.ServiceOptions:class'
+          - name: SkaffoldVersion
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.SkaffoldVersion:class'
+          - name: SourceCodeInfo
+            uid: '@google-cloud/deploy!protos.google.protobuf.SourceCodeInfo:class'
+          - name: Stage
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.Stage:class'
+          - name: Status
+            uid: '@google-cloud/deploy!protos.google.rpc.Status:class'
+          - name: Target
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.Target:class'
+          - name: TargetArtifact
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.TargetArtifact:class'
+          - name: TargetRender
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.Release.TargetRender:class'
+          - name: TargetsPresentCondition
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.TargetsPresentCondition:class'
+          - name: Timestamp
+            uid: '@google-cloud/deploy!protos.google.protobuf.Timestamp:class'
+          - name: UninterpretedOption
+            uid: '@google-cloud/deploy!protos.google.protobuf.UninterpretedOption:class'
+          - name: UpdateDeliveryPipelineRequest
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.UpdateDeliveryPipelineRequest:class'
+          - name: UpdateTargetRequest
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.UpdateTargetRequest:class'
+          - name: WaitOperationRequest
+            uid: '@google-cloud/deploy!protos.google.longrunning.WaitOperationRequest:class'
+      - name: Enums
+        items:
+          - name: ApprovalState
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.Rollout.ApprovalState:enum'
+          - name: CType
+            uid: '@google-cloud/deploy!protos.google.protobuf.FieldOptions.CType:enum'
+          - name: ExecutionEnvironmentUsage
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.ExecutionConfig.ExecutionEnvironmentUsage:enum'
+          - name: FieldBehavior
+            uid: '@google-cloud/deploy!protos.google.api.FieldBehavior:enum'
+          - name: History
+            uid: '@google-cloud/deploy!protos.google.api.ResourceDescriptor.History:enum'
+          - name: IdempotencyLevel
+            uid: '@google-cloud/deploy!protos.google.protobuf.MethodOptions.IdempotencyLevel:enum'
+          - name: JSType
+            uid: '@google-cloud/deploy!protos.google.protobuf.FieldOptions.JSType:enum'
+          - name: Label
+            uid: '@google-cloud/deploy!protos.google.protobuf.FieldDescriptorProto.Label:enum'
+          - name: OptimizeMode
+            uid: '@google-cloud/deploy!protos.google.protobuf.FileOptions.OptimizeMode:enum'
+          - name: RenderState
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.Release.RenderState:enum'
+          - name: State
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.Rollout.State:enum'
+          - name: Style
+            uid: '@google-cloud/deploy!protos.google.api.ResourceDescriptor.Style:enum'
+          - name: TargetRenderState
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.Release.TargetRender.TargetRenderState:enum'
+          - name: Type
+            uid: '@google-cloud/deploy!protos.google.protobuf.FieldDescriptorProto.Type:enum'
+      - name: Interfaces
+        items:
+          - name: IAnnotation
+            uid: '@google-cloud/deploy!protos.google.protobuf.GeneratedCodeInfo.IAnnotation:interface'
+          - name: IAny
+            uid: '@google-cloud/deploy!protos.google.protobuf.IAny:interface'
+          - name: IApproveRolloutRequest
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IApproveRolloutRequest:interface'
+          - name: IApproveRolloutResponse
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IApproveRolloutResponse:interface'
+          - name: IBuildArtifact
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IBuildArtifact:interface'
+          - name: ICancelOperationRequest
+            uid: '@google-cloud/deploy!protos.google.longrunning.ICancelOperationRequest:interface'
+          - name: IConfig
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IConfig:interface'
+          - name: ICreateDeliveryPipelineRequest
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.ICreateDeliveryPipelineRequest:interface'
+          - name: ICreateReleaseRequest
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.ICreateReleaseRequest:interface'
+          - name: ICreateRolloutRequest
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.ICreateRolloutRequest:interface'
+          - name: ICreateTargetRequest
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.ICreateTargetRequest:interface'
+          - name: ICustomHttpPattern
+            uid: '@google-cloud/deploy!protos.google.api.ICustomHttpPattern:interface'
+          - name: IDate
+            uid: '@google-cloud/deploy!protos.google.type.IDate:interface'
+          - name: IDefaultPool
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IDefaultPool:interface'
+          - name: IDeleteDeliveryPipelineRequest
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IDeleteDeliveryPipelineRequest:interface'
+          - name: IDeleteOperationRequest
+            uid: '@google-cloud/deploy!protos.google.longrunning.IDeleteOperationRequest:interface'
+          - name: IDeleteTargetRequest
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IDeleteTargetRequest:interface'
+          - name: IDeliveryPipeline
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IDeliveryPipeline:interface'
+          - name: IDescriptorProto
+            uid: '@google-cloud/deploy!protos.google.protobuf.IDescriptorProto:interface'
+          - name: IDuration
+            uid: '@google-cloud/deploy!protos.google.protobuf.IDuration:interface'
+          - name: IEmpty
+            uid: '@google-cloud/deploy!protos.google.protobuf.IEmpty:interface'
+          - name: IEnumDescriptorProto
+            uid: '@google-cloud/deploy!protos.google.protobuf.IEnumDescriptorProto:interface'
+          - name: IEnumOptions
+            uid: '@google-cloud/deploy!protos.google.protobuf.IEnumOptions:interface'
+          - name: IEnumReservedRange
+            uid: '@google-cloud/deploy!protos.google.protobuf.EnumDescriptorProto.IEnumReservedRange:interface'
+          - name: IEnumValueDescriptorProto
+            uid: '@google-cloud/deploy!protos.google.protobuf.IEnumValueDescriptorProto:interface'
+          - name: IEnumValueOptions
+            uid: '@google-cloud/deploy!protos.google.protobuf.IEnumValueOptions:interface'
+          - name: IExecutionConfig
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IExecutionConfig:interface'
+          - name: IExtensionRange
+            uid: '@google-cloud/deploy!protos.google.protobuf.DescriptorProto.IExtensionRange:interface'
+          - name: IExtensionRangeOptions
+            uid: '@google-cloud/deploy!protos.google.protobuf.IExtensionRangeOptions:interface'
+          - name: IFieldDescriptorProto
+            uid: '@google-cloud/deploy!protos.google.protobuf.IFieldDescriptorProto:interface'
+          - name: IFieldMask
+            uid: '@google-cloud/deploy!protos.google.protobuf.IFieldMask:interface'
+          - name: IFieldOptions
+            uid: '@google-cloud/deploy!protos.google.protobuf.IFieldOptions:interface'
+          - name: IFileDescriptorProto
+            uid: '@google-cloud/deploy!protos.google.protobuf.IFileDescriptorProto:interface'
+          - name: IFileDescriptorSet
+            uid: '@google-cloud/deploy!protos.google.protobuf.IFileDescriptorSet:interface'
+          - name: IFileOptions
+            uid: '@google-cloud/deploy!protos.google.protobuf.IFileOptions:interface'
+          - name: IGeneratedCodeInfo
+            uid: '@google-cloud/deploy!protos.google.protobuf.IGeneratedCodeInfo:interface'
+          - name: IGetConfigRequest
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IGetConfigRequest:interface'
+          - name: IGetDeliveryPipelineRequest
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IGetDeliveryPipelineRequest:interface'
+          - name: IGetOperationRequest
+            uid: '@google-cloud/deploy!protos.google.longrunning.IGetOperationRequest:interface'
+          - name: IGetReleaseRequest
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IGetReleaseRequest:interface'
+          - name: IGetRolloutRequest
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IGetRolloutRequest:interface'
+          - name: IGetTargetRequest
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IGetTargetRequest:interface'
+          - name: IGkeCluster
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IGkeCluster:interface'
+          - name: IHttp
+            uid: '@google-cloud/deploy!protos.google.api.IHttp:interface'
+          - name: IHttpRule
+            uid: '@google-cloud/deploy!protos.google.api.IHttpRule:interface'
+          - name: IListDeliveryPipelinesRequest
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IListDeliveryPipelinesRequest:interface'
+          - name: IListDeliveryPipelinesResponse
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IListDeliveryPipelinesResponse:interface'
+          - name: IListOperationsRequest
+            uid: '@google-cloud/deploy!protos.google.longrunning.IListOperationsRequest:interface'
+          - name: IListOperationsResponse
+            uid: '@google-cloud/deploy!protos.google.longrunning.IListOperationsResponse:interface'
+          - name: IListReleasesRequest
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IListReleasesRequest:interface'
+          - name: IListReleasesResponse
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IListReleasesResponse:interface'
+          - name: IListRolloutsRequest
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IListRolloutsRequest:interface'
+          - name: IListRolloutsResponse
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IListRolloutsResponse:interface'
+          - name: IListTargetsRequest
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IListTargetsRequest:interface'
+          - name: IListTargetsResponse
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IListTargetsResponse:interface'
+          - name: ILocation
+            uid: '@google-cloud/deploy!protos.google.protobuf.SourceCodeInfo.ILocation:interface'
+          - name: IMessageOptions
+            uid: '@google-cloud/deploy!protos.google.protobuf.IMessageOptions:interface'
+          - name: IMethodDescriptorProto
+            uid: '@google-cloud/deploy!protos.google.protobuf.IMethodDescriptorProto:interface'
+          - name: IMethodOptions
+            uid: '@google-cloud/deploy!protos.google.protobuf.IMethodOptions:interface'
+          - name: INamePart
+            uid: '@google-cloud/deploy!protos.google.protobuf.UninterpretedOption.INamePart:interface'
+          - name: IOneofDescriptorProto
+            uid: '@google-cloud/deploy!protos.google.protobuf.IOneofDescriptorProto:interface'
+          - name: IOneofOptions
+            uid: '@google-cloud/deploy!protos.google.protobuf.IOneofOptions:interface'
+          - name: IOperation
+            uid: '@google-cloud/deploy!protos.google.longrunning.IOperation:interface'
+          - name: IOperationInfo
+            uid: '@google-cloud/deploy!protos.google.longrunning.IOperationInfo:interface'
+          - name: IOperationMetadata
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IOperationMetadata:interface'
+          - name: IPipelineCondition
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IPipelineCondition:interface'
+          - name: IPipelineReadyCondition
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IPipelineReadyCondition:interface'
+          - name: IPrivatePool
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IPrivatePool:interface'
+          - name: IRelease
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IRelease:interface'
+          - name: IReservedRange
+            uid: '@google-cloud/deploy!protos.google.protobuf.DescriptorProto.IReservedRange:interface'
+          - name: IResourceDescriptor
+            uid: '@google-cloud/deploy!protos.google.api.IResourceDescriptor:interface'
+          - name: IResourceReference
+            uid: '@google-cloud/deploy!protos.google.api.IResourceReference:interface'
+          - name: IRollout
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IRollout:interface'
+          - name: ISerialPipeline
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.ISerialPipeline:interface'
+          - name: IServiceDescriptorProto
+            uid: '@google-cloud/deploy!protos.google.protobuf.IServiceDescriptorProto:interface'
+          - name: IServiceOptions
+            uid: '@google-cloud/deploy!protos.google.protobuf.IServiceOptions:interface'
+          - name: ISkaffoldVersion
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.ISkaffoldVersion:interface'
+          - name: ISourceCodeInfo
+            uid: '@google-cloud/deploy!protos.google.protobuf.ISourceCodeInfo:interface'
+          - name: IStage
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IStage:interface'
+          - name: IStatus
+            uid: '@google-cloud/deploy!protos.google.rpc.IStatus:interface'
+          - name: ITarget
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.ITarget:interface'
+          - name: ITargetArtifact
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.ITargetArtifact:interface'
+          - name: ITargetRender
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.Release.ITargetRender:interface'
+          - name: ITargetsPresentCondition
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.ITargetsPresentCondition:interface'
+          - name: ITimestamp
+            uid: '@google-cloud/deploy!protos.google.protobuf.ITimestamp:interface'
+          - name: IUninterpretedOption
+            uid: '@google-cloud/deploy!protos.google.protobuf.IUninterpretedOption:interface'
+          - name: IUpdateDeliveryPipelineRequest
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IUpdateDeliveryPipelineRequest:interface'
+          - name: IUpdateTargetRequest
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IUpdateTargetRequest:interface'
+          - name: IWaitOperationRequest
+            uid: '@google-cloud/deploy!protos.google.longrunning.IWaitOperationRequest:interface'
 
 `
 
