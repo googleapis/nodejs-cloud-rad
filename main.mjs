@@ -56,7 +56,7 @@ function deploy() {
     process.env.CREDENTIALS ||
     process.env.KOKORO_KEYSTORE_DIR + '/73713_docuploader_service_account';
 
-  return execa('python3', [
+  return execaAndLog('python3', [
     '-m',
     'docuploader',
     'upload',
@@ -67,7 +67,7 @@ function deploy() {
     credentials,
     '--staging-bucket',
     bucket,
-  ]);
+  ], process.cwd());
 }
 
 (async () => {
