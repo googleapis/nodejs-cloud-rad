@@ -15,7 +15,7 @@
   See the License for the specific language governing permissions and
   limitations under the License.
 */
-import {execa} from 'execa';
+import {execaAndLog} from './util.mjs'
 import fs from 'fs-extra';
 import generateDevsite from './lib/generate-devsite.mjs';
 import {join} from 'path';
@@ -27,9 +27,9 @@ async function createMetadata() {
   const packageShortName = packageInfo.name.replace('@google-cloud/', '');
   const repoMetadata = await fs.readJson(join(cwd, '.repo-metadata.json'));
 
-  await execa('pip', ['install', '-U', 'pip']);
-  await execa('python3', ['-m', 'pip', 'install', '--user', 'gcp-docuploader']);
-  await execa('python3', [
+  await execaAndLog('pip', ['install', '-U', 'pip'], cwd)
+  await execaAndLog('python3', ['-m', 'pip', 'install', '--user', 'gcp-docuploader'], cwd)
+  await execaAndLog('python3', [
     '-m',
     'docuploader',
     'create-metadata',
@@ -40,7 +40,8 @@ async function createMetadata() {
     `--product-page=${repoMetadata.product_documentation}`,
     `--github-repository=${repoMetadata.repo}`,
     `--issue-tracker=${repoMetadata.issue_tracker}`,
-  ]);
+  ], cwd);
+
 
   return fs.copyFile(
     join(cwd, 'docs.metadata'),

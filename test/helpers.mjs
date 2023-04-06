@@ -14,10 +14,9 @@
   limitations under the License.
 */
 import {basename, join} from 'path';
-import {execa} from 'execa';
+import {execaAndLog, matchesGlobs} from '../lib/util.mjs';
 import fs from 'fs-extra';
 import klaw from 'klaw';
-import {matchesGlobs} from '../lib/util.mjs';
 import os from 'os';
 
 export async function createTmpDir() {
@@ -63,9 +62,9 @@ export const mochaHooks = {
       join(process.cwd(), 'test', 'fixtures', 'nodejs-deploy'),
       nodeDeployDir
     );
-    await execa('npm', ['install'], {cwd: nodeDeployDir});
+    await execaAndLog('npm', ['install'], nodeDeployDir);
 
-    return execa('npm', ['run', 'compile'], {cwd: nodeDeployDir});
+    return execaAndLog('npm', ['run', 'compile'], nodeDeployDir);
   },
   async afterAll() {
     return removeTmpDir(mochaHooks._tmpDir);
