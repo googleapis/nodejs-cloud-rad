@@ -14,7 +14,8 @@
   limitations under the License.
 */
 import {basename, join} from 'path';
-import {execaAndLog, matchesGlobs} from '../lib/util.mjs';
+import {execa} from 'execa';
+import {matchesGlobs, withLogs} from '../lib/util.mjs';
 import fs from 'fs-extra';
 import klaw from 'klaw';
 import os from 'os';
@@ -62,9 +63,9 @@ export const mochaHooks = {
       join(process.cwd(), 'test', 'fixtures', 'nodejs-deploy'),
       nodeDeployDir
     );
-    await execaAndLog('npm', ['install'], nodeDeployDir);
+    await withLogs(execa)('npm', ['install'], nodeDeployDir);
 
-    return execaAndLog('npm', ['run', 'compile'], nodeDeployDir);
+    return withLogs(execa)('npm', ['run', 'compile'], nodeDeployDir);
   },
   async afterAll() {
     return removeTmpDir(mochaHooks._tmpDir);

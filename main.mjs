@@ -15,10 +15,11 @@
   See the License for the specific language governing permissions and
   limitations under the License.
 */
-import {execaAndLog} from './lib/util.mjs'
+import {execa} from 'execa';
 import fs from 'fs-extra';
 import generateDevsite from './lib/generate-devsite.mjs';
 import {join} from 'path';
+import {withLogs} from './lib/util.mjs'
 
 // Creates docs.metadata, based on package.json and .repo-metadata.json.
 async function createMetadata() {
@@ -27,9 +28,9 @@ async function createMetadata() {
   const packageShortName = packageInfo.name.replace('@google-cloud/', '');
   const repoMetadata = await fs.readJson(join(cwd, '.repo-metadata.json'));
 
-  await execaAndLog('pip', ['install', '-U', 'pip'], cwd)
-  await execaAndLog('python3', ['-m', 'pip', 'install', '--user', 'gcp-docuploader'], cwd)
-  await execaAndLog('python3', [
+  await withLogs(execa)('pip', ['install', '-U', 'pip'], cwd)
+  await withLogs(execa)('python3', ['-m', 'pip', 'install', '--user', 'gcp-docuploader'], cwd)
+  await withLogs(execa)('python3', [
     '-m',
     'docuploader',
     'create-metadata',
@@ -56,7 +57,7 @@ function deploy() {
     process.env.CREDENTIALS ||
     process.env.KOKORO_KEYSTORE_DIR + '/73713_docuploader_service_account';
 
-  return execaAndLog('python3', [
+  return withLogs(execa)('python3', [
     '-m',
     'docuploader',
     'upload',
