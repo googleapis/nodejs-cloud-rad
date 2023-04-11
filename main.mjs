@@ -19,6 +19,7 @@ import {execa} from 'execa';
 import fs from 'fs-extra';
 import generateDevsite from './lib/generate-devsite.mjs';
 import {join} from 'path';
+import {withLogs} from './lib/util.mjs'
 
 // Creates docs.metadata, based on package.json and .repo-metadata.json.
 async function createMetadata() {
@@ -27,9 +28,9 @@ async function createMetadata() {
   const packageShortName = packageInfo.name.replace('@google-cloud/', '');
   const repoMetadata = await fs.readJson(join(cwd, '.repo-metadata.json'));
 
-  await execa('pip', ['install', '-U', 'pip']);
-  await execa('python3', ['-m', 'pip', 'install', '--user', 'gcp-docuploader']);
-  await execa('python3', [
+  await withLogs(execa)('pip', ['install', '-U', 'pip'], cwd)
+  await withLogs(execa)('python3', ['-m', 'pip', 'install', '--user', 'gcp-docuploader'], cwd)
+  await withLogs(execa)('python3', [
     '-m',
     'docuploader',
     'create-metadata',
@@ -40,7 +41,8 @@ async function createMetadata() {
     `--product-page=${repoMetadata.product_documentation}`,
     `--github-repository=${repoMetadata.repo}`,
     `--issue-tracker=${repoMetadata.issue_tracker}`,
-  ]);
+  ], cwd);
+
 
   return fs.copyFile(
     join(cwd, 'docs.metadata'),
@@ -55,7 +57,7 @@ function deploy() {
     process.env.CREDENTIALS ||
     process.env.KOKORO_KEYSTORE_DIR + '/73713_docuploader_service_account';
 
-  return execa('python3', [
+  return withLogs(execa)('python3', [
     '-m',
     'docuploader',
     'upload',
@@ -66,7 +68,7 @@ function deploy() {
     credentials,
     '--staging-bucket',
     bucket,
-  ]);
+  ], process.cwd());
 }
 
 (async () => {
