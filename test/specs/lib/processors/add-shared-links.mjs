@@ -13,6 +13,7 @@
   See the License for the specific language governing permissions and
   limitations under the License.
 */
+
 import addSharedLinks from '../../../../lib/processors/add-shared-links.mjs';
 import {strict as assert} from 'assert';
 import {globResults} from '../../../helpers.mjs';

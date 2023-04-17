@@ -193,36 +193,6 @@ items:
             uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.UpdateTargetRequest:class'
           - name: WaitOperationRequest
             uid: '@google-cloud/deploy!protos.google.longrunning.WaitOperationRequest:class'
-      - name: Enums
-        items:
-          - name: ApprovalState
-            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.Rollout.ApprovalState:enum'
-          - name: CType
-            uid: '@google-cloud/deploy!protos.google.protobuf.FieldOptions.CType:enum'
-          - name: ExecutionEnvironmentUsage
-            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.ExecutionConfig.ExecutionEnvironmentUsage:enum'
-          - name: FieldBehavior
-            uid: '@google-cloud/deploy!protos.google.api.FieldBehavior:enum'
-          - name: History
-            uid: '@google-cloud/deploy!protos.google.api.ResourceDescriptor.History:enum'
-          - name: IdempotencyLevel
-            uid: '@google-cloud/deploy!protos.google.protobuf.MethodOptions.IdempotencyLevel:enum'
-          - name: JSType
-            uid: '@google-cloud/deploy!protos.google.protobuf.FieldOptions.JSType:enum'
-          - name: Label
-            uid: '@google-cloud/deploy!protos.google.protobuf.FieldDescriptorProto.Label:enum'
-          - name: OptimizeMode
-            uid: '@google-cloud/deploy!protos.google.protobuf.FileOptions.OptimizeMode:enum'
-          - name: RenderState
-            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.Release.RenderState:enum'
-          - name: State
-            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.Rollout.State:enum'
-          - name: Style
-            uid: '@google-cloud/deploy!protos.google.api.ResourceDescriptor.Style:enum'
-          - name: TargetRenderState
-            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.Release.TargetRender.TargetRenderState:enum'
-          - name: Type
-            uid: '@google-cloud/deploy!protos.google.protobuf.FieldDescriptorProto.Type:enum'
       - name: Interfaces
         items:
           - name: IAnnotation
@@ -403,6 +373,36 @@ items:
             uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IUpdateTargetRequest:interface'
           - name: IWaitOperationRequest
             uid: '@google-cloud/deploy!protos.google.longrunning.IWaitOperationRequest:interface'
+      - name: Enums
+        items:
+          - name: ApprovalState
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.Rollout.ApprovalState:enum'
+          - name: CType
+            uid: '@google-cloud/deploy!protos.google.protobuf.FieldOptions.CType:enum'
+          - name: ExecutionEnvironmentUsage
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.ExecutionConfig.ExecutionEnvironmentUsage:enum'
+          - name: FieldBehavior
+            uid: '@google-cloud/deploy!protos.google.api.FieldBehavior:enum'
+          - name: History
+            uid: '@google-cloud/deploy!protos.google.api.ResourceDescriptor.History:enum'
+          - name: IdempotencyLevel
+            uid: '@google-cloud/deploy!protos.google.protobuf.MethodOptions.IdempotencyLevel:enum'
+          - name: JSType
+            uid: '@google-cloud/deploy!protos.google.protobuf.FieldOptions.JSType:enum'
+          - name: Label
+            uid: '@google-cloud/deploy!protos.google.protobuf.FieldDescriptorProto.Label:enum'
+          - name: OptimizeMode
+            uid: '@google-cloud/deploy!protos.google.protobuf.FileOptions.OptimizeMode:enum'
+          - name: RenderState
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.Release.RenderState:enum'
+          - name: State
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.Rollout.State:enum'
+          - name: Style
+            uid: '@google-cloud/deploy!protos.google.api.ResourceDescriptor.Style:enum'
+          - name: TargetRenderState
+            uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.Release.TargetRender.TargetRenderState:enum'
+          - name: Type
+            uid: '@google-cloud/deploy!protos.google.protobuf.FieldDescriptorProto.Type:enum'
 
 `
 

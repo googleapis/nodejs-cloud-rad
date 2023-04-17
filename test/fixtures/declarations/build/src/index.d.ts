@@ -13,6 +13,7 @@
   See the License for the specific language governing permissions and
   limitations under the License.
 */
+
 import * as v1 from './v1';
 declare const FooClient: typeof v1.FooClient;
 type FooClient = v1.FooClient;

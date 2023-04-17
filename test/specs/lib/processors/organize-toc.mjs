@@ -13,6 +13,7 @@
   See the License for the specific language governing permissions and
   limitations under the License.
 */
+
 import {strict as assert} from 'assert';
 import {globResults} from '../../../helpers.mjs';
 import {join} from 'path';
@@ -159,56 +160,12 @@ describe('organize TOC processor', () => {
           uid: '@google-cloud/foo!',
           items: [
             {
+              name: 'FooClient',
+              uid: '@google-cloud/foo!v1.FooClient:class',
+            },
+            {
               name: 'RandomWidget',
               uid: '@google-cloud/foo!protos.google.foo.v1.RandomWidget:widget',
-            },
-            {
-              name: 'FooClient',
-              uid: '@google-cloud/foo!v1.FooClient:class',
-            },
-          ],
-        },
-      ],
-    };
-
-    assert.deepStrictEqual(actual, expected);
-  });
-
-  it('preserves items with no kind and does not sort them', async () => {
-    const actual = await organizeToc.process({
-      metadata,
-      obj: {
-        items: [
-          {
-            name: 'foo',
-            uid: '@google-cloud/foo!',
-            items: [
-              {
-                name: 'Quickstart',
-                homepage: 'index.html',
-              },
-              {
-                name: 'FooClient',
-                uid: '@google-cloud/foo!v1.FooClient:class',
-              },
-            ],
-          },
-        ],
-      },
-    });
-    const expected = {
-      items: [
-        {
-          name: 'foo',
-          uid: '@google-cloud/foo!',
-          items: [
-            {
-              name: 'Quickstart',
-              homepage: 'index.html',
-            },
-            {
-              name: 'FooClient',
-              uid: '@google-cloud/foo!v1.FooClient:class',
             },
           ],
         },
@@ -373,7 +330,7 @@ describe('organize TOC processor', () => {
     assert.deepStrictEqual(actual, expected);
   });
 
-  it('lists classes, then enums, then interfaces', async () => {
+  it('lists classes, then interfaces, then enums', async () => {
     const actual = await organizeToc.process({
       metadata,
       obj: {
@@ -423,20 +380,20 @@ describe('organize TOC processor', () => {
               ],
             },
             {
-              name: 'Enums',
-              items: [
-                {
-                  name: 'SomeProtoEnum',
-                  uid: '@google-cloud/foo!protos.google.foo.v1.SomeProtoEnum:enum',
-                },
-              ],
-            },
-            {
               name: 'Interfaces',
               items: [
                 {
                   name: 'IProtoInterface',
                   uid: '@google-cloud/foo!protos.google.foo.v1.IProtoInterface:interface',
+                },
+              ],
+            },
+            {
+              name: 'Enums',
+              items: [
+                {
+                  name: 'SomeProtoEnum',
+                  uid: '@google-cloud/foo!protos.google.foo.v1.SomeProtoEnum:enum',
                 },
               ],
             },
@@ -514,19 +471,6 @@ describe('organize TOC processor', () => {
               ],
             },
             {
-              name: 'Enums',
-              items: [
-                {
-                  name: 'AnotherProtoEnum',
-                  uid: '@google-cloud/foo!protos.google.foo.v1.AnotherProtoEnum:enum',
-                },
-                {
-                  name: 'SomeProtoEnum',
-                  uid: '@google-cloud/foo!protos.google.foo.v1.SomeProtoEnum:enum',
-                },
-              ],
-            },
-            {
               name: 'Interfaces',
               items: [
                 {
@@ -536,6 +480,19 @@ describe('organize TOC processor', () => {
                 {
                   name: 'IProtoInterface',
                   uid: '@google-cloud/foo!protos.google.foo.v1.IProtoInterface:interface',
+                },
+              ],
+            },
+            {
+              name: 'Enums',
+              items: [
+                {
+                  name: 'AnotherProtoEnum',
+                  uid: '@google-cloud/foo!protos.google.foo.v1.AnotherProtoEnum:enum',
+                },
+                {
+                  name: 'SomeProtoEnum',
+                  uid: '@google-cloud/foo!protos.google.foo.v1.SomeProtoEnum:enum',
                 },
               ],
             },
