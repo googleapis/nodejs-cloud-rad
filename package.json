@@ -10,13 +10,13 @@
   "scripts": {
     "coverage": "c8 npm run test",
     "test": "env mocha --timeout=50000 --require './test/helpers.mjs' --recursive './test/specs/**/*.mjs'",
-    "update-snapshots": "env SNAPSHOT_UPDATE=1 mocha --timeout=5000 --require './test/helpers.mjs' './test/specs/generate-devsite.mjs'"
+    "update-snapshots": "env SNAPSHOT_UPDATE=1 mocha --timeout=50000 --require './test/helpers.mjs' './test/specs/lib/generate-devsite.mjs'"
   },
   "author": "Google LLC",
   "license": "Apache-2.0",
   "dependencies": {
     "@googleapis/api-documenter": "~7.13.0",
-    "@microsoft/api-extractor": "~7.19.0",
+    "@microsoft/api-extractor": "~7.34.0",
     "@rushstack/node-core-library": "^3.55.2",
     "execa": "^7.0.0",
     "fs-extra": "^11.1.0",
