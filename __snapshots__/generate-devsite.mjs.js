@@ -464,7 +464,7 @@ items:
       content: type CloudDeployClient = v1.CloudDeployClient;
       return:
         type:
-          - '@google-cloud/deploy!CloudDeployClient~0:complex'
+          - '@google-cloud/deploy!v1.CloudDeployClient_2:class'
   - uid: '@google-cloud/deploy!CloudDeployClient:var'
     name: CloudDeployClient
     fullName: CloudDeployClient
@@ -475,7 +475,7 @@ items:
       content: 'CloudDeployClient: typeof v1.CloudDeployClient'
       return:
         type:
-          - '@google-cloud/deploy!CloudDeployClient~1:complex'
+          - '@google-cloud/deploy!CloudDeployClient~0:complex'
   - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.CloudDeploy.ApproveRolloutCallback:type'
     summary: Callback as used by .
     name: protos.google.cloud.deploy.v1.CloudDeploy.ApproveRolloutCallback
@@ -774,44 +774,44 @@ references:
     fullName: |-
       {
           v1: typeof v1;
-          CloudDeployClient: typeof v1.CloudDeployClient;
+          CloudDeployClient: typeof v1.CloudDeployClient_2;
       }
     spec.typeScript:
       - name: |-
           {
-              v1: typeof v1;
-              CloudDeployClient: typeof v1.
+              v1: typeof 
         fullName: |-
           {
-              v1: typeof v1;
-              CloudDeployClient: typeof v1.
-      - uid: '@google-cloud/deploy!CloudDeployClient:class'
-        name: CloudDeployClient
-        fullName: CloudDeployClient
+              v1: typeof 
+      - uid: '@google-cloud/deploy!v1'
+        name: v1
+        fullName: v1
+      - name: |-
+          ;
+              CloudDeployClient: typeof 
+        fullName: |-
+          ;
+              CloudDeployClient: typeof 
+      - uid: '@google-cloud/deploy!v1.CloudDeployClient_2:class'
+        name: v1.CloudDeployClient
+        fullName: v1.CloudDeployClient_2
       - name: |-
           ;
           }
         fullName: |-
           ;
           }
-  - uid: '@google-cloud/deploy!CloudDeployClient~0:complex'
+  - uid: '@google-cloud/deploy!v1.CloudDeployClient_2:class'
     name: v1.CloudDeployClient
-    fullName: v1.CloudDeployClient
-    spec.typeScript:
-      - name: v1.
-        fullName: v1.
-      - uid: '@google-cloud/deploy!CloudDeployClient:class'
-        name: CloudDeployClient
-        fullName: CloudDeployClient
-  - uid: '@google-cloud/deploy!CloudDeployClient~1:complex'
+  - uid: '@google-cloud/deploy!CloudDeployClient~0:complex'
     name: typeof v1.CloudDeployClient
-    fullName: typeof v1.CloudDeployClient
+    fullName: typeof v1.CloudDeployClient_2
     spec.typeScript:
-      - name: typeof v1.
-        fullName: typeof v1.
-      - uid: '@google-cloud/deploy!CloudDeployClient:class'
-        name: CloudDeployClient
-        fullName: CloudDeployClient
+      - name: 'typeof '
+        fullName: 'typeof '
+      - uid: '@google-cloud/deploy!v1.CloudDeployClient_2:class'
+        name: v1.CloudDeployClient
+        fullName: v1.CloudDeployClient_2
   - uid: '@google-cloud/deploy!protos.google.api.CustomHttpPattern:class'
     name: protos.google.api.CustomHttpPattern
   - uid: '@google-cloud/deploy!protos.google.api.FieldBehavior:enum'
@@ -848,7 +848,7 @@ references:
     name: protos.google.cloud.deploy.v1.CloudDeploy
   - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.CloudDeploy.ApproveRolloutCallback~0:complex'
     name: '(error: (Error|null), response?: google.cloud.deploy.v1.ApproveRolloutResponse) => void'
-    fullName: '(error: (Error|null), response?: google.cloud.deploy.v1.ApproveRolloutResponse) => void'
+    fullName: '(error: (Error|null), response?: protos.google.cloud.deploy.v1.ApproveRolloutResponse) => void'
     spec.typeScript:
       - name: '(error: ('
         fullName: '(error: ('
@@ -857,14 +857,14 @@ references:
         fullName: Error
       - name: '|null), response?: '
         fullName: '|null), response?: '
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.ApproveRolloutResponse:class'
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.ApproveRolloutResponse:class'
         name: google.cloud.deploy.v1.ApproveRolloutResponse
-        fullName: google.cloud.deploy.v1.ApproveRolloutResponse
+        fullName: protos.google.cloud.deploy.v1.ApproveRolloutResponse
       - name: ) => void
         fullName: ) => void
   - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.CloudDeploy.CreateDeliveryPipelineCallback~0:complex'
     name: '(error: (Error|null), response?: google.longrunning.Operation) => void'
-    fullName: '(error: (Error|null), response?: google.longrunning.Operation) => void'
+    fullName: '(error: (Error|null), response?: protos.google.longrunning.Operation) => void'
     spec.typeScript:
       - name: '(error: ('
         fullName: '(error: ('
@@ -873,14 +873,14 @@ references:
         fullName: Error
       - name: '|null), response?: '
         fullName: '|null), response?: '
-      - uid: '@google-cloud/deploy!google.longrunning.Operation:class'
+      - uid: '@google-cloud/deploy!protos.google.longrunning.Operation:class'
         name: google.longrunning.Operation
-        fullName: google.longrunning.Operation
+        fullName: protos.google.longrunning.Operation
       - name: ) => void
         fullName: ) => void
   - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.CloudDeploy.CreateReleaseCallback~0:complex'
     name: '(error: (Error|null), response?: google.longrunning.Operation) => void'
-    fullName: '(error: (Error|null), response?: google.longrunning.Operation) => void'
+    fullName: '(error: (Error|null), response?: protos.google.longrunning.Operation) => void'
     spec.typeScript:
       - name: '(error: ('
         fullName: '(error: ('
@@ -889,14 +889,14 @@ references:
         fullName: Error
       - name: '|null), response?: '
         fullName: '|null), response?: '
-      - uid: '@google-cloud/deploy!google.longrunning.Operation:class'
+      - uid: '@google-cloud/deploy!protos.google.longrunning.Operation:class'
         name: google.longrunning.Operation
-        fullName: google.longrunning.Operation
+        fullName: protos.google.longrunning.Operation
       - name: ) => void
         fullName: ) => void
   - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.CloudDeploy.CreateRolloutCallback~0:complex'
     name: '(error: (Error|null), response?: google.longrunning.Operation) => void'
-    fullName: '(error: (Error|null), response?: google.longrunning.Operation) => void'
+    fullName: '(error: (Error|null), response?: protos.google.longrunning.Operation) => void'
     spec.typeScript:
       - name: '(error: ('
         fullName: '(error: ('
@@ -905,14 +905,14 @@ references:
         fullName: Error
       - name: '|null), response?: '
         fullName: '|null), response?: '
-      - uid: '@google-cloud/deploy!google.longrunning.Operation:class'
+      - uid: '@google-cloud/deploy!protos.google.longrunning.Operation:class'
         name: google.longrunning.Operation
-        fullName: google.longrunning.Operation
+        fullName: protos.google.longrunning.Operation
       - name: ) => void
         fullName: ) => void
   - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.CloudDeploy.CreateTargetCallback~0:complex'
     name: '(error: (Error|null), response?: google.longrunning.Operation) => void'
-    fullName: '(error: (Error|null), response?: google.longrunning.Operation) => void'
+    fullName: '(error: (Error|null), response?: protos.google.longrunning.Operation) => void'
     spec.typeScript:
       - name: '(error: ('
         fullName: '(error: ('
@@ -921,14 +921,14 @@ references:
         fullName: Error
       - name: '|null), response?: '
         fullName: '|null), response?: '
-      - uid: '@google-cloud/deploy!google.longrunning.Operation:class'
+      - uid: '@google-cloud/deploy!protos.google.longrunning.Operation:class'
         name: google.longrunning.Operation
-        fullName: google.longrunning.Operation
+        fullName: protos.google.longrunning.Operation
       - name: ) => void
         fullName: ) => void
   - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.CloudDeploy.DeleteDeliveryPipelineCallback~0:complex'
     name: '(error: (Error|null), response?: google.longrunning.Operation) => void'
-    fullName: '(error: (Error|null), response?: google.longrunning.Operation) => void'
+    fullName: '(error: (Error|null), response?: protos.google.longrunning.Operation) => void'
     spec.typeScript:
       - name: '(error: ('
         fullName: '(error: ('
@@ -937,14 +937,14 @@ references:
         fullName: Error
       - name: '|null), response?: '
         fullName: '|null), response?: '
-      - uid: '@google-cloud/deploy!google.longrunning.Operation:class'
+      - uid: '@google-cloud/deploy!protos.google.longrunning.Operation:class'
         name: google.longrunning.Operation
-        fullName: google.longrunning.Operation
+        fullName: protos.google.longrunning.Operation
       - name: ) => void
         fullName: ) => void
   - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.CloudDeploy.DeleteTargetCallback~0:complex'
     name: '(error: (Error|null), response?: google.longrunning.Operation) => void'
-    fullName: '(error: (Error|null), response?: google.longrunning.Operation) => void'
+    fullName: '(error: (Error|null), response?: protos.google.longrunning.Operation) => void'
     spec.typeScript:
       - name: '(error: ('
         fullName: '(error: ('
@@ -953,14 +953,14 @@ references:
         fullName: Error
       - name: '|null), response?: '
         fullName: '|null), response?: '
-      - uid: '@google-cloud/deploy!google.longrunning.Operation:class'
+      - uid: '@google-cloud/deploy!protos.google.longrunning.Operation:class'
         name: google.longrunning.Operation
-        fullName: google.longrunning.Operation
+        fullName: protos.google.longrunning.Operation
       - name: ) => void
         fullName: ) => void
   - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.CloudDeploy.GetConfigCallback~0:complex'
     name: '(error: (Error|null), response?: google.cloud.deploy.v1.Config) => void'
-    fullName: '(error: (Error|null), response?: google.cloud.deploy.v1.Config) => void'
+    fullName: '(error: (Error|null), response?: protos.google.cloud.deploy.v1.Config) => void'
     spec.typeScript:
       - name: '(error: ('
         fullName: '(error: ('
@@ -969,14 +969,14 @@ references:
         fullName: Error
       - name: '|null), response?: '
         fullName: '|null), response?: '
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.Config:class'
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.Config:class'
         name: google.cloud.deploy.v1.Config
-        fullName: google.cloud.deploy.v1.Config
+        fullName: protos.google.cloud.deploy.v1.Config
       - name: ) => void
         fullName: ) => void
   - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.CloudDeploy.GetDeliveryPipelineCallback~0:complex'
     name: '(error: (Error|null), response?: google.cloud.deploy.v1.DeliveryPipeline) => void'
-    fullName: '(error: (Error|null), response?: google.cloud.deploy.v1.DeliveryPipeline) => void'
+    fullName: '(error: (Error|null), response?: protos.google.cloud.deploy.v1.DeliveryPipeline) => void'
     spec.typeScript:
       - name: '(error: ('
         fullName: '(error: ('
@@ -985,14 +985,14 @@ references:
         fullName: Error
       - name: '|null), response?: '
         fullName: '|null), response?: '
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.DeliveryPipeline:class'
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.DeliveryPipeline:class'
         name: google.cloud.deploy.v1.DeliveryPipeline
-        fullName: google.cloud.deploy.v1.DeliveryPipeline
+        fullName: protos.google.cloud.deploy.v1.DeliveryPipeline
       - name: ) => void
         fullName: ) => void
   - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.CloudDeploy.GetReleaseCallback~0:complex'
     name: '(error: (Error|null), response?: google.cloud.deploy.v1.Release) => void'
-    fullName: '(error: (Error|null), response?: google.cloud.deploy.v1.Release) => void'
+    fullName: '(error: (Error|null), response?: protos.google.cloud.deploy.v1.Release) => void'
     spec.typeScript:
       - name: '(error: ('
         fullName: '(error: ('
@@ -1001,14 +1001,14 @@ references:
         fullName: Error
       - name: '|null), response?: '
         fullName: '|null), response?: '
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.Release:class'
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.Release:class'
         name: google.cloud.deploy.v1.Release
-        fullName: google.cloud.deploy.v1.Release
+        fullName: protos.google.cloud.deploy.v1.Release
       - name: ) => void
         fullName: ) => void
   - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.CloudDeploy.GetRolloutCallback~0:complex'
     name: '(error: (Error|null), response?: google.cloud.deploy.v1.Rollout) => void'
-    fullName: '(error: (Error|null), response?: google.cloud.deploy.v1.Rollout) => void'
+    fullName: '(error: (Error|null), response?: protos.google.cloud.deploy.v1.Rollout) => void'
     spec.typeScript:
       - name: '(error: ('
         fullName: '(error: ('
@@ -1017,14 +1017,14 @@ references:
         fullName: Error
       - name: '|null), response?: '
         fullName: '|null), response?: '
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.Rollout:class'
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.Rollout:class'
         name: google.cloud.deploy.v1.Rollout
-        fullName: google.cloud.deploy.v1.Rollout
+        fullName: protos.google.cloud.deploy.v1.Rollout
       - name: ) => void
         fullName: ) => void
   - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.CloudDeploy.GetTargetCallback~0:complex'
     name: '(error: (Error|null), response?: google.cloud.deploy.v1.Target) => void'
-    fullName: '(error: (Error|null), response?: google.cloud.deploy.v1.Target) => void'
+    fullName: '(error: (Error|null), response?: protos.google.cloud.deploy.v1.Target) => void'
     spec.typeScript:
       - name: '(error: ('
         fullName: '(error: ('
@@ -1033,14 +1033,14 @@ references:
         fullName: Error
       - name: '|null), response?: '
         fullName: '|null), response?: '
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.Target:class'
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.Target:class'
         name: google.cloud.deploy.v1.Target
-        fullName: google.cloud.deploy.v1.Target
+        fullName: protos.google.cloud.deploy.v1.Target
       - name: ) => void
         fullName: ) => void
   - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.CloudDeploy.ListDeliveryPipelinesCallback~0:complex'
     name: '(error: (Error|null), response?: google.cloud.deploy.v1.ListDeliveryPipelinesResponse) => void'
-    fullName: '(error: (Error|null), response?: google.cloud.deploy.v1.ListDeliveryPipelinesResponse) => void'
+    fullName: '(error: (Error|null), response?: protos.google.cloud.deploy.v1.ListDeliveryPipelinesResponse) => void'
     spec.typeScript:
       - name: '(error: ('
         fullName: '(error: ('
@@ -1049,14 +1049,14 @@ references:
         fullName: Error
       - name: '|null), response?: '
         fullName: '|null), response?: '
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.ListDeliveryPipelinesResponse:class'
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.ListDeliveryPipelinesResponse:class'
         name: google.cloud.deploy.v1.ListDeliveryPipelinesResponse
-        fullName: google.cloud.deploy.v1.ListDeliveryPipelinesResponse
+        fullName: protos.google.cloud.deploy.v1.ListDeliveryPipelinesResponse
       - name: ) => void
         fullName: ) => void
   - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.CloudDeploy.ListReleasesCallback~0:complex'
     name: '(error: (Error|null), response?: google.cloud.deploy.v1.ListReleasesResponse) => void'
-    fullName: '(error: (Error|null), response?: google.cloud.deploy.v1.ListReleasesResponse) => void'
+    fullName: '(error: (Error|null), response?: protos.google.cloud.deploy.v1.ListReleasesResponse) => void'
     spec.typeScript:
       - name: '(error: ('
         fullName: '(error: ('
@@ -1065,14 +1065,14 @@ references:
         fullName: Error
       - name: '|null), response?: '
         fullName: '|null), response?: '
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.ListReleasesResponse:class'
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.ListReleasesResponse:class'
         name: google.cloud.deploy.v1.ListReleasesResponse
-        fullName: google.cloud.deploy.v1.ListReleasesResponse
+        fullName: protos.google.cloud.deploy.v1.ListReleasesResponse
       - name: ) => void
         fullName: ) => void
   - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.CloudDeploy.ListRolloutsCallback~0:complex'
     name: '(error: (Error|null), response?: google.cloud.deploy.v1.ListRolloutsResponse) => void'
-    fullName: '(error: (Error|null), response?: google.cloud.deploy.v1.ListRolloutsResponse) => void'
+    fullName: '(error: (Error|null), response?: protos.google.cloud.deploy.v1.ListRolloutsResponse) => void'
     spec.typeScript:
       - name: '(error: ('
         fullName: '(error: ('
@@ -1081,14 +1081,14 @@ references:
         fullName: Error
       - name: '|null), response?: '
         fullName: '|null), response?: '
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.ListRolloutsResponse:class'
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.ListRolloutsResponse:class'
         name: google.cloud.deploy.v1.ListRolloutsResponse
-        fullName: google.cloud.deploy.v1.ListRolloutsResponse
+        fullName: protos.google.cloud.deploy.v1.ListRolloutsResponse
       - name: ) => void
         fullName: ) => void
   - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.CloudDeploy.ListTargetsCallback~0:complex'
     name: '(error: (Error|null), response?: google.cloud.deploy.v1.ListTargetsResponse) => void'
-    fullName: '(error: (Error|null), response?: google.cloud.deploy.v1.ListTargetsResponse) => void'
+    fullName: '(error: (Error|null), response?: protos.google.cloud.deploy.v1.ListTargetsResponse) => void'
     spec.typeScript:
       - name: '(error: ('
         fullName: '(error: ('
@@ -1097,14 +1097,14 @@ references:
         fullName: Error
       - name: '|null), response?: '
         fullName: '|null), response?: '
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.ListTargetsResponse:class'
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.ListTargetsResponse:class'
         name: google.cloud.deploy.v1.ListTargetsResponse
-        fullName: google.cloud.deploy.v1.ListTargetsResponse
+        fullName: protos.google.cloud.deploy.v1.ListTargetsResponse
       - name: ) => void
         fullName: ) => void
   - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.CloudDeploy.UpdateDeliveryPipelineCallback~0:complex'
     name: '(error: (Error|null), response?: google.longrunning.Operation) => void'
-    fullName: '(error: (Error|null), response?: google.longrunning.Operation) => void'
+    fullName: '(error: (Error|null), response?: protos.google.longrunning.Operation) => void'
     spec.typeScript:
       - name: '(error: ('
         fullName: '(error: ('
@@ -1113,14 +1113,14 @@ references:
         fullName: Error
       - name: '|null), response?: '
         fullName: '|null), response?: '
-      - uid: '@google-cloud/deploy!google.longrunning.Operation:class'
+      - uid: '@google-cloud/deploy!protos.google.longrunning.Operation:class'
         name: google.longrunning.Operation
-        fullName: google.longrunning.Operation
+        fullName: protos.google.longrunning.Operation
       - name: ) => void
         fullName: ) => void
   - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.CloudDeploy.UpdateTargetCallback~0:complex'
     name: '(error: (Error|null), response?: google.longrunning.Operation) => void'
-    fullName: '(error: (Error|null), response?: google.longrunning.Operation) => void'
+    fullName: '(error: (Error|null), response?: protos.google.longrunning.Operation) => void'
     spec.typeScript:
       - name: '(error: ('
         fullName: '(error: ('
@@ -1129,9 +1129,9 @@ references:
         fullName: Error
       - name: '|null), response?: '
         fullName: '|null), response?: '
-      - uid: '@google-cloud/deploy!google.longrunning.Operation:class'
+      - uid: '@google-cloud/deploy!protos.google.longrunning.Operation:class'
         name: google.longrunning.Operation
-        fullName: google.longrunning.Operation
+        fullName: protos.google.longrunning.Operation
       - name: ) => void
         fullName: ) => void
   - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.Config:class'
@@ -1340,7 +1340,7 @@ references:
     name: protos.google.longrunning.Operations
   - uid: '@google-cloud/deploy!protos.google.longrunning.Operations.CancelOperationCallback~0:complex'
     name: '(error: (Error|null), response?: google.protobuf.Empty) => void'
-    fullName: '(error: (Error|null), response?: google.protobuf.Empty) => void'
+    fullName: '(error: (Error|null), response?: protos.google.protobuf.Empty) => void'
     spec.typeScript:
       - name: '(error: ('
         fullName: '(error: ('
@@ -1349,14 +1349,14 @@ references:
         fullName: Error
       - name: '|null), response?: '
         fullName: '|null), response?: '
-      - uid: '@google-cloud/deploy!google.protobuf.Empty:class'
+      - uid: '@google-cloud/deploy!protos.google.protobuf.Empty:class'
         name: google.protobuf.Empty
-        fullName: google.protobuf.Empty
+        fullName: protos.google.protobuf.Empty
       - name: ) => void
         fullName: ) => void
   - uid: '@google-cloud/deploy!protos.google.longrunning.Operations.DeleteOperationCallback~0:complex'
     name: '(error: (Error|null), response?: google.protobuf.Empty) => void'
-    fullName: '(error: (Error|null), response?: google.protobuf.Empty) => void'
+    fullName: '(error: (Error|null), response?: protos.google.protobuf.Empty) => void'
     spec.typeScript:
       - name: '(error: ('
         fullName: '(error: ('
@@ -1365,14 +1365,14 @@ references:
         fullName: Error
       - name: '|null), response?: '
         fullName: '|null), response?: '
-      - uid: '@google-cloud/deploy!google.protobuf.Empty:class'
+      - uid: '@google-cloud/deploy!protos.google.protobuf.Empty:class'
         name: google.protobuf.Empty
-        fullName: google.protobuf.Empty
+        fullName: protos.google.protobuf.Empty
       - name: ) => void
         fullName: ) => void
   - uid: '@google-cloud/deploy!protos.google.longrunning.Operations.GetOperationCallback~0:complex'
     name: '(error: (Error|null), response?: google.longrunning.Operation) => void'
-    fullName: '(error: (Error|null), response?: google.longrunning.Operation) => void'
+    fullName: '(error: (Error|null), response?: protos.google.longrunning.Operation) => void'
     spec.typeScript:
       - name: '(error: ('
         fullName: '(error: ('
@@ -1381,14 +1381,14 @@ references:
         fullName: Error
       - name: '|null), response?: '
         fullName: '|null), response?: '
-      - uid: '@google-cloud/deploy!google.longrunning.Operation:class'
+      - uid: '@google-cloud/deploy!protos.google.longrunning.Operation:class'
         name: google.longrunning.Operation
-        fullName: google.longrunning.Operation
+        fullName: protos.google.longrunning.Operation
       - name: ) => void
         fullName: ) => void
   - uid: '@google-cloud/deploy!protos.google.longrunning.Operations.ListOperationsCallback~0:complex'
     name: '(error: (Error|null), response?: google.longrunning.ListOperationsResponse) => void'
-    fullName: '(error: (Error|null), response?: google.longrunning.ListOperationsResponse) => void'
+    fullName: '(error: (Error|null), response?: protos.google.longrunning.ListOperationsResponse) => void'
     spec.typeScript:
       - name: '(error: ('
         fullName: '(error: ('
@@ -1397,14 +1397,14 @@ references:
         fullName: Error
       - name: '|null), response?: '
         fullName: '|null), response?: '
-      - uid: '@google-cloud/deploy!google.longrunning.ListOperationsResponse:class'
+      - uid: '@google-cloud/deploy!protos.google.longrunning.ListOperationsResponse:class'
         name: google.longrunning.ListOperationsResponse
-        fullName: google.longrunning.ListOperationsResponse
+        fullName: protos.google.longrunning.ListOperationsResponse
       - name: ) => void
         fullName: ) => void
   - uid: '@google-cloud/deploy!protos.google.longrunning.Operations.WaitOperationCallback~0:complex'
     name: '(error: (Error|null), response?: google.longrunning.Operation) => void'
-    fullName: '(error: (Error|null), response?: google.longrunning.Operation) => void'
+    fullName: '(error: (Error|null), response?: protos.google.longrunning.Operation) => void'
     spec.typeScript:
       - name: '(error: ('
         fullName: '(error: ('
@@ -1413,9 +1413,9 @@ references:
         fullName: Error
       - name: '|null), response?: '
         fullName: '|null), response?: '
-      - uid: '@google-cloud/deploy!google.longrunning.Operation:class'
+      - uid: '@google-cloud/deploy!protos.google.longrunning.Operation:class'
         name: google.longrunning.Operation
-        fullName: google.longrunning.Operation
+        fullName: protos.google.longrunning.Operation
       - name: ) => void
         fullName: ) => void
   - uid: '@google-cloud/deploy!protos.google.longrunning.WaitOperationRequest:class'
@@ -1756,7 +1756,7 @@ items:
         - id: request
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#approveRollout~1:complex'
+            - '@google-cloud/deploy!protos.google.cloud.deploy.v1.IApproveRolloutRequest:interface'
         - id: options
           description: ''
           type:
@@ -1780,7 +1780,7 @@ items:
         - id: request
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#approveRollout~2:complex'
+            - '@google-cloud/deploy!protos.google.cloud.deploy.v1.IApproveRolloutRequest:interface'
         - id: options
           description: ''
           type:
@@ -1788,7 +1788,7 @@ items:
         - id: callback
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#approveRollout~3:complex'
+            - '@google-cloud/deploy!v1.CloudDeployClient#approveRollout~1:complex'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#approveRollout:member(3)'
     name: approveRollout(request, callback)
     fullName: approveRollout(request, callback)
@@ -1808,11 +1808,11 @@ items:
         - id: request
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#approveRollout~4:complex'
+            - '@google-cloud/deploy!protos.google.cloud.deploy.v1.IApproveRolloutRequest:interface'
         - id: callback
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#approveRollout~5:complex'
+            - '@google-cloud/deploy!v1.CloudDeployClient#approveRollout~2:complex'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#auth:member'
     name: auth
     fullName: auth
@@ -2170,7 +2170,7 @@ items:
         - id: request
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#createDeliveryPipeline~1:complex'
+            - '@google-cloud/deploy!protos.google.cloud.deploy.v1.ICreateDeliveryPipelineRequest:interface'
         - id: options
           description: ''
           type:
@@ -2195,7 +2195,7 @@ items:
         - id: request
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#createDeliveryPipeline~2:complex'
+            - '@google-cloud/deploy!protos.google.cloud.deploy.v1.ICreateDeliveryPipelineRequest:interface'
         - id: options
           description: ''
           type:
@@ -2203,7 +2203,7 @@ items:
         - id: callback
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#createDeliveryPipeline~3:complex'
+            - '@google-cloud/deploy!v1.CloudDeployClient#createDeliveryPipeline~1:complex'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#createDeliveryPipeline:member(3)'
     name: createDeliveryPipeline(request, callback)
     fullName: createDeliveryPipeline(request, callback)
@@ -2224,11 +2224,11 @@ items:
         - id: request
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#createDeliveryPipeline~4:complex'
+            - '@google-cloud/deploy!protos.google.cloud.deploy.v1.ICreateDeliveryPipelineRequest:interface'
         - id: callback
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#createDeliveryPipeline~5:complex'
+            - '@google-cloud/deploy!v1.CloudDeployClient#createDeliveryPipeline~2:complex'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#createRelease:member(1)'
     name: createRelease(request, options)
     fullName: createRelease(request, options)
@@ -2250,7 +2250,7 @@ items:
         - id: request
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#createRelease~1:complex'
+            - '@google-cloud/deploy!protos.google.cloud.deploy.v1.ICreateReleaseRequest:interface'
         - id: options
           description: ''
           type:
@@ -2274,7 +2274,7 @@ items:
         - id: request
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#createRelease~2:complex'
+            - '@google-cloud/deploy!protos.google.cloud.deploy.v1.ICreateReleaseRequest:interface'
         - id: options
           description: ''
           type:
@@ -2282,7 +2282,7 @@ items:
         - id: callback
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#createRelease~3:complex'
+            - '@google-cloud/deploy!v1.CloudDeployClient#createRelease~1:complex'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#createRelease:member(3)'
     name: createRelease(request, callback)
     fullName: createRelease(request, callback)
@@ -2302,11 +2302,11 @@ items:
         - id: request
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#createRelease~4:complex'
+            - '@google-cloud/deploy!protos.google.cloud.deploy.v1.ICreateReleaseRequest:interface'
         - id: callback
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#createRelease~5:complex'
+            - '@google-cloud/deploy!v1.CloudDeployClient#createRelease~2:complex'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#createRollout:member(1)'
     name: createRollout(request, options)
     fullName: createRollout(request, options)
@@ -2328,7 +2328,7 @@ items:
         - id: request
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#createRollout~1:complex'
+            - '@google-cloud/deploy!protos.google.cloud.deploy.v1.ICreateRolloutRequest:interface'
         - id: options
           description: ''
           type:
@@ -2352,7 +2352,7 @@ items:
         - id: request
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#createRollout~2:complex'
+            - '@google-cloud/deploy!protos.google.cloud.deploy.v1.ICreateRolloutRequest:interface'
         - id: options
           description: ''
           type:
@@ -2360,7 +2360,7 @@ items:
         - id: callback
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#createRollout~3:complex'
+            - '@google-cloud/deploy!v1.CloudDeployClient#createRollout~1:complex'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#createRollout:member(3)'
     name: createRollout(request, callback)
     fullName: createRollout(request, callback)
@@ -2380,11 +2380,11 @@ items:
         - id: request
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#createRollout~4:complex'
+            - '@google-cloud/deploy!protos.google.cloud.deploy.v1.ICreateRolloutRequest:interface'
         - id: callback
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#createRollout~5:complex'
+            - '@google-cloud/deploy!v1.CloudDeployClient#createRollout~2:complex'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#createTarget:member(1)'
     name: createTarget(request, options)
     fullName: createTarget(request, options)
@@ -2406,7 +2406,7 @@ items:
         - id: request
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#createTarget~1:complex'
+            - '@google-cloud/deploy!protos.google.cloud.deploy.v1.ICreateTargetRequest:interface'
         - id: options
           description: ''
           type:
@@ -2430,7 +2430,7 @@ items:
         - id: request
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#createTarget~2:complex'
+            - '@google-cloud/deploy!protos.google.cloud.deploy.v1.ICreateTargetRequest:interface'
         - id: options
           description: ''
           type:
@@ -2438,7 +2438,7 @@ items:
         - id: callback
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#createTarget~3:complex'
+            - '@google-cloud/deploy!v1.CloudDeployClient#createTarget~1:complex'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#createTarget:member(3)'
     name: createTarget(request, callback)
     fullName: createTarget(request, callback)
@@ -2458,11 +2458,11 @@ items:
         - id: request
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#createTarget~4:complex'
+            - '@google-cloud/deploy!protos.google.cloud.deploy.v1.ICreateTargetRequest:interface'
         - id: callback
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#createTarget~5:complex'
+            - '@google-cloud/deploy!v1.CloudDeployClient#createTarget~2:complex'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#deleteDeliveryPipeline:member(1)'
     name: deleteDeliveryPipeline(request, options)
     fullName: deleteDeliveryPipeline(request, options)
@@ -2485,7 +2485,7 @@ items:
         - id: request
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#deleteDeliveryPipeline~1:complex'
+            - '@google-cloud/deploy!protos.google.cloud.deploy.v1.IDeleteDeliveryPipelineRequest:interface'
         - id: options
           description: ''
           type:
@@ -2510,7 +2510,7 @@ items:
         - id: request
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#deleteDeliveryPipeline~2:complex'
+            - '@google-cloud/deploy!protos.google.cloud.deploy.v1.IDeleteDeliveryPipelineRequest:interface'
         - id: options
           description: ''
           type:
@@ -2518,7 +2518,7 @@ items:
         - id: callback
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#deleteDeliveryPipeline~3:complex'
+            - '@google-cloud/deploy!v1.CloudDeployClient#deleteDeliveryPipeline~1:complex'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#deleteDeliveryPipeline:member(3)'
     name: deleteDeliveryPipeline(request, callback)
     fullName: deleteDeliveryPipeline(request, callback)
@@ -2538,11 +2538,11 @@ items:
         - id: request
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#deleteDeliveryPipeline~4:complex'
+            - '@google-cloud/deploy!protos.google.cloud.deploy.v1.IDeleteDeliveryPipelineRequest:interface'
         - id: callback
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#deleteDeliveryPipeline~5:complex'
+            - '@google-cloud/deploy!v1.CloudDeployClient#deleteDeliveryPipeline~2:complex'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#deleteTarget:member(1)'
     name: deleteTarget(request, options)
     fullName: deleteTarget(request, options)
@@ -2564,7 +2564,7 @@ items:
         - id: request
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#deleteTarget~1:complex'
+            - '@google-cloud/deploy!protos.google.cloud.deploy.v1.IDeleteTargetRequest:interface'
         - id: options
           description: ''
           type:
@@ -2588,7 +2588,7 @@ items:
         - id: request
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#deleteTarget~2:complex'
+            - '@google-cloud/deploy!protos.google.cloud.deploy.v1.IDeleteTargetRequest:interface'
         - id: options
           description: ''
           type:
@@ -2596,7 +2596,7 @@ items:
         - id: callback
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#deleteTarget~3:complex'
+            - '@google-cloud/deploy!v1.CloudDeployClient#deleteTarget~1:complex'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#deleteTarget:member(3)'
     name: deleteTarget(request, callback)
     fullName: deleteTarget(request, callback)
@@ -2616,11 +2616,11 @@ items:
         - id: request
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#deleteTarget~4:complex'
+            - '@google-cloud/deploy!protos.google.cloud.deploy.v1.IDeleteTargetRequest:interface'
         - id: callback
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#deleteTarget~5:complex'
+            - '@google-cloud/deploy!v1.CloudDeployClient#deleteTarget~2:complex'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#deliveryPipelinePath:member(1)'
     summary: Return a fully-qualified deliveryPipeline resource name string.
     name: deliveryPipelinePath(project, location, deliveryPipeline)
@@ -2676,7 +2676,7 @@ items:
         - id: request
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#getConfig~1:complex'
+            - '@google-cloud/deploy!protos.google.cloud.deploy.v1.IGetConfigRequest:interface'
         - id: options
           description: ''
           type:
@@ -2700,7 +2700,7 @@ items:
         - id: request
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#getConfig~2:complex'
+            - '@google-cloud/deploy!protos.google.cloud.deploy.v1.IGetConfigRequest:interface'
         - id: options
           description: ''
           type:
@@ -2708,7 +2708,7 @@ items:
         - id: callback
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#getConfig~3:complex'
+            - '@google-cloud/deploy!v1.CloudDeployClient#getConfig~1:complex'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#getConfig:member(3)'
     name: getConfig(request, callback)
     fullName: getConfig(request, callback)
@@ -2728,11 +2728,11 @@ items:
         - id: request
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#getConfig~4:complex'
+            - '@google-cloud/deploy!protos.google.cloud.deploy.v1.IGetConfigRequest:interface'
         - id: callback
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#getConfig~5:complex'
+            - '@google-cloud/deploy!v1.CloudDeployClient#getConfig~2:complex'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#getDeliveryPipeline:member(1)'
     name: getDeliveryPipeline(request, options)
     fullName: getDeliveryPipeline(request, options)
@@ -2755,7 +2755,7 @@ items:
         - id: request
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#getDeliveryPipeline~1:complex'
+            - '@google-cloud/deploy!protos.google.cloud.deploy.v1.IGetDeliveryPipelineRequest:interface'
         - id: options
           description: ''
           type:
@@ -2779,7 +2779,7 @@ items:
         - id: request
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#getDeliveryPipeline~2:complex'
+            - '@google-cloud/deploy!protos.google.cloud.deploy.v1.IGetDeliveryPipelineRequest:interface'
         - id: options
           description: ''
           type:
@@ -2787,7 +2787,7 @@ items:
         - id: callback
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#getDeliveryPipeline~3:complex'
+            - '@google-cloud/deploy!v1.CloudDeployClient#getDeliveryPipeline~1:complex'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#getDeliveryPipeline:member(3)'
     name: getDeliveryPipeline(request, callback)
     fullName: getDeliveryPipeline(request, callback)
@@ -2807,11 +2807,11 @@ items:
         - id: request
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#getDeliveryPipeline~4:complex'
+            - '@google-cloud/deploy!protos.google.cloud.deploy.v1.IGetDeliveryPipelineRequest:interface'
         - id: callback
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#getDeliveryPipeline~5:complex'
+            - '@google-cloud/deploy!v1.CloudDeployClient#getDeliveryPipeline~2:complex'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#getProjectId:member(1)'
     name: getProjectId()
     fullName: getProjectId()
@@ -2862,7 +2862,7 @@ items:
         - id: request
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#getRelease~1:complex'
+            - '@google-cloud/deploy!protos.google.cloud.deploy.v1.IGetReleaseRequest:interface'
         - id: options
           description: ''
           type:
@@ -2886,7 +2886,7 @@ items:
         - id: request
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#getRelease~2:complex'
+            - '@google-cloud/deploy!protos.google.cloud.deploy.v1.IGetReleaseRequest:interface'
         - id: options
           description: ''
           type:
@@ -2894,7 +2894,7 @@ items:
         - id: callback
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#getRelease~3:complex'
+            - '@google-cloud/deploy!v1.CloudDeployClient#getRelease~1:complex'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#getRelease:member(3)'
     name: getRelease(request, callback)
     fullName: getRelease(request, callback)
@@ -2914,11 +2914,11 @@ items:
         - id: request
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#getRelease~4:complex'
+            - '@google-cloud/deploy!protos.google.cloud.deploy.v1.IGetReleaseRequest:interface'
         - id: callback
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#getRelease~5:complex'
+            - '@google-cloud/deploy!v1.CloudDeployClient#getRelease~2:complex'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#getRollout:member(1)'
     name: getRollout(request, options)
     fullName: getRollout(request, options)
@@ -2940,7 +2940,7 @@ items:
         - id: request
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#getRollout~1:complex'
+            - '@google-cloud/deploy!protos.google.cloud.deploy.v1.IGetRolloutRequest:interface'
         - id: options
           description: ''
           type:
@@ -2964,7 +2964,7 @@ items:
         - id: request
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#getRollout~2:complex'
+            - '@google-cloud/deploy!protos.google.cloud.deploy.v1.IGetRolloutRequest:interface'
         - id: options
           description: ''
           type:
@@ -2972,7 +2972,7 @@ items:
         - id: callback
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#getRollout~3:complex'
+            - '@google-cloud/deploy!v1.CloudDeployClient#getRollout~1:complex'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#getRollout:member(3)'
     name: getRollout(request, callback)
     fullName: getRollout(request, callback)
@@ -2992,11 +2992,11 @@ items:
         - id: request
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#getRollout~4:complex'
+            - '@google-cloud/deploy!protos.google.cloud.deploy.v1.IGetRolloutRequest:interface'
         - id: callback
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#getRollout~5:complex'
+            - '@google-cloud/deploy!v1.CloudDeployClient#getRollout~2:complex'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#getTarget:member(1)'
     name: getTarget(request, options)
     fullName: getTarget(request, options)
@@ -3018,7 +3018,7 @@ items:
         - id: request
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#getTarget~1:complex'
+            - '@google-cloud/deploy!protos.google.cloud.deploy.v1.IGetTargetRequest:interface'
         - id: options
           description: ''
           type:
@@ -3042,7 +3042,7 @@ items:
         - id: request
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#getTarget~2:complex'
+            - '@google-cloud/deploy!protos.google.cloud.deploy.v1.IGetTargetRequest:interface'
         - id: options
           description: ''
           type:
@@ -3050,7 +3050,7 @@ items:
         - id: callback
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#getTarget~3:complex'
+            - '@google-cloud/deploy!v1.CloudDeployClient#getTarget~1:complex'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#getTarget:member(3)'
     name: getTarget(request, callback)
     fullName: getTarget(request, callback)
@@ -3070,11 +3070,11 @@ items:
         - id: request
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#getTarget~4:complex'
+            - '@google-cloud/deploy!protos.google.cloud.deploy.v1.IGetTargetRequest:interface'
         - id: callback
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#getTarget~5:complex'
+            - '@google-cloud/deploy!v1.CloudDeployClient#getTarget~2:complex'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#initialize:member(1)'
     summary: >-
       Initialize the client. Performs asynchronous operations (such as authentication) and prepares the client. This
@@ -3130,7 +3130,7 @@ items:
         - id: request
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#listDeliveryPipelines~1:complex'
+            - '@google-cloud/deploy!protos.google.cloud.deploy.v1.IListDeliveryPipelinesRequest:interface'
         - id: options
           description: ''
           type:
@@ -3155,7 +3155,7 @@ items:
         - id: request
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#listDeliveryPipelines~2:complex'
+            - '@google-cloud/deploy!protos.google.cloud.deploy.v1.IListDeliveryPipelinesRequest:interface'
         - id: options
           description: ''
           type:
@@ -3163,7 +3163,7 @@ items:
         - id: callback
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#listDeliveryPipelines~3:complex'
+            - '@google-cloud/deploy!v1.CloudDeployClient#listDeliveryPipelines~1:complex'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#listDeliveryPipelines:member(3)'
     name: listDeliveryPipelines(request, callback)
     fullName: listDeliveryPipelines(request, callback)
@@ -3184,11 +3184,11 @@ items:
         - id: request
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#listDeliveryPipelines~4:complex'
+            - '@google-cloud/deploy!protos.google.cloud.deploy.v1.IListDeliveryPipelinesRequest:interface'
         - id: callback
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#listDeliveryPipelines~5:complex'
+            - '@google-cloud/deploy!v1.CloudDeployClient#listDeliveryPipelines~2:complex'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#listDeliveryPipelinesAsync:member(1)'
     summary: |-
       Equivalent to \`listDeliveryPipelines\`<!-- -->, but returns an iterable object.
@@ -3222,7 +3222,7 @@ items:
         - id: request
           description: The request object that will be sent.
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#listDeliveryPipelinesAsync~1:complex'
+            - '@google-cloud/deploy!protos.google.cloud.deploy.v1.IListDeliveryPipelinesRequest:interface'
         - id: options
           description: >-
             Call options. See [CallOptions](https://googleapis.dev/nodejs/google-gax/latest/interfaces/CallOptions.html)
@@ -3242,7 +3242,7 @@ items:
         CallOptions): Transform;
       return:
         type:
-          - '!internal.Transform:class'
+          - '!"\\"stream\\"".internal.Transform:class'
         description: >-
           {<!-- -->Stream<!-- -->} An object stream which emits an object representing \\[DeliveryPipeline\\] on 'data'
           event. The client library will perform auto-pagination by default: it will call the API as many times as
@@ -3254,7 +3254,7 @@ items:
         - id: request
           description: The request object that will be sent.
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#listDeliveryPipelinesStream~0:complex'
+            - '@google-cloud/deploy!protos.google.cloud.deploy.v1.IListDeliveryPipelinesRequest:interface'
         - id: options
           description: >-
             Call options. See [CallOptions](https://googleapis.dev/nodejs/google-gax/latest/interfaces/CallOptions.html)
@@ -3282,7 +3282,7 @@ items:
         - id: request
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#listReleases~1:complex'
+            - '@google-cloud/deploy!protos.google.cloud.deploy.v1.IListReleasesRequest:interface'
         - id: options
           description: ''
           type:
@@ -3307,7 +3307,7 @@ items:
         - id: request
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#listReleases~2:complex'
+            - '@google-cloud/deploy!protos.google.cloud.deploy.v1.IListReleasesRequest:interface'
         - id: options
           description: ''
           type:
@@ -3315,7 +3315,7 @@ items:
         - id: callback
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#listReleases~3:complex'
+            - '@google-cloud/deploy!v1.CloudDeployClient#listReleases~1:complex'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#listReleases:member(3)'
     name: listReleases(request, callback)
     fullName: listReleases(request, callback)
@@ -3336,11 +3336,11 @@ items:
         - id: request
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#listReleases~4:complex'
+            - '@google-cloud/deploy!protos.google.cloud.deploy.v1.IListReleasesRequest:interface'
         - id: callback
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#listReleases~5:complex'
+            - '@google-cloud/deploy!v1.CloudDeployClient#listReleases~2:complex'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#listReleasesAsync:member(1)'
     summary: |-
       Equivalent to \`listReleases\`<!-- -->, but returns an iterable object.
@@ -3374,7 +3374,7 @@ items:
         - id: request
           description: The request object that will be sent.
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#listReleasesAsync~1:complex'
+            - '@google-cloud/deploy!protos.google.cloud.deploy.v1.IListReleasesRequest:interface'
         - id: options
           description: >-
             Call options. See [CallOptions](https://googleapis.dev/nodejs/google-gax/latest/interfaces/CallOptions.html)
@@ -3394,7 +3394,7 @@ items:
         Transform;
       return:
         type:
-          - '!internal.Transform:class'
+          - '!"\\"stream\\"".internal.Transform:class'
         description: >-
           {<!-- -->Stream<!-- -->} An object stream which emits an object representing \\[Release\\] on 'data' event. The
           client library will perform auto-pagination by default: it will call the API as many times as needed. Note
@@ -3406,7 +3406,7 @@ items:
         - id: request
           description: The request object that will be sent.
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#listReleasesStream~0:complex'
+            - '@google-cloud/deploy!protos.google.cloud.deploy.v1.IListReleasesRequest:interface'
         - id: options
           description: >-
             Call options. See [CallOptions](https://googleapis.dev/nodejs/google-gax/latest/interfaces/CallOptions.html)
@@ -3434,7 +3434,7 @@ items:
         - id: request
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#listRollouts~1:complex'
+            - '@google-cloud/deploy!protos.google.cloud.deploy.v1.IListRolloutsRequest:interface'
         - id: options
           description: ''
           type:
@@ -3459,7 +3459,7 @@ items:
         - id: request
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#listRollouts~2:complex'
+            - '@google-cloud/deploy!protos.google.cloud.deploy.v1.IListRolloutsRequest:interface'
         - id: options
           description: ''
           type:
@@ -3467,7 +3467,7 @@ items:
         - id: callback
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#listRollouts~3:complex'
+            - '@google-cloud/deploy!v1.CloudDeployClient#listRollouts~1:complex'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#listRollouts:member(3)'
     name: listRollouts(request, callback)
     fullName: listRollouts(request, callback)
@@ -3488,11 +3488,11 @@ items:
         - id: request
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#listRollouts~4:complex'
+            - '@google-cloud/deploy!protos.google.cloud.deploy.v1.IListRolloutsRequest:interface'
         - id: callback
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#listRollouts~5:complex'
+            - '@google-cloud/deploy!v1.CloudDeployClient#listRollouts~2:complex'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#listRolloutsAsync:member(1)'
     summary: |-
       Equivalent to \`listRollouts\`<!-- -->, but returns an iterable object.
@@ -3526,7 +3526,7 @@ items:
         - id: request
           description: The request object that will be sent.
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#listRolloutsAsync~1:complex'
+            - '@google-cloud/deploy!protos.google.cloud.deploy.v1.IListRolloutsRequest:interface'
         - id: options
           description: >-
             Call options. See [CallOptions](https://googleapis.dev/nodejs/google-gax/latest/interfaces/CallOptions.html)
@@ -3546,7 +3546,7 @@ items:
         Transform;
       return:
         type:
-          - '!internal.Transform:class'
+          - '!"\\"stream\\"".internal.Transform:class'
         description: >-
           {<!-- -->Stream<!-- -->} An object stream which emits an object representing \\[Rollout\\] on 'data' event. The
           client library will perform auto-pagination by default: it will call the API as many times as needed. Note
@@ -3558,7 +3558,7 @@ items:
         - id: request
           description: The request object that will be sent.
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#listRolloutsStream~0:complex'
+            - '@google-cloud/deploy!protos.google.cloud.deploy.v1.IListRolloutsRequest:interface'
         - id: options
           description: >-
             Call options. See [CallOptions](https://googleapis.dev/nodejs/google-gax/latest/interfaces/CallOptions.html)
@@ -3586,7 +3586,7 @@ items:
         - id: request
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#listTargets~1:complex'
+            - '@google-cloud/deploy!protos.google.cloud.deploy.v1.IListTargetsRequest:interface'
         - id: options
           description: ''
           type:
@@ -3611,7 +3611,7 @@ items:
         - id: request
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#listTargets~2:complex'
+            - '@google-cloud/deploy!protos.google.cloud.deploy.v1.IListTargetsRequest:interface'
         - id: options
           description: ''
           type:
@@ -3619,7 +3619,7 @@ items:
         - id: callback
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#listTargets~3:complex'
+            - '@google-cloud/deploy!v1.CloudDeployClient#listTargets~1:complex'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#listTargets:member(3)'
     name: listTargets(request, callback)
     fullName: listTargets(request, callback)
@@ -3640,11 +3640,11 @@ items:
         - id: request
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#listTargets~4:complex'
+            - '@google-cloud/deploy!protos.google.cloud.deploy.v1.IListTargetsRequest:interface'
         - id: callback
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#listTargets~5:complex'
+            - '@google-cloud/deploy!v1.CloudDeployClient#listTargets~2:complex'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#listTargetsAsync:member(1)'
     summary: |-
       Equivalent to \`listTargets\`<!-- -->, but returns an iterable object.
@@ -3678,7 +3678,7 @@ items:
         - id: request
           description: The request object that will be sent.
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#listTargetsAsync~1:complex'
+            - '@google-cloud/deploy!protos.google.cloud.deploy.v1.IListTargetsRequest:interface'
         - id: options
           description: >-
             Call options. See [CallOptions](https://googleapis.dev/nodejs/google-gax/latest/interfaces/CallOptions.html)
@@ -3698,7 +3698,7 @@ items:
         Transform;
       return:
         type:
-          - '!internal.Transform:class'
+          - '!"\\"stream\\"".internal.Transform:class'
         description: >-
           {<!-- -->Stream<!-- -->} An object stream which emits an object representing \\[Target\\] on 'data' event. The
           client library will perform auto-pagination by default: it will call the API as many times as needed. Note
@@ -3710,7 +3710,7 @@ items:
         - id: request
           description: The request object that will be sent.
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#listTargetsStream~0:complex'
+            - '@google-cloud/deploy!protos.google.cloud.deploy.v1.IListTargetsRequest:interface'
         - id: options
           description: >-
             Call options. See [CallOptions](https://googleapis.dev/nodejs/google-gax/latest/interfaces/CallOptions.html)
@@ -4439,7 +4439,7 @@ items:
         - id: request
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#updateDeliveryPipeline~1:complex'
+            - '@google-cloud/deploy!protos.google.cloud.deploy.v1.IUpdateDeliveryPipelineRequest:interface'
         - id: options
           description: ''
           type:
@@ -4464,7 +4464,7 @@ items:
         - id: request
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#updateDeliveryPipeline~2:complex'
+            - '@google-cloud/deploy!protos.google.cloud.deploy.v1.IUpdateDeliveryPipelineRequest:interface'
         - id: options
           description: ''
           type:
@@ -4472,7 +4472,7 @@ items:
         - id: callback
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#updateDeliveryPipeline~3:complex'
+            - '@google-cloud/deploy!v1.CloudDeployClient#updateDeliveryPipeline~1:complex'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#updateDeliveryPipeline:member(3)'
     name: updateDeliveryPipeline(request, callback)
     fullName: updateDeliveryPipeline(request, callback)
@@ -4493,11 +4493,11 @@ items:
         - id: request
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#updateDeliveryPipeline~4:complex'
+            - '@google-cloud/deploy!protos.google.cloud.deploy.v1.IUpdateDeliveryPipelineRequest:interface'
         - id: callback
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#updateDeliveryPipeline~5:complex'
+            - '@google-cloud/deploy!v1.CloudDeployClient#updateDeliveryPipeline~2:complex'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#updateTarget:member(1)'
     name: updateTarget(request, options)
     fullName: updateTarget(request, options)
@@ -4519,7 +4519,7 @@ items:
         - id: request
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#updateTarget~1:complex'
+            - '@google-cloud/deploy!protos.google.cloud.deploy.v1.IUpdateTargetRequest:interface'
         - id: options
           description: ''
           type:
@@ -4543,7 +4543,7 @@ items:
         - id: request
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#updateTarget~2:complex'
+            - '@google-cloud/deploy!protos.google.cloud.deploy.v1.IUpdateTargetRequest:interface'
         - id: options
           description: ''
           type:
@@ -4551,7 +4551,7 @@ items:
         - id: callback
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#updateTarget~3:complex'
+            - '@google-cloud/deploy!v1.CloudDeployClient#updateTarget~1:complex'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#updateTarget:member(3)'
     name: updateTarget(request, callback)
     fullName: updateTarget(request, callback)
@@ -4571,11 +4571,11 @@ items:
         - id: request
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#updateTarget~4:complex'
+            - '@google-cloud/deploy!protos.google.cloud.deploy.v1.IUpdateTargetRequest:interface'
         - id: callback
           description: ''
           type:
-            - '@google-cloud/deploy!v1.CloudDeployClient#updateTarget~5:complex'
+            - '@google-cloud/deploy!v1.CloudDeployClient#updateTarget~2:complex'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#warn:member'
     name: warn
     fullName: warn
@@ -4632,22 +4632,22 @@ references:
         fullName: Promise
       - name: |-
           <[
-                  protos.
+                  
         fullName: |-
           <[
-                  protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IApproveRolloutResponse:interface'
-        name: google.cloud.deploy.v1.IApproveRolloutResponse
-        fullName: google.cloud.deploy.v1.IApproveRolloutResponse
+                  
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IApproveRolloutResponse:interface'
+        name: protos.google.cloud.deploy.v1.IApproveRolloutResponse
+        fullName: protos.google.cloud.deploy.v1.IApproveRolloutResponse
       - name: |-
           ,
-                  protos.
+                  
         fullName: |-
           ,
-                  protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IApproveRolloutRequest:interface'
-        name: google.cloud.deploy.v1.IApproveRolloutRequest
-        fullName: google.cloud.deploy.v1.IApproveRolloutRequest
+                  
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IApproveRolloutRequest:interface'
+        name: protos.google.cloud.deploy.v1.IApproveRolloutRequest
+        fullName: protos.google.cloud.deploy.v1.IApproveRolloutRequest
       - name: |2-
            | undefined,
                   {} | undefined
@@ -4656,27 +4656,12 @@ references:
            | undefined,
                   {} | undefined
               ]>
-  - uid: '@google-cloud/deploy!v1.CloudDeployClient#approveRollout~1:complex'
-    name: protos.google.cloud.deploy.v1.IApproveRolloutRequest
+  - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IApproveRolloutRequest:interface'
+    name: IApproveRolloutRequest
     fullName: protos.google.cloud.deploy.v1.IApproveRolloutRequest
-    spec.typeScript:
-      - name: protos.
-        fullName: protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IApproveRolloutRequest:interface'
-        name: google.cloud.deploy.v1.IApproveRolloutRequest
-        fullName: google.cloud.deploy.v1.IApproveRolloutRequest
   - uid: google-gax!CallOptions:interface
     name: CallOptions
-  - uid: '@google-cloud/deploy!v1.CloudDeployClient#approveRollout~2:complex'
-    name: protos.google.cloud.deploy.v1.IApproveRolloutRequest
-    fullName: protos.google.cloud.deploy.v1.IApproveRolloutRequest
-    spec.typeScript:
-      - name: protos.
-        fullName: protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IApproveRolloutRequest:interface'
-        name: google.cloud.deploy.v1.IApproveRolloutRequest
-        fullName: google.cloud.deploy.v1.IApproveRolloutRequest
-  - uid: '@google-cloud/deploy!v1.CloudDeployClient#approveRollout~3:complex'
+  - uid: '@google-cloud/deploy!v1.CloudDeployClient#approveRollout~1:complex'
     name: >-
       Callback<protos.google.cloud.deploy.v1.IApproveRolloutResponse,
       protos.google.cloud.deploy.v1.IApproveRolloutRequest | null | undefined, {} | null | undefined>
@@ -4687,28 +4672,19 @@ references:
       - uid: google-gax!Callback:interface
         name: Callback
         fullName: Callback
-      - name: <protos.
-        fullName: <protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IApproveRolloutResponse:interface'
-        name: google.cloud.deploy.v1.IApproveRolloutResponse
-        fullName: google.cloud.deploy.v1.IApproveRolloutResponse
-      - name: ', protos.'
-        fullName: ', protos.'
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IApproveRolloutRequest:interface'
-        name: google.cloud.deploy.v1.IApproveRolloutRequest
-        fullName: google.cloud.deploy.v1.IApproveRolloutRequest
+      - name: <
+        fullName: <
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IApproveRolloutResponse:interface'
+        name: protos.google.cloud.deploy.v1.IApproveRolloutResponse
+        fullName: protos.google.cloud.deploy.v1.IApproveRolloutResponse
+      - name: ', '
+        fullName: ', '
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IApproveRolloutRequest:interface'
+        name: protos.google.cloud.deploy.v1.IApproveRolloutRequest
+        fullName: protos.google.cloud.deploy.v1.IApproveRolloutRequest
       - name: ' | null | undefined, {} | null | undefined>'
         fullName: ' | null | undefined, {} | null | undefined>'
-  - uid: '@google-cloud/deploy!v1.CloudDeployClient#approveRollout~4:complex'
-    name: protos.google.cloud.deploy.v1.IApproveRolloutRequest
-    fullName: protos.google.cloud.deploy.v1.IApproveRolloutRequest
-    spec.typeScript:
-      - name: protos.
-        fullName: protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IApproveRolloutRequest:interface'
-        name: google.cloud.deploy.v1.IApproveRolloutRequest
-        fullName: google.cloud.deploy.v1.IApproveRolloutRequest
-  - uid: '@google-cloud/deploy!v1.CloudDeployClient#approveRollout~5:complex'
+  - uid: '@google-cloud/deploy!v1.CloudDeployClient#approveRollout~2:complex'
     name: >-
       Callback<protos.google.cloud.deploy.v1.IApproveRolloutResponse,
       protos.google.cloud.deploy.v1.IApproveRolloutRequest | null | undefined, {} | null | undefined>
@@ -4719,16 +4695,16 @@ references:
       - uid: google-gax!Callback:interface
         name: Callback
         fullName: Callback
-      - name: <protos.
-        fullName: <protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IApproveRolloutResponse:interface'
-        name: google.cloud.deploy.v1.IApproveRolloutResponse
-        fullName: google.cloud.deploy.v1.IApproveRolloutResponse
-      - name: ', protos.'
-        fullName: ', protos.'
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IApproveRolloutRequest:interface'
-        name: google.cloud.deploy.v1.IApproveRolloutRequest
-        fullName: google.cloud.deploy.v1.IApproveRolloutRequest
+      - name: <
+        fullName: <
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IApproveRolloutResponse:interface'
+        name: protos.google.cloud.deploy.v1.IApproveRolloutResponse
+        fullName: protos.google.cloud.deploy.v1.IApproveRolloutResponse
+      - name: ', '
+        fullName: ', '
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IApproveRolloutRequest:interface'
+        name: protos.google.cloud.deploy.v1.IApproveRolloutRequest
+        fullName: protos.google.cloud.deploy.v1.IApproveRolloutRequest
       - name: ' | null | undefined, {} | null | undefined>'
         fullName: ' | null | undefined, {} | null | undefined>'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#checkCreateDeliveryPipelineProgress~0:complex'
@@ -4747,16 +4723,16 @@ references:
       - uid: google-gax!LROperation:interface
         name: LROperation
         fullName: LROperation
-      - name: <protos.
-        fullName: <protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.DeliveryPipeline:class'
-        name: google.cloud.deploy.v1.DeliveryPipeline
-        fullName: google.cloud.deploy.v1.DeliveryPipeline
-      - name: ', protos.'
-        fullName: ', protos.'
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.OperationMetadata:class'
-        name: google.cloud.deploy.v1.OperationMetadata
-        fullName: google.cloud.deploy.v1.OperationMetadata
+      - name: <
+        fullName: <
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.DeliveryPipeline:class'
+        name: protos.google.cloud.deploy.v1.DeliveryPipeline
+        fullName: protos.google.cloud.deploy.v1.DeliveryPipeline
+      - name: ', '
+        fullName: ', '
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.OperationMetadata:class'
+        name: protos.google.cloud.deploy.v1.OperationMetadata
+        fullName: protos.google.cloud.deploy.v1.OperationMetadata
       - name: '>>'
         fullName: '>>'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#checkCreateReleaseProgress~0:complex'
@@ -4771,16 +4747,16 @@ references:
       - uid: google-gax!LROperation:interface
         name: LROperation
         fullName: LROperation
-      - name: <protos.
-        fullName: <protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.Release:class'
-        name: google.cloud.deploy.v1.Release
-        fullName: google.cloud.deploy.v1.Release
-      - name: ', protos.'
-        fullName: ', protos.'
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.OperationMetadata:class'
-        name: google.cloud.deploy.v1.OperationMetadata
-        fullName: google.cloud.deploy.v1.OperationMetadata
+      - name: <
+        fullName: <
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.Release:class'
+        name: protos.google.cloud.deploy.v1.Release
+        fullName: protos.google.cloud.deploy.v1.Release
+      - name: ', '
+        fullName: ', '
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.OperationMetadata:class'
+        name: protos.google.cloud.deploy.v1.OperationMetadata
+        fullName: protos.google.cloud.deploy.v1.OperationMetadata
       - name: '>>'
         fullName: '>>'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#checkCreateRolloutProgress~0:complex'
@@ -4795,16 +4771,16 @@ references:
       - uid: google-gax!LROperation:interface
         name: LROperation
         fullName: LROperation
-      - name: <protos.
-        fullName: <protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.Rollout:class'
-        name: google.cloud.deploy.v1.Rollout
-        fullName: google.cloud.deploy.v1.Rollout
-      - name: ', protos.'
-        fullName: ', protos.'
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.OperationMetadata:class'
-        name: google.cloud.deploy.v1.OperationMetadata
-        fullName: google.cloud.deploy.v1.OperationMetadata
+      - name: <
+        fullName: <
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.Rollout:class'
+        name: protos.google.cloud.deploy.v1.Rollout
+        fullName: protos.google.cloud.deploy.v1.Rollout
+      - name: ', '
+        fullName: ', '
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.OperationMetadata:class'
+        name: protos.google.cloud.deploy.v1.OperationMetadata
+        fullName: protos.google.cloud.deploy.v1.OperationMetadata
       - name: '>>'
         fullName: '>>'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#checkCreateTargetProgress~0:complex'
@@ -4819,16 +4795,16 @@ references:
       - uid: google-gax!LROperation:interface
         name: LROperation
         fullName: LROperation
-      - name: <protos.
-        fullName: <protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.Target:class'
-        name: google.cloud.deploy.v1.Target
-        fullName: google.cloud.deploy.v1.Target
-      - name: ', protos.'
-        fullName: ', protos.'
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.OperationMetadata:class'
-        name: google.cloud.deploy.v1.OperationMetadata
-        fullName: google.cloud.deploy.v1.OperationMetadata
+      - name: <
+        fullName: <
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.Target:class'
+        name: protos.google.cloud.deploy.v1.Target
+        fullName: protos.google.cloud.deploy.v1.Target
+      - name: ', '
+        fullName: ', '
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.OperationMetadata:class'
+        name: protos.google.cloud.deploy.v1.OperationMetadata
+        fullName: protos.google.cloud.deploy.v1.OperationMetadata
       - name: '>>'
         fullName: '>>'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#checkDeleteDeliveryPipelineProgress~0:complex'
@@ -4843,16 +4819,16 @@ references:
       - uid: google-gax!LROperation:interface
         name: LROperation
         fullName: LROperation
-      - name: <protos.
-        fullName: <protos.
-      - uid: '@google-cloud/deploy!google.protobuf.Empty:class'
-        name: google.protobuf.Empty
-        fullName: google.protobuf.Empty
-      - name: ', protos.'
-        fullName: ', protos.'
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.OperationMetadata:class'
-        name: google.cloud.deploy.v1.OperationMetadata
-        fullName: google.cloud.deploy.v1.OperationMetadata
+      - name: <
+        fullName: <
+      - uid: '@google-cloud/deploy!protos.google.protobuf.Empty:class'
+        name: protos.google.protobuf.Empty
+        fullName: protos.google.protobuf.Empty
+      - name: ', '
+        fullName: ', '
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.OperationMetadata:class'
+        name: protos.google.cloud.deploy.v1.OperationMetadata
+        fullName: protos.google.cloud.deploy.v1.OperationMetadata
       - name: '>>'
         fullName: '>>'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#checkDeleteTargetProgress~0:complex'
@@ -4867,16 +4843,16 @@ references:
       - uid: google-gax!LROperation:interface
         name: LROperation
         fullName: LROperation
-      - name: <protos.
-        fullName: <protos.
-      - uid: '@google-cloud/deploy!google.protobuf.Empty:class'
-        name: google.protobuf.Empty
-        fullName: google.protobuf.Empty
-      - name: ', protos.'
-        fullName: ', protos.'
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.OperationMetadata:class'
-        name: google.cloud.deploy.v1.OperationMetadata
-        fullName: google.cloud.deploy.v1.OperationMetadata
+      - name: <
+        fullName: <
+      - uid: '@google-cloud/deploy!protos.google.protobuf.Empty:class'
+        name: protos.google.protobuf.Empty
+        fullName: protos.google.protobuf.Empty
+      - name: ', '
+        fullName: ', '
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.OperationMetadata:class'
+        name: protos.google.cloud.deploy.v1.OperationMetadata
+        fullName: protos.google.cloud.deploy.v1.OperationMetadata
       - name: '>>'
         fullName: '>>'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#checkUpdateDeliveryPipelineProgress~0:complex'
@@ -4895,16 +4871,16 @@ references:
       - uid: google-gax!LROperation:interface
         name: LROperation
         fullName: LROperation
-      - name: <protos.
-        fullName: <protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.DeliveryPipeline:class'
-        name: google.cloud.deploy.v1.DeliveryPipeline
-        fullName: google.cloud.deploy.v1.DeliveryPipeline
-      - name: ', protos.'
-        fullName: ', protos.'
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.OperationMetadata:class'
-        name: google.cloud.deploy.v1.OperationMetadata
-        fullName: google.cloud.deploy.v1.OperationMetadata
+      - name: <
+        fullName: <
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.DeliveryPipeline:class'
+        name: protos.google.cloud.deploy.v1.DeliveryPipeline
+        fullName: protos.google.cloud.deploy.v1.DeliveryPipeline
+      - name: ', '
+        fullName: ', '
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.OperationMetadata:class'
+        name: protos.google.cloud.deploy.v1.OperationMetadata
+        fullName: protos.google.cloud.deploy.v1.OperationMetadata
       - name: '>>'
         fullName: '>>'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#checkUpdateTargetProgress~0:complex'
@@ -4919,16 +4895,16 @@ references:
       - uid: google-gax!LROperation:interface
         name: LROperation
         fullName: LROperation
-      - name: <protos.
-        fullName: <protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.Target:class'
-        name: google.cloud.deploy.v1.Target
-        fullName: google.cloud.deploy.v1.Target
-      - name: ', protos.'
-        fullName: ', protos.'
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.OperationMetadata:class'
-        name: google.cloud.deploy.v1.OperationMetadata
-        fullName: google.cloud.deploy.v1.OperationMetadata
+      - name: <
+        fullName: <
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.Target:class'
+        name: protos.google.cloud.deploy.v1.Target
+        fullName: protos.google.cloud.deploy.v1.Target
+      - name: ', '
+        fullName: ', '
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.OperationMetadata:class'
+        name: protos.google.cloud.deploy.v1.OperationMetadata
+        fullName: protos.google.cloud.deploy.v1.OperationMetadata
       - name: '>>'
         fullName: '>>'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#close~0:complex'
@@ -4966,25 +4942,25 @@ references:
       - uid: google-gax!LROperation:interface
         name: LROperation
         fullName: LROperation
-      - name: <protos.
-        fullName: <protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IDeliveryPipeline:interface'
-        name: google.cloud.deploy.v1.IDeliveryPipeline
-        fullName: google.cloud.deploy.v1.IDeliveryPipeline
-      - name: ', protos.'
-        fullName: ', protos.'
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IOperationMetadata:interface'
-        name: google.cloud.deploy.v1.IOperationMetadata
-        fullName: google.cloud.deploy.v1.IOperationMetadata
+      - name: <
+        fullName: <
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IDeliveryPipeline:interface'
+        name: protos.google.cloud.deploy.v1.IDeliveryPipeline
+        fullName: protos.google.cloud.deploy.v1.IDeliveryPipeline
+      - name: ', '
+        fullName: ', '
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IOperationMetadata:interface'
+        name: protos.google.cloud.deploy.v1.IOperationMetadata
+        fullName: protos.google.cloud.deploy.v1.IOperationMetadata
       - name: |-
           >,
-                  protos.
+                  
         fullName: |-
           >,
-                  protos.
-      - uid: '@google-cloud/deploy!google.longrunning.IOperation:interface'
-        name: google.longrunning.IOperation
-        fullName: google.longrunning.IOperation
+                  
+      - uid: '@google-cloud/deploy!protos.google.longrunning.IOperation:interface'
+        name: protos.google.longrunning.IOperation
+        fullName: protos.google.longrunning.IOperation
       - name: |2-
            | undefined,
                   {} | undefined
@@ -4993,25 +4969,10 @@ references:
            | undefined,
                   {} | undefined
               ]>
+  - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.ICreateDeliveryPipelineRequest:interface'
+    name: ICreateDeliveryPipelineRequest
+    fullName: protos.google.cloud.deploy.v1.ICreateDeliveryPipelineRequest
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#createDeliveryPipeline~1:complex'
-    name: protos.google.cloud.deploy.v1.ICreateDeliveryPipelineRequest
-    fullName: protos.google.cloud.deploy.v1.ICreateDeliveryPipelineRequest
-    spec.typeScript:
-      - name: protos.
-        fullName: protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.ICreateDeliveryPipelineRequest:interface'
-        name: google.cloud.deploy.v1.ICreateDeliveryPipelineRequest
-        fullName: google.cloud.deploy.v1.ICreateDeliveryPipelineRequest
-  - uid: '@google-cloud/deploy!v1.CloudDeployClient#createDeliveryPipeline~2:complex'
-    name: protos.google.cloud.deploy.v1.ICreateDeliveryPipelineRequest
-    fullName: protos.google.cloud.deploy.v1.ICreateDeliveryPipelineRequest
-    spec.typeScript:
-      - name: protos.
-        fullName: protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.ICreateDeliveryPipelineRequest:interface'
-        name: google.cloud.deploy.v1.ICreateDeliveryPipelineRequest
-        fullName: google.cloud.deploy.v1.ICreateDeliveryPipelineRequest
-  - uid: '@google-cloud/deploy!v1.CloudDeployClient#createDeliveryPipeline~3:complex'
     name: >-
       Callback<LROperation<protos.google.cloud.deploy.v1.IDeliveryPipeline,
       protos.google.cloud.deploy.v1.IOperationMetadata>, protos.google.longrunning.IOperation | null | undefined, {} |
@@ -5029,33 +4990,24 @@ references:
       - uid: google-gax!LROperation:interface
         name: LROperation
         fullName: LROperation
-      - name: <protos.
-        fullName: <protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IDeliveryPipeline:interface'
-        name: google.cloud.deploy.v1.IDeliveryPipeline
-        fullName: google.cloud.deploy.v1.IDeliveryPipeline
-      - name: ', protos.'
-        fullName: ', protos.'
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IOperationMetadata:interface'
-        name: google.cloud.deploy.v1.IOperationMetadata
-        fullName: google.cloud.deploy.v1.IOperationMetadata
-      - name: '>, protos.'
-        fullName: '>, protos.'
-      - uid: '@google-cloud/deploy!google.longrunning.IOperation:interface'
-        name: google.longrunning.IOperation
-        fullName: google.longrunning.IOperation
+      - name: <
+        fullName: <
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IDeliveryPipeline:interface'
+        name: protos.google.cloud.deploy.v1.IDeliveryPipeline
+        fullName: protos.google.cloud.deploy.v1.IDeliveryPipeline
+      - name: ', '
+        fullName: ', '
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IOperationMetadata:interface'
+        name: protos.google.cloud.deploy.v1.IOperationMetadata
+        fullName: protos.google.cloud.deploy.v1.IOperationMetadata
+      - name: '>, '
+        fullName: '>, '
+      - uid: '@google-cloud/deploy!protos.google.longrunning.IOperation:interface'
+        name: protos.google.longrunning.IOperation
+        fullName: protos.google.longrunning.IOperation
       - name: ' | null | undefined, {} | null | undefined>'
         fullName: ' | null | undefined, {} | null | undefined>'
-  - uid: '@google-cloud/deploy!v1.CloudDeployClient#createDeliveryPipeline~4:complex'
-    name: protos.google.cloud.deploy.v1.ICreateDeliveryPipelineRequest
-    fullName: protos.google.cloud.deploy.v1.ICreateDeliveryPipelineRequest
-    spec.typeScript:
-      - name: protos.
-        fullName: protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.ICreateDeliveryPipelineRequest:interface'
-        name: google.cloud.deploy.v1.ICreateDeliveryPipelineRequest
-        fullName: google.cloud.deploy.v1.ICreateDeliveryPipelineRequest
-  - uid: '@google-cloud/deploy!v1.CloudDeployClient#createDeliveryPipeline~5:complex'
+  - uid: '@google-cloud/deploy!v1.CloudDeployClient#createDeliveryPipeline~2:complex'
     name: >-
       Callback<LROperation<protos.google.cloud.deploy.v1.IDeliveryPipeline,
       protos.google.cloud.deploy.v1.IOperationMetadata>, protos.google.longrunning.IOperation | null | undefined, {} |
@@ -5073,21 +5025,21 @@ references:
       - uid: google-gax!LROperation:interface
         name: LROperation
         fullName: LROperation
-      - name: <protos.
-        fullName: <protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IDeliveryPipeline:interface'
-        name: google.cloud.deploy.v1.IDeliveryPipeline
-        fullName: google.cloud.deploy.v1.IDeliveryPipeline
-      - name: ', protos.'
-        fullName: ', protos.'
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IOperationMetadata:interface'
-        name: google.cloud.deploy.v1.IOperationMetadata
-        fullName: google.cloud.deploy.v1.IOperationMetadata
-      - name: '>, protos.'
-        fullName: '>, protos.'
-      - uid: '@google-cloud/deploy!google.longrunning.IOperation:interface'
-        name: google.longrunning.IOperation
-        fullName: google.longrunning.IOperation
+      - name: <
+        fullName: <
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IDeliveryPipeline:interface'
+        name: protos.google.cloud.deploy.v1.IDeliveryPipeline
+        fullName: protos.google.cloud.deploy.v1.IDeliveryPipeline
+      - name: ', '
+        fullName: ', '
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IOperationMetadata:interface'
+        name: protos.google.cloud.deploy.v1.IOperationMetadata
+        fullName: protos.google.cloud.deploy.v1.IOperationMetadata
+      - name: '>, '
+        fullName: '>, '
+      - uid: '@google-cloud/deploy!protos.google.longrunning.IOperation:interface'
+        name: protos.google.longrunning.IOperation
+        fullName: protos.google.longrunning.IOperation
       - name: ' | null | undefined, {} | null | undefined>'
         fullName: ' | null | undefined, {} | null | undefined>'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#createRelease~0:complex'
@@ -5116,25 +5068,25 @@ references:
       - uid: google-gax!LROperation:interface
         name: LROperation
         fullName: LROperation
-      - name: <protos.
-        fullName: <protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IRelease:interface'
-        name: google.cloud.deploy.v1.IRelease
-        fullName: google.cloud.deploy.v1.IRelease
-      - name: ', protos.'
-        fullName: ', protos.'
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IOperationMetadata:interface'
-        name: google.cloud.deploy.v1.IOperationMetadata
-        fullName: google.cloud.deploy.v1.IOperationMetadata
+      - name: <
+        fullName: <
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IRelease:interface'
+        name: protos.google.cloud.deploy.v1.IRelease
+        fullName: protos.google.cloud.deploy.v1.IRelease
+      - name: ', '
+        fullName: ', '
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IOperationMetadata:interface'
+        name: protos.google.cloud.deploy.v1.IOperationMetadata
+        fullName: protos.google.cloud.deploy.v1.IOperationMetadata
       - name: |-
           >,
-                  protos.
+                  
         fullName: |-
           >,
-                  protos.
-      - uid: '@google-cloud/deploy!google.longrunning.IOperation:interface'
-        name: google.longrunning.IOperation
-        fullName: google.longrunning.IOperation
+                  
+      - uid: '@google-cloud/deploy!protos.google.longrunning.IOperation:interface'
+        name: protos.google.longrunning.IOperation
+        fullName: protos.google.longrunning.IOperation
       - name: |2-
            | undefined,
                   {} | undefined
@@ -5143,25 +5095,10 @@ references:
            | undefined,
                   {} | undefined
               ]>
+  - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.ICreateReleaseRequest:interface'
+    name: ICreateReleaseRequest
+    fullName: protos.google.cloud.deploy.v1.ICreateReleaseRequest
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#createRelease~1:complex'
-    name: protos.google.cloud.deploy.v1.ICreateReleaseRequest
-    fullName: protos.google.cloud.deploy.v1.ICreateReleaseRequest
-    spec.typeScript:
-      - name: protos.
-        fullName: protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.ICreateReleaseRequest:interface'
-        name: google.cloud.deploy.v1.ICreateReleaseRequest
-        fullName: google.cloud.deploy.v1.ICreateReleaseRequest
-  - uid: '@google-cloud/deploy!v1.CloudDeployClient#createRelease~2:complex'
-    name: protos.google.cloud.deploy.v1.ICreateReleaseRequest
-    fullName: protos.google.cloud.deploy.v1.ICreateReleaseRequest
-    spec.typeScript:
-      - name: protos.
-        fullName: protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.ICreateReleaseRequest:interface'
-        name: google.cloud.deploy.v1.ICreateReleaseRequest
-        fullName: google.cloud.deploy.v1.ICreateReleaseRequest
-  - uid: '@google-cloud/deploy!v1.CloudDeployClient#createRelease~3:complex'
     name: >-
       Callback<LROperation<protos.google.cloud.deploy.v1.IRelease, protos.google.cloud.deploy.v1.IOperationMetadata>,
       protos.google.longrunning.IOperation | null | undefined, {} | null | undefined>
@@ -5177,33 +5114,24 @@ references:
       - uid: google-gax!LROperation:interface
         name: LROperation
         fullName: LROperation
-      - name: <protos.
-        fullName: <protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IRelease:interface'
-        name: google.cloud.deploy.v1.IRelease
-        fullName: google.cloud.deploy.v1.IRelease
-      - name: ', protos.'
-        fullName: ', protos.'
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IOperationMetadata:interface'
-        name: google.cloud.deploy.v1.IOperationMetadata
-        fullName: google.cloud.deploy.v1.IOperationMetadata
-      - name: '>, protos.'
-        fullName: '>, protos.'
-      - uid: '@google-cloud/deploy!google.longrunning.IOperation:interface'
-        name: google.longrunning.IOperation
-        fullName: google.longrunning.IOperation
+      - name: <
+        fullName: <
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IRelease:interface'
+        name: protos.google.cloud.deploy.v1.IRelease
+        fullName: protos.google.cloud.deploy.v1.IRelease
+      - name: ', '
+        fullName: ', '
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IOperationMetadata:interface'
+        name: protos.google.cloud.deploy.v1.IOperationMetadata
+        fullName: protos.google.cloud.deploy.v1.IOperationMetadata
+      - name: '>, '
+        fullName: '>, '
+      - uid: '@google-cloud/deploy!protos.google.longrunning.IOperation:interface'
+        name: protos.google.longrunning.IOperation
+        fullName: protos.google.longrunning.IOperation
       - name: ' | null | undefined, {} | null | undefined>'
         fullName: ' | null | undefined, {} | null | undefined>'
-  - uid: '@google-cloud/deploy!v1.CloudDeployClient#createRelease~4:complex'
-    name: protos.google.cloud.deploy.v1.ICreateReleaseRequest
-    fullName: protos.google.cloud.deploy.v1.ICreateReleaseRequest
-    spec.typeScript:
-      - name: protos.
-        fullName: protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.ICreateReleaseRequest:interface'
-        name: google.cloud.deploy.v1.ICreateReleaseRequest
-        fullName: google.cloud.deploy.v1.ICreateReleaseRequest
-  - uid: '@google-cloud/deploy!v1.CloudDeployClient#createRelease~5:complex'
+  - uid: '@google-cloud/deploy!v1.CloudDeployClient#createRelease~2:complex'
     name: >-
       Callback<LROperation<protos.google.cloud.deploy.v1.IRelease, protos.google.cloud.deploy.v1.IOperationMetadata>,
       protos.google.longrunning.IOperation | null | undefined, {} | null | undefined>
@@ -5219,21 +5147,21 @@ references:
       - uid: google-gax!LROperation:interface
         name: LROperation
         fullName: LROperation
-      - name: <protos.
-        fullName: <protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IRelease:interface'
-        name: google.cloud.deploy.v1.IRelease
-        fullName: google.cloud.deploy.v1.IRelease
-      - name: ', protos.'
-        fullName: ', protos.'
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IOperationMetadata:interface'
-        name: google.cloud.deploy.v1.IOperationMetadata
-        fullName: google.cloud.deploy.v1.IOperationMetadata
-      - name: '>, protos.'
-        fullName: '>, protos.'
-      - uid: '@google-cloud/deploy!google.longrunning.IOperation:interface'
-        name: google.longrunning.IOperation
-        fullName: google.longrunning.IOperation
+      - name: <
+        fullName: <
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IRelease:interface'
+        name: protos.google.cloud.deploy.v1.IRelease
+        fullName: protos.google.cloud.deploy.v1.IRelease
+      - name: ', '
+        fullName: ', '
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IOperationMetadata:interface'
+        name: protos.google.cloud.deploy.v1.IOperationMetadata
+        fullName: protos.google.cloud.deploy.v1.IOperationMetadata
+      - name: '>, '
+        fullName: '>, '
+      - uid: '@google-cloud/deploy!protos.google.longrunning.IOperation:interface'
+        name: protos.google.longrunning.IOperation
+        fullName: protos.google.longrunning.IOperation
       - name: ' | null | undefined, {} | null | undefined>'
         fullName: ' | null | undefined, {} | null | undefined>'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#createRollout~0:complex'
@@ -5262,25 +5190,25 @@ references:
       - uid: google-gax!LROperation:interface
         name: LROperation
         fullName: LROperation
-      - name: <protos.
-        fullName: <protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IRollout:interface'
-        name: google.cloud.deploy.v1.IRollout
-        fullName: google.cloud.deploy.v1.IRollout
-      - name: ', protos.'
-        fullName: ', protos.'
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IOperationMetadata:interface'
-        name: google.cloud.deploy.v1.IOperationMetadata
-        fullName: google.cloud.deploy.v1.IOperationMetadata
+      - name: <
+        fullName: <
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IRollout:interface'
+        name: protos.google.cloud.deploy.v1.IRollout
+        fullName: protos.google.cloud.deploy.v1.IRollout
+      - name: ', '
+        fullName: ', '
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IOperationMetadata:interface'
+        name: protos.google.cloud.deploy.v1.IOperationMetadata
+        fullName: protos.google.cloud.deploy.v1.IOperationMetadata
       - name: |-
           >,
-                  protos.
+                  
         fullName: |-
           >,
-                  protos.
-      - uid: '@google-cloud/deploy!google.longrunning.IOperation:interface'
-        name: google.longrunning.IOperation
-        fullName: google.longrunning.IOperation
+                  
+      - uid: '@google-cloud/deploy!protos.google.longrunning.IOperation:interface'
+        name: protos.google.longrunning.IOperation
+        fullName: protos.google.longrunning.IOperation
       - name: |2-
            | undefined,
                   {} | undefined
@@ -5289,25 +5217,10 @@ references:
            | undefined,
                   {} | undefined
               ]>
+  - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.ICreateRolloutRequest:interface'
+    name: ICreateRolloutRequest
+    fullName: protos.google.cloud.deploy.v1.ICreateRolloutRequest
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#createRollout~1:complex'
-    name: protos.google.cloud.deploy.v1.ICreateRolloutRequest
-    fullName: protos.google.cloud.deploy.v1.ICreateRolloutRequest
-    spec.typeScript:
-      - name: protos.
-        fullName: protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.ICreateRolloutRequest:interface'
-        name: google.cloud.deploy.v1.ICreateRolloutRequest
-        fullName: google.cloud.deploy.v1.ICreateRolloutRequest
-  - uid: '@google-cloud/deploy!v1.CloudDeployClient#createRollout~2:complex'
-    name: protos.google.cloud.deploy.v1.ICreateRolloutRequest
-    fullName: protos.google.cloud.deploy.v1.ICreateRolloutRequest
-    spec.typeScript:
-      - name: protos.
-        fullName: protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.ICreateRolloutRequest:interface'
-        name: google.cloud.deploy.v1.ICreateRolloutRequest
-        fullName: google.cloud.deploy.v1.ICreateRolloutRequest
-  - uid: '@google-cloud/deploy!v1.CloudDeployClient#createRollout~3:complex'
     name: >-
       Callback<LROperation<protos.google.cloud.deploy.v1.IRollout, protos.google.cloud.deploy.v1.IOperationMetadata>,
       protos.google.longrunning.IOperation | null | undefined, {} | null | undefined>
@@ -5323,33 +5236,24 @@ references:
       - uid: google-gax!LROperation:interface
         name: LROperation
         fullName: LROperation
-      - name: <protos.
-        fullName: <protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IRollout:interface'
-        name: google.cloud.deploy.v1.IRollout
-        fullName: google.cloud.deploy.v1.IRollout
-      - name: ', protos.'
-        fullName: ', protos.'
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IOperationMetadata:interface'
-        name: google.cloud.deploy.v1.IOperationMetadata
-        fullName: google.cloud.deploy.v1.IOperationMetadata
-      - name: '>, protos.'
-        fullName: '>, protos.'
-      - uid: '@google-cloud/deploy!google.longrunning.IOperation:interface'
-        name: google.longrunning.IOperation
-        fullName: google.longrunning.IOperation
+      - name: <
+        fullName: <
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IRollout:interface'
+        name: protos.google.cloud.deploy.v1.IRollout
+        fullName: protos.google.cloud.deploy.v1.IRollout
+      - name: ', '
+        fullName: ', '
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IOperationMetadata:interface'
+        name: protos.google.cloud.deploy.v1.IOperationMetadata
+        fullName: protos.google.cloud.deploy.v1.IOperationMetadata
+      - name: '>, '
+        fullName: '>, '
+      - uid: '@google-cloud/deploy!protos.google.longrunning.IOperation:interface'
+        name: protos.google.longrunning.IOperation
+        fullName: protos.google.longrunning.IOperation
       - name: ' | null | undefined, {} | null | undefined>'
         fullName: ' | null | undefined, {} | null | undefined>'
-  - uid: '@google-cloud/deploy!v1.CloudDeployClient#createRollout~4:complex'
-    name: protos.google.cloud.deploy.v1.ICreateRolloutRequest
-    fullName: protos.google.cloud.deploy.v1.ICreateRolloutRequest
-    spec.typeScript:
-      - name: protos.
-        fullName: protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.ICreateRolloutRequest:interface'
-        name: google.cloud.deploy.v1.ICreateRolloutRequest
-        fullName: google.cloud.deploy.v1.ICreateRolloutRequest
-  - uid: '@google-cloud/deploy!v1.CloudDeployClient#createRollout~5:complex'
+  - uid: '@google-cloud/deploy!v1.CloudDeployClient#createRollout~2:complex'
     name: >-
       Callback<LROperation<protos.google.cloud.deploy.v1.IRollout, protos.google.cloud.deploy.v1.IOperationMetadata>,
       protos.google.longrunning.IOperation | null | undefined, {} | null | undefined>
@@ -5365,21 +5269,21 @@ references:
       - uid: google-gax!LROperation:interface
         name: LROperation
         fullName: LROperation
-      - name: <protos.
-        fullName: <protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IRollout:interface'
-        name: google.cloud.deploy.v1.IRollout
-        fullName: google.cloud.deploy.v1.IRollout
-      - name: ', protos.'
-        fullName: ', protos.'
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IOperationMetadata:interface'
-        name: google.cloud.deploy.v1.IOperationMetadata
-        fullName: google.cloud.deploy.v1.IOperationMetadata
-      - name: '>, protos.'
-        fullName: '>, protos.'
-      - uid: '@google-cloud/deploy!google.longrunning.IOperation:interface'
-        name: google.longrunning.IOperation
-        fullName: google.longrunning.IOperation
+      - name: <
+        fullName: <
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IRollout:interface'
+        name: protos.google.cloud.deploy.v1.IRollout
+        fullName: protos.google.cloud.deploy.v1.IRollout
+      - name: ', '
+        fullName: ', '
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IOperationMetadata:interface'
+        name: protos.google.cloud.deploy.v1.IOperationMetadata
+        fullName: protos.google.cloud.deploy.v1.IOperationMetadata
+      - name: '>, '
+        fullName: '>, '
+      - uid: '@google-cloud/deploy!protos.google.longrunning.IOperation:interface'
+        name: protos.google.longrunning.IOperation
+        fullName: protos.google.longrunning.IOperation
       - name: ' | null | undefined, {} | null | undefined>'
         fullName: ' | null | undefined, {} | null | undefined>'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#createTarget~0:complex'
@@ -5408,25 +5312,25 @@ references:
       - uid: google-gax!LROperation:interface
         name: LROperation
         fullName: LROperation
-      - name: <protos.
-        fullName: <protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.ITarget:interface'
-        name: google.cloud.deploy.v1.ITarget
-        fullName: google.cloud.deploy.v1.ITarget
-      - name: ', protos.'
-        fullName: ', protos.'
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IOperationMetadata:interface'
-        name: google.cloud.deploy.v1.IOperationMetadata
-        fullName: google.cloud.deploy.v1.IOperationMetadata
+      - name: <
+        fullName: <
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.ITarget:interface'
+        name: protos.google.cloud.deploy.v1.ITarget
+        fullName: protos.google.cloud.deploy.v1.ITarget
+      - name: ', '
+        fullName: ', '
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IOperationMetadata:interface'
+        name: protos.google.cloud.deploy.v1.IOperationMetadata
+        fullName: protos.google.cloud.deploy.v1.IOperationMetadata
       - name: |-
           >,
-                  protos.
+                  
         fullName: |-
           >,
-                  protos.
-      - uid: '@google-cloud/deploy!google.longrunning.IOperation:interface'
-        name: google.longrunning.IOperation
-        fullName: google.longrunning.IOperation
+                  
+      - uid: '@google-cloud/deploy!protos.google.longrunning.IOperation:interface'
+        name: protos.google.longrunning.IOperation
+        fullName: protos.google.longrunning.IOperation
       - name: |2-
            | undefined,
                   {} | undefined
@@ -5435,25 +5339,10 @@ references:
            | undefined,
                   {} | undefined
               ]>
+  - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.ICreateTargetRequest:interface'
+    name: ICreateTargetRequest
+    fullName: protos.google.cloud.deploy.v1.ICreateTargetRequest
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#createTarget~1:complex'
-    name: protos.google.cloud.deploy.v1.ICreateTargetRequest
-    fullName: protos.google.cloud.deploy.v1.ICreateTargetRequest
-    spec.typeScript:
-      - name: protos.
-        fullName: protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.ICreateTargetRequest:interface'
-        name: google.cloud.deploy.v1.ICreateTargetRequest
-        fullName: google.cloud.deploy.v1.ICreateTargetRequest
-  - uid: '@google-cloud/deploy!v1.CloudDeployClient#createTarget~2:complex'
-    name: protos.google.cloud.deploy.v1.ICreateTargetRequest
-    fullName: protos.google.cloud.deploy.v1.ICreateTargetRequest
-    spec.typeScript:
-      - name: protos.
-        fullName: protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.ICreateTargetRequest:interface'
-        name: google.cloud.deploy.v1.ICreateTargetRequest
-        fullName: google.cloud.deploy.v1.ICreateTargetRequest
-  - uid: '@google-cloud/deploy!v1.CloudDeployClient#createTarget~3:complex'
     name: >-
       Callback<LROperation<protos.google.cloud.deploy.v1.ITarget, protos.google.cloud.deploy.v1.IOperationMetadata>,
       protos.google.longrunning.IOperation | null | undefined, {} | null | undefined>
@@ -5469,33 +5358,24 @@ references:
       - uid: google-gax!LROperation:interface
         name: LROperation
         fullName: LROperation
-      - name: <protos.
-        fullName: <protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.ITarget:interface'
-        name: google.cloud.deploy.v1.ITarget
-        fullName: google.cloud.deploy.v1.ITarget
-      - name: ', protos.'
-        fullName: ', protos.'
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IOperationMetadata:interface'
-        name: google.cloud.deploy.v1.IOperationMetadata
-        fullName: google.cloud.deploy.v1.IOperationMetadata
-      - name: '>, protos.'
-        fullName: '>, protos.'
-      - uid: '@google-cloud/deploy!google.longrunning.IOperation:interface'
-        name: google.longrunning.IOperation
-        fullName: google.longrunning.IOperation
+      - name: <
+        fullName: <
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.ITarget:interface'
+        name: protos.google.cloud.deploy.v1.ITarget
+        fullName: protos.google.cloud.deploy.v1.ITarget
+      - name: ', '
+        fullName: ', '
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IOperationMetadata:interface'
+        name: protos.google.cloud.deploy.v1.IOperationMetadata
+        fullName: protos.google.cloud.deploy.v1.IOperationMetadata
+      - name: '>, '
+        fullName: '>, '
+      - uid: '@google-cloud/deploy!protos.google.longrunning.IOperation:interface'
+        name: protos.google.longrunning.IOperation
+        fullName: protos.google.longrunning.IOperation
       - name: ' | null | undefined, {} | null | undefined>'
         fullName: ' | null | undefined, {} | null | undefined>'
-  - uid: '@google-cloud/deploy!v1.CloudDeployClient#createTarget~4:complex'
-    name: protos.google.cloud.deploy.v1.ICreateTargetRequest
-    fullName: protos.google.cloud.deploy.v1.ICreateTargetRequest
-    spec.typeScript:
-      - name: protos.
-        fullName: protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.ICreateTargetRequest:interface'
-        name: google.cloud.deploy.v1.ICreateTargetRequest
-        fullName: google.cloud.deploy.v1.ICreateTargetRequest
-  - uid: '@google-cloud/deploy!v1.CloudDeployClient#createTarget~5:complex'
+  - uid: '@google-cloud/deploy!v1.CloudDeployClient#createTarget~2:complex'
     name: >-
       Callback<LROperation<protos.google.cloud.deploy.v1.ITarget, protos.google.cloud.deploy.v1.IOperationMetadata>,
       protos.google.longrunning.IOperation | null | undefined, {} | null | undefined>
@@ -5511,21 +5391,21 @@ references:
       - uid: google-gax!LROperation:interface
         name: LROperation
         fullName: LROperation
-      - name: <protos.
-        fullName: <protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.ITarget:interface'
-        name: google.cloud.deploy.v1.ITarget
-        fullName: google.cloud.deploy.v1.ITarget
-      - name: ', protos.'
-        fullName: ', protos.'
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IOperationMetadata:interface'
-        name: google.cloud.deploy.v1.IOperationMetadata
-        fullName: google.cloud.deploy.v1.IOperationMetadata
-      - name: '>, protos.'
-        fullName: '>, protos.'
-      - uid: '@google-cloud/deploy!google.longrunning.IOperation:interface'
-        name: google.longrunning.IOperation
-        fullName: google.longrunning.IOperation
+      - name: <
+        fullName: <
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.ITarget:interface'
+        name: protos.google.cloud.deploy.v1.ITarget
+        fullName: protos.google.cloud.deploy.v1.ITarget
+      - name: ', '
+        fullName: ', '
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IOperationMetadata:interface'
+        name: protos.google.cloud.deploy.v1.IOperationMetadata
+        fullName: protos.google.cloud.deploy.v1.IOperationMetadata
+      - name: '>, '
+        fullName: '>, '
+      - uid: '@google-cloud/deploy!protos.google.longrunning.IOperation:interface'
+        name: protos.google.longrunning.IOperation
+        fullName: protos.google.longrunning.IOperation
       - name: ' | null | undefined, {} | null | undefined>'
         fullName: ' | null | undefined, {} | null | undefined>'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#deleteDeliveryPipeline~0:complex'
@@ -5554,25 +5434,25 @@ references:
       - uid: google-gax!LROperation:interface
         name: LROperation
         fullName: LROperation
-      - name: <protos.
-        fullName: <protos.
-      - uid: '@google-cloud/deploy!google.protobuf.IEmpty:interface'
-        name: google.protobuf.IEmpty
-        fullName: google.protobuf.IEmpty
-      - name: ', protos.'
-        fullName: ', protos.'
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IOperationMetadata:interface'
-        name: google.cloud.deploy.v1.IOperationMetadata
-        fullName: google.cloud.deploy.v1.IOperationMetadata
+      - name: <
+        fullName: <
+      - uid: '@google-cloud/deploy!protos.google.protobuf.IEmpty:interface'
+        name: protos.google.protobuf.IEmpty
+        fullName: protos.google.protobuf.IEmpty
+      - name: ', '
+        fullName: ', '
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IOperationMetadata:interface'
+        name: protos.google.cloud.deploy.v1.IOperationMetadata
+        fullName: protos.google.cloud.deploy.v1.IOperationMetadata
       - name: |-
           >,
-                  protos.
+                  
         fullName: |-
           >,
-                  protos.
-      - uid: '@google-cloud/deploy!google.longrunning.IOperation:interface'
-        name: google.longrunning.IOperation
-        fullName: google.longrunning.IOperation
+                  
+      - uid: '@google-cloud/deploy!protos.google.longrunning.IOperation:interface'
+        name: protos.google.longrunning.IOperation
+        fullName: protos.google.longrunning.IOperation
       - name: |2-
            | undefined,
                   {} | undefined
@@ -5581,25 +5461,10 @@ references:
            | undefined,
                   {} | undefined
               ]>
+  - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IDeleteDeliveryPipelineRequest:interface'
+    name: IDeleteDeliveryPipelineRequest
+    fullName: protos.google.cloud.deploy.v1.IDeleteDeliveryPipelineRequest
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#deleteDeliveryPipeline~1:complex'
-    name: protos.google.cloud.deploy.v1.IDeleteDeliveryPipelineRequest
-    fullName: protos.google.cloud.deploy.v1.IDeleteDeliveryPipelineRequest
-    spec.typeScript:
-      - name: protos.
-        fullName: protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IDeleteDeliveryPipelineRequest:interface'
-        name: google.cloud.deploy.v1.IDeleteDeliveryPipelineRequest
-        fullName: google.cloud.deploy.v1.IDeleteDeliveryPipelineRequest
-  - uid: '@google-cloud/deploy!v1.CloudDeployClient#deleteDeliveryPipeline~2:complex'
-    name: protos.google.cloud.deploy.v1.IDeleteDeliveryPipelineRequest
-    fullName: protos.google.cloud.deploy.v1.IDeleteDeliveryPipelineRequest
-    spec.typeScript:
-      - name: protos.
-        fullName: protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IDeleteDeliveryPipelineRequest:interface'
-        name: google.cloud.deploy.v1.IDeleteDeliveryPipelineRequest
-        fullName: google.cloud.deploy.v1.IDeleteDeliveryPipelineRequest
-  - uid: '@google-cloud/deploy!v1.CloudDeployClient#deleteDeliveryPipeline~3:complex'
     name: >-
       Callback<LROperation<protos.google.protobuf.IEmpty, protos.google.cloud.deploy.v1.IOperationMetadata>,
       protos.google.longrunning.IOperation | null | undefined, {} | null | undefined>
@@ -5615,33 +5480,24 @@ references:
       - uid: google-gax!LROperation:interface
         name: LROperation
         fullName: LROperation
-      - name: <protos.
-        fullName: <protos.
-      - uid: '@google-cloud/deploy!google.protobuf.IEmpty:interface'
-        name: google.protobuf.IEmpty
-        fullName: google.protobuf.IEmpty
-      - name: ', protos.'
-        fullName: ', protos.'
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IOperationMetadata:interface'
-        name: google.cloud.deploy.v1.IOperationMetadata
-        fullName: google.cloud.deploy.v1.IOperationMetadata
-      - name: '>, protos.'
-        fullName: '>, protos.'
-      - uid: '@google-cloud/deploy!google.longrunning.IOperation:interface'
-        name: google.longrunning.IOperation
-        fullName: google.longrunning.IOperation
+      - name: <
+        fullName: <
+      - uid: '@google-cloud/deploy!protos.google.protobuf.IEmpty:interface'
+        name: protos.google.protobuf.IEmpty
+        fullName: protos.google.protobuf.IEmpty
+      - name: ', '
+        fullName: ', '
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IOperationMetadata:interface'
+        name: protos.google.cloud.deploy.v1.IOperationMetadata
+        fullName: protos.google.cloud.deploy.v1.IOperationMetadata
+      - name: '>, '
+        fullName: '>, '
+      - uid: '@google-cloud/deploy!protos.google.longrunning.IOperation:interface'
+        name: protos.google.longrunning.IOperation
+        fullName: protos.google.longrunning.IOperation
       - name: ' | null | undefined, {} | null | undefined>'
         fullName: ' | null | undefined, {} | null | undefined>'
-  - uid: '@google-cloud/deploy!v1.CloudDeployClient#deleteDeliveryPipeline~4:complex'
-    name: protos.google.cloud.deploy.v1.IDeleteDeliveryPipelineRequest
-    fullName: protos.google.cloud.deploy.v1.IDeleteDeliveryPipelineRequest
-    spec.typeScript:
-      - name: protos.
-        fullName: protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IDeleteDeliveryPipelineRequest:interface'
-        name: google.cloud.deploy.v1.IDeleteDeliveryPipelineRequest
-        fullName: google.cloud.deploy.v1.IDeleteDeliveryPipelineRequest
-  - uid: '@google-cloud/deploy!v1.CloudDeployClient#deleteDeliveryPipeline~5:complex'
+  - uid: '@google-cloud/deploy!v1.CloudDeployClient#deleteDeliveryPipeline~2:complex'
     name: >-
       Callback<LROperation<protos.google.protobuf.IEmpty, protos.google.cloud.deploy.v1.IOperationMetadata>,
       protos.google.longrunning.IOperation | null | undefined, {} | null | undefined>
@@ -5657,21 +5513,21 @@ references:
       - uid: google-gax!LROperation:interface
         name: LROperation
         fullName: LROperation
-      - name: <protos.
-        fullName: <protos.
-      - uid: '@google-cloud/deploy!google.protobuf.IEmpty:interface'
-        name: google.protobuf.IEmpty
-        fullName: google.protobuf.IEmpty
-      - name: ', protos.'
-        fullName: ', protos.'
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IOperationMetadata:interface'
-        name: google.cloud.deploy.v1.IOperationMetadata
-        fullName: google.cloud.deploy.v1.IOperationMetadata
-      - name: '>, protos.'
-        fullName: '>, protos.'
-      - uid: '@google-cloud/deploy!google.longrunning.IOperation:interface'
-        name: google.longrunning.IOperation
-        fullName: google.longrunning.IOperation
+      - name: <
+        fullName: <
+      - uid: '@google-cloud/deploy!protos.google.protobuf.IEmpty:interface'
+        name: protos.google.protobuf.IEmpty
+        fullName: protos.google.protobuf.IEmpty
+      - name: ', '
+        fullName: ', '
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IOperationMetadata:interface'
+        name: protos.google.cloud.deploy.v1.IOperationMetadata
+        fullName: protos.google.cloud.deploy.v1.IOperationMetadata
+      - name: '>, '
+        fullName: '>, '
+      - uid: '@google-cloud/deploy!protos.google.longrunning.IOperation:interface'
+        name: protos.google.longrunning.IOperation
+        fullName: protos.google.longrunning.IOperation
       - name: ' | null | undefined, {} | null | undefined>'
         fullName: ' | null | undefined, {} | null | undefined>'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#deleteTarget~0:complex'
@@ -5700,25 +5556,25 @@ references:
       - uid: google-gax!LROperation:interface
         name: LROperation
         fullName: LROperation
-      - name: <protos.
-        fullName: <protos.
-      - uid: '@google-cloud/deploy!google.protobuf.IEmpty:interface'
-        name: google.protobuf.IEmpty
-        fullName: google.protobuf.IEmpty
-      - name: ', protos.'
-        fullName: ', protos.'
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IOperationMetadata:interface'
-        name: google.cloud.deploy.v1.IOperationMetadata
-        fullName: google.cloud.deploy.v1.IOperationMetadata
+      - name: <
+        fullName: <
+      - uid: '@google-cloud/deploy!protos.google.protobuf.IEmpty:interface'
+        name: protos.google.protobuf.IEmpty
+        fullName: protos.google.protobuf.IEmpty
+      - name: ', '
+        fullName: ', '
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IOperationMetadata:interface'
+        name: protos.google.cloud.deploy.v1.IOperationMetadata
+        fullName: protos.google.cloud.deploy.v1.IOperationMetadata
       - name: |-
           >,
-                  protos.
+                  
         fullName: |-
           >,
-                  protos.
-      - uid: '@google-cloud/deploy!google.longrunning.IOperation:interface'
-        name: google.longrunning.IOperation
-        fullName: google.longrunning.IOperation
+                  
+      - uid: '@google-cloud/deploy!protos.google.longrunning.IOperation:interface'
+        name: protos.google.longrunning.IOperation
+        fullName: protos.google.longrunning.IOperation
       - name: |2-
            | undefined,
                   {} | undefined
@@ -5727,25 +5583,10 @@ references:
            | undefined,
                   {} | undefined
               ]>
+  - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IDeleteTargetRequest:interface'
+    name: IDeleteTargetRequest
+    fullName: protos.google.cloud.deploy.v1.IDeleteTargetRequest
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#deleteTarget~1:complex'
-    name: protos.google.cloud.deploy.v1.IDeleteTargetRequest
-    fullName: protos.google.cloud.deploy.v1.IDeleteTargetRequest
-    spec.typeScript:
-      - name: protos.
-        fullName: protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IDeleteTargetRequest:interface'
-        name: google.cloud.deploy.v1.IDeleteTargetRequest
-        fullName: google.cloud.deploy.v1.IDeleteTargetRequest
-  - uid: '@google-cloud/deploy!v1.CloudDeployClient#deleteTarget~2:complex'
-    name: protos.google.cloud.deploy.v1.IDeleteTargetRequest
-    fullName: protos.google.cloud.deploy.v1.IDeleteTargetRequest
-    spec.typeScript:
-      - name: protos.
-        fullName: protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IDeleteTargetRequest:interface'
-        name: google.cloud.deploy.v1.IDeleteTargetRequest
-        fullName: google.cloud.deploy.v1.IDeleteTargetRequest
-  - uid: '@google-cloud/deploy!v1.CloudDeployClient#deleteTarget~3:complex'
     name: >-
       Callback<LROperation<protos.google.protobuf.IEmpty, protos.google.cloud.deploy.v1.IOperationMetadata>,
       protos.google.longrunning.IOperation | null | undefined, {} | null | undefined>
@@ -5761,33 +5602,24 @@ references:
       - uid: google-gax!LROperation:interface
         name: LROperation
         fullName: LROperation
-      - name: <protos.
-        fullName: <protos.
-      - uid: '@google-cloud/deploy!google.protobuf.IEmpty:interface'
-        name: google.protobuf.IEmpty
-        fullName: google.protobuf.IEmpty
-      - name: ', protos.'
-        fullName: ', protos.'
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IOperationMetadata:interface'
-        name: google.cloud.deploy.v1.IOperationMetadata
-        fullName: google.cloud.deploy.v1.IOperationMetadata
-      - name: '>, protos.'
-        fullName: '>, protos.'
-      - uid: '@google-cloud/deploy!google.longrunning.IOperation:interface'
-        name: google.longrunning.IOperation
-        fullName: google.longrunning.IOperation
+      - name: <
+        fullName: <
+      - uid: '@google-cloud/deploy!protos.google.protobuf.IEmpty:interface'
+        name: protos.google.protobuf.IEmpty
+        fullName: protos.google.protobuf.IEmpty
+      - name: ', '
+        fullName: ', '
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IOperationMetadata:interface'
+        name: protos.google.cloud.deploy.v1.IOperationMetadata
+        fullName: protos.google.cloud.deploy.v1.IOperationMetadata
+      - name: '>, '
+        fullName: '>, '
+      - uid: '@google-cloud/deploy!protos.google.longrunning.IOperation:interface'
+        name: protos.google.longrunning.IOperation
+        fullName: protos.google.longrunning.IOperation
       - name: ' | null | undefined, {} | null | undefined>'
         fullName: ' | null | undefined, {} | null | undefined>'
-  - uid: '@google-cloud/deploy!v1.CloudDeployClient#deleteTarget~4:complex'
-    name: protos.google.cloud.deploy.v1.IDeleteTargetRequest
-    fullName: protos.google.cloud.deploy.v1.IDeleteTargetRequest
-    spec.typeScript:
-      - name: protos.
-        fullName: protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IDeleteTargetRequest:interface'
-        name: google.cloud.deploy.v1.IDeleteTargetRequest
-        fullName: google.cloud.deploy.v1.IDeleteTargetRequest
-  - uid: '@google-cloud/deploy!v1.CloudDeployClient#deleteTarget~5:complex'
+  - uid: '@google-cloud/deploy!v1.CloudDeployClient#deleteTarget~2:complex'
     name: >-
       Callback<LROperation<protos.google.protobuf.IEmpty, protos.google.cloud.deploy.v1.IOperationMetadata>,
       protos.google.longrunning.IOperation | null | undefined, {} | null | undefined>
@@ -5803,21 +5635,21 @@ references:
       - uid: google-gax!LROperation:interface
         name: LROperation
         fullName: LROperation
-      - name: <protos.
-        fullName: <protos.
-      - uid: '@google-cloud/deploy!google.protobuf.IEmpty:interface'
-        name: google.protobuf.IEmpty
-        fullName: google.protobuf.IEmpty
-      - name: ', protos.'
-        fullName: ', protos.'
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IOperationMetadata:interface'
-        name: google.cloud.deploy.v1.IOperationMetadata
-        fullName: google.cloud.deploy.v1.IOperationMetadata
-      - name: '>, protos.'
-        fullName: '>, protos.'
-      - uid: '@google-cloud/deploy!google.longrunning.IOperation:interface'
-        name: google.longrunning.IOperation
-        fullName: google.longrunning.IOperation
+      - name: <
+        fullName: <
+      - uid: '@google-cloud/deploy!protos.google.protobuf.IEmpty:interface'
+        name: protos.google.protobuf.IEmpty
+        fullName: protos.google.protobuf.IEmpty
+      - name: ', '
+        fullName: ', '
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IOperationMetadata:interface'
+        name: protos.google.cloud.deploy.v1.IOperationMetadata
+        fullName: protos.google.cloud.deploy.v1.IOperationMetadata
+      - name: '>, '
+        fullName: '>, '
+      - uid: '@google-cloud/deploy!protos.google.longrunning.IOperation:interface'
+        name: protos.google.longrunning.IOperation
+        fullName: protos.google.longrunning.IOperation
       - name: ' | null | undefined, {} | null | undefined>'
         fullName: ' | null | undefined, {} | null | undefined>'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#getConfig~0:complex'
@@ -5839,22 +5671,22 @@ references:
         fullName: Promise
       - name: |-
           <[
-                  protos.
+                  
         fullName: |-
           <[
-                  protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IConfig:interface'
-        name: google.cloud.deploy.v1.IConfig
-        fullName: google.cloud.deploy.v1.IConfig
+                  
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IConfig:interface'
+        name: protos.google.cloud.deploy.v1.IConfig
+        fullName: protos.google.cloud.deploy.v1.IConfig
       - name: |-
           ,
-                  protos.
+                  
         fullName: |-
           ,
-                  protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IGetConfigRequest:interface'
-        name: google.cloud.deploy.v1.IGetConfigRequest
-        fullName: google.cloud.deploy.v1.IGetConfigRequest
+                  
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IGetConfigRequest:interface'
+        name: protos.google.cloud.deploy.v1.IGetConfigRequest
+        fullName: protos.google.cloud.deploy.v1.IGetConfigRequest
       - name: |2-
            | undefined,
                   {} | undefined
@@ -5863,25 +5695,10 @@ references:
            | undefined,
                   {} | undefined
               ]>
+  - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IGetConfigRequest:interface'
+    name: IGetConfigRequest
+    fullName: protos.google.cloud.deploy.v1.IGetConfigRequest
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#getConfig~1:complex'
-    name: protos.google.cloud.deploy.v1.IGetConfigRequest
-    fullName: protos.google.cloud.deploy.v1.IGetConfigRequest
-    spec.typeScript:
-      - name: protos.
-        fullName: protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IGetConfigRequest:interface'
-        name: google.cloud.deploy.v1.IGetConfigRequest
-        fullName: google.cloud.deploy.v1.IGetConfigRequest
-  - uid: '@google-cloud/deploy!v1.CloudDeployClient#getConfig~2:complex'
-    name: protos.google.cloud.deploy.v1.IGetConfigRequest
-    fullName: protos.google.cloud.deploy.v1.IGetConfigRequest
-    spec.typeScript:
-      - name: protos.
-        fullName: protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IGetConfigRequest:interface'
-        name: google.cloud.deploy.v1.IGetConfigRequest
-        fullName: google.cloud.deploy.v1.IGetConfigRequest
-  - uid: '@google-cloud/deploy!v1.CloudDeployClient#getConfig~3:complex'
     name: >-
       Callback<protos.google.cloud.deploy.v1.IConfig, protos.google.cloud.deploy.v1.IGetConfigRequest | null |
       undefined, {} | null | undefined>
@@ -5892,28 +5709,19 @@ references:
       - uid: google-gax!Callback:interface
         name: Callback
         fullName: Callback
-      - name: <protos.
-        fullName: <protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IConfig:interface'
-        name: google.cloud.deploy.v1.IConfig
-        fullName: google.cloud.deploy.v1.IConfig
-      - name: ', protos.'
-        fullName: ', protos.'
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IGetConfigRequest:interface'
-        name: google.cloud.deploy.v1.IGetConfigRequest
-        fullName: google.cloud.deploy.v1.IGetConfigRequest
+      - name: <
+        fullName: <
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IConfig:interface'
+        name: protos.google.cloud.deploy.v1.IConfig
+        fullName: protos.google.cloud.deploy.v1.IConfig
+      - name: ', '
+        fullName: ', '
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IGetConfigRequest:interface'
+        name: protos.google.cloud.deploy.v1.IGetConfigRequest
+        fullName: protos.google.cloud.deploy.v1.IGetConfigRequest
       - name: ' | null | undefined, {} | null | undefined>'
         fullName: ' | null | undefined, {} | null | undefined>'
-  - uid: '@google-cloud/deploy!v1.CloudDeployClient#getConfig~4:complex'
-    name: protos.google.cloud.deploy.v1.IGetConfigRequest
-    fullName: protos.google.cloud.deploy.v1.IGetConfigRequest
-    spec.typeScript:
-      - name: protos.
-        fullName: protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IGetConfigRequest:interface'
-        name: google.cloud.deploy.v1.IGetConfigRequest
-        fullName: google.cloud.deploy.v1.IGetConfigRequest
-  - uid: '@google-cloud/deploy!v1.CloudDeployClient#getConfig~5:complex'
+  - uid: '@google-cloud/deploy!v1.CloudDeployClient#getConfig~2:complex'
     name: >-
       Callback<protos.google.cloud.deploy.v1.IConfig, protos.google.cloud.deploy.v1.IGetConfigRequest | null |
       undefined, {} | null | undefined>
@@ -5924,16 +5732,16 @@ references:
       - uid: google-gax!Callback:interface
         name: Callback
         fullName: Callback
-      - name: <protos.
-        fullName: <protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IConfig:interface'
-        name: google.cloud.deploy.v1.IConfig
-        fullName: google.cloud.deploy.v1.IConfig
-      - name: ', protos.'
-        fullName: ', protos.'
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IGetConfigRequest:interface'
-        name: google.cloud.deploy.v1.IGetConfigRequest
-        fullName: google.cloud.deploy.v1.IGetConfigRequest
+      - name: <
+        fullName: <
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IConfig:interface'
+        name: protos.google.cloud.deploy.v1.IConfig
+        fullName: protos.google.cloud.deploy.v1.IConfig
+      - name: ', '
+        fullName: ', '
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IGetConfigRequest:interface'
+        name: protos.google.cloud.deploy.v1.IGetConfigRequest
+        fullName: protos.google.cloud.deploy.v1.IGetConfigRequest
       - name: ' | null | undefined, {} | null | undefined>'
         fullName: ' | null | undefined, {} | null | undefined>'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#getDeliveryPipeline~0:complex'
@@ -5955,22 +5763,22 @@ references:
         fullName: Promise
       - name: |-
           <[
-                  protos.
+                  
         fullName: |-
           <[
-                  protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IDeliveryPipeline:interface'
-        name: google.cloud.deploy.v1.IDeliveryPipeline
-        fullName: google.cloud.deploy.v1.IDeliveryPipeline
+                  
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IDeliveryPipeline:interface'
+        name: protos.google.cloud.deploy.v1.IDeliveryPipeline
+        fullName: protos.google.cloud.deploy.v1.IDeliveryPipeline
       - name: |-
           ,
-                  protos.
+                  
         fullName: |-
           ,
-                  protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IGetDeliveryPipelineRequest:interface'
-        name: google.cloud.deploy.v1.IGetDeliveryPipelineRequest
-        fullName: google.cloud.deploy.v1.IGetDeliveryPipelineRequest
+                  
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IGetDeliveryPipelineRequest:interface'
+        name: protos.google.cloud.deploy.v1.IGetDeliveryPipelineRequest
+        fullName: protos.google.cloud.deploy.v1.IGetDeliveryPipelineRequest
       - name: |2-
            | undefined,
                   {} | undefined
@@ -5979,25 +5787,10 @@ references:
            | undefined,
                   {} | undefined
               ]>
+  - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IGetDeliveryPipelineRequest:interface'
+    name: IGetDeliveryPipelineRequest
+    fullName: protos.google.cloud.deploy.v1.IGetDeliveryPipelineRequest
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#getDeliveryPipeline~1:complex'
-    name: protos.google.cloud.deploy.v1.IGetDeliveryPipelineRequest
-    fullName: protos.google.cloud.deploy.v1.IGetDeliveryPipelineRequest
-    spec.typeScript:
-      - name: protos.
-        fullName: protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IGetDeliveryPipelineRequest:interface'
-        name: google.cloud.deploy.v1.IGetDeliveryPipelineRequest
-        fullName: google.cloud.deploy.v1.IGetDeliveryPipelineRequest
-  - uid: '@google-cloud/deploy!v1.CloudDeployClient#getDeliveryPipeline~2:complex'
-    name: protos.google.cloud.deploy.v1.IGetDeliveryPipelineRequest
-    fullName: protos.google.cloud.deploy.v1.IGetDeliveryPipelineRequest
-    spec.typeScript:
-      - name: protos.
-        fullName: protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IGetDeliveryPipelineRequest:interface'
-        name: google.cloud.deploy.v1.IGetDeliveryPipelineRequest
-        fullName: google.cloud.deploy.v1.IGetDeliveryPipelineRequest
-  - uid: '@google-cloud/deploy!v1.CloudDeployClient#getDeliveryPipeline~3:complex'
     name: >-
       Callback<protos.google.cloud.deploy.v1.IDeliveryPipeline,
       protos.google.cloud.deploy.v1.IGetDeliveryPipelineRequest | null | undefined, {} | null | undefined>
@@ -6008,28 +5801,19 @@ references:
       - uid: google-gax!Callback:interface
         name: Callback
         fullName: Callback
-      - name: <protos.
-        fullName: <protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IDeliveryPipeline:interface'
-        name: google.cloud.deploy.v1.IDeliveryPipeline
-        fullName: google.cloud.deploy.v1.IDeliveryPipeline
-      - name: ', protos.'
-        fullName: ', protos.'
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IGetDeliveryPipelineRequest:interface'
-        name: google.cloud.deploy.v1.IGetDeliveryPipelineRequest
-        fullName: google.cloud.deploy.v1.IGetDeliveryPipelineRequest
+      - name: <
+        fullName: <
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IDeliveryPipeline:interface'
+        name: protos.google.cloud.deploy.v1.IDeliveryPipeline
+        fullName: protos.google.cloud.deploy.v1.IDeliveryPipeline
+      - name: ', '
+        fullName: ', '
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IGetDeliveryPipelineRequest:interface'
+        name: protos.google.cloud.deploy.v1.IGetDeliveryPipelineRequest
+        fullName: protos.google.cloud.deploy.v1.IGetDeliveryPipelineRequest
       - name: ' | null | undefined, {} | null | undefined>'
         fullName: ' | null | undefined, {} | null | undefined>'
-  - uid: '@google-cloud/deploy!v1.CloudDeployClient#getDeliveryPipeline~4:complex'
-    name: protos.google.cloud.deploy.v1.IGetDeliveryPipelineRequest
-    fullName: protos.google.cloud.deploy.v1.IGetDeliveryPipelineRequest
-    spec.typeScript:
-      - name: protos.
-        fullName: protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IGetDeliveryPipelineRequest:interface'
-        name: google.cloud.deploy.v1.IGetDeliveryPipelineRequest
-        fullName: google.cloud.deploy.v1.IGetDeliveryPipelineRequest
-  - uid: '@google-cloud/deploy!v1.CloudDeployClient#getDeliveryPipeline~5:complex'
+  - uid: '@google-cloud/deploy!v1.CloudDeployClient#getDeliveryPipeline~2:complex'
     name: >-
       Callback<protos.google.cloud.deploy.v1.IDeliveryPipeline,
       protos.google.cloud.deploy.v1.IGetDeliveryPipelineRequest | null | undefined, {} | null | undefined>
@@ -6040,16 +5824,16 @@ references:
       - uid: google-gax!Callback:interface
         name: Callback
         fullName: Callback
-      - name: <protos.
-        fullName: <protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IDeliveryPipeline:interface'
-        name: google.cloud.deploy.v1.IDeliveryPipeline
-        fullName: google.cloud.deploy.v1.IDeliveryPipeline
-      - name: ', protos.'
-        fullName: ', protos.'
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IGetDeliveryPipelineRequest:interface'
-        name: google.cloud.deploy.v1.IGetDeliveryPipelineRequest
-        fullName: google.cloud.deploy.v1.IGetDeliveryPipelineRequest
+      - name: <
+        fullName: <
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IDeliveryPipeline:interface'
+        name: protos.google.cloud.deploy.v1.IDeliveryPipeline
+        fullName: protos.google.cloud.deploy.v1.IDeliveryPipeline
+      - name: ', '
+        fullName: ', '
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IGetDeliveryPipelineRequest:interface'
+        name: protos.google.cloud.deploy.v1.IGetDeliveryPipelineRequest
+        fullName: protos.google.cloud.deploy.v1.IGetDeliveryPipelineRequest
       - name: ' | null | undefined, {} | null | undefined>'
         fullName: ' | null | undefined, {} | null | undefined>'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#getProjectId~0:complex'
@@ -6089,22 +5873,22 @@ references:
         fullName: Promise
       - name: |-
           <[
-                  protos.
+                  
         fullName: |-
           <[
-                  protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IRelease:interface'
-        name: google.cloud.deploy.v1.IRelease
-        fullName: google.cloud.deploy.v1.IRelease
+                  
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IRelease:interface'
+        name: protos.google.cloud.deploy.v1.IRelease
+        fullName: protos.google.cloud.deploy.v1.IRelease
       - name: |-
           ,
-                  protos.
+                  
         fullName: |-
           ,
-                  protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IGetReleaseRequest:interface'
-        name: google.cloud.deploy.v1.IGetReleaseRequest
-        fullName: google.cloud.deploy.v1.IGetReleaseRequest
+                  
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IGetReleaseRequest:interface'
+        name: protos.google.cloud.deploy.v1.IGetReleaseRequest
+        fullName: protos.google.cloud.deploy.v1.IGetReleaseRequest
       - name: |2-
            | undefined,
                   {} | undefined
@@ -6113,25 +5897,10 @@ references:
            | undefined,
                   {} | undefined
               ]>
+  - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IGetReleaseRequest:interface'
+    name: IGetReleaseRequest
+    fullName: protos.google.cloud.deploy.v1.IGetReleaseRequest
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#getRelease~1:complex'
-    name: protos.google.cloud.deploy.v1.IGetReleaseRequest
-    fullName: protos.google.cloud.deploy.v1.IGetReleaseRequest
-    spec.typeScript:
-      - name: protos.
-        fullName: protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IGetReleaseRequest:interface'
-        name: google.cloud.deploy.v1.IGetReleaseRequest
-        fullName: google.cloud.deploy.v1.IGetReleaseRequest
-  - uid: '@google-cloud/deploy!v1.CloudDeployClient#getRelease~2:complex'
-    name: protos.google.cloud.deploy.v1.IGetReleaseRequest
-    fullName: protos.google.cloud.deploy.v1.IGetReleaseRequest
-    spec.typeScript:
-      - name: protos.
-        fullName: protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IGetReleaseRequest:interface'
-        name: google.cloud.deploy.v1.IGetReleaseRequest
-        fullName: google.cloud.deploy.v1.IGetReleaseRequest
-  - uid: '@google-cloud/deploy!v1.CloudDeployClient#getRelease~3:complex'
     name: >-
       Callback<protos.google.cloud.deploy.v1.IRelease, protos.google.cloud.deploy.v1.IGetReleaseRequest | null |
       undefined, {} | null | undefined>
@@ -6142,28 +5911,19 @@ references:
       - uid: google-gax!Callback:interface
         name: Callback
         fullName: Callback
-      - name: <protos.
-        fullName: <protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IRelease:interface'
-        name: google.cloud.deploy.v1.IRelease
-        fullName: google.cloud.deploy.v1.IRelease
-      - name: ', protos.'
-        fullName: ', protos.'
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IGetReleaseRequest:interface'
-        name: google.cloud.deploy.v1.IGetReleaseRequest
-        fullName: google.cloud.deploy.v1.IGetReleaseRequest
+      - name: <
+        fullName: <
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IRelease:interface'
+        name: protos.google.cloud.deploy.v1.IRelease
+        fullName: protos.google.cloud.deploy.v1.IRelease
+      - name: ', '
+        fullName: ', '
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IGetReleaseRequest:interface'
+        name: protos.google.cloud.deploy.v1.IGetReleaseRequest
+        fullName: protos.google.cloud.deploy.v1.IGetReleaseRequest
       - name: ' | null | undefined, {} | null | undefined>'
         fullName: ' | null | undefined, {} | null | undefined>'
-  - uid: '@google-cloud/deploy!v1.CloudDeployClient#getRelease~4:complex'
-    name: protos.google.cloud.deploy.v1.IGetReleaseRequest
-    fullName: protos.google.cloud.deploy.v1.IGetReleaseRequest
-    spec.typeScript:
-      - name: protos.
-        fullName: protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IGetReleaseRequest:interface'
-        name: google.cloud.deploy.v1.IGetReleaseRequest
-        fullName: google.cloud.deploy.v1.IGetReleaseRequest
-  - uid: '@google-cloud/deploy!v1.CloudDeployClient#getRelease~5:complex'
+  - uid: '@google-cloud/deploy!v1.CloudDeployClient#getRelease~2:complex'
     name: >-
       Callback<protos.google.cloud.deploy.v1.IRelease, protos.google.cloud.deploy.v1.IGetReleaseRequest | null |
       undefined, {} | null | undefined>
@@ -6174,16 +5934,16 @@ references:
       - uid: google-gax!Callback:interface
         name: Callback
         fullName: Callback
-      - name: <protos.
-        fullName: <protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IRelease:interface'
-        name: google.cloud.deploy.v1.IRelease
-        fullName: google.cloud.deploy.v1.IRelease
-      - name: ', protos.'
-        fullName: ', protos.'
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IGetReleaseRequest:interface'
-        name: google.cloud.deploy.v1.IGetReleaseRequest
-        fullName: google.cloud.deploy.v1.IGetReleaseRequest
+      - name: <
+        fullName: <
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IRelease:interface'
+        name: protos.google.cloud.deploy.v1.IRelease
+        fullName: protos.google.cloud.deploy.v1.IRelease
+      - name: ', '
+        fullName: ', '
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IGetReleaseRequest:interface'
+        name: protos.google.cloud.deploy.v1.IGetReleaseRequest
+        fullName: protos.google.cloud.deploy.v1.IGetReleaseRequest
       - name: ' | null | undefined, {} | null | undefined>'
         fullName: ' | null | undefined, {} | null | undefined>'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#getRollout~0:complex'
@@ -6205,22 +5965,22 @@ references:
         fullName: Promise
       - name: |-
           <[
-                  protos.
+                  
         fullName: |-
           <[
-                  protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IRollout:interface'
-        name: google.cloud.deploy.v1.IRollout
-        fullName: google.cloud.deploy.v1.IRollout
+                  
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IRollout:interface'
+        name: protos.google.cloud.deploy.v1.IRollout
+        fullName: protos.google.cloud.deploy.v1.IRollout
       - name: |-
           ,
-                  protos.
+                  
         fullName: |-
           ,
-                  protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IGetRolloutRequest:interface'
-        name: google.cloud.deploy.v1.IGetRolloutRequest
-        fullName: google.cloud.deploy.v1.IGetRolloutRequest
+                  
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IGetRolloutRequest:interface'
+        name: protos.google.cloud.deploy.v1.IGetRolloutRequest
+        fullName: protos.google.cloud.deploy.v1.IGetRolloutRequest
       - name: |2-
            | undefined,
                   {} | undefined
@@ -6229,25 +5989,10 @@ references:
            | undefined,
                   {} | undefined
               ]>
+  - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IGetRolloutRequest:interface'
+    name: IGetRolloutRequest
+    fullName: protos.google.cloud.deploy.v1.IGetRolloutRequest
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#getRollout~1:complex'
-    name: protos.google.cloud.deploy.v1.IGetRolloutRequest
-    fullName: protos.google.cloud.deploy.v1.IGetRolloutRequest
-    spec.typeScript:
-      - name: protos.
-        fullName: protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IGetRolloutRequest:interface'
-        name: google.cloud.deploy.v1.IGetRolloutRequest
-        fullName: google.cloud.deploy.v1.IGetRolloutRequest
-  - uid: '@google-cloud/deploy!v1.CloudDeployClient#getRollout~2:complex'
-    name: protos.google.cloud.deploy.v1.IGetRolloutRequest
-    fullName: protos.google.cloud.deploy.v1.IGetRolloutRequest
-    spec.typeScript:
-      - name: protos.
-        fullName: protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IGetRolloutRequest:interface'
-        name: google.cloud.deploy.v1.IGetRolloutRequest
-        fullName: google.cloud.deploy.v1.IGetRolloutRequest
-  - uid: '@google-cloud/deploy!v1.CloudDeployClient#getRollout~3:complex'
     name: >-
       Callback<protos.google.cloud.deploy.v1.IRollout, protos.google.cloud.deploy.v1.IGetRolloutRequest | null |
       undefined, {} | null | undefined>
@@ -6258,28 +6003,19 @@ references:
       - uid: google-gax!Callback:interface
         name: Callback
         fullName: Callback
-      - name: <protos.
-        fullName: <protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IRollout:interface'
-        name: google.cloud.deploy.v1.IRollout
-        fullName: google.cloud.deploy.v1.IRollout
-      - name: ', protos.'
-        fullName: ', protos.'
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IGetRolloutRequest:interface'
-        name: google.cloud.deploy.v1.IGetRolloutRequest
-        fullName: google.cloud.deploy.v1.IGetRolloutRequest
+      - name: <
+        fullName: <
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IRollout:interface'
+        name: protos.google.cloud.deploy.v1.IRollout
+        fullName: protos.google.cloud.deploy.v1.IRollout
+      - name: ', '
+        fullName: ', '
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IGetRolloutRequest:interface'
+        name: protos.google.cloud.deploy.v1.IGetRolloutRequest
+        fullName: protos.google.cloud.deploy.v1.IGetRolloutRequest
       - name: ' | null | undefined, {} | null | undefined>'
         fullName: ' | null | undefined, {} | null | undefined>'
-  - uid: '@google-cloud/deploy!v1.CloudDeployClient#getRollout~4:complex'
-    name: protos.google.cloud.deploy.v1.IGetRolloutRequest
-    fullName: protos.google.cloud.deploy.v1.IGetRolloutRequest
-    spec.typeScript:
-      - name: protos.
-        fullName: protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IGetRolloutRequest:interface'
-        name: google.cloud.deploy.v1.IGetRolloutRequest
-        fullName: google.cloud.deploy.v1.IGetRolloutRequest
-  - uid: '@google-cloud/deploy!v1.CloudDeployClient#getRollout~5:complex'
+  - uid: '@google-cloud/deploy!v1.CloudDeployClient#getRollout~2:complex'
     name: >-
       Callback<protos.google.cloud.deploy.v1.IRollout, protos.google.cloud.deploy.v1.IGetRolloutRequest | null |
       undefined, {} | null | undefined>
@@ -6290,16 +6026,16 @@ references:
       - uid: google-gax!Callback:interface
         name: Callback
         fullName: Callback
-      - name: <protos.
-        fullName: <protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IRollout:interface'
-        name: google.cloud.deploy.v1.IRollout
-        fullName: google.cloud.deploy.v1.IRollout
-      - name: ', protos.'
-        fullName: ', protos.'
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IGetRolloutRequest:interface'
-        name: google.cloud.deploy.v1.IGetRolloutRequest
-        fullName: google.cloud.deploy.v1.IGetRolloutRequest
+      - name: <
+        fullName: <
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IRollout:interface'
+        name: protos.google.cloud.deploy.v1.IRollout
+        fullName: protos.google.cloud.deploy.v1.IRollout
+      - name: ', '
+        fullName: ', '
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IGetRolloutRequest:interface'
+        name: protos.google.cloud.deploy.v1.IGetRolloutRequest
+        fullName: protos.google.cloud.deploy.v1.IGetRolloutRequest
       - name: ' | null | undefined, {} | null | undefined>'
         fullName: ' | null | undefined, {} | null | undefined>'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#getTarget~0:complex'
@@ -6321,22 +6057,22 @@ references:
         fullName: Promise
       - name: |-
           <[
-                  protos.
+                  
         fullName: |-
           <[
-                  protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.ITarget:interface'
-        name: google.cloud.deploy.v1.ITarget
-        fullName: google.cloud.deploy.v1.ITarget
+                  
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.ITarget:interface'
+        name: protos.google.cloud.deploy.v1.ITarget
+        fullName: protos.google.cloud.deploy.v1.ITarget
       - name: |-
           ,
-                  protos.
+                  
         fullName: |-
           ,
-                  protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IGetTargetRequest:interface'
-        name: google.cloud.deploy.v1.IGetTargetRequest
-        fullName: google.cloud.deploy.v1.IGetTargetRequest
+                  
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IGetTargetRequest:interface'
+        name: protos.google.cloud.deploy.v1.IGetTargetRequest
+        fullName: protos.google.cloud.deploy.v1.IGetTargetRequest
       - name: |2-
            | undefined,
                   {} | undefined
@@ -6345,25 +6081,10 @@ references:
            | undefined,
                   {} | undefined
               ]>
+  - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IGetTargetRequest:interface'
+    name: IGetTargetRequest
+    fullName: protos.google.cloud.deploy.v1.IGetTargetRequest
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#getTarget~1:complex'
-    name: protos.google.cloud.deploy.v1.IGetTargetRequest
-    fullName: protos.google.cloud.deploy.v1.IGetTargetRequest
-    spec.typeScript:
-      - name: protos.
-        fullName: protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IGetTargetRequest:interface'
-        name: google.cloud.deploy.v1.IGetTargetRequest
-        fullName: google.cloud.deploy.v1.IGetTargetRequest
-  - uid: '@google-cloud/deploy!v1.CloudDeployClient#getTarget~2:complex'
-    name: protos.google.cloud.deploy.v1.IGetTargetRequest
-    fullName: protos.google.cloud.deploy.v1.IGetTargetRequest
-    spec.typeScript:
-      - name: protos.
-        fullName: protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IGetTargetRequest:interface'
-        name: google.cloud.deploy.v1.IGetTargetRequest
-        fullName: google.cloud.deploy.v1.IGetTargetRequest
-  - uid: '@google-cloud/deploy!v1.CloudDeployClient#getTarget~3:complex'
     name: >-
       Callback<protos.google.cloud.deploy.v1.ITarget, protos.google.cloud.deploy.v1.IGetTargetRequest | null |
       undefined, {} | null | undefined>
@@ -6374,28 +6095,19 @@ references:
       - uid: google-gax!Callback:interface
         name: Callback
         fullName: Callback
-      - name: <protos.
-        fullName: <protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.ITarget:interface'
-        name: google.cloud.deploy.v1.ITarget
-        fullName: google.cloud.deploy.v1.ITarget
-      - name: ', protos.'
-        fullName: ', protos.'
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IGetTargetRequest:interface'
-        name: google.cloud.deploy.v1.IGetTargetRequest
-        fullName: google.cloud.deploy.v1.IGetTargetRequest
+      - name: <
+        fullName: <
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.ITarget:interface'
+        name: protos.google.cloud.deploy.v1.ITarget
+        fullName: protos.google.cloud.deploy.v1.ITarget
+      - name: ', '
+        fullName: ', '
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IGetTargetRequest:interface'
+        name: protos.google.cloud.deploy.v1.IGetTargetRequest
+        fullName: protos.google.cloud.deploy.v1.IGetTargetRequest
       - name: ' | null | undefined, {} | null | undefined>'
         fullName: ' | null | undefined, {} | null | undefined>'
-  - uid: '@google-cloud/deploy!v1.CloudDeployClient#getTarget~4:complex'
-    name: protos.google.cloud.deploy.v1.IGetTargetRequest
-    fullName: protos.google.cloud.deploy.v1.IGetTargetRequest
-    spec.typeScript:
-      - name: protos.
-        fullName: protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IGetTargetRequest:interface'
-        name: google.cloud.deploy.v1.IGetTargetRequest
-        fullName: google.cloud.deploy.v1.IGetTargetRequest
-  - uid: '@google-cloud/deploy!v1.CloudDeployClient#getTarget~5:complex'
+  - uid: '@google-cloud/deploy!v1.CloudDeployClient#getTarget~2:complex'
     name: >-
       Callback<protos.google.cloud.deploy.v1.ITarget, protos.google.cloud.deploy.v1.IGetTargetRequest | null |
       undefined, {} | null | undefined>
@@ -6406,16 +6118,16 @@ references:
       - uid: google-gax!Callback:interface
         name: Callback
         fullName: Callback
-      - name: <protos.
-        fullName: <protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.ITarget:interface'
-        name: google.cloud.deploy.v1.ITarget
-        fullName: google.cloud.deploy.v1.ITarget
-      - name: ', protos.'
-        fullName: ', protos.'
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IGetTargetRequest:interface'
-        name: google.cloud.deploy.v1.IGetTargetRequest
-        fullName: google.cloud.deploy.v1.IGetTargetRequest
+      - name: <
+        fullName: <
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.ITarget:interface'
+        name: protos.google.cloud.deploy.v1.ITarget
+        fullName: protos.google.cloud.deploy.v1.ITarget
+      - name: ', '
+        fullName: ', '
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IGetTargetRequest:interface'
+        name: protos.google.cloud.deploy.v1.IGetTargetRequest
+        fullName: protos.google.cloud.deploy.v1.IGetTargetRequest
       - name: ' | null | undefined, {} | null | undefined>'
         fullName: ' | null | undefined, {} | null | undefined>'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#initialize~0:complex'
@@ -6465,56 +6177,41 @@ references:
         fullName: Promise
       - name: |-
           <[
-                  protos.
+                  
         fullName: |-
           <[
-                  protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IDeliveryPipeline:interface'
-        name: google.cloud.deploy.v1.IDeliveryPipeline
-        fullName: google.cloud.deploy.v1.IDeliveryPipeline
+                  
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IDeliveryPipeline:interface'
+        name: protos.google.cloud.deploy.v1.IDeliveryPipeline
+        fullName: protos.google.cloud.deploy.v1.IDeliveryPipeline
       - name: |-
           [],
-                  protos.
+                  
         fullName: |-
           [],
-                  protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IListDeliveryPipelinesRequest:interface'
-        name: google.cloud.deploy.v1.IListDeliveryPipelinesRequest
-        fullName: google.cloud.deploy.v1.IListDeliveryPipelinesRequest
+                  
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IListDeliveryPipelinesRequest:interface'
+        name: protos.google.cloud.deploy.v1.IListDeliveryPipelinesRequest
+        fullName: protos.google.cloud.deploy.v1.IListDeliveryPipelinesRequest
       - name: |2-
            | null,
-                  protos.
+                  
         fullName: |2-
            | null,
-                  protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IListDeliveryPipelinesResponse:interface'
-        name: google.cloud.deploy.v1.IListDeliveryPipelinesResponse
-        fullName: google.cloud.deploy.v1.IListDeliveryPipelinesResponse
+                  
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IListDeliveryPipelinesResponse:interface'
+        name: protos.google.cloud.deploy.v1.IListDeliveryPipelinesResponse
+        fullName: protos.google.cloud.deploy.v1.IListDeliveryPipelinesResponse
       - name: |2-
 
               ]>
         fullName: |2-
 
               ]>
+  - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IListDeliveryPipelinesRequest:interface'
+    name: IListDeliveryPipelinesRequest
+    fullName: protos.google.cloud.deploy.v1.IListDeliveryPipelinesRequest
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#listDeliveryPipelines~1:complex'
-    name: protos.google.cloud.deploy.v1.IListDeliveryPipelinesRequest
-    fullName: protos.google.cloud.deploy.v1.IListDeliveryPipelinesRequest
-    spec.typeScript:
-      - name: protos.
-        fullName: protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IListDeliveryPipelinesRequest:interface'
-        name: google.cloud.deploy.v1.IListDeliveryPipelinesRequest
-        fullName: google.cloud.deploy.v1.IListDeliveryPipelinesRequest
-  - uid: '@google-cloud/deploy!v1.CloudDeployClient#listDeliveryPipelines~2:complex'
-    name: protos.google.cloud.deploy.v1.IListDeliveryPipelinesRequest
-    fullName: protos.google.cloud.deploy.v1.IListDeliveryPipelinesRequest
-    spec.typeScript:
-      - name: protos.
-        fullName: protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IListDeliveryPipelinesRequest:interface'
-        name: google.cloud.deploy.v1.IListDeliveryPipelinesRequest
-        fullName: google.cloud.deploy.v1.IListDeliveryPipelinesRequest
-  - uid: '@google-cloud/deploy!v1.CloudDeployClient#listDeliveryPipelines~3:complex'
     name: >-
       PaginationCallback<protos.google.cloud.deploy.v1.IListDeliveryPipelinesRequest,
       protos.google.cloud.deploy.v1.IListDeliveryPipelinesResponse | null | undefined,
@@ -6527,33 +6224,24 @@ references:
       - uid: google-gax!PaginationCallback:interface
         name: PaginationCallback
         fullName: PaginationCallback
-      - name: <protos.
-        fullName: <protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IListDeliveryPipelinesRequest:interface'
-        name: google.cloud.deploy.v1.IListDeliveryPipelinesRequest
-        fullName: google.cloud.deploy.v1.IListDeliveryPipelinesRequest
-      - name: ', protos.'
-        fullName: ', protos.'
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IListDeliveryPipelinesResponse:interface'
-        name: google.cloud.deploy.v1.IListDeliveryPipelinesResponse
-        fullName: google.cloud.deploy.v1.IListDeliveryPipelinesResponse
-      - name: ' | null | undefined, protos.'
-        fullName: ' | null | undefined, protos.'
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IDeliveryPipeline:interface'
-        name: google.cloud.deploy.v1.IDeliveryPipeline
-        fullName: google.cloud.deploy.v1.IDeliveryPipeline
+      - name: <
+        fullName: <
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IListDeliveryPipelinesRequest:interface'
+        name: protos.google.cloud.deploy.v1.IListDeliveryPipelinesRequest
+        fullName: protos.google.cloud.deploy.v1.IListDeliveryPipelinesRequest
+      - name: ', '
+        fullName: ', '
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IListDeliveryPipelinesResponse:interface'
+        name: protos.google.cloud.deploy.v1.IListDeliveryPipelinesResponse
+        fullName: protos.google.cloud.deploy.v1.IListDeliveryPipelinesResponse
+      - name: ' | null | undefined, '
+        fullName: ' | null | undefined, '
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IDeliveryPipeline:interface'
+        name: protos.google.cloud.deploy.v1.IDeliveryPipeline
+        fullName: protos.google.cloud.deploy.v1.IDeliveryPipeline
       - name: '>'
         fullName: '>'
-  - uid: '@google-cloud/deploy!v1.CloudDeployClient#listDeliveryPipelines~4:complex'
-    name: protos.google.cloud.deploy.v1.IListDeliveryPipelinesRequest
-    fullName: protos.google.cloud.deploy.v1.IListDeliveryPipelinesRequest
-    spec.typeScript:
-      - name: protos.
-        fullName: protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IListDeliveryPipelinesRequest:interface'
-        name: google.cloud.deploy.v1.IListDeliveryPipelinesRequest
-        fullName: google.cloud.deploy.v1.IListDeliveryPipelinesRequest
-  - uid: '@google-cloud/deploy!v1.CloudDeployClient#listDeliveryPipelines~5:complex'
+  - uid: '@google-cloud/deploy!v1.CloudDeployClient#listDeliveryPipelines~2:complex'
     name: >-
       PaginationCallback<protos.google.cloud.deploy.v1.IListDeliveryPipelinesRequest,
       protos.google.cloud.deploy.v1.IListDeliveryPipelinesResponse | null | undefined,
@@ -6566,21 +6254,21 @@ references:
       - uid: google-gax!PaginationCallback:interface
         name: PaginationCallback
         fullName: PaginationCallback
-      - name: <protos.
-        fullName: <protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IListDeliveryPipelinesRequest:interface'
-        name: google.cloud.deploy.v1.IListDeliveryPipelinesRequest
-        fullName: google.cloud.deploy.v1.IListDeliveryPipelinesRequest
-      - name: ', protos.'
-        fullName: ', protos.'
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IListDeliveryPipelinesResponse:interface'
-        name: google.cloud.deploy.v1.IListDeliveryPipelinesResponse
-        fullName: google.cloud.deploy.v1.IListDeliveryPipelinesResponse
-      - name: ' | null | undefined, protos.'
-        fullName: ' | null | undefined, protos.'
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IDeliveryPipeline:interface'
-        name: google.cloud.deploy.v1.IDeliveryPipeline
-        fullName: google.cloud.deploy.v1.IDeliveryPipeline
+      - name: <
+        fullName: <
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IListDeliveryPipelinesRequest:interface'
+        name: protos.google.cloud.deploy.v1.IListDeliveryPipelinesRequest
+        fullName: protos.google.cloud.deploy.v1.IListDeliveryPipelinesRequest
+      - name: ', '
+        fullName: ', '
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IListDeliveryPipelinesResponse:interface'
+        name: protos.google.cloud.deploy.v1.IListDeliveryPipelinesResponse
+        fullName: protos.google.cloud.deploy.v1.IListDeliveryPipelinesResponse
+      - name: ' | null | undefined, '
+        fullName: ' | null | undefined, '
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IDeliveryPipeline:interface'
+        name: protos.google.cloud.deploy.v1.IDeliveryPipeline
+        fullName: protos.google.cloud.deploy.v1.IDeliveryPipeline
       - name: '>'
         fullName: '>'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#listDeliveryPipelinesAsync~0:complex'
@@ -6590,33 +6278,15 @@ references:
       - uid: '!AsyncIterable:interface'
         name: AsyncIterable
         fullName: AsyncIterable
-      - name: <protos.
-        fullName: <protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IDeliveryPipeline:interface'
-        name: google.cloud.deploy.v1.IDeliveryPipeline
-        fullName: google.cloud.deploy.v1.IDeliveryPipeline
+      - name: <
+        fullName: <
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IDeliveryPipeline:interface'
+        name: protos.google.cloud.deploy.v1.IDeliveryPipeline
+        fullName: protos.google.cloud.deploy.v1.IDeliveryPipeline
       - name: '>'
         fullName: '>'
-  - uid: '@google-cloud/deploy!v1.CloudDeployClient#listDeliveryPipelinesAsync~1:complex'
-    name: protos.google.cloud.deploy.v1.IListDeliveryPipelinesRequest
-    fullName: protos.google.cloud.deploy.v1.IListDeliveryPipelinesRequest
-    spec.typeScript:
-      - name: protos.
-        fullName: protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IListDeliveryPipelinesRequest:interface'
-        name: google.cloud.deploy.v1.IListDeliveryPipelinesRequest
-        fullName: google.cloud.deploy.v1.IListDeliveryPipelinesRequest
-  - uid: '!internal.Transform:class'
+  - uid: '!"\\"stream\\"".internal.Transform:class'
     name: Transform
-  - uid: '@google-cloud/deploy!v1.CloudDeployClient#listDeliveryPipelinesStream~0:complex'
-    name: protos.google.cloud.deploy.v1.IListDeliveryPipelinesRequest
-    fullName: protos.google.cloud.deploy.v1.IListDeliveryPipelinesRequest
-    spec.typeScript:
-      - name: protos.
-        fullName: protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IListDeliveryPipelinesRequest:interface'
-        name: google.cloud.deploy.v1.IListDeliveryPipelinesRequest
-        fullName: google.cloud.deploy.v1.IListDeliveryPipelinesRequest
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#listReleases~0:complex'
     name: |-
       Promise<[
@@ -6636,56 +6306,41 @@ references:
         fullName: Promise
       - name: |-
           <[
-                  protos.
+                  
         fullName: |-
           <[
-                  protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IRelease:interface'
-        name: google.cloud.deploy.v1.IRelease
-        fullName: google.cloud.deploy.v1.IRelease
+                  
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IRelease:interface'
+        name: protos.google.cloud.deploy.v1.IRelease
+        fullName: protos.google.cloud.deploy.v1.IRelease
       - name: |-
           [],
-                  protos.
+                  
         fullName: |-
           [],
-                  protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IListReleasesRequest:interface'
-        name: google.cloud.deploy.v1.IListReleasesRequest
-        fullName: google.cloud.deploy.v1.IListReleasesRequest
+                  
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IListReleasesRequest:interface'
+        name: protos.google.cloud.deploy.v1.IListReleasesRequest
+        fullName: protos.google.cloud.deploy.v1.IListReleasesRequest
       - name: |2-
            | null,
-                  protos.
+                  
         fullName: |2-
            | null,
-                  protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IListReleasesResponse:interface'
-        name: google.cloud.deploy.v1.IListReleasesResponse
-        fullName: google.cloud.deploy.v1.IListReleasesResponse
+                  
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IListReleasesResponse:interface'
+        name: protos.google.cloud.deploy.v1.IListReleasesResponse
+        fullName: protos.google.cloud.deploy.v1.IListReleasesResponse
       - name: |2-
 
               ]>
         fullName: |2-
 
               ]>
+  - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IListReleasesRequest:interface'
+    name: IListReleasesRequest
+    fullName: protos.google.cloud.deploy.v1.IListReleasesRequest
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#listReleases~1:complex'
-    name: protos.google.cloud.deploy.v1.IListReleasesRequest
-    fullName: protos.google.cloud.deploy.v1.IListReleasesRequest
-    spec.typeScript:
-      - name: protos.
-        fullName: protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IListReleasesRequest:interface'
-        name: google.cloud.deploy.v1.IListReleasesRequest
-        fullName: google.cloud.deploy.v1.IListReleasesRequest
-  - uid: '@google-cloud/deploy!v1.CloudDeployClient#listReleases~2:complex'
-    name: protos.google.cloud.deploy.v1.IListReleasesRequest
-    fullName: protos.google.cloud.deploy.v1.IListReleasesRequest
-    spec.typeScript:
-      - name: protos.
-        fullName: protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IListReleasesRequest:interface'
-        name: google.cloud.deploy.v1.IListReleasesRequest
-        fullName: google.cloud.deploy.v1.IListReleasesRequest
-  - uid: '@google-cloud/deploy!v1.CloudDeployClient#listReleases~3:complex'
     name: >-
       PaginationCallback<protos.google.cloud.deploy.v1.IListReleasesRequest,
       protos.google.cloud.deploy.v1.IListReleasesResponse | null | undefined, protos.google.cloud.deploy.v1.IRelease>
@@ -6696,33 +6351,24 @@ references:
       - uid: google-gax!PaginationCallback:interface
         name: PaginationCallback
         fullName: PaginationCallback
-      - name: <protos.
-        fullName: <protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IListReleasesRequest:interface'
-        name: google.cloud.deploy.v1.IListReleasesRequest
-        fullName: google.cloud.deploy.v1.IListReleasesRequest
-      - name: ', protos.'
-        fullName: ', protos.'
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IListReleasesResponse:interface'
-        name: google.cloud.deploy.v1.IListReleasesResponse
-        fullName: google.cloud.deploy.v1.IListReleasesResponse
-      - name: ' | null | undefined, protos.'
-        fullName: ' | null | undefined, protos.'
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IRelease:interface'
-        name: google.cloud.deploy.v1.IRelease
-        fullName: google.cloud.deploy.v1.IRelease
+      - name: <
+        fullName: <
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IListReleasesRequest:interface'
+        name: protos.google.cloud.deploy.v1.IListReleasesRequest
+        fullName: protos.google.cloud.deploy.v1.IListReleasesRequest
+      - name: ', '
+        fullName: ', '
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IListReleasesResponse:interface'
+        name: protos.google.cloud.deploy.v1.IListReleasesResponse
+        fullName: protos.google.cloud.deploy.v1.IListReleasesResponse
+      - name: ' | null | undefined, '
+        fullName: ' | null | undefined, '
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IRelease:interface'
+        name: protos.google.cloud.deploy.v1.IRelease
+        fullName: protos.google.cloud.deploy.v1.IRelease
       - name: '>'
         fullName: '>'
-  - uid: '@google-cloud/deploy!v1.CloudDeployClient#listReleases~4:complex'
-    name: protos.google.cloud.deploy.v1.IListReleasesRequest
-    fullName: protos.google.cloud.deploy.v1.IListReleasesRequest
-    spec.typeScript:
-      - name: protos.
-        fullName: protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IListReleasesRequest:interface'
-        name: google.cloud.deploy.v1.IListReleasesRequest
-        fullName: google.cloud.deploy.v1.IListReleasesRequest
-  - uid: '@google-cloud/deploy!v1.CloudDeployClient#listReleases~5:complex'
+  - uid: '@google-cloud/deploy!v1.CloudDeployClient#listReleases~2:complex'
     name: >-
       PaginationCallback<protos.google.cloud.deploy.v1.IListReleasesRequest,
       protos.google.cloud.deploy.v1.IListReleasesResponse | null | undefined, protos.google.cloud.deploy.v1.IRelease>
@@ -6733,21 +6379,21 @@ references:
       - uid: google-gax!PaginationCallback:interface
         name: PaginationCallback
         fullName: PaginationCallback
-      - name: <protos.
-        fullName: <protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IListReleasesRequest:interface'
-        name: google.cloud.deploy.v1.IListReleasesRequest
-        fullName: google.cloud.deploy.v1.IListReleasesRequest
-      - name: ', protos.'
-        fullName: ', protos.'
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IListReleasesResponse:interface'
-        name: google.cloud.deploy.v1.IListReleasesResponse
-        fullName: google.cloud.deploy.v1.IListReleasesResponse
-      - name: ' | null | undefined, protos.'
-        fullName: ' | null | undefined, protos.'
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IRelease:interface'
-        name: google.cloud.deploy.v1.IRelease
-        fullName: google.cloud.deploy.v1.IRelease
+      - name: <
+        fullName: <
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IListReleasesRequest:interface'
+        name: protos.google.cloud.deploy.v1.IListReleasesRequest
+        fullName: protos.google.cloud.deploy.v1.IListReleasesRequest
+      - name: ', '
+        fullName: ', '
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IListReleasesResponse:interface'
+        name: protos.google.cloud.deploy.v1.IListReleasesResponse
+        fullName: protos.google.cloud.deploy.v1.IListReleasesResponse
+      - name: ' | null | undefined, '
+        fullName: ' | null | undefined, '
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IRelease:interface'
+        name: protos.google.cloud.deploy.v1.IRelease
+        fullName: protos.google.cloud.deploy.v1.IRelease
       - name: '>'
         fullName: '>'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#listReleasesAsync~0:complex'
@@ -6757,31 +6403,13 @@ references:
       - uid: '!AsyncIterable:interface'
         name: AsyncIterable
         fullName: AsyncIterable
-      - name: <protos.
-        fullName: <protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IRelease:interface'
-        name: google.cloud.deploy.v1.IRelease
-        fullName: google.cloud.deploy.v1.IRelease
+      - name: <
+        fullName: <
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IRelease:interface'
+        name: protos.google.cloud.deploy.v1.IRelease
+        fullName: protos.google.cloud.deploy.v1.IRelease
       - name: '>'
         fullName: '>'
-  - uid: '@google-cloud/deploy!v1.CloudDeployClient#listReleasesAsync~1:complex'
-    name: protos.google.cloud.deploy.v1.IListReleasesRequest
-    fullName: protos.google.cloud.deploy.v1.IListReleasesRequest
-    spec.typeScript:
-      - name: protos.
-        fullName: protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IListReleasesRequest:interface'
-        name: google.cloud.deploy.v1.IListReleasesRequest
-        fullName: google.cloud.deploy.v1.IListReleasesRequest
-  - uid: '@google-cloud/deploy!v1.CloudDeployClient#listReleasesStream~0:complex'
-    name: protos.google.cloud.deploy.v1.IListReleasesRequest
-    fullName: protos.google.cloud.deploy.v1.IListReleasesRequest
-    spec.typeScript:
-      - name: protos.
-        fullName: protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IListReleasesRequest:interface'
-        name: google.cloud.deploy.v1.IListReleasesRequest
-        fullName: google.cloud.deploy.v1.IListReleasesRequest
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#listRollouts~0:complex'
     name: |-
       Promise<[
@@ -6801,56 +6429,41 @@ references:
         fullName: Promise
       - name: |-
           <[
-                  protos.
+                  
         fullName: |-
           <[
-                  protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IRollout:interface'
-        name: google.cloud.deploy.v1.IRollout
-        fullName: google.cloud.deploy.v1.IRollout
+                  
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IRollout:interface'
+        name: protos.google.cloud.deploy.v1.IRollout
+        fullName: protos.google.cloud.deploy.v1.IRollout
       - name: |-
           [],
-                  protos.
+                  
         fullName: |-
           [],
-                  protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IListRolloutsRequest:interface'
-        name: google.cloud.deploy.v1.IListRolloutsRequest
-        fullName: google.cloud.deploy.v1.IListRolloutsRequest
+                  
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IListRolloutsRequest:interface'
+        name: protos.google.cloud.deploy.v1.IListRolloutsRequest
+        fullName: protos.google.cloud.deploy.v1.IListRolloutsRequest
       - name: |2-
            | null,
-                  protos.
+                  
         fullName: |2-
            | null,
-                  protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IListRolloutsResponse:interface'
-        name: google.cloud.deploy.v1.IListRolloutsResponse
-        fullName: google.cloud.deploy.v1.IListRolloutsResponse
+                  
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IListRolloutsResponse:interface'
+        name: protos.google.cloud.deploy.v1.IListRolloutsResponse
+        fullName: protos.google.cloud.deploy.v1.IListRolloutsResponse
       - name: |2-
 
               ]>
         fullName: |2-
 
               ]>
+  - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IListRolloutsRequest:interface'
+    name: IListRolloutsRequest
+    fullName: protos.google.cloud.deploy.v1.IListRolloutsRequest
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#listRollouts~1:complex'
-    name: protos.google.cloud.deploy.v1.IListRolloutsRequest
-    fullName: protos.google.cloud.deploy.v1.IListRolloutsRequest
-    spec.typeScript:
-      - name: protos.
-        fullName: protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IListRolloutsRequest:interface'
-        name: google.cloud.deploy.v1.IListRolloutsRequest
-        fullName: google.cloud.deploy.v1.IListRolloutsRequest
-  - uid: '@google-cloud/deploy!v1.CloudDeployClient#listRollouts~2:complex'
-    name: protos.google.cloud.deploy.v1.IListRolloutsRequest
-    fullName: protos.google.cloud.deploy.v1.IListRolloutsRequest
-    spec.typeScript:
-      - name: protos.
-        fullName: protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IListRolloutsRequest:interface'
-        name: google.cloud.deploy.v1.IListRolloutsRequest
-        fullName: google.cloud.deploy.v1.IListRolloutsRequest
-  - uid: '@google-cloud/deploy!v1.CloudDeployClient#listRollouts~3:complex'
     name: >-
       PaginationCallback<protos.google.cloud.deploy.v1.IListRolloutsRequest,
       protos.google.cloud.deploy.v1.IListRolloutsResponse | null | undefined, protos.google.cloud.deploy.v1.IRollout>
@@ -6861,33 +6474,24 @@ references:
       - uid: google-gax!PaginationCallback:interface
         name: PaginationCallback
         fullName: PaginationCallback
-      - name: <protos.
-        fullName: <protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IListRolloutsRequest:interface'
-        name: google.cloud.deploy.v1.IListRolloutsRequest
-        fullName: google.cloud.deploy.v1.IListRolloutsRequest
-      - name: ', protos.'
-        fullName: ', protos.'
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IListRolloutsResponse:interface'
-        name: google.cloud.deploy.v1.IListRolloutsResponse
-        fullName: google.cloud.deploy.v1.IListRolloutsResponse
-      - name: ' | null | undefined, protos.'
-        fullName: ' | null | undefined, protos.'
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IRollout:interface'
-        name: google.cloud.deploy.v1.IRollout
-        fullName: google.cloud.deploy.v1.IRollout
+      - name: <
+        fullName: <
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IListRolloutsRequest:interface'
+        name: protos.google.cloud.deploy.v1.IListRolloutsRequest
+        fullName: protos.google.cloud.deploy.v1.IListRolloutsRequest
+      - name: ', '
+        fullName: ', '
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IListRolloutsResponse:interface'
+        name: protos.google.cloud.deploy.v1.IListRolloutsResponse
+        fullName: protos.google.cloud.deploy.v1.IListRolloutsResponse
+      - name: ' | null | undefined, '
+        fullName: ' | null | undefined, '
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IRollout:interface'
+        name: protos.google.cloud.deploy.v1.IRollout
+        fullName: protos.google.cloud.deploy.v1.IRollout
       - name: '>'
         fullName: '>'
-  - uid: '@google-cloud/deploy!v1.CloudDeployClient#listRollouts~4:complex'
-    name: protos.google.cloud.deploy.v1.IListRolloutsRequest
-    fullName: protos.google.cloud.deploy.v1.IListRolloutsRequest
-    spec.typeScript:
-      - name: protos.
-        fullName: protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IListRolloutsRequest:interface'
-        name: google.cloud.deploy.v1.IListRolloutsRequest
-        fullName: google.cloud.deploy.v1.IListRolloutsRequest
-  - uid: '@google-cloud/deploy!v1.CloudDeployClient#listRollouts~5:complex'
+  - uid: '@google-cloud/deploy!v1.CloudDeployClient#listRollouts~2:complex'
     name: >-
       PaginationCallback<protos.google.cloud.deploy.v1.IListRolloutsRequest,
       protos.google.cloud.deploy.v1.IListRolloutsResponse | null | undefined, protos.google.cloud.deploy.v1.IRollout>
@@ -6898,21 +6502,21 @@ references:
       - uid: google-gax!PaginationCallback:interface
         name: PaginationCallback
         fullName: PaginationCallback
-      - name: <protos.
-        fullName: <protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IListRolloutsRequest:interface'
-        name: google.cloud.deploy.v1.IListRolloutsRequest
-        fullName: google.cloud.deploy.v1.IListRolloutsRequest
-      - name: ', protos.'
-        fullName: ', protos.'
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IListRolloutsResponse:interface'
-        name: google.cloud.deploy.v1.IListRolloutsResponse
-        fullName: google.cloud.deploy.v1.IListRolloutsResponse
-      - name: ' | null | undefined, protos.'
-        fullName: ' | null | undefined, protos.'
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IRollout:interface'
-        name: google.cloud.deploy.v1.IRollout
-        fullName: google.cloud.deploy.v1.IRollout
+      - name: <
+        fullName: <
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IListRolloutsRequest:interface'
+        name: protos.google.cloud.deploy.v1.IListRolloutsRequest
+        fullName: protos.google.cloud.deploy.v1.IListRolloutsRequest
+      - name: ', '
+        fullName: ', '
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IListRolloutsResponse:interface'
+        name: protos.google.cloud.deploy.v1.IListRolloutsResponse
+        fullName: protos.google.cloud.deploy.v1.IListRolloutsResponse
+      - name: ' | null | undefined, '
+        fullName: ' | null | undefined, '
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IRollout:interface'
+        name: protos.google.cloud.deploy.v1.IRollout
+        fullName: protos.google.cloud.deploy.v1.IRollout
       - name: '>'
         fullName: '>'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#listRolloutsAsync~0:complex'
@@ -6922,31 +6526,13 @@ references:
       - uid: '!AsyncIterable:interface'
         name: AsyncIterable
         fullName: AsyncIterable
-      - name: <protos.
-        fullName: <protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IRollout:interface'
-        name: google.cloud.deploy.v1.IRollout
-        fullName: google.cloud.deploy.v1.IRollout
+      - name: <
+        fullName: <
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IRollout:interface'
+        name: protos.google.cloud.deploy.v1.IRollout
+        fullName: protos.google.cloud.deploy.v1.IRollout
       - name: '>'
         fullName: '>'
-  - uid: '@google-cloud/deploy!v1.CloudDeployClient#listRolloutsAsync~1:complex'
-    name: protos.google.cloud.deploy.v1.IListRolloutsRequest
-    fullName: protos.google.cloud.deploy.v1.IListRolloutsRequest
-    spec.typeScript:
-      - name: protos.
-        fullName: protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IListRolloutsRequest:interface'
-        name: google.cloud.deploy.v1.IListRolloutsRequest
-        fullName: google.cloud.deploy.v1.IListRolloutsRequest
-  - uid: '@google-cloud/deploy!v1.CloudDeployClient#listRolloutsStream~0:complex'
-    name: protos.google.cloud.deploy.v1.IListRolloutsRequest
-    fullName: protos.google.cloud.deploy.v1.IListRolloutsRequest
-    spec.typeScript:
-      - name: protos.
-        fullName: protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IListRolloutsRequest:interface'
-        name: google.cloud.deploy.v1.IListRolloutsRequest
-        fullName: google.cloud.deploy.v1.IListRolloutsRequest
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#listTargets~0:complex'
     name: |-
       Promise<[
@@ -6966,56 +6552,41 @@ references:
         fullName: Promise
       - name: |-
           <[
-                  protos.
+                  
         fullName: |-
           <[
-                  protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.ITarget:interface'
-        name: google.cloud.deploy.v1.ITarget
-        fullName: google.cloud.deploy.v1.ITarget
+                  
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.ITarget:interface'
+        name: protos.google.cloud.deploy.v1.ITarget
+        fullName: protos.google.cloud.deploy.v1.ITarget
       - name: |-
           [],
-                  protos.
+                  
         fullName: |-
           [],
-                  protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IListTargetsRequest:interface'
-        name: google.cloud.deploy.v1.IListTargetsRequest
-        fullName: google.cloud.deploy.v1.IListTargetsRequest
+                  
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IListTargetsRequest:interface'
+        name: protos.google.cloud.deploy.v1.IListTargetsRequest
+        fullName: protos.google.cloud.deploy.v1.IListTargetsRequest
       - name: |2-
            | null,
-                  protos.
+                  
         fullName: |2-
            | null,
-                  protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IListTargetsResponse:interface'
-        name: google.cloud.deploy.v1.IListTargetsResponse
-        fullName: google.cloud.deploy.v1.IListTargetsResponse
+                  
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IListTargetsResponse:interface'
+        name: protos.google.cloud.deploy.v1.IListTargetsResponse
+        fullName: protos.google.cloud.deploy.v1.IListTargetsResponse
       - name: |2-
 
               ]>
         fullName: |2-
 
               ]>
+  - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IListTargetsRequest:interface'
+    name: IListTargetsRequest
+    fullName: protos.google.cloud.deploy.v1.IListTargetsRequest
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#listTargets~1:complex'
-    name: protos.google.cloud.deploy.v1.IListTargetsRequest
-    fullName: protos.google.cloud.deploy.v1.IListTargetsRequest
-    spec.typeScript:
-      - name: protos.
-        fullName: protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IListTargetsRequest:interface'
-        name: google.cloud.deploy.v1.IListTargetsRequest
-        fullName: google.cloud.deploy.v1.IListTargetsRequest
-  - uid: '@google-cloud/deploy!v1.CloudDeployClient#listTargets~2:complex'
-    name: protos.google.cloud.deploy.v1.IListTargetsRequest
-    fullName: protos.google.cloud.deploy.v1.IListTargetsRequest
-    spec.typeScript:
-      - name: protos.
-        fullName: protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IListTargetsRequest:interface'
-        name: google.cloud.deploy.v1.IListTargetsRequest
-        fullName: google.cloud.deploy.v1.IListTargetsRequest
-  - uid: '@google-cloud/deploy!v1.CloudDeployClient#listTargets~3:complex'
     name: >-
       PaginationCallback<protos.google.cloud.deploy.v1.IListTargetsRequest,
       protos.google.cloud.deploy.v1.IListTargetsResponse | null | undefined, protos.google.cloud.deploy.v1.ITarget>
@@ -7026,33 +6597,24 @@ references:
       - uid: google-gax!PaginationCallback:interface
         name: PaginationCallback
         fullName: PaginationCallback
-      - name: <protos.
-        fullName: <protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IListTargetsRequest:interface'
-        name: google.cloud.deploy.v1.IListTargetsRequest
-        fullName: google.cloud.deploy.v1.IListTargetsRequest
-      - name: ', protos.'
-        fullName: ', protos.'
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IListTargetsResponse:interface'
-        name: google.cloud.deploy.v1.IListTargetsResponse
-        fullName: google.cloud.deploy.v1.IListTargetsResponse
-      - name: ' | null | undefined, protos.'
-        fullName: ' | null | undefined, protos.'
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.ITarget:interface'
-        name: google.cloud.deploy.v1.ITarget
-        fullName: google.cloud.deploy.v1.ITarget
+      - name: <
+        fullName: <
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IListTargetsRequest:interface'
+        name: protos.google.cloud.deploy.v1.IListTargetsRequest
+        fullName: protos.google.cloud.deploy.v1.IListTargetsRequest
+      - name: ', '
+        fullName: ', '
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IListTargetsResponse:interface'
+        name: protos.google.cloud.deploy.v1.IListTargetsResponse
+        fullName: protos.google.cloud.deploy.v1.IListTargetsResponse
+      - name: ' | null | undefined, '
+        fullName: ' | null | undefined, '
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.ITarget:interface'
+        name: protos.google.cloud.deploy.v1.ITarget
+        fullName: protos.google.cloud.deploy.v1.ITarget
       - name: '>'
         fullName: '>'
-  - uid: '@google-cloud/deploy!v1.CloudDeployClient#listTargets~4:complex'
-    name: protos.google.cloud.deploy.v1.IListTargetsRequest
-    fullName: protos.google.cloud.deploy.v1.IListTargetsRequest
-    spec.typeScript:
-      - name: protos.
-        fullName: protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IListTargetsRequest:interface'
-        name: google.cloud.deploy.v1.IListTargetsRequest
-        fullName: google.cloud.deploy.v1.IListTargetsRequest
-  - uid: '@google-cloud/deploy!v1.CloudDeployClient#listTargets~5:complex'
+  - uid: '@google-cloud/deploy!v1.CloudDeployClient#listTargets~2:complex'
     name: >-
       PaginationCallback<protos.google.cloud.deploy.v1.IListTargetsRequest,
       protos.google.cloud.deploy.v1.IListTargetsResponse | null | undefined, protos.google.cloud.deploy.v1.ITarget>
@@ -7063,21 +6625,21 @@ references:
       - uid: google-gax!PaginationCallback:interface
         name: PaginationCallback
         fullName: PaginationCallback
-      - name: <protos.
-        fullName: <protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IListTargetsRequest:interface'
-        name: google.cloud.deploy.v1.IListTargetsRequest
-        fullName: google.cloud.deploy.v1.IListTargetsRequest
-      - name: ', protos.'
-        fullName: ', protos.'
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IListTargetsResponse:interface'
-        name: google.cloud.deploy.v1.IListTargetsResponse
-        fullName: google.cloud.deploy.v1.IListTargetsResponse
-      - name: ' | null | undefined, protos.'
-        fullName: ' | null | undefined, protos.'
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.ITarget:interface'
-        name: google.cloud.deploy.v1.ITarget
-        fullName: google.cloud.deploy.v1.ITarget
+      - name: <
+        fullName: <
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IListTargetsRequest:interface'
+        name: protos.google.cloud.deploy.v1.IListTargetsRequest
+        fullName: protos.google.cloud.deploy.v1.IListTargetsRequest
+      - name: ', '
+        fullName: ', '
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IListTargetsResponse:interface'
+        name: protos.google.cloud.deploy.v1.IListTargetsResponse
+        fullName: protos.google.cloud.deploy.v1.IListTargetsResponse
+      - name: ' | null | undefined, '
+        fullName: ' | null | undefined, '
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.ITarget:interface'
+        name: protos.google.cloud.deploy.v1.ITarget
+        fullName: protos.google.cloud.deploy.v1.ITarget
       - name: '>'
         fullName: '>'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#listTargetsAsync~0:complex'
@@ -7087,31 +6649,13 @@ references:
       - uid: '!AsyncIterable:interface'
         name: AsyncIterable
         fullName: AsyncIterable
-      - name: <protos.
-        fullName: <protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.ITarget:interface'
-        name: google.cloud.deploy.v1.ITarget
-        fullName: google.cloud.deploy.v1.ITarget
+      - name: <
+        fullName: <
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.ITarget:interface'
+        name: protos.google.cloud.deploy.v1.ITarget
+        fullName: protos.google.cloud.deploy.v1.ITarget
       - name: '>'
         fullName: '>'
-  - uid: '@google-cloud/deploy!v1.CloudDeployClient#listTargetsAsync~1:complex'
-    name: protos.google.cloud.deploy.v1.IListTargetsRequest
-    fullName: protos.google.cloud.deploy.v1.IListTargetsRequest
-    spec.typeScript:
-      - name: protos.
-        fullName: protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IListTargetsRequest:interface'
-        name: google.cloud.deploy.v1.IListTargetsRequest
-        fullName: google.cloud.deploy.v1.IListTargetsRequest
-  - uid: '@google-cloud/deploy!v1.CloudDeployClient#listTargetsStream~0:complex'
-    name: protos.google.cloud.deploy.v1.IListTargetsRequest
-    fullName: protos.google.cloud.deploy.v1.IListTargetsRequest
-    spec.typeScript:
-      - name: protos.
-        fullName: protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IListTargetsRequest:interface'
-        name: google.cloud.deploy.v1.IListTargetsRequest
-        fullName: google.cloud.deploy.v1.IListTargetsRequest
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#updateDeliveryPipeline~0:complex'
     name: |-
       Promise<[
@@ -7138,25 +6682,25 @@ references:
       - uid: google-gax!LROperation:interface
         name: LROperation
         fullName: LROperation
-      - name: <protos.
-        fullName: <protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IDeliveryPipeline:interface'
-        name: google.cloud.deploy.v1.IDeliveryPipeline
-        fullName: google.cloud.deploy.v1.IDeliveryPipeline
-      - name: ', protos.'
-        fullName: ', protos.'
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IOperationMetadata:interface'
-        name: google.cloud.deploy.v1.IOperationMetadata
-        fullName: google.cloud.deploy.v1.IOperationMetadata
+      - name: <
+        fullName: <
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IDeliveryPipeline:interface'
+        name: protos.google.cloud.deploy.v1.IDeliveryPipeline
+        fullName: protos.google.cloud.deploy.v1.IDeliveryPipeline
+      - name: ', '
+        fullName: ', '
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IOperationMetadata:interface'
+        name: protos.google.cloud.deploy.v1.IOperationMetadata
+        fullName: protos.google.cloud.deploy.v1.IOperationMetadata
       - name: |-
           >,
-                  protos.
+                  
         fullName: |-
           >,
-                  protos.
-      - uid: '@google-cloud/deploy!google.longrunning.IOperation:interface'
-        name: google.longrunning.IOperation
-        fullName: google.longrunning.IOperation
+                  
+      - uid: '@google-cloud/deploy!protos.google.longrunning.IOperation:interface'
+        name: protos.google.longrunning.IOperation
+        fullName: protos.google.longrunning.IOperation
       - name: |2-
            | undefined,
                   {} | undefined
@@ -7165,25 +6709,10 @@ references:
            | undefined,
                   {} | undefined
               ]>
+  - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IUpdateDeliveryPipelineRequest:interface'
+    name: IUpdateDeliveryPipelineRequest
+    fullName: protos.google.cloud.deploy.v1.IUpdateDeliveryPipelineRequest
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#updateDeliveryPipeline~1:complex'
-    name: protos.google.cloud.deploy.v1.IUpdateDeliveryPipelineRequest
-    fullName: protos.google.cloud.deploy.v1.IUpdateDeliveryPipelineRequest
-    spec.typeScript:
-      - name: protos.
-        fullName: protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IUpdateDeliveryPipelineRequest:interface'
-        name: google.cloud.deploy.v1.IUpdateDeliveryPipelineRequest
-        fullName: google.cloud.deploy.v1.IUpdateDeliveryPipelineRequest
-  - uid: '@google-cloud/deploy!v1.CloudDeployClient#updateDeliveryPipeline~2:complex'
-    name: protos.google.cloud.deploy.v1.IUpdateDeliveryPipelineRequest
-    fullName: protos.google.cloud.deploy.v1.IUpdateDeliveryPipelineRequest
-    spec.typeScript:
-      - name: protos.
-        fullName: protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IUpdateDeliveryPipelineRequest:interface'
-        name: google.cloud.deploy.v1.IUpdateDeliveryPipelineRequest
-        fullName: google.cloud.deploy.v1.IUpdateDeliveryPipelineRequest
-  - uid: '@google-cloud/deploy!v1.CloudDeployClient#updateDeliveryPipeline~3:complex'
     name: >-
       Callback<LROperation<protos.google.cloud.deploy.v1.IDeliveryPipeline,
       protos.google.cloud.deploy.v1.IOperationMetadata>, protos.google.longrunning.IOperation | null | undefined, {} |
@@ -7201,33 +6730,24 @@ references:
       - uid: google-gax!LROperation:interface
         name: LROperation
         fullName: LROperation
-      - name: <protos.
-        fullName: <protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IDeliveryPipeline:interface'
-        name: google.cloud.deploy.v1.IDeliveryPipeline
-        fullName: google.cloud.deploy.v1.IDeliveryPipeline
-      - name: ', protos.'
-        fullName: ', protos.'
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IOperationMetadata:interface'
-        name: google.cloud.deploy.v1.IOperationMetadata
-        fullName: google.cloud.deploy.v1.IOperationMetadata
-      - name: '>, protos.'
-        fullName: '>, protos.'
-      - uid: '@google-cloud/deploy!google.longrunning.IOperation:interface'
-        name: google.longrunning.IOperation
-        fullName: google.longrunning.IOperation
+      - name: <
+        fullName: <
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IDeliveryPipeline:interface'
+        name: protos.google.cloud.deploy.v1.IDeliveryPipeline
+        fullName: protos.google.cloud.deploy.v1.IDeliveryPipeline
+      - name: ', '
+        fullName: ', '
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IOperationMetadata:interface'
+        name: protos.google.cloud.deploy.v1.IOperationMetadata
+        fullName: protos.google.cloud.deploy.v1.IOperationMetadata
+      - name: '>, '
+        fullName: '>, '
+      - uid: '@google-cloud/deploy!protos.google.longrunning.IOperation:interface'
+        name: protos.google.longrunning.IOperation
+        fullName: protos.google.longrunning.IOperation
       - name: ' | null | undefined, {} | null | undefined>'
         fullName: ' | null | undefined, {} | null | undefined>'
-  - uid: '@google-cloud/deploy!v1.CloudDeployClient#updateDeliveryPipeline~4:complex'
-    name: protos.google.cloud.deploy.v1.IUpdateDeliveryPipelineRequest
-    fullName: protos.google.cloud.deploy.v1.IUpdateDeliveryPipelineRequest
-    spec.typeScript:
-      - name: protos.
-        fullName: protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IUpdateDeliveryPipelineRequest:interface'
-        name: google.cloud.deploy.v1.IUpdateDeliveryPipelineRequest
-        fullName: google.cloud.deploy.v1.IUpdateDeliveryPipelineRequest
-  - uid: '@google-cloud/deploy!v1.CloudDeployClient#updateDeliveryPipeline~5:complex'
+  - uid: '@google-cloud/deploy!v1.CloudDeployClient#updateDeliveryPipeline~2:complex'
     name: >-
       Callback<LROperation<protos.google.cloud.deploy.v1.IDeliveryPipeline,
       protos.google.cloud.deploy.v1.IOperationMetadata>, protos.google.longrunning.IOperation | null | undefined, {} |
@@ -7245,21 +6765,21 @@ references:
       - uid: google-gax!LROperation:interface
         name: LROperation
         fullName: LROperation
-      - name: <protos.
-        fullName: <protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IDeliveryPipeline:interface'
-        name: google.cloud.deploy.v1.IDeliveryPipeline
-        fullName: google.cloud.deploy.v1.IDeliveryPipeline
-      - name: ', protos.'
-        fullName: ', protos.'
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IOperationMetadata:interface'
-        name: google.cloud.deploy.v1.IOperationMetadata
-        fullName: google.cloud.deploy.v1.IOperationMetadata
-      - name: '>, protos.'
-        fullName: '>, protos.'
-      - uid: '@google-cloud/deploy!google.longrunning.IOperation:interface'
-        name: google.longrunning.IOperation
-        fullName: google.longrunning.IOperation
+      - name: <
+        fullName: <
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IDeliveryPipeline:interface'
+        name: protos.google.cloud.deploy.v1.IDeliveryPipeline
+        fullName: protos.google.cloud.deploy.v1.IDeliveryPipeline
+      - name: ', '
+        fullName: ', '
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IOperationMetadata:interface'
+        name: protos.google.cloud.deploy.v1.IOperationMetadata
+        fullName: protos.google.cloud.deploy.v1.IOperationMetadata
+      - name: '>, '
+        fullName: '>, '
+      - uid: '@google-cloud/deploy!protos.google.longrunning.IOperation:interface'
+        name: protos.google.longrunning.IOperation
+        fullName: protos.google.longrunning.IOperation
       - name: ' | null | undefined, {} | null | undefined>'
         fullName: ' | null | undefined, {} | null | undefined>'
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#updateTarget~0:complex'
@@ -7288,25 +6808,25 @@ references:
       - uid: google-gax!LROperation:interface
         name: LROperation
         fullName: LROperation
-      - name: <protos.
-        fullName: <protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.ITarget:interface'
-        name: google.cloud.deploy.v1.ITarget
-        fullName: google.cloud.deploy.v1.ITarget
-      - name: ', protos.'
-        fullName: ', protos.'
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IOperationMetadata:interface'
-        name: google.cloud.deploy.v1.IOperationMetadata
-        fullName: google.cloud.deploy.v1.IOperationMetadata
+      - name: <
+        fullName: <
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.ITarget:interface'
+        name: protos.google.cloud.deploy.v1.ITarget
+        fullName: protos.google.cloud.deploy.v1.ITarget
+      - name: ', '
+        fullName: ', '
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IOperationMetadata:interface'
+        name: protos.google.cloud.deploy.v1.IOperationMetadata
+        fullName: protos.google.cloud.deploy.v1.IOperationMetadata
       - name: |-
           >,
-                  protos.
+                  
         fullName: |-
           >,
-                  protos.
-      - uid: '@google-cloud/deploy!google.longrunning.IOperation:interface'
-        name: google.longrunning.IOperation
-        fullName: google.longrunning.IOperation
+                  
+      - uid: '@google-cloud/deploy!protos.google.longrunning.IOperation:interface'
+        name: protos.google.longrunning.IOperation
+        fullName: protos.google.longrunning.IOperation
       - name: |2-
            | undefined,
                   {} | undefined
@@ -7315,25 +6835,10 @@ references:
            | undefined,
                   {} | undefined
               ]>
+  - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IUpdateTargetRequest:interface'
+    name: IUpdateTargetRequest
+    fullName: protos.google.cloud.deploy.v1.IUpdateTargetRequest
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#updateTarget~1:complex'
-    name: protos.google.cloud.deploy.v1.IUpdateTargetRequest
-    fullName: protos.google.cloud.deploy.v1.IUpdateTargetRequest
-    spec.typeScript:
-      - name: protos.
-        fullName: protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IUpdateTargetRequest:interface'
-        name: google.cloud.deploy.v1.IUpdateTargetRequest
-        fullName: google.cloud.deploy.v1.IUpdateTargetRequest
-  - uid: '@google-cloud/deploy!v1.CloudDeployClient#updateTarget~2:complex'
-    name: protos.google.cloud.deploy.v1.IUpdateTargetRequest
-    fullName: protos.google.cloud.deploy.v1.IUpdateTargetRequest
-    spec.typeScript:
-      - name: protos.
-        fullName: protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IUpdateTargetRequest:interface'
-        name: google.cloud.deploy.v1.IUpdateTargetRequest
-        fullName: google.cloud.deploy.v1.IUpdateTargetRequest
-  - uid: '@google-cloud/deploy!v1.CloudDeployClient#updateTarget~3:complex'
     name: >-
       Callback<LROperation<protos.google.cloud.deploy.v1.ITarget, protos.google.cloud.deploy.v1.IOperationMetadata>,
       protos.google.longrunning.IOperation | null | undefined, {} | null | undefined>
@@ -7349,33 +6854,24 @@ references:
       - uid: google-gax!LROperation:interface
         name: LROperation
         fullName: LROperation
-      - name: <protos.
-        fullName: <protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.ITarget:interface'
-        name: google.cloud.deploy.v1.ITarget
-        fullName: google.cloud.deploy.v1.ITarget
-      - name: ', protos.'
-        fullName: ', protos.'
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IOperationMetadata:interface'
-        name: google.cloud.deploy.v1.IOperationMetadata
-        fullName: google.cloud.deploy.v1.IOperationMetadata
-      - name: '>, protos.'
-        fullName: '>, protos.'
-      - uid: '@google-cloud/deploy!google.longrunning.IOperation:interface'
-        name: google.longrunning.IOperation
-        fullName: google.longrunning.IOperation
+      - name: <
+        fullName: <
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.ITarget:interface'
+        name: protos.google.cloud.deploy.v1.ITarget
+        fullName: protos.google.cloud.deploy.v1.ITarget
+      - name: ', '
+        fullName: ', '
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IOperationMetadata:interface'
+        name: protos.google.cloud.deploy.v1.IOperationMetadata
+        fullName: protos.google.cloud.deploy.v1.IOperationMetadata
+      - name: '>, '
+        fullName: '>, '
+      - uid: '@google-cloud/deploy!protos.google.longrunning.IOperation:interface'
+        name: protos.google.longrunning.IOperation
+        fullName: protos.google.longrunning.IOperation
       - name: ' | null | undefined, {} | null | undefined>'
         fullName: ' | null | undefined, {} | null | undefined>'
-  - uid: '@google-cloud/deploy!v1.CloudDeployClient#updateTarget~4:complex'
-    name: protos.google.cloud.deploy.v1.IUpdateTargetRequest
-    fullName: protos.google.cloud.deploy.v1.IUpdateTargetRequest
-    spec.typeScript:
-      - name: protos.
-        fullName: protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IUpdateTargetRequest:interface'
-        name: google.cloud.deploy.v1.IUpdateTargetRequest
-        fullName: google.cloud.deploy.v1.IUpdateTargetRequest
-  - uid: '@google-cloud/deploy!v1.CloudDeployClient#updateTarget~5:complex'
+  - uid: '@google-cloud/deploy!v1.CloudDeployClient#updateTarget~2:complex'
     name: >-
       Callback<LROperation<protos.google.cloud.deploy.v1.ITarget, protos.google.cloud.deploy.v1.IOperationMetadata>,
       protos.google.longrunning.IOperation | null | undefined, {} | null | undefined>
@@ -7391,21 +6887,21 @@ references:
       - uid: google-gax!LROperation:interface
         name: LROperation
         fullName: LROperation
-      - name: <protos.
-        fullName: <protos.
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.ITarget:interface'
-        name: google.cloud.deploy.v1.ITarget
-        fullName: google.cloud.deploy.v1.ITarget
-      - name: ', protos.'
-        fullName: ', protos.'
-      - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IOperationMetadata:interface'
-        name: google.cloud.deploy.v1.IOperationMetadata
-        fullName: google.cloud.deploy.v1.IOperationMetadata
-      - name: '>, protos.'
-        fullName: '>, protos.'
-      - uid: '@google-cloud/deploy!google.longrunning.IOperation:interface'
-        name: google.longrunning.IOperation
-        fullName: google.longrunning.IOperation
+      - name: <
+        fullName: <
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.ITarget:interface'
+        name: protos.google.cloud.deploy.v1.ITarget
+        fullName: protos.google.cloud.deploy.v1.ITarget
+      - name: ', '
+        fullName: ', '
+      - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IOperationMetadata:interface'
+        name: protos.google.cloud.deploy.v1.IOperationMetadata
+        fullName: protos.google.cloud.deploy.v1.IOperationMetadata
+      - name: '>, '
+        fullName: '>, '
+      - uid: '@google-cloud/deploy!protos.google.longrunning.IOperation:interface'
+        name: protos.google.longrunning.IOperation
+        fullName: protos.google.longrunning.IOperation
       - name: ' | null | undefined, {} | null | undefined>'
         fullName: ' | null | undefined, {} | null | undefined>'
 
@@ -7500,7 +6996,7 @@ items:
       - typeScript
     type: class
     implements:
-      - '@google-cloud/deploy!google.cloud.deploy.v1.IApproveRolloutResponse:interface'
+      - '@google-cloud/deploy!protos.google.cloud.deploy.v1.IApproveRolloutResponse:interface'
     package: '@google-cloud/deploy!'
     children:
       - '@google-cloud/deploy!protos.google.cloud.deploy.v1.ApproveRolloutResponse:constructor(1)'
@@ -7526,7 +7022,7 @@ items:
         - id: properties
           description: Properties to set
           type:
-            - '@google-cloud/deploy!google.cloud.deploy.v1.IApproveRolloutResponse:interface'
+            - '@google-cloud/deploy!protos.google.cloud.deploy.v1.IApproveRolloutResponse:interface'
   - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.ApproveRolloutResponse.create:member(1)'
     summary: Creates a new ApproveRolloutResponse instance using the specified properties.
     name: create(properties)
@@ -7540,13 +7036,13 @@ items:
         google.cloud.deploy.v1.ApproveRolloutResponse;
       return:
         type:
-          - '@google-cloud/deploy!google.cloud.deploy.v1.ApproveRolloutResponse:class'
+          - '@google-cloud/deploy!protos.google.cloud.deploy.v1.ApproveRolloutResponse:class'
         description: ApproveRolloutResponse instance
       parameters:
         - id: properties
           description: Properties to set
           type:
-            - '@google-cloud/deploy!google.cloud.deploy.v1.IApproveRolloutResponse:interface'
+            - '@google-cloud/deploy!protos.google.cloud.deploy.v1.IApproveRolloutResponse:interface'
   - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.ApproveRolloutResponse.decode:member(1)'
     summary: Decodes an ApproveRolloutResponse message from the specified reader or buffer.
     name: decode(reader, length)
@@ -7560,7 +7056,7 @@ items:
         google.cloud.deploy.v1.ApproveRolloutResponse;
       return:
         type:
-          - '@google-cloud/deploy!google.cloud.deploy.v1.ApproveRolloutResponse:class'
+          - '@google-cloud/deploy!protos.google.cloud.deploy.v1.ApproveRolloutResponse:class'
         description: ApproveRolloutResponse
       parameters:
         - id: reader
@@ -7584,7 +7080,7 @@ items:
         google.cloud.deploy.v1.ApproveRolloutResponse;
       return:
         type:
-          - '@google-cloud/deploy!google.cloud.deploy.v1.ApproveRolloutResponse:class'
+          - '@google-cloud/deploy!protos.google.cloud.deploy.v1.ApproveRolloutResponse:class'
         description: ApproveRolloutResponse
       parameters:
         - id: reader
@@ -7604,17 +7100,17 @@ items:
         $protobuf.Writer;
       return:
         type:
-          - '@google-cloud/deploy!protos.google.cloud.deploy.v1.ApproveRolloutResponse.encode~0:complex'
+          - protobufjs!Writer:class
         description: Writer
       parameters:
         - id: message
           description: ApproveRolloutResponse message or plain object to encode
           type:
-            - '@google-cloud/deploy!google.cloud.deploy.v1.IApproveRolloutResponse:interface'
+            - '@google-cloud/deploy!protos.google.cloud.deploy.v1.IApproveRolloutResponse:interface'
         - id: writer
           description: Writer to encode to
           type:
-            - '@google-cloud/deploy!protos.google.cloud.deploy.v1.ApproveRolloutResponse.encode~1:complex'
+            - protobufjs!Writer:class
   - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.ApproveRolloutResponse.encodeDelimited:member(1)'
     summary: Encodes the specified ApproveRolloutResponse message, length delimited. Does not implicitly  messages.
     name: encodeDelimited(message, writer)
@@ -7628,17 +7124,17 @@ items:
         $protobuf.Writer): $protobuf.Writer;
       return:
         type:
-          - '@google-cloud/deploy!protos.google.cloud.deploy.v1.ApproveRolloutResponse.encodeDelimited~0:complex'
+          - protobufjs!Writer:class
         description: Writer
       parameters:
         - id: message
           description: ApproveRolloutResponse message or plain object to encode
           type:
-            - '@google-cloud/deploy!google.cloud.deploy.v1.IApproveRolloutResponse:interface'
+            - '@google-cloud/deploy!protos.google.cloud.deploy.v1.IApproveRolloutResponse:interface'
         - id: writer
           description: Writer to encode to
           type:
-            - '@google-cloud/deploy!protos.google.cloud.deploy.v1.ApproveRolloutResponse.encodeDelimited~1:complex'
+            - protobufjs!Writer:class
   - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.ApproveRolloutResponse.fromObject:member(1)'
     summary: >-
       Creates an ApproveRolloutResponse message from a plain object. Also converts values to their respective internal
@@ -7652,7 +7148,7 @@ items:
       content: 'public static fromObject(object: { [k: string]: any }): google.cloud.deploy.v1.ApproveRolloutResponse;'
       return:
         type:
-          - '@google-cloud/deploy!google.cloud.deploy.v1.ApproveRolloutResponse:class'
+          - '@google-cloud/deploy!protos.google.cloud.deploy.v1.ApproveRolloutResponse:class'
         description: ApproveRolloutResponse
       parameters:
         - id: object
@@ -7691,11 +7187,11 @@ items:
         - id: message
           description: ApproveRolloutResponse
           type:
-            - '@google-cloud/deploy!google.cloud.deploy.v1.ApproveRolloutResponse:class'
+            - '@google-cloud/deploy!protos.google.cloud.deploy.v1.ApproveRolloutResponse:class'
         - id: options
           description: Conversion options
           type:
-            - '@google-cloud/deploy!protos.google.cloud.deploy.v1.ApproveRolloutResponse.toObject~0:complex'
+            - protobufjs!IConversionOptions:interface
   - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.ApproveRolloutResponse.verify:member(1)'
     summary: Verifies an ApproveRolloutResponse message.
     name: verify(message)
@@ -7715,18 +7211,20 @@ items:
           type:
             - '{ [k: string]: any }'
 references:
-  - uid: '@google-cloud/deploy!google.cloud.deploy.v1.IApproveRolloutResponse:interface'
+  - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IApproveRolloutResponse:interface'
     name: IApproveRolloutResponse
-  - uid: '@google-cloud/deploy!google.cloud.deploy.v1.ApproveRolloutResponse:class'
-    name: google.cloud.deploy.v1.ApproveRolloutResponse
+    fullName: protos.google.cloud.deploy.v1.IApproveRolloutResponse
+  - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.ApproveRolloutResponse:class'
+    name: ApproveRolloutResponse
+    fullName: protos.google.cloud.deploy.v1.ApproveRolloutResponse
   - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.ApproveRolloutResponse.decode~0:complex'
     name: ($protobuf.Reader|Uint8Array)
-    fullName: ($protobuf.Reader|Uint8Array)
+    fullName: (Reader|Uint8Array)
     spec.typeScript:
-      - name: ($protobuf.
-        fullName: ($protobuf.
+      - name: (
+        fullName: (
       - uid: protobufjs!Reader:class
-        name: Reader
+        name: $protobuf.Reader
         fullName: Reader
       - name: '|'
         fullName: '|'
@@ -7737,12 +7235,12 @@ references:
         fullName: )
   - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.ApproveRolloutResponse.decodeDelimited~0:complex'
     name: ($protobuf.Reader|Uint8Array)
-    fullName: ($protobuf.Reader|Uint8Array)
+    fullName: (Reader|Uint8Array)
     spec.typeScript:
-      - name: ($protobuf.
-        fullName: ($protobuf.
+      - name: (
+        fullName: (
       - uid: protobufjs!Reader:class
-        name: Reader
+        name: $protobuf.Reader
         fullName: Reader
       - name: '|'
         fullName: '|'
@@ -7751,51 +7249,10 @@ references:
         fullName: Uint8Array
       - name: )
         fullName: )
-  - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.ApproveRolloutResponse.encode~0:complex'
+  - uid: protobufjs!Writer:class
     name: $protobuf.Writer
-    fullName: $protobuf.Writer
-    spec.typeScript:
-      - name: $protobuf.
-        fullName: $protobuf.
-      - uid: protobufjs!Writer:class
-        name: Writer
-        fullName: Writer
-  - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.ApproveRolloutResponse.encode~1:complex'
-    name: $protobuf.Writer
-    fullName: $protobuf.Writer
-    spec.typeScript:
-      - name: $protobuf.
-        fullName: $protobuf.
-      - uid: protobufjs!Writer:class
-        name: Writer
-        fullName: Writer
-  - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.ApproveRolloutResponse.encodeDelimited~0:complex'
-    name: $protobuf.Writer
-    fullName: $protobuf.Writer
-    spec.typeScript:
-      - name: $protobuf.
-        fullName: $protobuf.
-      - uid: protobufjs!Writer:class
-        name: Writer
-        fullName: Writer
-  - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.ApproveRolloutResponse.encodeDelimited~1:complex'
-    name: $protobuf.Writer
-    fullName: $protobuf.Writer
-    spec.typeScript:
-      - name: $protobuf.
-        fullName: $protobuf.
-      - uid: protobufjs!Writer:class
-        name: Writer
-        fullName: Writer
-  - uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.ApproveRolloutResponse.toObject~0:complex'
+  - uid: protobufjs!IConversionOptions:interface
     name: $protobuf.IConversionOptions
-    fullName: $protobuf.IConversionOptions
-    spec.typeScript:
-      - name: $protobuf.
-        fullName: $protobuf.
-      - uid: protobufjs!IConversionOptions:interface
-        name: IConversionOptions
-        fullName: IConversionOptions
 
 `
 
@@ -7810,7 +7267,7 @@ items:
       - typeScript
     type: class
     implements:
-      - '@google-cloud/deploy!google.rpc.IStatus:interface'
+      - '@google-cloud/deploy!protos.google.rpc.IStatus:interface'
     package: '@google-cloud/deploy!'
     children:
       - '@google-cloud/deploy!protos.google.rpc.Status:constructor(1)'
@@ -7839,7 +7296,7 @@ items:
         - id: properties
           description: Properties to set
           type:
-            - '@google-cloud/deploy!google.rpc.IStatus:interface'
+            - '@google-cloud/deploy!protos.google.rpc.IStatus:interface'
   - uid: '@google-cloud/deploy!protos.google.rpc.Status#code:member'
     summary: Status code.
     name: code
@@ -7860,13 +7317,13 @@ items:
       content: 'public static create(properties?: google.rpc.IStatus): google.rpc.Status;'
       return:
         type:
-          - '@google-cloud/deploy!google.rpc.Status:class'
+          - '@google-cloud/deploy!protos.google.rpc.Status:class'
         description: Status instance
       parameters:
         - id: properties
           description: Properties to set
           type:
-            - '@google-cloud/deploy!google.rpc.IStatus:interface'
+            - '@google-cloud/deploy!protos.google.rpc.IStatus:interface'
   - uid: '@google-cloud/deploy!protos.google.rpc.Status.decode:member(1)'
     summary: Decodes a Status message from the specified reader or buffer.
     name: decode(reader, length)
@@ -7878,7 +7335,7 @@ items:
       content: 'public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): google.rpc.Status;'
       return:
         type:
-          - '@google-cloud/deploy!google.rpc.Status:class'
+          - '@google-cloud/deploy!protos.google.rpc.Status:class'
         description: Status
       parameters:
         - id: reader
@@ -7900,7 +7357,7 @@ items:
       content: 'public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): google.rpc.Status;'
       return:
         type:
-          - '@google-cloud/deploy!google.rpc.Status:class'
+          - '@google-cloud/deploy!protos.google.rpc.Status:class'
         description: Status
       parameters:
         - id: reader
@@ -7927,17 +7384,17 @@ items:
       content: 'public static encode(message: google.rpc.IStatus, writer?: $protobuf.Writer): $protobuf.Writer;'
       return:
         type:
-          - '@google-cloud/deploy!protos.google.rpc.Status.encode~0:complex'
+          - protobufjs!Writer:class
         description: Writer
       parameters:
         - id: message
           description: Status message or plain object to encode
           type:
-            - '@google-cloud/deploy!google.rpc.IStatus:interface'
+            - '@google-cloud/deploy!protos.google.rpc.IStatus:interface'
         - id: writer
           description: Writer to encode to
           type:
-            - '@google-cloud/deploy!protos.google.rpc.Status.encode~1:complex'
+            - protobufjs!Writer:class
   - uid: '@google-cloud/deploy!protos.google.rpc.Status.encodeDelimited:member(1)'
     summary: Encodes the specified Status message, length delimited. Does not implicitly  messages.
     name: encodeDelimited(message, writer)
@@ -7949,17 +7406,17 @@ items:
       content: 'public static encodeDelimited(message: google.rpc.IStatus, writer?: $protobuf.Writer): $protobuf.Writer;'
       return:
         type:
-          - '@google-cloud/deploy!protos.google.rpc.Status.encodeDelimited~0:complex'
+          - protobufjs!Writer:class
         description: Writer
       parameters:
         - id: message
           description: Status message or plain object to encode
           type:
-            - '@google-cloud/deploy!google.rpc.IStatus:interface'
+            - '@google-cloud/deploy!protos.google.rpc.IStatus:interface'
         - id: writer
           description: Writer to encode to
           type:
-            - '@google-cloud/deploy!protos.google.rpc.Status.encodeDelimited~1:complex'
+            - protobufjs!Writer:class
   - uid: '@google-cloud/deploy!protos.google.rpc.Status.fromObject:member(1)'
     summary: Creates a Status message from a plain object. Also converts values to their respective internal types.
     name: fromObject(object)
@@ -7971,7 +7428,7 @@ items:
       content: 'public static fromObject(object: { [k: string]: any }): google.rpc.Status;'
       return:
         type:
-          - '@google-cloud/deploy!google.rpc.Status:class'
+          - '@google-cloud/deploy!protos.google.rpc.Status:class'
         description: Status
       parameters:
         - id: object
@@ -8019,11 +7476,11 @@ items:
         - id: message
           description: Status
           type:
-            - '@google-cloud/deploy!google.rpc.Status:class'
+            - '@google-cloud/deploy!protos.google.rpc.Status:class'
         - id: options
           description: Conversion options
           type:
-            - '@google-cloud/deploy!protos.google.rpc.Status.toObject~0:complex'
+            - protobufjs!IConversionOptions:interface
   - uid: '@google-cloud/deploy!protos.google.rpc.Status.verify:member(1)'
     summary: Verifies a Status message.
     name: verify(message)
@@ -8043,18 +7500,20 @@ items:
           type:
             - '{ [k: string]: any }'
 references:
-  - uid: '@google-cloud/deploy!google.rpc.IStatus:interface'
+  - uid: '@google-cloud/deploy!protos.google.rpc.IStatus:interface'
     name: IStatus
-  - uid: '@google-cloud/deploy!google.rpc.Status:class'
-    name: google.rpc.Status
+    fullName: protos.google.rpc.IStatus
+  - uid: '@google-cloud/deploy!protos.google.rpc.Status:class'
+    name: Status
+    fullName: protos.google.rpc.Status
   - uid: '@google-cloud/deploy!protos.google.rpc.Status.decode~0:complex'
     name: ($protobuf.Reader|Uint8Array)
-    fullName: ($protobuf.Reader|Uint8Array)
+    fullName: (Reader|Uint8Array)
     spec.typeScript:
-      - name: ($protobuf.
-        fullName: ($protobuf.
+      - name: (
+        fullName: (
       - uid: protobufjs!Reader:class
-        name: Reader
+        name: $protobuf.Reader
         fullName: Reader
       - name: '|'
         fullName: '|'
@@ -8065,12 +7524,12 @@ references:
         fullName: )
   - uid: '@google-cloud/deploy!protos.google.rpc.Status.decodeDelimited~0:complex'
     name: ($protobuf.Reader|Uint8Array)
-    fullName: ($protobuf.Reader|Uint8Array)
+    fullName: (Reader|Uint8Array)
     spec.typeScript:
-      - name: ($protobuf.
-        fullName: ($protobuf.
+      - name: (
+        fullName: (
       - uid: protobufjs!Reader:class
-        name: Reader
+        name: $protobuf.Reader
         fullName: Reader
       - name: '|'
         fullName: '|'
@@ -8079,50 +7538,9 @@ references:
         fullName: Uint8Array
       - name: )
         fullName: )
-  - uid: '@google-cloud/deploy!protos.google.rpc.Status.encode~0:complex'
+  - uid: protobufjs!Writer:class
     name: $protobuf.Writer
-    fullName: $protobuf.Writer
-    spec.typeScript:
-      - name: $protobuf.
-        fullName: $protobuf.
-      - uid: protobufjs!Writer:class
-        name: Writer
-        fullName: Writer
-  - uid: '@google-cloud/deploy!protos.google.rpc.Status.encode~1:complex'
-    name: $protobuf.Writer
-    fullName: $protobuf.Writer
-    spec.typeScript:
-      - name: $protobuf.
-        fullName: $protobuf.
-      - uid: protobufjs!Writer:class
-        name: Writer
-        fullName: Writer
-  - uid: '@google-cloud/deploy!protos.google.rpc.Status.encodeDelimited~0:complex'
-    name: $protobuf.Writer
-    fullName: $protobuf.Writer
-    spec.typeScript:
-      - name: $protobuf.
-        fullName: $protobuf.
-      - uid: protobufjs!Writer:class
-        name: Writer
-        fullName: Writer
-  - uid: '@google-cloud/deploy!protos.google.rpc.Status.encodeDelimited~1:complex'
-    name: $protobuf.Writer
-    fullName: $protobuf.Writer
-    spec.typeScript:
-      - name: $protobuf.
-        fullName: $protobuf.
-      - uid: protobufjs!Writer:class
-        name: Writer
-        fullName: Writer
-  - uid: '@google-cloud/deploy!protos.google.rpc.Status.toObject~0:complex'
+  - uid: protobufjs!IConversionOptions:interface
     name: $protobuf.IConversionOptions
-    fullName: $protobuf.IConversionOptions
-    spec.typeScript:
-      - name: $protobuf.
-        fullName: $protobuf.
-      - uid: protobufjs!IConversionOptions:interface
-        name: IConversionOptions
-        fullName: IConversionOptions
 
 `
