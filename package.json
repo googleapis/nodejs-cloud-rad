@@ -10,6 +10,7 @@
   "scripts": {
     "coverage": "c8 npm run test",
     "test": "env TEST=1 mocha --timeout=50000 --require './test/helpers.mjs' --recursive './test/specs/**/*.mjs'",
+    "update-api-model": "api-extractor run --local -c ./test/fixtures/api-model/api-extractor.json",
     "update-snapshots": "env SNAPSHOT_UPDATE=1 TEST=1 mocha --timeout=5000 --require './test/helpers.mjs' './test/specs/lib/generate-devsite.mjs'"
   },
   "author": "Google LLC",
@@ -17,6 +18,7 @@
   "dependencies": {
     "@googleapis/api-documenter": "~7.13.0",
     "@microsoft/api-extractor": "~7.37.0",
+    "@microsoft/api-extractor-model": "^7.27.2",
     "@rushstack/node-core-library": "^3.55.2",
     "execa": "^7.0.0",
     "fs-extra": "^11.1.0",

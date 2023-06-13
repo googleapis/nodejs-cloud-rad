@@ -20,9 +20,20 @@ import {join} from 'path';
 import organizeToc from '../../../../lib/processors/organize-toc.mjs';
 
 describe('organize TOC processor', () => {
-  const metadata = {
-    cwd: join(process.cwd(), 'test', 'fixtures', 'declarations'),
-  };
+  let metadata;
+
+  beforeEach(() => {
+    metadata = {
+      // Specify version numbers manually, rather than checking the API model.
+      _versions: ['v1'],
+      cwd: join(process.cwd(), 'test', 'fixtures', 'declarations'),
+      packageInfo: {
+        name: '@google-cloud/foo',
+      },
+      packageShortName: 'foo',
+      tmpDir: join(process.cwd(), 'test', 'fixtures', 'api-model'),
+    };
+  });
 
   it('asks to process toc.yml files', async () => {
     const actual = await globResults(
@@ -559,5 +570,294 @@ describe('organize TOC processor', () => {
     };
 
     assert.deepStrictEqual(actual, expected);
+  });
+
+  describe('versions', () => {
+    let toc;
+
+    beforeEach(() => {
+      // Remove the version-number override, so we can get version numbers from
+      // the API model instead.
+      delete metadata._versions;
+      toc = {
+        items: [
+          {
+            name: 'foo',
+            uid: '@google-cloud/foo!',
+            items: [
+              {
+                name: 'FooMetadata',
+                uid: '@google-cloud/cloud-rad!protos.google.cloud.foo.v1.FooMetadata:class',
+              },
+              {
+                name: 'FooSize',
+                uid: '@google-cloud/cloud-rad!protos.google.cloud.foo.v1.FooSize:enum',
+              },
+              {
+                name: 'IFooMetadata',
+                uid: '@google-cloud/cloud-rad!protos.google.cloud.foo.v1.IFooMetadata:interface',
+              },
+              {
+                name: 'FooMetadata',
+                uid: '@google-cloud/cloud-rad!protos.google.cloud.foo.v1alpha1.FooMetadata:class',
+              },
+              {
+                name: 'FooSize',
+                uid: '@google-cloud/cloud-rad!protos.google.cloud.foo.v1alpha1.FooSize:enum',
+              },
+              {
+                name: 'IFooMetadata',
+                uid: '@google-cloud/cloud-rad!protos.google.cloud.foo.v1alpha1.IFooMetadata:interface',
+              },
+              {
+                name: 'FooMetadata',
+                uid: '@google-cloud/cloud-rad!protos.google.cloud.foo.v1alpha2.FooMetadata:class',
+              },
+              {
+                name: 'FooSize',
+                uid: '@google-cloud/cloud-rad!protos.google.cloud.foo.v1alpha2.FooSize:enum',
+              },
+              {
+                name: 'IFooMetadata',
+                uid: '@google-cloud/cloud-rad!protos.google.cloud.foo.v1alpha2.IFooMetadata:interface',
+              },
+              {
+                name: 'FooMetadata',
+                uid: '@google-cloud/cloud-rad!protos.google.cloud.foo.v1beta.FooMetadata:class',
+              },
+              {
+                name: 'FooSize',
+                uid: '@google-cloud/cloud-rad!protos.google.cloud.foo.v1beta.FooSize:enum',
+              },
+              {
+                name: 'IFooMetadata',
+                uid: '@google-cloud/cloud-rad!protos.google.cloud.foo.v1beta.IFooMetadata:interface',
+              },
+              {
+                name: 'FooMetadata',
+                uid: '@google-cloud/cloud-rad!protos.google.cloud.foo.v2.FooMetadata:class',
+              },
+              {
+                name: 'FooSize',
+                uid: '@google-cloud/cloud-rad!protos.google.cloud.foo.v2.FooSize:enum',
+              },
+              {
+                name: 'IFooMetadata',
+                uid: '@google-cloud/cloud-rad!protos.google.cloud.foo.v2.IFooMetadata:interface',
+              },
+              {
+                name: 'FooClient',
+                uid: '@google-cloud/cloud-rad!v1.FooClient:class',
+              },
+              {
+                name: 'FooClient',
+                uid: '@google-cloud/cloud-rad!v1alpha1.FooClient:class',
+              },
+              {
+                name: 'FooClient',
+                uid: '@google-cloud/cloud-rad!v1alpha2.FooClient:class',
+              },
+              {
+                name: 'FooClient',
+                uid: '@google-cloud/cloud-rad!v1beta.FooClient:class',
+              },
+              {
+                name: 'FooClient',
+                uid: '@google-cloud/cloud-rad!v2.FooClient:class',
+              },
+            ],
+          },
+        ],
+      };
+    });
+
+    it('sorts by version ID', async () => {
+      const actual = await organizeToc.process({
+        metadata,
+        obj: toc,
+      });
+      const expected = {
+        items: [
+          {
+            name: 'foo',
+            uid: '@google-cloud/foo!',
+            items: [
+              {
+                name: 'FooClient',
+                uid: '@google-cloud/cloud-rad!v2.FooClient:class',
+              },
+              {
+                name: 'Classes',
+                items: [
+                  {
+                    name: 'v2',
+                    items: [
+                      {
+                        name: 'FooMetadata',
+                        uid: '@google-cloud/cloud-rad!protos.google.cloud.foo.v2.FooMetadata:class',
+                      },
+                    ],
+                  },
+                  {
+                    name: 'v1',
+                    items: [
+                      {
+                        name: 'FooClient',
+                        uid: '@google-cloud/cloud-rad!v1.FooClient:class',
+                      },
+                      {
+                        name: 'FooMetadata',
+                        uid: '@google-cloud/cloud-rad!protos.google.cloud.foo.v1.FooMetadata:class',
+                      },
+                    ],
+                  },
+                  {
+                    name: 'v1beta',
+                    items: [
+                      {
+                        name: 'FooClient',
+                        uid: '@google-cloud/cloud-rad!v1beta.FooClient:class',
+                      },
+                      {
+                        name: 'FooMetadata',
+                        uid: '@google-cloud/cloud-rad!protos.google.cloud.foo.v1beta.FooMetadata:class',
+                      },
+                    ],
+                  },
+                  {
+                    name: 'v1alpha2',
+                    items: [
+                      {
+                        name: 'FooClient',
+                        uid: '@google-cloud/cloud-rad!v1alpha2.FooClient:class',
+                      },
+                      {
+                        name: 'FooMetadata',
+                        uid: '@google-cloud/cloud-rad!protos.google.cloud.foo.v1alpha2.FooMetadata:class',
+                      },
+                    ],
+                  },
+                  {
+                    name: 'v1alpha1',
+                    items: [
+                      {
+                        name: 'FooClient',
+                        uid: '@google-cloud/cloud-rad!v1alpha1.FooClient:class',
+                      },
+                      {
+                        name: 'FooMetadata',
+                        uid: '@google-cloud/cloud-rad!protos.google.cloud.foo.v1alpha1.FooMetadata:class',
+                      },
+                    ],
+                  },
+                ],
+              },
+              {
+                name: 'Interfaces',
+                items: [
+                  {
+                    name: 'v2',
+                    items: [
+                      {
+                        name: 'IFooMetadata',
+                        uid: '@google-cloud/cloud-rad!protos.google.cloud.foo.v2.IFooMetadata:interface',
+                      },
+                    ],
+                  },
+                  {
+                    name: 'v1',
+                    items: [
+                      {
+                        name: 'IFooMetadata',
+                        uid: '@google-cloud/cloud-rad!protos.google.cloud.foo.v1.IFooMetadata:interface',
+                      },
+                    ],
+                  },
+                  {
+                    name: 'v1beta',
+                    items: [
+                      {
+                        name: 'IFooMetadata',
+                        uid: '@google-cloud/cloud-rad!protos.google.cloud.foo.v1beta.IFooMetadata:interface',
+                      },
+                    ],
+                  },
+                  {
+                    name: 'v1alpha2',
+                    items: [
+                      {
+                        name: 'IFooMetadata',
+                        uid: '@google-cloud/cloud-rad!protos.google.cloud.foo.v1alpha2.IFooMetadata:interface',
+                      },
+                    ],
+                  },
+                  {
+                    name: 'v1alpha1',
+                    items: [
+                      {
+                        name: 'IFooMetadata',
+                        uid: '@google-cloud/cloud-rad!protos.google.cloud.foo.v1alpha1.IFooMetadata:interface',
+                      },
+                    ],
+                  },
+                ],
+              },
+              {
+                name: 'Enums',
+                items: [
+                  {
+                    name: 'v2',
+                    items: [
+                      {
+                        name: 'FooSize',
+                        uid: '@google-cloud/cloud-rad!protos.google.cloud.foo.v2.FooSize:enum',
+                      },
+                    ],
+                  },
+                  {
+                    name: 'v1',
+                    items: [
+                      {
+                        name: 'FooSize',
+                        uid: '@google-cloud/cloud-rad!protos.google.cloud.foo.v1.FooSize:enum',
+                      },
+                    ],
+                  },
+                  {
+                    name: 'v1beta',
+                    items: [
+                      {
+                        name: 'FooSize',
+                        uid: '@google-cloud/cloud-rad!protos.google.cloud.foo.v1beta.FooSize:enum',
+                      },
+                    ],
+                  },
+                  {
+                    name: 'v1alpha2',
+                    items: [
+                      {
+                        name: 'FooSize',
+                        uid: '@google-cloud/cloud-rad!protos.google.cloud.foo.v1alpha2.FooSize:enum',
+                      },
+                    ],
+                  },
+                  {
+                    name: 'v1alpha1',
+                    items: [
+                      {
+                        name: 'FooSize',
+                        uid: '@google-cloud/cloud-rad!protos.google.cloud.foo.v1alpha1.FooSize:enum',
+                      },
+                    ],
+                  },
+                ],
+              },
+            ],
+          },
+        ],
+      };
+
+      assert.deepStrictEqual(actual, expected);
+    });
   });
 });
