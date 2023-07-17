@@ -684,6 +684,65 @@ describe('organize TOC processor', () => {
     assert.deepStrictEqual(actual, expected);
   });
 
+  it('handles items with no namespace', async () => {
+    const actual = await organizeToc.process({
+      metadata,
+      obj: {
+        items: [
+          {
+            name: 'foo',
+            uid: '@google-cloud/foo!',
+            items: [
+              {
+                name: 'SomeProtoEnum',
+                uid: '@google-cloud/foo!protos.google.foo.v1.SomeProtoEnum:enum',
+              },
+              {
+                name: 'Foo',
+                uid: '@google-cloud/foo!Foo:class',
+              },
+            ],
+          },
+        ],
+      },
+    });
+    const expected = {
+      items: [
+        {
+          name: 'foo',
+          uid: '@google-cloud/foo!',
+          items: [
+            {
+              name: 'Classes',
+              items: [
+                {
+                  name: 'Foo',
+                  uid: '@google-cloud/foo!Foo:class',
+                },
+              ],
+            },
+            {
+              name: 'Enums',
+              items: [
+                {
+                  name: 'protos.google.foo.v1',
+                  items: [
+                    {
+                      name: 'SomeProtoEnum',
+                      uid: '@google-cloud/foo!protos.google.foo.v1.SomeProtoEnum:enum',
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    };
+
+    assert.deepStrictEqual(actual, expected);
+  });
+
   describe('namespaces', () => {
     let toc;
 
