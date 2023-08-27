@@ -100,6 +100,26 @@ export namespace google {
           LARGE = 3
         }
       }
+      /** Namespace v1p1alpha3. */
+      namespace v1p1alpha3 {
+        /** Properties of a FooMetadata. */
+        interface IFooMetadata {
+          createTime?: null;
+        }
+        /** Represents a FooMetadata. */
+        class FooMetadata implements IFooMetadata {
+          /**
+           * Constructs a new FooMetadata.
+           */
+          constructor();
+        }
+        enum FooSize {
+          FOO_SIZE_UNSPECIFIED = 0,
+          SMALL = 1,
+          MEDIUM = 2,
+          LARGE = 3
+        }
+      }
       /** Namespace v2. */
       namespace v2 {
         /** Properties of a FooMetadata. */

@@ -11,18 +11,6 @@ items:
         uid: '@google-cloud/deploy!v1.CloudDeployClient:class'
       - name: Classes
         items:
-          - name: protos.google.api
-            items:
-              - name: CustomHttpPattern
-                uid: '@google-cloud/deploy!protos.google.api.CustomHttpPattern:class'
-              - name: Http
-                uid: '@google-cloud/deploy!protos.google.api.Http:class'
-              - name: HttpRule
-                uid: '@google-cloud/deploy!protos.google.api.HttpRule:class'
-              - name: ResourceDescriptor
-                uid: '@google-cloud/deploy!protos.google.api.ResourceDescriptor:class'
-              - name: ResourceReference
-                uid: '@google-cloud/deploy!protos.google.api.ResourceReference:class'
           - name: protos.google.cloud.deploy.v1
             items:
               - name: ApproveRolloutRequest
@@ -111,6 +99,18 @@ items:
                 uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.UpdateDeliveryPipelineRequest:class'
               - name: UpdateTargetRequest
                 uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.UpdateTargetRequest:class'
+          - name: protos.google.api
+            items:
+              - name: CustomHttpPattern
+                uid: '@google-cloud/deploy!protos.google.api.CustomHttpPattern:class'
+              - name: Http
+                uid: '@google-cloud/deploy!protos.google.api.Http:class'
+              - name: HttpRule
+                uid: '@google-cloud/deploy!protos.google.api.HttpRule:class'
+              - name: ResourceDescriptor
+                uid: '@google-cloud/deploy!protos.google.api.ResourceDescriptor:class'
+              - name: ResourceReference
+                uid: '@google-cloud/deploy!protos.google.api.ResourceReference:class'
           - name: protos.google.longrunning
             items:
               - name: CancelOperationRequest
@@ -207,18 +207,6 @@ items:
                 uid: '@google-cloud/deploy!protos.google.type.Date:class'
       - name: Interfaces
         items:
-          - name: protos.google.api
-            items:
-              - name: ICustomHttpPattern
-                uid: '@google-cloud/deploy!protos.google.api.ICustomHttpPattern:interface'
-              - name: IHttp
-                uid: '@google-cloud/deploy!protos.google.api.IHttp:interface'
-              - name: IHttpRule
-                uid: '@google-cloud/deploy!protos.google.api.IHttpRule:interface'
-              - name: IResourceDescriptor
-                uid: '@google-cloud/deploy!protos.google.api.IResourceDescriptor:interface'
-              - name: IResourceReference
-                uid: '@google-cloud/deploy!protos.google.api.IResourceReference:interface'
           - name: protos.google.cloud.deploy.v1
             items:
               - name: IApproveRolloutRequest
@@ -305,6 +293,18 @@ items:
                 uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IUpdateDeliveryPipelineRequest:interface'
               - name: IUpdateTargetRequest
                 uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.IUpdateTargetRequest:interface'
+          - name: protos.google.api
+            items:
+              - name: ICustomHttpPattern
+                uid: '@google-cloud/deploy!protos.google.api.ICustomHttpPattern:interface'
+              - name: IHttp
+                uid: '@google-cloud/deploy!protos.google.api.IHttp:interface'
+              - name: IHttpRule
+                uid: '@google-cloud/deploy!protos.google.api.IHttpRule:interface'
+              - name: IResourceDescriptor
+                uid: '@google-cloud/deploy!protos.google.api.IResourceDescriptor:interface'
+              - name: IResourceReference
+                uid: '@google-cloud/deploy!protos.google.api.IResourceReference:interface'
           - name: protos.google.longrunning
             items:
               - name: ICancelOperationRequest
@@ -399,14 +399,6 @@ items:
                 uid: '@google-cloud/deploy!protos.google.type.IDate:interface'
       - name: Enums
         items:
-          - name: protos.google.api
-            items:
-              - name: FieldBehavior
-                uid: '@google-cloud/deploy!protos.google.api.FieldBehavior:enum'
-              - name: History
-                uid: '@google-cloud/deploy!protos.google.api.ResourceDescriptor.History:enum'
-              - name: Style
-                uid: '@google-cloud/deploy!protos.google.api.ResourceDescriptor.Style:enum'
           - name: protos.google.cloud.deploy.v1
             items:
               - name: ApprovalState
@@ -419,6 +411,14 @@ items:
                 uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.Rollout.State:enum'
               - name: TargetRenderState
                 uid: '@google-cloud/deploy!protos.google.cloud.deploy.v1.Release.TargetRender.TargetRenderState:enum'
+          - name: protos.google.api
+            items:
+              - name: FieldBehavior
+                uid: '@google-cloud/deploy!protos.google.api.FieldBehavior:enum'
+              - name: History
+                uid: '@google-cloud/deploy!protos.google.api.ResourceDescriptor.History:enum'
+              - name: Style
+                uid: '@google-cloud/deploy!protos.google.api.ResourceDescriptor.Style:enum'
           - name: protos.google.protobuf
             items:
               - name: CType

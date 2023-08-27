@@ -18,15 +18,17 @@ import * as v1 from './v1';
 import * as v1alpha1 from './v1alpha1';
 import * as v1alpha2 from './v1alpha2';
 import * as v1beta from './v1beta';
+import * as v1p1alpha3 from './v1p1alpha3'
 import * as v2 from './v2';
 declare const FooClient: typeof v2.FooClient;
 type FooClient = v2.FooClient;
-export { v1, v1alpha1, v1alpha2, v1beta, v2, FooClient };
+export { v1, v1alpha1, v1alpha2, v1beta, v1p1alpha3, v2, FooClient };
 declare const _default: {
   v1: typeof v1;
   v1alpha1: typeof v1alpha1;
   v1alpha2: typeof v1alpha2;
   v1beta: typeof v1beta;
+  v1p1alpha3: typeof v1p1alpha3;
   v2: typeof v2;
   FooClient: typeof v2.FooClient;
 };

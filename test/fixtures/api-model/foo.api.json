@@ -1,8 +1,8 @@
 {
   "metadata": {
     "toolPackage": "@microsoft/api-extractor",
-    "toolVersion": "7.19.5",
-    "schemaVersion": 1004,
+    "toolVersion": "7.37.0",
+    "schemaVersion": 1011,
     "oldestForwardsCompatibleVersion": 1001,
     "tsdocConfig": {
       "$schema": "https://developer.microsoft.com/json-schemas/tsdoc/v0/tsdoc.schema.json",
@@ -156,18 +156,21 @@
         "@betaDocumentation": true,
         "@internalRemarks": true,
         "@preapproved": true
-      }
+      },
+      "reportUnsupportedHtmlElements": false
     }
   },
   "kind": "Package",
   "canonicalReference": "@google-cloud/cloud-rad!",
   "docComment": "",
   "name": "@google-cloud/cloud-rad",
+  "preserveMemberOrder": false,
   "members": [
     {
       "kind": "EntryPoint",
       "canonicalReference": "@google-cloud/cloud-rad!",
       "name": "",
+      "preserveMemberOrder": false,
       "members": [
         {
           "kind": "Variable",
@@ -180,23 +183,79 @@
             },
             {
               "kind": "Content",
-              "text": "{\n  v1: typeof v1;\n  v1alpha1: typeof v1alpha1;\n  v1alpha2: typeof v1alpha2;\n  v1beta: typeof v1beta;\n  v2: typeof v2;\n  FooClient: typeof v2."
+              "text": "{\n  v1: typeof "
             },
             {
               "kind": "Reference",
-              "text": "FooClient",
-              "canonicalReference": "@google-cloud/cloud-rad!FooClient:class"
+              "text": "v1",
+              "canonicalReference": "@google-cloud/cloud-rad!v1"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n  v1alpha1: typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "v1alpha1",
+              "canonicalReference": "@google-cloud/cloud-rad!v1alpha1"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n  v1alpha2: typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "v1alpha2",
+              "canonicalReference": "@google-cloud/cloud-rad!v1alpha2"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n  v1beta: typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "v1beta",
+              "canonicalReference": "@google-cloud/cloud-rad!v1beta"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n  v1p1alpha3: typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "v1p1alpha3",
+              "canonicalReference": "@google-cloud/cloud-rad!v1p1alpha3"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n  v2: typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "v2",
+              "canonicalReference": "@google-cloud/cloud-rad!v2"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n  FooClient: typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "v2.FooClient",
+              "canonicalReference": "@google-cloud/cloud-rad!v2.FooClient_7:class"
             },
             {
               "kind": "Content",
               "text": ";\n}"
             }
           ],
+          "fileUrlPath": "src/index.d.ts",
+          "isReadonly": true,
           "releaseTag": "Public",
           "name": "_default",
           "variableTypeTokenRange": {
             "startIndex": 1,
-            "endIndex": 4
+            "endIndex": 16
           }
         },
         {
@@ -209,24 +268,21 @@
               "text": "type FooClient = "
             },
             {
-              "kind": "Content",
-              "text": "v2."
-            },
-            {
               "kind": "Reference",
-              "text": "FooClient",
-              "canonicalReference": "@google-cloud/cloud-rad!FooClient:class"
+              "text": "v2.FooClient",
+              "canonicalReference": "@google-cloud/cloud-rad!v2.FooClient_7:class"
             },
             {
               "kind": "Content",
               "text": ";"
             }
           ],
+          "fileUrlPath": "src/index.d.ts",
           "releaseTag": "Public",
           "name": "FooClient",
           "typeTokenRange": {
             "startIndex": 1,
-            "endIndex": 3
+            "endIndex": 2
           }
         },
         {
@@ -240,14 +296,16 @@
             },
             {
               "kind": "Content",
-              "text": "typeof v2."
+              "text": "typeof "
             },
             {
               "kind": "Reference",
-              "text": "FooClient",
-              "canonicalReference": "@google-cloud/cloud-rad!FooClient:class"
+              "text": "v2.FooClient",
+              "canonicalReference": "@google-cloud/cloud-rad!v2.FooClient_7:class"
             }
           ],
+          "fileUrlPath": "src/index.d.ts",
+          "isReadonly": true,
           "releaseTag": "Public",
           "name": "FooClient",
           "variableTypeTokenRange": {
@@ -260,8 +318,10 @@
           "canonicalReference": "@google-cloud/cloud-rad!protos:namespace",
           "docComment": "",
           "excerptTokens": [],
+          "fileUrlPath": "src/index.d.ts",
           "releaseTag": "None",
           "name": "protos",
+          "preserveMemberOrder": false,
           "members": [
             {
               "kind": "Namespace",
@@ -273,8 +333,10 @@
                   "text": "export namespace google "
                 }
               ],
+              "fileUrlPath": "protos/protos.d.ts",
               "releaseTag": "Public",
               "name": "google",
+              "preserveMemberOrder": false,
               "members": [
                 {
                   "kind": "Namespace",
@@ -288,6 +350,7 @@
                   ],
                   "releaseTag": "Public",
                   "name": "cloud",
+                  "preserveMemberOrder": false,
                   "members": [
                     {
                       "kind": "Namespace",
@@ -301,6 +364,7 @@
                       ],
                       "releaseTag": "Public",
                       "name": "foo",
+                      "preserveMemberOrder": false,
                       "members": [
                         {
                           "kind": "Namespace",
@@ -314,6 +378,7 @@
                           ],
                           "releaseTag": "Public",
                           "name": "v1",
+                          "preserveMemberOrder": false,
                           "members": [
                             {
                               "kind": "Class",
@@ -327,7 +392,7 @@
                                 {
                                   "kind": "Reference",
                                   "text": "IFooMetadata",
-                                  "canonicalReference": "@google-cloud/cloud-rad!google.cloud.foo.v1.IFooMetadata:interface"
+                                  "canonicalReference": "@google-cloud/cloud-rad!protos.google.cloud.foo.v1.IFooMetadata:interface"
                                 },
                                 {
                                   "kind": "Content",
@@ -335,7 +400,9 @@
                                 }
                               ],
                               "releaseTag": "Public",
+                              "isAbstract": false,
                               "name": "FooMetadata",
+                              "preserveMemberOrder": false,
                               "members": [
                                 {
                                   "kind": "Constructor",
@@ -348,6 +415,7 @@
                                     }
                                   ],
                                   "releaseTag": "Public",
+                                  "isProtected": false,
                                   "overloadIndex": 1,
                                   "parameters": []
                                 }
@@ -355,7 +423,7 @@
                               "implementsTokenRanges": [
                                 {
                                   "startIndex": 1,
-                                  "endIndex": 3
+                                  "endIndex": 2
                                 }
                               ]
                             },
@@ -371,6 +439,7 @@
                               ],
                               "releaseTag": "Public",
                               "name": "FooSize",
+                              "preserveMemberOrder": false,
                               "members": [
                                 {
                                   "kind": "EnumMember",
@@ -386,12 +455,12 @@
                                       "text": "0"
                                     }
                                   ],
-                                  "releaseTag": "Public",
-                                  "name": "FOO_SIZE_UNSPECIFIED",
                                   "initializerTokenRange": {
                                     "startIndex": 1,
                                     "endIndex": 2
-                                  }
+                                  },
+                                  "releaseTag": "Public",
+                                  "name": "FOO_SIZE_UNSPECIFIED"
                                 },
                                 {
                                   "kind": "EnumMember",
@@ -407,12 +476,12 @@
                                       "text": "3"
                                     }
                                   ],
-                                  "releaseTag": "Public",
-                                  "name": "LARGE",
                                   "initializerTokenRange": {
                                     "startIndex": 1,
                                     "endIndex": 2
-                                  }
+                                  },
+                                  "releaseTag": "Public",
+                                  "name": "LARGE"
                                 },
                                 {
                                   "kind": "EnumMember",
@@ -428,12 +497,12 @@
                                       "text": "2"
                                     }
                                   ],
-                                  "releaseTag": "Public",
-                                  "name": "MEDIUM",
                                   "initializerTokenRange": {
                                     "startIndex": 1,
                                     "endIndex": 2
-                                  }
+                                  },
+                                  "releaseTag": "Public",
+                                  "name": "MEDIUM"
                                 },
                                 {
                                   "kind": "EnumMember",
@@ -449,12 +518,12 @@
                                       "text": "1"
                                     }
                                   ],
-                                  "releaseTag": "Public",
-                                  "name": "SMALL",
                                   "initializerTokenRange": {
                                     "startIndex": 1,
                                     "endIndex": 2
-                                  }
+                                  },
+                                  "releaseTag": "Public",
+                                  "name": "SMALL"
                                 }
                               ]
                             },
@@ -470,6 +539,7 @@
                               ],
                               "releaseTag": "Public",
                               "name": "IFooMetadata",
+                              "preserveMemberOrder": false,
                               "members": [
                                 {
                                   "kind": "PropertySignature",
@@ -489,6 +559,7 @@
                                       "text": ";"
                                     }
                                   ],
+                                  "isReadonly": false,
                                   "isOptional": true,
                                   "releaseTag": "Public",
                                   "name": "createTime",
@@ -514,6 +585,7 @@
                           ],
                           "releaseTag": "Public",
                           "name": "v1alpha1",
+                          "preserveMemberOrder": false,
                           "members": [
                             {
                               "kind": "Class",
@@ -527,7 +599,7 @@
                                 {
                                   "kind": "Reference",
                                   "text": "IFooMetadata",
-                                  "canonicalReference": "@google-cloud/cloud-rad!google.cloud.foo.v1alpha1.IFooMetadata:interface"
+                                  "canonicalReference": "@google-cloud/cloud-rad!protos.google.cloud.foo.v1alpha1.IFooMetadata:interface"
                                 },
                                 {
                                   "kind": "Content",
@@ -535,7 +607,9 @@
                                 }
                               ],
                               "releaseTag": "Public",
+                              "isAbstract": false,
                               "name": "FooMetadata",
+                              "preserveMemberOrder": false,
                               "members": [
                                 {
                                   "kind": "Constructor",
@@ -548,6 +622,7 @@
                                     }
                                   ],
                                   "releaseTag": "Public",
+                                  "isProtected": false,
                                   "overloadIndex": 1,
                                   "parameters": []
                                 }
@@ -555,7 +630,7 @@
                               "implementsTokenRanges": [
                                 {
                                   "startIndex": 1,
-                                  "endIndex": 3
+                                  "endIndex": 2
                                 }
                               ]
                             },
@@ -571,6 +646,7 @@
                               ],
                               "releaseTag": "Public",
                               "name": "FooSize",
+                              "preserveMemberOrder": false,
                               "members": [
                                 {
                                   "kind": "EnumMember",
@@ -586,12 +662,12 @@
                                       "text": "0"
                                     }
                                   ],
-                                  "releaseTag": "Public",
-                                  "name": "FOO_SIZE_UNSPECIFIED",
                                   "initializerTokenRange": {
                                     "startIndex": 1,
                                     "endIndex": 2
-                                  }
+                                  },
+                                  "releaseTag": "Public",
+                                  "name": "FOO_SIZE_UNSPECIFIED"
                                 },
                                 {
                                   "kind": "EnumMember",
@@ -607,12 +683,12 @@
                                       "text": "3"
                                     }
                                   ],
-                                  "releaseTag": "Public",
-                                  "name": "LARGE",
                                   "initializerTokenRange": {
                                     "startIndex": 1,
                                     "endIndex": 2
-                                  }
+                                  },
+                                  "releaseTag": "Public",
+                                  "name": "LARGE"
                                 },
                                 {
                                   "kind": "EnumMember",
@@ -628,12 +704,12 @@
                                       "text": "2"
                                     }
                                   ],
-                                  "releaseTag": "Public",
-                                  "name": "MEDIUM",
                                   "initializerTokenRange": {
                                     "startIndex": 1,
                                     "endIndex": 2
-                                  }
+                                  },
+                                  "releaseTag": "Public",
+                                  "name": "MEDIUM"
                                 },
                                 {
                                   "kind": "EnumMember",
@@ -649,12 +725,12 @@
                                       "text": "1"
                                     }
                                   ],
-                                  "releaseTag": "Public",
-                                  "name": "SMALL",
                                   "initializerTokenRange": {
                                     "startIndex": 1,
                                     "endIndex": 2
-                                  }
+                                  },
+                                  "releaseTag": "Public",
+                                  "name": "SMALL"
                                 }
                               ]
                             },
@@ -670,6 +746,7 @@
                               ],
                               "releaseTag": "Public",
                               "name": "IFooMetadata",
+                              "preserveMemberOrder": false,
                               "members": [
                                 {
                                   "kind": "PropertySignature",
@@ -689,6 +766,7 @@
                                       "text": ";"
                                     }
                                   ],
+                                  "isReadonly": false,
                                   "isOptional": true,
                                   "releaseTag": "Public",
                                   "name": "createTime",
@@ -714,6 +792,7 @@
                           ],
                           "releaseTag": "Public",
                           "name": "v1alpha2",
+                          "preserveMemberOrder": false,
                           "members": [
                             {
                               "kind": "Class",
@@ -727,7 +806,7 @@
                                 {
                                   "kind": "Reference",
                                   "text": "IFooMetadata",
-                                  "canonicalReference": "@google-cloud/cloud-rad!google.cloud.foo.v1alpha2.IFooMetadata:interface"
+                                  "canonicalReference": "@google-cloud/cloud-rad!protos.google.cloud.foo.v1alpha2.IFooMetadata:interface"
                                 },
                                 {
                                   "kind": "Content",
@@ -735,7 +814,9 @@
                                 }
                               ],
                               "releaseTag": "Public",
+                              "isAbstract": false,
                               "name": "FooMetadata",
+                              "preserveMemberOrder": false,
                               "members": [
                                 {
                                   "kind": "Constructor",
@@ -748,6 +829,7 @@
                                     }
                                   ],
                                   "releaseTag": "Public",
+                                  "isProtected": false,
                                   "overloadIndex": 1,
                                   "parameters": []
                                 }
@@ -755,7 +837,7 @@
                               "implementsTokenRanges": [
                                 {
                                   "startIndex": 1,
-                                  "endIndex": 3
+                                  "endIndex": 2
                                 }
                               ]
                             },
@@ -771,6 +853,7 @@
                               ],
                               "releaseTag": "Public",
                               "name": "FooSize",
+                              "preserveMemberOrder": false,
                               "members": [
                                 {
                                   "kind": "EnumMember",
@@ -786,12 +869,12 @@
                                       "text": "0"
                                     }
                                   ],
-                                  "releaseTag": "Public",
-                                  "name": "FOO_SIZE_UNSPECIFIED",
                                   "initializerTokenRange": {
                                     "startIndex": 1,
                                     "endIndex": 2
-                                  }
+                                  },
+                                  "releaseTag": "Public",
+                                  "name": "FOO_SIZE_UNSPECIFIED"
                                 },
                                 {
                                   "kind": "EnumMember",
@@ -807,12 +890,12 @@
                                       "text": "3"
                                     }
                                   ],
-                                  "releaseTag": "Public",
-                                  "name": "LARGE",
                                   "initializerTokenRange": {
                                     "startIndex": 1,
                                     "endIndex": 2
-                                  }
+                                  },
+                                  "releaseTag": "Public",
+                                  "name": "LARGE"
                                 },
                                 {
                                   "kind": "EnumMember",
@@ -828,12 +911,12 @@
                                       "text": "2"
                                     }
                                   ],
-                                  "releaseTag": "Public",
-                                  "name": "MEDIUM",
                                   "initializerTokenRange": {
                                     "startIndex": 1,
                                     "endIndex": 2
-                                  }
+                                  },
+                                  "releaseTag": "Public",
+                                  "name": "MEDIUM"
                                 },
                                 {
                                   "kind": "EnumMember",
@@ -849,12 +932,12 @@
                                       "text": "1"
                                     }
                                   ],
-                                  "releaseTag": "Public",
-                                  "name": "SMALL",
                                   "initializerTokenRange": {
                                     "startIndex": 1,
                                     "endIndex": 2
-                                  }
+                                  },
+                                  "releaseTag": "Public",
+                                  "name": "SMALL"
                                 }
                               ]
                             },
@@ -870,6 +953,7 @@
                               ],
                               "releaseTag": "Public",
                               "name": "IFooMetadata",
+                              "preserveMemberOrder": false,
                               "members": [
                                 {
                                   "kind": "PropertySignature",
@@ -889,6 +973,7 @@
                                       "text": ";"
                                     }
                                   ],
+                                  "isReadonly": false,
                                   "isOptional": true,
                                   "releaseTag": "Public",
                                   "name": "createTime",
@@ -914,6 +999,7 @@
                           ],
                           "releaseTag": "Public",
                           "name": "v1beta",
+                          "preserveMemberOrder": false,
                           "members": [
                             {
                               "kind": "Class",
@@ -927,7 +1013,7 @@
                                 {
                                   "kind": "Reference",
                                   "text": "IFooMetadata",
-                                  "canonicalReference": "@google-cloud/cloud-rad!google.cloud.foo.v1beta.IFooMetadata:interface"
+                                  "canonicalReference": "@google-cloud/cloud-rad!protos.google.cloud.foo.v1beta.IFooMetadata:interface"
                                 },
                                 {
                                   "kind": "Content",
@@ -935,7 +1021,9 @@
                                 }
                               ],
                               "releaseTag": "Public",
+                              "isAbstract": false,
                               "name": "FooMetadata",
+                              "preserveMemberOrder": false,
                               "members": [
                                 {
                                   "kind": "Constructor",
@@ -948,6 +1036,7 @@
                                     }
                                   ],
                                   "releaseTag": "Public",
+                                  "isProtected": false,
                                   "overloadIndex": 1,
                                   "parameters": []
                                 }
@@ -955,7 +1044,7 @@
                               "implementsTokenRanges": [
                                 {
                                   "startIndex": 1,
-                                  "endIndex": 3
+                                  "endIndex": 2
                                 }
                               ]
                             },
@@ -971,6 +1060,7 @@
                               ],
                               "releaseTag": "Public",
                               "name": "FooSize",
+                              "preserveMemberOrder": false,
                               "members": [
                                 {
                                   "kind": "EnumMember",
@@ -986,12 +1076,12 @@
                                       "text": "0"
                                     }
                                   ],
-                                  "releaseTag": "Public",
-                                  "name": "FOO_SIZE_UNSPECIFIED",
                                   "initializerTokenRange": {
                                     "startIndex": 1,
                                     "endIndex": 2
-                                  }
+                                  },
+                                  "releaseTag": "Public",
+                                  "name": "FOO_SIZE_UNSPECIFIED"
                                 },
                                 {
                                   "kind": "EnumMember",
@@ -1007,12 +1097,12 @@
                                       "text": "3"
                                     }
                                   ],
-                                  "releaseTag": "Public",
-                                  "name": "LARGE",
                                   "initializerTokenRange": {
                                     "startIndex": 1,
                                     "endIndex": 2
-                                  }
+                                  },
+                                  "releaseTag": "Public",
+                                  "name": "LARGE"
                                 },
                                 {
                                   "kind": "EnumMember",
@@ -1028,12 +1118,12 @@
                                       "text": "2"
                                     }
                                   ],
-                                  "releaseTag": "Public",
-                                  "name": "MEDIUM",
                                   "initializerTokenRange": {
                                     "startIndex": 1,
                                     "endIndex": 2
-                                  }
+                                  },
+                                  "releaseTag": "Public",
+                                  "name": "MEDIUM"
                                 },
                                 {
                                   "kind": "EnumMember",
@@ -1049,12 +1139,12 @@
                                       "text": "1"
                                     }
                                   ],
-                                  "releaseTag": "Public",
-                                  "name": "SMALL",
                                   "initializerTokenRange": {
                                     "startIndex": 1,
                                     "endIndex": 2
-                                  }
+                                  },
+                                  "releaseTag": "Public",
+                                  "name": "SMALL"
                                 }
                               ]
                             },
@@ -1070,6 +1160,7 @@
                               ],
                               "releaseTag": "Public",
                               "name": "IFooMetadata",
+                              "preserveMemberOrder": false,
                               "members": [
                                 {
                                   "kind": "PropertySignature",
@@ -1089,6 +1180,214 @@
                                       "text": ";"
                                     }
                                   ],
+                                  "isReadonly": false,
+                                  "isOptional": true,
+                                  "releaseTag": "Public",
+                                  "name": "createTime",
+                                  "propertyTypeTokenRange": {
+                                    "startIndex": 1,
+                                    "endIndex": 2
+                                  }
+                                }
+                              ],
+                              "extendsTokenRanges": []
+                            }
+                          ]
+                        },
+                        {
+                          "kind": "Namespace",
+                          "canonicalReference": "@google-cloud/cloud-rad!protos.google.cloud.foo.v1p1alpha3:namespace",
+                          "docComment": "/**\n * Namespace v1p1alpha3.\n */\n",
+                          "excerptTokens": [
+                            {
+                              "kind": "Content",
+                              "text": "namespace v1p1alpha3 "
+                            }
+                          ],
+                          "releaseTag": "Public",
+                          "name": "v1p1alpha3",
+                          "preserveMemberOrder": false,
+                          "members": [
+                            {
+                              "kind": "Class",
+                              "canonicalReference": "@google-cloud/cloud-rad!protos.google.cloud.foo.v1p1alpha3.FooMetadata:class",
+                              "docComment": "/**\n * Represents a FooMetadata.\n */\n",
+                              "excerptTokens": [
+                                {
+                                  "kind": "Content",
+                                  "text": "class FooMetadata implements "
+                                },
+                                {
+                                  "kind": "Reference",
+                                  "text": "IFooMetadata",
+                                  "canonicalReference": "@google-cloud/cloud-rad!protos.google.cloud.foo.v1p1alpha3.IFooMetadata:interface"
+                                },
+                                {
+                                  "kind": "Content",
+                                  "text": " "
+                                }
+                              ],
+                              "releaseTag": "Public",
+                              "isAbstract": false,
+                              "name": "FooMetadata",
+                              "preserveMemberOrder": false,
+                              "members": [
+                                {
+                                  "kind": "Constructor",
+                                  "canonicalReference": "@google-cloud/cloud-rad!protos.google.cloud.foo.v1p1alpha3.FooMetadata:constructor(1)",
+                                  "docComment": "/**\n * Constructs a new FooMetadata.\n */\n",
+                                  "excerptTokens": [
+                                    {
+                                      "kind": "Content",
+                                      "text": "constructor();"
+                                    }
+                                  ],
+                                  "releaseTag": "Public",
+                                  "isProtected": false,
+                                  "overloadIndex": 1,
+                                  "parameters": []
+                                }
+                              ],
+                              "implementsTokenRanges": [
+                                {
+                                  "startIndex": 1,
+                                  "endIndex": 2
+                                }
+                              ]
+                            },
+                            {
+                              "kind": "Enum",
+                              "canonicalReference": "@google-cloud/cloud-rad!protos.google.cloud.foo.v1p1alpha3.FooSize:enum",
+                              "docComment": "",
+                              "excerptTokens": [
+                                {
+                                  "kind": "Content",
+                                  "text": "enum FooSize "
+                                }
+                              ],
+                              "releaseTag": "Public",
+                              "name": "FooSize",
+                              "preserveMemberOrder": false,
+                              "members": [
+                                {
+                                  "kind": "EnumMember",
+                                  "canonicalReference": "@google-cloud/cloud-rad!protos.google.cloud.foo.v1p1alpha3.FooSize.FOO_SIZE_UNSPECIFIED:member",
+                                  "docComment": "",
+                                  "excerptTokens": [
+                                    {
+                                      "kind": "Content",
+                                      "text": "FOO_SIZE_UNSPECIFIED = "
+                                    },
+                                    {
+                                      "kind": "Content",
+                                      "text": "0"
+                                    }
+                                  ],
+                                  "initializerTokenRange": {
+                                    "startIndex": 1,
+                                    "endIndex": 2
+                                  },
+                                  "releaseTag": "Public",
+                                  "name": "FOO_SIZE_UNSPECIFIED"
+                                },
+                                {
+                                  "kind": "EnumMember",
+                                  "canonicalReference": "@google-cloud/cloud-rad!protos.google.cloud.foo.v1p1alpha3.FooSize.LARGE:member",
+                                  "docComment": "",
+                                  "excerptTokens": [
+                                    {
+                                      "kind": "Content",
+                                      "text": "LARGE = "
+                                    },
+                                    {
+                                      "kind": "Content",
+                                      "text": "3"
+                                    }
+                                  ],
+                                  "initializerTokenRange": {
+                                    "startIndex": 1,
+                                    "endIndex": 2
+                                  },
+                                  "releaseTag": "Public",
+                                  "name": "LARGE"
+                                },
+                                {
+                                  "kind": "EnumMember",
+                                  "canonicalReference": "@google-cloud/cloud-rad!protos.google.cloud.foo.v1p1alpha3.FooSize.MEDIUM:member",
+                                  "docComment": "",
+                                  "excerptTokens": [
+                                    {
+                                      "kind": "Content",
+                                      "text": "MEDIUM = "
+                                    },
+                                    {
+                                      "kind": "Content",
+                                      "text": "2"
+                                    }
+                                  ],
+                                  "initializerTokenRange": {
+                                    "startIndex": 1,
+                                    "endIndex": 2
+                                  },
+                                  "releaseTag": "Public",
+                                  "name": "MEDIUM"
+                                },
+                                {
+                                  "kind": "EnumMember",
+                                  "canonicalReference": "@google-cloud/cloud-rad!protos.google.cloud.foo.v1p1alpha3.FooSize.SMALL:member",
+                                  "docComment": "",
+                                  "excerptTokens": [
+                                    {
+                                      "kind": "Content",
+                                      "text": "SMALL = "
+                                    },
+                                    {
+                                      "kind": "Content",
+                                      "text": "1"
+                                    }
+                                  ],
+                                  "initializerTokenRange": {
+                                    "startIndex": 1,
+                                    "endIndex": 2
+                                  },
+                                  "releaseTag": "Public",
+                                  "name": "SMALL"
+                                }
+                              ]
+                            },
+                            {
+                              "kind": "Interface",
+                              "canonicalReference": "@google-cloud/cloud-rad!protos.google.cloud.foo.v1p1alpha3.IFooMetadata:interface",
+                              "docComment": "/**\n * Properties of a FooMetadata.\n */\n",
+                              "excerptTokens": [
+                                {
+                                  "kind": "Content",
+                                  "text": "interface IFooMetadata "
+                                }
+                              ],
+                              "releaseTag": "Public",
+                              "name": "IFooMetadata",
+                              "preserveMemberOrder": false,
+                              "members": [
+                                {
+                                  "kind": "PropertySignature",
+                                  "canonicalReference": "@google-cloud/cloud-rad!protos.google.cloud.foo.v1p1alpha3.IFooMetadata#createTime:member",
+                                  "docComment": "",
+                                  "excerptTokens": [
+                                    {
+                                      "kind": "Content",
+                                      "text": "createTime?: "
+                                    },
+                                    {
+                                      "kind": "Content",
+                                      "text": "null"
+                                    },
+                                    {
+                                      "kind": "Content",
+                                      "text": ";"
+                                    }
+                                  ],
+                                  "isReadonly": false,
                                   "isOptional": true,
                                   "releaseTag": "Public",
                                   "name": "createTime",
@@ -1114,6 +1413,7 @@
                           ],
                           "releaseTag": "Public",
                           "name": "v2",
+                          "preserveMemberOrder": false,
                           "members": [
                             {
                               "kind": "Class",
@@ -1127,7 +1427,7 @@
                                 {
                                   "kind": "Reference",
                                   "text": "IFooMetadata",
-                                  "canonicalReference": "@google-cloud/cloud-rad!google.cloud.foo.v2.IFooMetadata:interface"
+                                  "canonicalReference": "@google-cloud/cloud-rad!protos.google.cloud.foo.v2.IFooMetadata:interface"
                                 },
                                 {
                                   "kind": "Content",
@@ -1135,7 +1435,9 @@
                                 }
                               ],
                               "releaseTag": "Public",
+                              "isAbstract": false,
                               "name": "FooMetadata",
+                              "preserveMemberOrder": false,
                               "members": [
                                 {
                                   "kind": "Constructor",
@@ -1148,6 +1450,7 @@
                                     }
                                   ],
                                   "releaseTag": "Public",
+                                  "isProtected": false,
                                   "overloadIndex": 1,
                                   "parameters": []
                                 }
@@ -1155,7 +1458,7 @@
                               "implementsTokenRanges": [
                                 {
                                   "startIndex": 1,
-                                  "endIndex": 3
+                                  "endIndex": 2
                                 }
                               ]
                             },
@@ -1171,6 +1474,7 @@
                               ],
                               "releaseTag": "Public",
                               "name": "FooSize",
+                              "preserveMemberOrder": false,
                               "members": [
                                 {
                                   "kind": "EnumMember",
@@ -1186,12 +1490,12 @@
                                       "text": "0"
                                     }
                                   ],
-                                  "releaseTag": "Public",
-                                  "name": "FOO_SIZE_UNSPECIFIED",
                                   "initializerTokenRange": {
                                     "startIndex": 1,
                                     "endIndex": 2
-                                  }
+                                  },
+                                  "releaseTag": "Public",
+                                  "name": "FOO_SIZE_UNSPECIFIED"
                                 },
                                 {
                                   "kind": "EnumMember",
@@ -1207,12 +1511,12 @@
                                       "text": "3"
                                     }
                                   ],
-                                  "releaseTag": "Public",
-                                  "name": "LARGE",
                                   "initializerTokenRange": {
                                     "startIndex": 1,
                                     "endIndex": 2
-                                  }
+                                  },
+                                  "releaseTag": "Public",
+                                  "name": "LARGE"
                                 },
                                 {
                                   "kind": "EnumMember",
@@ -1228,12 +1532,12 @@
                                       "text": "2"
                                     }
                                   ],
-                                  "releaseTag": "Public",
-                                  "name": "MEDIUM",
                                   "initializerTokenRange": {
                                     "startIndex": 1,
                                     "endIndex": 2
-                                  }
+                                  },
+                                  "releaseTag": "Public",
+                                  "name": "MEDIUM"
                                 },
                                 {
                                   "kind": "EnumMember",
@@ -1249,12 +1553,12 @@
                                       "text": "1"
                                     }
                                   ],
-                                  "releaseTag": "Public",
-                                  "name": "SMALL",
                                   "initializerTokenRange": {
                                     "startIndex": 1,
                                     "endIndex": 2
-                                  }
+                                  },
+                                  "releaseTag": "Public",
+                                  "name": "SMALL"
                                 }
                               ]
                             },
@@ -1270,6 +1574,7 @@
                               ],
                               "releaseTag": "Public",
                               "name": "IFooMetadata",
+                              "preserveMemberOrder": false,
                               "members": [
                                 {
                                   "kind": "PropertySignature",
@@ -1289,6 +1594,7 @@
                                       "text": ";"
                                     }
                                   ],
+                                  "isReadonly": false,
                                   "isOptional": true,
                                   "releaseTag": "Public",
                                   "name": "createTime",
@@ -1315,8 +1621,10 @@
           "canonicalReference": "@google-cloud/cloud-rad!v1:namespace",
           "docComment": "",
           "excerptTokens": [],
+          "fileUrlPath": "src/index.d.ts",
           "releaseTag": "None",
           "name": "v1",
+          "preserveMemberOrder": false,
           "members": [
             {
               "kind": "Class",
@@ -1328,8 +1636,11 @@
                   "text": "export declare class FooClient "
                 }
               ],
+              "fileUrlPath": "src/v1/foo_client.d.ts",
               "releaseTag": "Public",
+              "isAbstract": false,
               "name": "FooClient",
+              "preserveMemberOrder": false,
               "members": [],
               "implementsTokenRanges": []
             }
@@ -1340,8 +1651,10 @@
           "canonicalReference": "@google-cloud/cloud-rad!v1alpha1:namespace",
           "docComment": "",
           "excerptTokens": [],
+          "fileUrlPath": "src/index.d.ts",
           "releaseTag": "None",
           "name": "v1alpha1",
+          "preserveMemberOrder": false,
           "members": [
             {
               "kind": "Class",
@@ -1353,8 +1666,11 @@
                   "text": "export declare class FooClient "
                 }
               ],
+              "fileUrlPath": "src/v1alpha1/foo_client.d.ts",
               "releaseTag": "Public",
+              "isAbstract": false,
               "name": "FooClient",
+              "preserveMemberOrder": false,
               "members": [],
               "implementsTokenRanges": []
             }
@@ -1365,8 +1681,10 @@
           "canonicalReference": "@google-cloud/cloud-rad!v1alpha2:namespace",
           "docComment": "",
           "excerptTokens": [],
+          "fileUrlPath": "src/index.d.ts",
           "releaseTag": "None",
           "name": "v1alpha2",
+          "preserveMemberOrder": false,
           "members": [
             {
               "kind": "Class",
@@ -1378,8 +1696,11 @@
                   "text": "export declare class FooClient "
                 }
               ],
+              "fileUrlPath": "src/v1alpha2/foo_client.d.ts",
               "releaseTag": "Public",
+              "isAbstract": false,
               "name": "FooClient",
+              "preserveMemberOrder": false,
               "members": [],
               "implementsTokenRanges": []
             }
@@ -1390,8 +1711,10 @@
           "canonicalReference": "@google-cloud/cloud-rad!v1beta:namespace",
           "docComment": "",
           "excerptTokens": [],
+          "fileUrlPath": "src/index.d.ts",
           "releaseTag": "None",
           "name": "v1beta",
+          "preserveMemberOrder": false,
           "members": [
             {
               "kind": "Class",
@@ -1403,8 +1726,41 @@
                   "text": "export declare class FooClient "
                 }
               ],
+              "fileUrlPath": "src/v1beta/foo_client.d.ts",
               "releaseTag": "Public",
+              "isAbstract": false,
               "name": "FooClient",
+              "preserveMemberOrder": false,
+              "members": [],
+              "implementsTokenRanges": []
+            }
+          ]
+        },
+        {
+          "kind": "Namespace",
+          "canonicalReference": "@google-cloud/cloud-rad!v1p1alpha3:namespace",
+          "docComment": "",
+          "excerptTokens": [],
+          "fileUrlPath": "src/index.d.ts",
+          "releaseTag": "None",
+          "name": "v1p1alpha3",
+          "preserveMemberOrder": false,
+          "members": [
+            {
+              "kind": "Class",
+              "canonicalReference": "@google-cloud/cloud-rad!v1p1alpha3.FooClient:class",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export declare class FooClient "
+                }
+              ],
+              "fileUrlPath": "src/v1p1alpha3/foo_client.d.ts",
+              "releaseTag": "Public",
+              "isAbstract": false,
+              "name": "FooClient",
+              "preserveMemberOrder": false,
               "members": [],
               "implementsTokenRanges": []
             }
@@ -1415,8 +1771,10 @@
           "canonicalReference": "@google-cloud/cloud-rad!v2:namespace",
           "docComment": "",
           "excerptTokens": [],
+          "fileUrlPath": "src/index.d.ts",
           "releaseTag": "None",
           "name": "v2",
+          "preserveMemberOrder": false,
           "members": [
             {
               "kind": "Class",
@@ -1428,8 +1786,11 @@
                   "text": "export declare class FooClient "
                 }
               ],
+              "fileUrlPath": "src/v2/foo_client.d.ts",
               "releaseTag": "Public",
+              "isAbstract": false,
               "name": "FooClient",
+              "preserveMemberOrder": false,
               "members": [],
               "implementsTokenRanges": []
             }

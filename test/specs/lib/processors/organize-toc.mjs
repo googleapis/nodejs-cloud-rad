@@ -457,6 +457,10 @@ describe('organize TOC processor', () => {
   });
 
   it('sorts items by name within each known kind', async () => {
+    // Don't override the version numbers; let `organizeToc` get version numbers
+    // from the API package.
+    delete metadata._versions;
+
     const actual = await organizeToc.process({
       metadata,
       obj: {
@@ -493,6 +497,14 @@ describe('organize TOC processor', () => {
                 name: 'FooClient',
                 uid: '@google-cloud/foo!v1.FooClient:class',
               },
+              {
+                name: 'FooClient',
+                uid: '@google-cloud/foo!v1beta.FooClient:class',
+              },
+              {
+                name: 'FooClient',
+                uid: '@google-cloud/foo!v1p1alpha3.FooClient:class',
+              },
             ],
           },
         ],
@@ -505,8 +517,16 @@ describe('organize TOC processor', () => {
           uid: '@google-cloud/foo!',
           items: [
             {
-              name: 'FooClient',
+              name: 'FooClient (v1)',
               uid: '@google-cloud/foo!v1.FooClient:class',
+            },
+            {
+              name: 'FooClient (v1beta)',
+              uid: '@google-cloud/foo!v1beta.FooClient:class',
+            },
+            {
+              name: 'FooClient (v1p1alpha3)',
+              uid: '@google-cloud/foo!v1p1alpha3.FooClient:class',
             },
             {
               name: 'Classes',
@@ -747,7 +767,7 @@ describe('organize TOC processor', () => {
     let toc;
 
     beforeEach(() => {
-      // Don't override the version number for these tests; let `organizeToc`
+      // Don't override the version numbers for these tests; let `organizeToc`
       // get version numbers from the API package.
       delete metadata._versions;
 
@@ -807,6 +827,18 @@ describe('organize TOC processor', () => {
               },
               {
                 name: 'FooMetadata',
+                uid: '@google-cloud/cloud-rad!protos.google.cloud.foo.v1p1alpha3.FooMetadata:class',
+              },
+              {
+                name: 'FooSize',
+                uid: '@google-cloud/cloud-rad!protos.google.cloud.foo.v1p1alpha3.FooSize:enum',
+              },
+              {
+                name: 'IFooMetadata',
+                uid: '@google-cloud/cloud-rad!protos.google.cloud.foo.v1p1alpha3.IFooMetadata:interface',
+              },
+              {
+                name: 'FooMetadata',
                 uid: '@google-cloud/cloud-rad!protos.google.cloud.foo.v2.FooMetadata:class',
               },
               {
@@ -835,6 +867,10 @@ describe('organize TOC processor', () => {
               },
               {
                 name: 'FooClient',
+                uid: '@google-cloud/cloud-rad!v1p1alpha3.FooClient:class',
+              },
+              {
+                name: 'FooClient',
                 uid: '@google-cloud/cloud-rad!v2.FooClient:class',
               },
             ],
@@ -855,8 +891,28 @@ describe('organize TOC processor', () => {
             uid: '@google-cloud/foo!',
             items: [
               {
-                name: 'FooClient',
+                name: 'FooClient (v2)',
                 uid: '@google-cloud/cloud-rad!v2.FooClient:class',
+              },
+              {
+                name: 'FooClient (v1)',
+                uid: '@google-cloud/cloud-rad!v1.FooClient:class',
+              },
+              {
+                name: 'FooClient (v1beta)',
+                uid: '@google-cloud/cloud-rad!v1beta.FooClient:class',
+              },
+              {
+                name: 'FooClient (v1p1alpha3)',
+                uid: '@google-cloud/cloud-rad!v1p1alpha3.FooClient:class',
+              },
+              {
+                name: 'FooClient (v1alpha2)',
+                uid: '@google-cloud/cloud-rad!v1alpha2.FooClient:class',
+              },
+              {
+                name: 'FooClient (v1alpha1)',
+                uid: '@google-cloud/cloud-rad!v1alpha1.FooClient:class',
               },
               {
                 name: 'Classes',
@@ -898,47 +954,20 @@ describe('organize TOC processor', () => {
                     ],
                   },
                   {
+                    name: 'protos.google.cloud.foo.v1p1alpha3',
+                    items: [
+                      {
+                        name: 'FooMetadata',
+                        uid: '@google-cloud/cloud-rad!protos.google.cloud.foo.v1p1alpha3.FooMetadata:class',
+                      },
+                    ],
+                  },
+                  {
                     name: 'protos.google.cloud.foo.v2',
                     items: [
                       {
                         name: 'FooMetadata',
                         uid: '@google-cloud/cloud-rad!protos.google.cloud.foo.v2.FooMetadata:class',
-                      },
-                    ],
-                  },
-                  {
-                    name: 'v1',
-                    items: [
-                      {
-                        name: 'FooClient',
-                        uid: '@google-cloud/cloud-rad!v1.FooClient:class',
-                      },
-                    ],
-                  },
-                  {
-                    name: 'v1alpha1',
-                    items: [
-                      {
-                        name: 'FooClient',
-                        uid: '@google-cloud/cloud-rad!v1alpha1.FooClient:class',
-                      },
-                    ],
-                  },
-                  {
-                    name: 'v1alpha2',
-                    items: [
-                      {
-                        name: 'FooClient',
-                        uid: '@google-cloud/cloud-rad!v1alpha2.FooClient:class',
-                      },
-                    ],
-                  },
-                  {
-                    name: 'v1beta',
-                    items: [
-                      {
-                        name: 'FooClient',
-                        uid: '@google-cloud/cloud-rad!v1beta.FooClient:class',
                       },
                     ],
                   },
@@ -980,6 +1009,15 @@ describe('organize TOC processor', () => {
                       {
                         name: 'IFooMetadata',
                         uid: '@google-cloud/cloud-rad!protos.google.cloud.foo.v1beta.IFooMetadata:interface',
+                      },
+                    ],
+                  },
+                  {
+                    name: 'protos.google.cloud.foo.v1p1alpha3',
+                    items: [
+                      {
+                        name: 'IFooMetadata',
+                        uid: '@google-cloud/cloud-rad!protos.google.cloud.foo.v1p1alpha3.IFooMetadata:interface',
                       },
                     ],
                   },
@@ -1030,6 +1068,15 @@ describe('organize TOC processor', () => {
                       {
                         name: 'FooSize',
                         uid: '@google-cloud/cloud-rad!protos.google.cloud.foo.v1beta.FooSize:enum',
+                      },
+                    ],
+                  },
+                  {
+                    name: 'protos.google.cloud.foo.v1p1alpha3',
+                    items: [
+                      {
+                        name: 'FooSize',
+                        uid: '@google-cloud/cloud-rad!protos.google.cloud.foo.v1p1alpha3.FooSize:enum',
                       },
                     ],
                   },
