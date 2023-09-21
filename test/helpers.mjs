@@ -53,19 +53,23 @@ export const mochaHooks = {
     // Give ourselves a generous timeout for setup tasks.
     this.timeout(150000);
 
-    // Copy nodejs-deploy to temp dir; install its dependencies; and build it.
+    // Copy google-cloud-deploy to temp dir; install its dependencies; and build it.
     const tmpDir = (mochaHooks._tmpDir = await createTmpDir());
-    const nodeDeployDir = (mochaHooks.nodeDeployDir = join(
+    const googleCloudDeployDir = (mochaHooks.googleCloudDeployDir = join(
       tmpDir,
-      'nodejs-deploy'
+      'google-cloud-deploy'
     ));
     await fs.copy(
-      join(process.cwd(), 'test', 'fixtures', 'nodejs-deploy'),
-      nodeDeployDir
+      join(process.cwd(), 'test', 'fixtures', 'google-cloud-deploy'),
+      googleCloudDeployDir
     );
-    await withLogs(execa)('npm', ['install'], nodeDeployDir);
 
-    return withLogs(execa)('npm', ['run', 'compile'], nodeDeployDir);
+    const samplesDir = join(process.cwd(), 'test', 'fixtures', 'google-cloud-deploy', 'samples')
+    process.env.SAMPLES_DIRECTORY = samplesDir
+
+    await withLogs(execa)('npm', ['install'], googleCloudDeployDir);
+
+    return withLogs(execa)('npm', ['run', 'compile'], googleCloudDeployDir);
   },
   async afterAll() {
     return removeTmpDir(mochaHooks._tmpDir);
