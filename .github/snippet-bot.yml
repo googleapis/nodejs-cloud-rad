@@ -1,2 +1,2 @@
 ignoreFiles:
-  - test/fixtures/**
+  - test/fixtures/**/*
