@@ -1,2 +1,3 @@
 ignoreFiles:
-  - test/fixtures/**/*
+  - test/fixtures/google-cloud-deploy/**/*.js
+  - test/fixtures/google-cloud-deploy/**/*.ts
