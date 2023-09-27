@@ -11,7 +11,7 @@
     "coverage": "c8 npm run test",
     "test": "env TEST=1 mocha --timeout=50000 --require './test/helpers.mjs' --recursive './test/specs/**/*.mjs'",
     "update-api-model": "api-extractor run --local -c ./test/fixtures/api-model/api-extractor.json",
-    "update-snapshots": "env SNAPSHOT_UPDATE=1 TEST=1 mocha --timeout=5000 --require './test/helpers.mjs' './test/specs/lib/generate-devsite.mjs'"
+    "update-snapshots": "env SNAPSHOT_UPDATE=1 TEST=1 mocha --timeout=50000 --require './test/helpers.mjs' './test/specs/lib/generate-devsite.mjs'"
   },
   "author": "Google LLC",
   "license": "Apache-2.0",
