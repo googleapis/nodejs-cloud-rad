@@ -35,9 +35,9 @@ before(async () => {
   }
 
   // Run the tool.
-  const cwd = mochaHooks.nodeDeployDir;
+  const cwd = mochaHooks.googleCloudDeployDir;
   const packageInfo = await fs.readJson(
-    join(mochaHooks.nodeDeployDir, 'package.json')
+    join(mochaHooks.googleCloudDeployDir, 'package.json')
   );
   const packageShortName = packageInfo.name.replace('@google-cloud/', '');
 
@@ -51,7 +51,7 @@ before(async () => {
 describe('cloud-rad docfx generator', () => {
   it('generates a toc.yml file', async () => {
     const tocYml = await fs.readFile(
-      join(mochaHooks.nodeDeployDir, '_devsite', 'toc.yml'),
+      join(mochaHooks.googleCloudDeployDir, '_devsite', 'toc.yml'),
       'utf8'
     );
     const snapshot = takeSnapshot(tocYml);
@@ -61,7 +61,7 @@ describe('cloud-rad docfx generator', () => {
 
   it('generates an index.md file', async () => {
     const indexMd = await fs.readFile(
-      join(mochaHooks.nodeDeployDir, '_devsite', 'index.md'),
+      join(mochaHooks.googleCloudDeployDir, '_devsite', 'index.md'),
       'utf8'
     );
     const snapshot = takeSnapshot(indexMd);
@@ -71,7 +71,7 @@ describe('cloud-rad docfx generator', () => {
 
   it('generates an overview.yml file', async () => {
     let overviewYml = await fs.readFile(
-      join(mochaHooks.nodeDeployDir, '_devsite', 'overview.yml'),
+      join(mochaHooks.googleCloudDeployDir, '_devsite', 'overview.yml'),
       'utf8'
     );
     const snapshot = takeSnapshot(overviewYml);
@@ -82,7 +82,7 @@ describe('cloud-rad docfx generator', () => {
   it('handles example tags', async () => {
     let contentYml = await fs.readFile(
       join(
-        mochaHooks.nodeDeployDir,
+        mochaHooks.googleCloudDeployDir,
         '_devsite',
         'deploy',
         'v1.clouddeployclient.yml'
@@ -97,7 +97,7 @@ describe('cloud-rad docfx generator', () => {
   it('generates an enum page', async () => {
     let contentYml = await fs.readFile(
       join(
-        mochaHooks.nodeDeployDir,
+        mochaHooks.googleCloudDeployDir,
         '_devsite',
         'deploy',
         'protos.google.cloud.deploy.v1.executionconfig.executionenvironmentusage.yml'
@@ -112,7 +112,7 @@ describe('cloud-rad docfx generator', () => {
   it('generates an interface page', async () => {
     let contentYml = await fs.readFile(
       join(
-        mochaHooks.nodeDeployDir,
+        mochaHooks.googleCloudDeployDir,
         '_devsite',
         'deploy',
         'protos.google.cloud.deploy.v1.release.itargetrender.yml'
@@ -127,7 +127,7 @@ describe('cloud-rad docfx generator', () => {
   it('generates a class page', async () => {
     let contentYml = await fs.readFile(
       join(
-        mochaHooks.nodeDeployDir,
+        mochaHooks.googleCloudDeployDir,
         '_devsite',
         'deploy',
         'protos.google.cloud.deploy.v1.approverolloutresponse.yml'
@@ -142,7 +142,7 @@ describe('cloud-rad docfx generator', () => {
   it('generates dependency pages', async () => {
     let contentYml = await fs.readFile(
       join(
-        mochaHooks.nodeDeployDir,
+        mochaHooks.googleCloudDeployDir,
         '_devsite',
         'deploy',
         'protos.google.rpc.status.yml'
