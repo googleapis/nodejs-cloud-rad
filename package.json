@@ -17,7 +17,7 @@
   "license": "Apache-2.0",
   "dependencies": {
     "@googleapis/api-documenter": "~7.13.0",
-    "@microsoft/api-extractor": "~7.37.0",
+    "@microsoft/api-extractor": "~7.38.0",
     "@microsoft/api-extractor-model": "^7.27.2",
     "@rushstack/node-core-library": "^3.55.2",
     "execa": "^7.0.0",
