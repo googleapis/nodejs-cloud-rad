@@ -14,18 +14,14 @@
   limitations under the License.
 */
 
-import {replace} from '../util.mjs';
-
-const REPLACERS = [
-  [/```([\s\S]+?)```/g, '<pre class="prettyprint"><code>$1</code></pre>'],
-];
-
-const globPatterns = ['**/*.yml'];
-
-function process({obj}) {
-  replace(obj.items, 'example', REPLACERS);
-
-  return Promise.resolve(obj);
-}
-
-export default {globPatterns, process};
+import * as v1 from './v1';
+declare const FooClient: typeof v1.FooClient;
+type FooClient = v1.FooClient;
+export { v1, FooClient };
+declare const _default: {
+    v1: typeof v1;
+    FooClient: typeof v1.FooClient;
+};
+export default _default;
+import * as protos from '../protos/protos';
+export { protos };

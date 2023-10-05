@@ -13,11 +13,12 @@
   See the License for the specific language governing permissions and
   limitations under the License.
 */
+
 import {basename, join} from 'path';
 import klaw from 'klaw';
 import processors from '../../../../lib/processors/processors.mjs';
 
-const EXCLUDED_FILES = ['processors.mjs', 'util.mjs'];
+const EXCLUDED_FILES = ['processors.mjs'];
 
 describe('processors', () => {
   it('exports every processor', () => {

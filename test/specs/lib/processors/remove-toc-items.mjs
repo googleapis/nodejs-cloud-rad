@@ -13,6 +13,7 @@
   See the License for the specific language governing permissions and
   limitations under the License.
 */
+
 import {strict as assert} from 'assert';
 import {globResults} from '../../../helpers.mjs';
 import {join} from 'path';
@@ -29,36 +30,6 @@ describe('remove TOC items processor', () => {
   });
 
   describe('normal packages', () => {
-    it('removes interfaces', async () => {
-      const obj = {
-        items: [
-          {uid: '@google-cloud/iam!google.type.IExpr:interface'},
-          {uid: '@google-cloud/bigquery!BigQuery:class'},
-        ],
-      };
-
-      await removeTocItems.process({metadata: {}, obj});
-
-      assert.deepStrictEqual(obj.items, [
-        {uid: '@google-cloud/bigquery!BigQuery:class'},
-      ]);
-    });
-
-    it('removes items that come from protos', async () => {
-      const obj = {
-        items: [
-          {uid: '@google-cloud/iam!protos.google.type.Expr:class'},
-          {uid: '@google-cloud/bigquery!BigQuery:class'},
-        ],
-      };
-
-      await removeTocItems.process({metadata: {}, obj});
-
-      assert.deepStrictEqual(obj.items, [
-        {uid: '@google-cloud/bigquery!BigQuery:class'},
-      ]);
-    });
-
     it('removes items that come from @google-cloud/common', async () => {
       const obj = {
         items: [
@@ -91,37 +62,6 @@ describe('remove TOC items processor', () => {
   });
 
   describe('shared packages', () => {
-    it('removes interfaces', async () => {
-      const obj = {
-        items: [
-          {uid: '@google-cloud/iam!google.type.IExpr:interface'},
-          {uid: '@google-cloud/bigquery!BigQuery:class'},
-        ],
-      };
-
-      await removeTocItems.process({metadata: {isSharedPackage: true}, obj});
-
-      assert.deepStrictEqual(obj.items, [
-        {uid: '@google-cloud/bigquery!BigQuery:class'},
-      ]);
-    });
-
-    it('does not remove items that come from protos', async () => {
-      const obj = {
-        items: [
-          {uid: '@google-cloud/iam!protos.google.type.Expr:class'},
-          {uid: '@google-cloud/bigquery!BigQuery:class'},
-        ],
-      };
-
-      await removeTocItems.process({metadata: {isSharedPackage: true}, obj});
-
-      assert.deepStrictEqual(obj.items, [
-        {uid: '@google-cloud/iam!protos.google.type.Expr:class'},
-        {uid: '@google-cloud/bigquery!BigQuery:class'},
-      ]);
-    });
-
     it('does not remove items that come from @google-cloud/common', async () => {
       const obj = {
         items: [

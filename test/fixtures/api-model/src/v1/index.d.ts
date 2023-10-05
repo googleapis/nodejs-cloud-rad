@@ -14,18 +14,4 @@
   limitations under the License.
 */
 
-import {replace} from '../util.mjs';
-
-const REPLACERS = [
-  [/```([\s\S]+?)```/g, '<pre class="prettyprint"><code>$1</code></pre>'],
-];
-
-const globPatterns = ['**/*.yml'];
-
-function process({obj}) {
-  replace(obj.items, 'example', REPLACERS);
-
-  return Promise.resolve(obj);
-}
-
-export default {globPatterns, process};
+export { FooClient } from './foo_client';

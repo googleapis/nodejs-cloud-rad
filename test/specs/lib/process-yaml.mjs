@@ -13,6 +13,7 @@
   See the License for the specific language governing permissions and
   limitations under the License.
 */
+
 import {strict as assert} from 'assert';
 import {createTmpDir, removeTmpDir} from '../../helpers.mjs';
 import fs from 'fs-extra';
@@ -84,6 +85,30 @@ describe('process YAML', () => {
     for (const filepath of filepaths) {
       assert.notEqual(basename(filepath), 'not-yaml-file.md');
     }
+  });
+
+  it('runs processors in sequence, and in the correct order', async () => {
+    const processors = [];
+    const result = [];
+
+    // Create four processors, ordered from slowest to fastest.
+    for (let i = 4; i > 0; i--) {
+      processors.push({
+        globPatterns: ['**/toc.yml'],
+        process: ({obj}) => {
+          return new Promise(resolve => {
+            setTimeout(() => {
+              result.push(i);
+              resolve(obj);
+            }, i * 100);
+          });
+        },
+      });
+    }
+
+    await processYaml(metadata, processors);
+
+    assert.deepEqual(result, [4, 3, 2, 1]);
   });
 
   it('only runs a processor if a file matches one of its glob patterns', async () => {
