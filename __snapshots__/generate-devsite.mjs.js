@@ -321,6 +321,10 @@ items:
                 uid: '@google-cloud/deploy!protos.google.protobuf.ExtensionRangeOptions:class'
               - name: FeatureSet
                 uid: '@google-cloud/deploy!protos.google.protobuf.FeatureSet:class'
+              - name: FeatureSetDefaults
+                uid: '@google-cloud/deploy!protos.google.protobuf.FeatureSetDefaults:class'
+              - name: FeatureSetEditionDefault
+                uid: '@google-cloud/deploy!protos.google.protobuf.FeatureSetDefaults.FeatureSetEditionDefault:class'
               - name: FieldDescriptorProto
                 uid: '@google-cloud/deploy!protos.google.protobuf.FieldDescriptorProto:class'
               - name: FieldMask
@@ -677,6 +681,10 @@ items:
                 uid: '@google-cloud/deploy!protos.google.protobuf.IExtensionRangeOptions:interface'
               - name: IFeatureSet
                 uid: '@google-cloud/deploy!protos.google.protobuf.IFeatureSet:interface'
+              - name: IFeatureSetDefaults
+                uid: '@google-cloud/deploy!protos.google.protobuf.IFeatureSetDefaults:interface'
+              - name: IFeatureSetEditionDefault
+                uid: '@google-cloud/deploy!protos.google.protobuf.FeatureSetDefaults.IFeatureSetEditionDefault:interface'
               - name: IFieldDescriptorProto
                 uid: '@google-cloud/deploy!protos.google.protobuf.IFieldDescriptorProto:interface'
               - name: IFieldMask
@@ -779,6 +787,8 @@ items:
             items:
               - name: CType
                 uid: '@google-cloud/deploy!protos.google.protobuf.FieldOptions.CType:enum'
+              - name: Edition
+                uid: '@google-cloud/deploy!protos.google.protobuf.Edition:enum'
               - name: EnumType
                 uid: '@google-cloud/deploy!protos.google.protobuf.FeatureSet.EnumType:enum'
               - name: FieldPresence
@@ -803,10 +813,10 @@ items:
                 uid: '@google-cloud/deploy!protos.google.protobuf.FeatureSet.RepeatedFieldEncoding:enum'
               - name: Semantic
                 uid: '@google-cloud/deploy!protos.google.protobuf.GeneratedCodeInfo.Annotation.Semantic:enum'
-              - name: StringFieldValidation
-                uid: '@google-cloud/deploy!protos.google.protobuf.FeatureSet.StringFieldValidation:enum'
               - name: Type
                 uid: '@google-cloud/deploy!protos.google.protobuf.FieldDescriptorProto.Type:enum'
+              - name: Utf8Validation
+                uid: '@google-cloud/deploy!protos.google.protobuf.FeatureSet.Utf8Validation:enum'
               - name: VerificationState
                 uid: '@google-cloud/deploy!protos.google.protobuf.ExtensionRangeOptions.VerificationState:enum'
 
@@ -1378,6 +1388,7 @@ items:
       - '@google-cloud/deploy!protos.google.protobuf.DescriptorProto.IReservedRange:interface'
       - '@google-cloud/deploy!protos.google.protobuf.DescriptorProto.ReservedRange:class'
       - '@google-cloud/deploy!protos.google.protobuf.Duration:class'
+      - '@google-cloud/deploy!protos.google.protobuf.Edition:enum'
       - '@google-cloud/deploy!protos.google.protobuf.Empty:class'
       - '@google-cloud/deploy!protos.google.protobuf.EnumDescriptorProto:class'
       - '@google-cloud/deploy!protos.google.protobuf.EnumDescriptorProto.EnumReservedRange:class'
@@ -1395,7 +1406,10 @@ items:
       - '@google-cloud/deploy!protos.google.protobuf.FeatureSet.JsonFormat:enum'
       - '@google-cloud/deploy!protos.google.protobuf.FeatureSet.MessageEncoding:enum'
       - '@google-cloud/deploy!protos.google.protobuf.FeatureSet.RepeatedFieldEncoding:enum'
-      - '@google-cloud/deploy!protos.google.protobuf.FeatureSet.StringFieldValidation:enum'
+      - '@google-cloud/deploy!protos.google.protobuf.FeatureSet.Utf8Validation:enum'
+      - '@google-cloud/deploy!protos.google.protobuf.FeatureSetDefaults:class'
+      - '@google-cloud/deploy!protos.google.protobuf.FeatureSetDefaults.FeatureSetEditionDefault:class'
+      - '@google-cloud/deploy!protos.google.protobuf.FeatureSetDefaults.IFeatureSetEditionDefault:interface'
       - '@google-cloud/deploy!protos.google.protobuf.FieldDescriptorProto:class'
       - '@google-cloud/deploy!protos.google.protobuf.FieldDescriptorProto.Label:enum'
       - '@google-cloud/deploy!protos.google.protobuf.FieldDescriptorProto.Type:enum'
@@ -1425,6 +1439,7 @@ items:
       - '@google-cloud/deploy!protos.google.protobuf.IEnumValueOptions:interface'
       - '@google-cloud/deploy!protos.google.protobuf.IExtensionRangeOptions:interface'
       - '@google-cloud/deploy!protos.google.protobuf.IFeatureSet:interface'
+      - '@google-cloud/deploy!protos.google.protobuf.IFeatureSetDefaults:interface'
       - '@google-cloud/deploy!protos.google.protobuf.IFieldDescriptorProto:interface'
       - '@google-cloud/deploy!protos.google.protobuf.IFieldMask:interface'
       - '@google-cloud/deploy!protos.google.protobuf.IFieldOptions:interface'
@@ -3033,6 +3048,8 @@ references:
     name: protos.google.protobuf.DescriptorProto.ReservedRange
   - uid: '@google-cloud/deploy!protos.google.protobuf.Duration:class'
     name: protos.google.protobuf.Duration
+  - uid: '@google-cloud/deploy!protos.google.protobuf.Edition:enum'
+    name: protos.google.protobuf.Edition
   - uid: '@google-cloud/deploy!protos.google.protobuf.Empty:class'
     name: protos.google.protobuf.Empty
   - uid: '@google-cloud/deploy!protos.google.protobuf.EnumDescriptorProto:class'
@@ -3067,8 +3084,14 @@ references:
     name: protos.google.protobuf.FeatureSet.MessageEncoding
   - uid: '@google-cloud/deploy!protos.google.protobuf.FeatureSet.RepeatedFieldEncoding:enum'
     name: protos.google.protobuf.FeatureSet.RepeatedFieldEncoding
-  - uid: '@google-cloud/deploy!protos.google.protobuf.FeatureSet.StringFieldValidation:enum'
-    name: protos.google.protobuf.FeatureSet.StringFieldValidation
+  - uid: '@google-cloud/deploy!protos.google.protobuf.FeatureSet.Utf8Validation:enum'
+    name: protos.google.protobuf.FeatureSet.Utf8Validation
+  - uid: '@google-cloud/deploy!protos.google.protobuf.FeatureSetDefaults:class'
+    name: protos.google.protobuf.FeatureSetDefaults
+  - uid: '@google-cloud/deploy!protos.google.protobuf.FeatureSetDefaults.FeatureSetEditionDefault:class'
+    name: protos.google.protobuf.FeatureSetDefaults.FeatureSetEditionDefault
+  - uid: '@google-cloud/deploy!protos.google.protobuf.FeatureSetDefaults.IFeatureSetEditionDefault:interface'
+    name: protos.google.protobuf.FeatureSetDefaults.IFeatureSetEditionDefault
   - uid: '@google-cloud/deploy!protos.google.protobuf.FieldDescriptorProto:class'
     name: protos.google.protobuf.FieldDescriptorProto
   - uid: '@google-cloud/deploy!protos.google.protobuf.FieldDescriptorProto.Label:enum'
@@ -3127,6 +3150,8 @@ references:
     name: protos.google.protobuf.IExtensionRangeOptions
   - uid: '@google-cloud/deploy!protos.google.protobuf.IFeatureSet:interface'
     name: protos.google.protobuf.IFeatureSet
+  - uid: '@google-cloud/deploy!protos.google.protobuf.IFeatureSetDefaults:interface'
+    name: protos.google.protobuf.IFeatureSetDefaults
   - uid: '@google-cloud/deploy!protos.google.protobuf.IFieldDescriptorProto:interface'
     name: protos.google.protobuf.IFieldDescriptorProto
   - uid: '@google-cloud/deploy!protos.google.protobuf.IFieldMask:interface'
