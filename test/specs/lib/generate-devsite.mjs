@@ -19,6 +19,7 @@ import fs from 'fs-extra';
 import generateDevsite from '../../../lib/generate-devsite.mjs';
 import {mochaHooks} from '../../helpers.mjs';
 import {join} from 'path';
+import {packageShortNameRegex} from '../../../lib/util.mjs';
 import snapshots from '../../../__snapshots__/generate-devsite.mjs.js';
 import takeSnapshot from 'snap-shot-it';
 
@@ -40,7 +41,7 @@ before(async () => {
   const packageInfo = await fs.readJson(
     join(mochaHooks.googleCloudDeployDir, 'package.json')
   );
-  const packageShortName = packageInfo.name.replace('@google-cloud/', '');
+  const packageShortName = packageInfo.name.replace(packageShortNameRegex, '');
 
   return generateDevsite({
     cwd,
