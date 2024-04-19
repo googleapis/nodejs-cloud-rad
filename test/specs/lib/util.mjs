@@ -14,17 +14,25 @@
   limitations under the License.
 */
 
+import {getPackageShortName} from '../../../lib/util.mjs';
 import {strict as assert} from 'assert';
-import {packageShortNameRegex} from '../../../lib/util.mjs';
 
-describe('package short name regex', () => {
-  it('matches @google-cloud namespace', async () => {
+describe('get package short name', () => {
+  it('shortens @google-cloud namespace', async () => {
     const googleCloudPackageName = '@google-cloud/retail'
-    assert.deepEqual(googleCloudPackageName.match(packageShortNameRegex), ['@google-cloud/'])
+    const result = getPackageShortName(googleCloudPackageName)
+    assert.deepEqual(result, 'retail')
   });
 
-  it('matches other @google namespaces', async () => {
+  it('shortens other @google namespaces', async () => {
     const googleCloudPackageName = '@google-apps/meet'
-    assert.deepEqual(googleCloudPackageName.match(packageShortNameRegex), ['@google-apps/'])
+    const result = getPackageShortName(googleCloudPackageName)
+    assert.deepEqual(result, 'meet')
+  });
+
+  it('raises an error for non-Google namespaces', async () => {
+    const nonGoogleCloudPackageName = '@other-namespace/app'
+
+    assert.throws(() => getPackageShortName(nonGoogleCloudPackageName), Error)
   });
 })
