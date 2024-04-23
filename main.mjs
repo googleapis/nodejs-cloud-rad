@@ -17,39 +17,9 @@
 */
 
 import {execa} from 'execa';
-import fs from 'fs-extra';
+import createMetadata from './lib/metadata.mjs';
 import generateDevsite from './lib/generate-devsite.mjs';
-import {join} from 'path';
 import {withLogs} from './lib/util.mjs'
-
-// Creates docs.metadata, based on package.json and .repo-metadata.json.
-async function createMetadata() {
-  const cwd = process.cwd();
-  const packageInfo = await fs.readJson(join(cwd, 'package.json'));
-  const packageShortName = packageInfo.name.replace('@google-cloud/', '');
-  const repoMetadata = await fs.readJson(join(cwd, '.repo-metadata.json'));
-
-  await withLogs(execa)('pip', ['install', '-U', 'pip'], cwd)
-  await withLogs(execa)('python3', ['-m', 'pip', 'install', '--user', 'gcp-docuploader'], cwd)
-  await withLogs(execa)('python3', [
-    '-m',
-    'docuploader',
-    'create-metadata',
-    `--name=${packageShortName}`,
-    `--version=${packageInfo.version}`,
-    `--language=${repoMetadata.language}`,
-    `--distribution-name=${repoMetadata.distribution_name}`,
-    `--product-page=${repoMetadata.product_documentation}`,
-    `--github-repository=${repoMetadata.repo}`,
-    `--issue-tracker=${repoMetadata.issue_tracker}`,
-  ], cwd);
-
-
-  return fs.copyFile(
-    join(cwd, 'docs.metadata'),
-    join(cwd, '_devsite', 'docs.metadata')
-  );
-}
 
 // Deploys the docs.
 function deploy() {
