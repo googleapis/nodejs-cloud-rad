@@ -25,9 +25,9 @@ describe('get package short name', () => {
   });
 
   it('shortens other @google namespaces', async () => {
-    const googleCloudPackageName = '@google-apps/meet'
+    const googleCloudPackageName = '@googlemaps/places'
     const result = getPackageShortName(googleCloudPackageName)
-    assert.deepEqual(result, 'meet')
+    assert.deepEqual(result, 'places')
   });
 
   it('raises an error for non-Google namespaces', async () => {
@@ -35,4 +35,5 @@ describe('get package short name', () => {
 
     assert.throws(() => getPackageShortName(nonGoogleCloudPackageName), Error)
   });
+  
 })
