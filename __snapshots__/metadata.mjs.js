@@ -19,3 +19,15 @@ github_repository: "googleapis/google-cloud-node"
 issue_tracker: "https://github.com/googleapis/google-cloud-node/issues"
 
 `
+
+exports['docs.metadata generation generates with custom stem 1'] = `
+name: "meet"
+version: "0.2.0"
+language: "nodejs"
+distribution_name: "@google-apps/meet"
+product_page: "https://developers.google.com/meet/api/guides/overview"
+github_repository: "googleapis/google-cloud-node"
+issue_tracker: "https://github.com/googleapis/google-cloud-node/issues"
+stem: "/package/custom/stem"
+
+`

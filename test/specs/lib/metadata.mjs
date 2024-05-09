@@ -79,5 +79,29 @@ describe('docs.metadata generation', () => {
         const snapshot = takeSnapshot(removeTimestamp(docsMetadata))
 
         checkSnapshot(snapshot);
-    });    
+    });
+
+    it('generates with custom stem', async () => {
+        const tmpDir = await createTmpDir();
+
+        const googleMeetsDir = join(process.cwd(), 'test', 'fixtures', 'google-apps-meet');
+        await fs.copy(googleMeetsDir, tmpDir);
+
+        const cwd = tmpDir
+        const destination = cwd;
+        const stem = '/package/custom/stem'
+        await createMetadata({
+            cwd,
+            destination,
+            stem,
+        });
+
+        const docsMetadata = await fs.readFile(
+            join(tmpDir, 'docs.metadata'),
+            'utf8'
+        );
+        const snapshot = takeSnapshot(removeTimestamp(docsMetadata))
+
+        checkSnapshot(snapshot);
+    });
 });
