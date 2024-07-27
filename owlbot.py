@@ -26,6 +26,7 @@ node.owlbot_main(
         ".github/release-trigger.yml",
         ".github/release-please.yml",
         ".github/sync-repo-settings.yaml",
+        ".github/CODEOWNERS",
     ]
 )
 
