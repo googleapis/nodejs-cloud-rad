@@ -21,7 +21,7 @@
     "@microsoft/api-extractor-model": "<7.28.13",
     "@rushstack/node-core-library": "^3.55.2",
     "ajv": "^8.17.1",
-    "execa": "^7.0.0",
+    "execa": "^9.0.0",
     "fs-extra": "^11.1.0",
     "glob": "^10.1.0",
     "js-yaml": "^4.1.0",
