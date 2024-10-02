@@ -169,7 +169,7 @@ describe('cloud-rad supports CommonJS build for docs entry point', () => {
 
     // Move type files to be within /build/cjs/src.
     const cjsBuildPathDir = join(cwd, 'build', 'cjs', 'src');
-    await fs.move(join(cwd, 'build', 'src'), cjsBuildPathDir, { recursive: true});
+    await fs.move(join(cwd, 'build', 'src'), cjsBuildPathDir, { recursive: true });
 
     return generateDevsite({
       cwd,
