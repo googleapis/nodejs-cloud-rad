@@ -14103,3 +14103,107 @@ references:
     name: $protobuf.IConversionOptions
 
 `
+
+exports['cloud-rad supports CommonJS build for docs entry point generates an overview.yml file 1'] = `
+### YamlMime:UniversalReference
+items:
+  - uid: '@google-cloud/deploy!'
+    name: '@google-cloud/deploy'
+    fullName: '@google-cloud/deploy'
+    langs:
+      - typeScript
+    type: package
+    children:
+      - '@google-cloud/deploy!_default:var'
+      - '@google-cloud/deploy!CloudDeployClient:type'
+      - '@google-cloud/deploy!CloudDeployClient:var'
+      - '@google-cloud/deploy!v1.CloudDeployClient:class'
+  - uid: '@google-cloud/deploy!_default:var'
+    name: _default
+    fullName: _default
+    langs:
+      - typeScript
+    type: variable
+    syntax:
+      content: |-
+        _default: {
+            v1: typeof v1;
+            CloudDeployClient: typeof v1.CloudDeployClient;
+        }
+      return:
+        type:
+          - '@google-cloud/deploy!_default~0:complex'
+  - uid: '@google-cloud/deploy!CloudDeployClient:type'
+    name: CloudDeployClient
+    fullName: CloudDeployClient
+    langs:
+      - typeScript
+    type: typealias
+    syntax:
+      content: type CloudDeployClient = v1.CloudDeployClient;
+      return:
+        type:
+          - '@google-cloud/deploy!v1.CloudDeployClient_2:class'
+  - uid: '@google-cloud/deploy!CloudDeployClient:var'
+    name: CloudDeployClient
+    fullName: CloudDeployClient
+    langs:
+      - typeScript
+    type: variable
+    syntax:
+      content: 'CloudDeployClient: typeof v1.CloudDeployClient'
+      return:
+        type:
+          - '@google-cloud/deploy!CloudDeployClient~0:complex'
+references:
+  - uid: '@google-cloud/deploy!_default~0:complex'
+    name: |-
+      {
+          v1: typeof v1;
+          CloudDeployClient: typeof v1.CloudDeployClient;
+      }
+    fullName: |-
+      {
+          v1: typeof v1;
+          CloudDeployClient: typeof v1.CloudDeployClient_2;
+      }
+    spec.typeScript:
+      - name: |-
+          {
+              v1: typeof 
+        fullName: |-
+          {
+              v1: typeof 
+      - uid: '@google-cloud/deploy!v1'
+        name: v1
+        fullName: v1
+      - name: |-
+          ;
+              CloudDeployClient: typeof 
+        fullName: |-
+          ;
+              CloudDeployClient: typeof 
+      - uid: '@google-cloud/deploy!v1.CloudDeployClient_2:class'
+        name: v1.CloudDeployClient
+        fullName: v1.CloudDeployClient_2
+      - name: |-
+          ;
+          }
+        fullName: |-
+          ;
+          }
+  - uid: '@google-cloud/deploy!v1.CloudDeployClient_2:class'
+    name: v1.CloudDeployClient
+  - uid: '@google-cloud/deploy!CloudDeployClient~0:complex'
+    name: typeof v1.CloudDeployClient
+    fullName: typeof v1.CloudDeployClient_2
+    spec.typeScript:
+      - name: 'typeof '
+        fullName: 'typeof '
+      - uid: '@google-cloud/deploy!v1.CloudDeployClient_2:class'
+        name: v1.CloudDeployClient
+        fullName: v1.CloudDeployClient_2
+  - uid: '@google-cloud/deploy!v1.CloudDeployClient:class'
+    name: v1.CloudDeployClient
+
+`
