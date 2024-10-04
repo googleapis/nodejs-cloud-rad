@@ -23,34 +23,35 @@ import {join} from 'path';
 import snapshots from '../../../__snapshots__/generate-devsite.mjs.js';
 import takeSnapshot from 'snap-shot-it';
 
-let checkSnapshot = () => {};
+const checkSnapshot = (snapshot) => {
+  // The saved snapshot starts and ends with extra newline characters.
+  const value = `\n${snapshot.value}\n`;
 
-before(async () => {
   if (!process.env.SNAPSHOT_UPDATE) {
-    // We want to compare the output with the snapshots, not update snapshots.
-    checkSnapshot = snapshot => {
-      // The saved snapshot starts and ends with extra newline characters.
-      const value = `\n${snapshot.value}\n`;
-
-      assert.deepStrictEqual(value, snapshots[snapshot.key]);
-    };
+    assert.deepStrictEqual(value, snapshots[snapshot.key]);
   }
-
-  // Run the tool.
-  const cwd = mochaHooks.googleCloudDeployDir;
-  const packageInfo = await fs.readJson(
-    join(mochaHooks.googleCloudDeployDir, 'package.json')
-  );
-  const packageShortName = getPackageShortName(packageInfo.name);
-
-  return generateDevsite({
-    cwd,
-    packageInfo,
-    packageShortName,
-  });
-});
+};
 
 describe('cloud-rad docfx generator', () => {
+  before(async () => {
+    // Run the tool.
+    const cwd = mochaHooks.googleCloudDeployDir;
+    const packageInfo = await fs.readJson(
+      join(mochaHooks.googleCloudDeployDir, 'package.json')
+    );
+    const packageShortName = getPackageShortName(packageInfo.name);
+
+    return generateDevsite({
+      cwd,
+      packageInfo,
+      packageShortName,
+    });
+  });
+
+  after(async() => {
+    await fs.rmdir(join(mochaHooks.googleCloudDeployDir, '_devsite'), { recursive: true });
+  });
+
   it('generates a toc.yml file', async () => {
     const tocYml = await fs.readFile(
       join(mochaHooks.googleCloudDeployDir, '_devsite', 'toc.yml'),
@@ -152,6 +153,37 @@ describe('cloud-rad docfx generator', () => {
       'utf8'
     );
     const snapshot = takeSnapshot(contentYml);
+
+    checkSnapshot(snapshot);
+  });
+});
+
+describe('cloud-rad supports CommonJS build for docs entry point', () => {
+  before(async () => {
+    // Rerun the tool for CommonJS build.
+    const cwd = mochaHooks.googleCloudDeployDir;
+    const packageInfo = await fs.readJson(
+      join(mochaHooks.googleCloudDeployDir, 'package.json')
+    );
+    const packageShortName = getPackageShortName(packageInfo.name);
+
+    // Move type files to be within /build/cjs/src.
+    const cjsBuildPathDir = join(cwd, 'build', 'cjs', 'src');
+    await fs.move(join(cwd, 'build', 'src'), cjsBuildPathDir, { recursive: true });
+
+    return generateDevsite({
+      cwd,
+      packageInfo,
+      packageShortName,
+    });
+  });
+
+  it('generates an overview.yml file', async () => {
+    let overviewYml = await fs.readFile(
+      join(mochaHooks.googleCloudDeployDir, '_devsite', 'overview.yml'),
+      'utf8'
+    );
+    const snapshot = takeSnapshot(overviewYml);
 
     checkSnapshot(snapshot);
   });
