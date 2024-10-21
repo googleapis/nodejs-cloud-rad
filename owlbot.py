@@ -21,6 +21,7 @@ node.owlbot_main(
         "README.md",
         ".kokoro/**",
         ".github/workflows/ci.yaml",
+        ".github/workflows/issues-no-repro.yaml",
         ".trampolinerc",
         ".mocharc.js",
         ".github/release-trigger.yml",
