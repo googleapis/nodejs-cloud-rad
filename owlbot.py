@@ -26,7 +26,7 @@ node.owlbot_main(
         ".github/release-trigger.yml",
         ".github/release-please.yml",
         ".github/sync-repo-settings.yaml",
-        ".github/ISSUE_TEMPALTE",
+        ".github/ISSUE_TEMPLATE",
         ".github/scripts/close-invalid-link.cjs"
     ]
 )
