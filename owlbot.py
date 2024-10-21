@@ -20,7 +20,7 @@ node.owlbot_main(
     templates_excludes=[
         "README.md",
         ".kokoro/**",
-        ".github/workflows/**",
+        ".github/workflows/ci.yaml",
         ".trampolinerc",
         ".mocharc.js",
         ".github/release-trigger.yml",
