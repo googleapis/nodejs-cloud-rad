@@ -7155,7 +7155,7 @@ items:
         CallOptions): Transform;
       return:
         type:
-          - '!"\\"stream\\"".internal.Transform:class'
+          - '!"\\"stream\\"".Stream.Transform:class'
         description: >-
           {<!-- -->Stream<!-- -->} An object stream which emits an object representing
           [DeliveryPipeline](xref:@google-cloud/deploy!protos.google.cloud.deploy.v1.DeliveryPipeline:class) on 'data'
@@ -7373,7 +7373,7 @@ items:
         Transform;
       return:
         type:
-          - '!"\\"stream\\"".internal.Transform:class'
+          - '!"\\"stream\\"".Stream.Transform:class'
         description: >-
           {<!-- -->Stream<!-- -->} An object stream which emits an object representing  on 'data' event. The client
           library will perform auto-pagination by default: it will call the API as many times as needed. Note that it
@@ -7676,7 +7676,7 @@ items:
         Transform;
       return:
         type:
-          - '!"\\"stream\\"".internal.Transform:class'
+          - '!"\\"stream\\"".Stream.Transform:class'
         description: >-
           {<!-- -->Stream<!-- -->} An object stream which emits an object representing  on 'data' event. The client
           library will perform auto-pagination by default: it will call the API as many times as needed. Note that it
@@ -7893,7 +7893,7 @@ items:
         Transform;
       return:
         type:
-          - '!"\\"stream\\"".internal.Transform:class'
+          - '!"\\"stream\\"".Stream.Transform:class'
         description: >-
           {<!-- -->Stream<!-- -->} An object stream which emits an object representing  on 'data' event. The client
           library will perform auto-pagination by default: it will call the API as many times as needed. Note that it
@@ -8113,7 +8113,7 @@ items:
         Transform;
       return:
         type:
-          - '!"\\"stream\\"".internal.Transform:class'
+          - '!"\\"stream\\"".Stream.Transform:class'
         description: >-
           {<!-- -->Stream<!-- -->} An object stream which emits an object representing
           [Target](xref:@google-cloud/deploy!protos.google.cloud.deploy.v1.Target:class) on 'data' event. The client
@@ -12278,7 +12278,7 @@ references:
         fullName: protos.google.cloud.deploy.v1.IDeliveryPipeline
       - name: '>'
         fullName: '>'
-  - uid: '!"\\"stream\\"".internal.Transform:class'
+  - uid: '!"\\"stream\\"".Stream.Transform:class'
     name: Transform
   - uid: '@google-cloud/deploy!v1.CloudDeployClient#listJobRuns~0:complex'
     name: |-
