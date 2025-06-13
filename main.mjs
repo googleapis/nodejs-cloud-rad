@@ -24,6 +24,9 @@ import {withLogs} from './lib/util.mjs'
 // Deploys the docs.
 function deploy() {
   const bucket = process.env.BUCKET || 'docs-staging-v2';
+  const credentials =
+    process.env.CREDENTIALS ||
+    process.env.KOKORO_KEYSTORE_DIR + '/73713_docuploader_service_account';
 
   const args = [
     '-m',
