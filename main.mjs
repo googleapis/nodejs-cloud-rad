@@ -25,7 +25,7 @@ import {withLogs} from './lib/util.mjs'
 function deploy() {
   const bucket = process.env.BUCKET || 'docs-staging-v2';
 
-  return withLogs(execa)('python3', [
+  const args = [
     '-m',
     'docuploader',
     'upload',
@@ -34,7 +34,13 @@ function deploy() {
     'docfx',
     '--staging-bucket',
     bucket,
-  ], process.cwd());
+  ];
+
+  if (credentials) {
+    args.push('--credentials', credentials);
+  }
+
+  return withLogs(execa)('python3', args, process.cwd());
 }
 
 (async () => {
