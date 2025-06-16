@@ -28,18 +28,22 @@ function deploy() {
     process.env.CREDENTIALS ||
     process.env.KOKORO_KEYSTORE_DIR + '/73713_docuploader_service_account';
 
-  return withLogs(execa)('python3', [
+  const args = [
     '-m',
     'docuploader',
     'upload',
     './_devsite',
     '--destination-prefix',
     'docfx',
-    '--credentials',
-    credentials,
     '--staging-bucket',
     bucket,
-  ], process.cwd());
+  ];
+
+  if (credentials) {
+    args.push('--credentials', credentials);
+  }
+
+  return withLogs(execa)('python3', args, process.cwd());
 }
 
 (async () => {
