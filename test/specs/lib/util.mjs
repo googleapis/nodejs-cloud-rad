@@ -36,4 +36,10 @@ describe('get package short name', () => {
     assert.throws(() => getPackageShortName(nonGoogleCloudPackageName), Error)
   });
   
+  it('handle special packages shortnames', async () => {
+    assert.deepEqual(getPackageShortName('gaxios'), 'gaxios');
+    assert.deepEqual(getPackageShortName('node-gtoken'), 'node-gtoken');
+    assert.deepEqual(getPackageShortName('gcp-metadata'), 'gcp-metadata');
+    assert.deepEqual(getPackageShortName('code-suggester'), 'code-suggester');
+  });
 })
