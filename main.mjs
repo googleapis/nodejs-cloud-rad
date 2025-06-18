@@ -18,6 +18,7 @@
 
 import {execa} from 'execa';
 import createMetadata from './lib/metadata.mjs';
+import fs from 'fs';
 import generateDevsite from './lib/generate-devsite.mjs';
 import {withLogs} from './lib/util.mjs'
 
@@ -39,8 +40,10 @@ function deploy() {
     bucket,
   ];
 
-  if (credentials) {
+  if (credentials && fs.existsSync(credentials)) {
     args.push('--credentials', credentials);
+  } else if (credentials) {
+    console.warn(`Credentials file not found at ${credentials}. Skipping --credentials flag.`);
   }
 
   return withLogs(execa)('python3', args, process.cwd());
