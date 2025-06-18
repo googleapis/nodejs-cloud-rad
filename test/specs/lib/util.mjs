@@ -41,5 +41,6 @@ describe('get package short name', () => {
     assert.deepEqual(getPackageShortName('gtoken'), 'gtoken');
     assert.deepEqual(getPackageShortName('gcp-metadata'), 'gcp-metadata');
     assert.deepEqual(getPackageShortName('code-suggester'), 'code-suggester');
+    assert.deepEqual(getPackageShortName('google-gax'), 'google-gax');
   });
 })
