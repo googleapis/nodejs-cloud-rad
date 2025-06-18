@@ -38,7 +38,7 @@ describe('get package short name', () => {
   
   it('handle special packages shortnames', async () => {
     assert.deepEqual(getPackageShortName('gaxios'), 'gaxios');
-    assert.deepEqual(getPackageShortName('node-gtoken'), 'node-gtoken');
+    assert.deepEqual(getPackageShortName('gtoken'), 'gtoken');
     assert.deepEqual(getPackageShortName('gcp-metadata'), 'gcp-metadata');
     assert.deepEqual(getPackageShortName('code-suggester'), 'code-suggester');
   });
