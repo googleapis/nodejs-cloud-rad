@@ -1,5 +1,5 @@
 {
-  "codeowner_team": "@googleapis/dkp",
+  "codeowner_team": "@googleapis/dkp-team",
   "library_type": "OTHER",
   "client_documentation": "https://www.npmjs.com/package/@google-cloud/cloud-rad",
   "release_level": "stable"
