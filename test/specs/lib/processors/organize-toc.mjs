@@ -763,6 +763,31 @@ describe('organize TOC processor', () => {
     assert.deepStrictEqual(actual, expected);
   });
 
+  it('handles packages with no sub-items gracefully', async () => {
+    const actual = await organizeToc.process({
+      metadata,
+      obj: {
+        items: [
+          {
+            name: 'foo',
+            uid: '@google-cloud/foo!',
+          },
+        ],
+      },
+    });
+    const expected = {
+      items: [
+        {
+          name: 'foo',
+          uid: '@google-cloud/foo!',
+          items: [],
+        },
+      ],
+    };
+
+    assert.deepStrictEqual(actual, expected);
+  });
+
   describe('namespaces', () => {
     let toc;
 
