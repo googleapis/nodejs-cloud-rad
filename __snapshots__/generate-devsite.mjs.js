@@ -5634,8 +5634,8 @@ items:
         </code></pre>
       - |-
         <pre class="prettyprint"><code>
-        function spanner_read_only_transaction() {
-          console.log('spanner_read_only_transaction');
+        function delete_operation() {
+          console.log('delete_operation');
         }
 
         </pre></code>
