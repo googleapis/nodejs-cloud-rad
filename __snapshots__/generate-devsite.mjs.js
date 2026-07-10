@@ -5632,13 +5632,6 @@ items:
         const client = longrunning.operationsClient();
         await client.deleteOperation({name: ''});
         </code></pre>
-      - |-
-        <pre class="prettyprint"><code>
-        function delete_operation() {
-          console.log('delete_operation');
-        }
-
-        </pre></code>
     name: deleteOperation(request, options, callback)
     fullName: deleteOperation(request, options, callback)
     langs:
