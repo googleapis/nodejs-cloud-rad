@@ -4495,8 +4495,8 @@ export class CloudDeployClient {
    * await client.deleteOperation({name: ''});
    * ```
    *
-   * @example <caption>include:samples/spanner.js</caption>
-   * region_tag:spanner_read_only_transaction
+   * @example <caption>include:samples/delete_operation.js</caption>
+   * region_tag:longrunning_delete_operation
    */
   deleteOperation(
     request: protos.google.longrunning.DeleteOperationRequest,
