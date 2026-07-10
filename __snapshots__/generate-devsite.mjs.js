@@ -5629,6 +5629,11 @@ items:
     example:
       - |-
         <pre class="prettyprint"><code>
+        const client = longrunning.operationsClient();
+        await client.deleteOperation({name: ''});
+        </code></pre>
+      - |-
+        <pre class="prettyprint"><code>
         function spanner_read_only_transaction() {
           console.log('spanner_read_only_transaction');
         }
