@@ -34,6 +34,8 @@ const checkSnapshot = (snapshot) => {
 
 describe('cloud-rad docfx generator', () => {
   before(async function() {
+    // This generator clones the nodejs-docs-samples repository to extract region tags, 
+    // which can take a while depending on network speed. Increase timeout to avoid flakiness.
     this.timeout(150000);
     // Run the tool.
     const cwd = mochaHooks.googleCloudDeployDir;
@@ -98,7 +100,7 @@ describe('cloud-rad docfx generator', () => {
     checkSnapshot(snapshot);
   });
 
-  it('handles spanner_read_only_transaction region tag', async () => {
+  it('handles longrunning_delete_operation region tag', async () => {
     let contentYml = await fs.readFile(
       join(
         mochaHooks.googleCloudDeployDir,
@@ -108,7 +110,7 @@ describe('cloud-rad docfx generator', () => {
       ),
       'utf8'
     );
-    assert.ok(contentYml.includes('spanner_read_only_transaction'));
+    assert.ok(contentYml.includes('longrunning_delete_operation'));
   });
 
   it('generates an enum page', async () => {
