@@ -33,7 +33,8 @@ const checkSnapshot = (snapshot) => {
 };
 
 describe('cloud-rad docfx generator', () => {
-  before(async () => {
+  before(async function() {
+    this.timeout(150000);
     // Run the tool.
     const cwd = mochaHooks.googleCloudDeployDir;
     const packageInfo = await fs.readJson(
@@ -95,6 +96,19 @@ describe('cloud-rad docfx generator', () => {
     const snapshot = takeSnapshot(contentYml);
 
     checkSnapshot(snapshot);
+  });
+
+  it('handles spanner_read_only_transaction region tag', async () => {
+    let contentYml = await fs.readFile(
+      join(
+        mochaHooks.googleCloudDeployDir,
+        '_devsite',
+        'deploy',
+        'v1.clouddeployclient.yml'
+      ),
+      'utf8'
+    );
+    assert.ok(contentYml.includes('spanner_read_only_transaction'));
   });
 
   it('generates an enum page', async () => {

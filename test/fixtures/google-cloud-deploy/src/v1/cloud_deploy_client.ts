@@ -4489,11 +4489,8 @@ export class CloudDeployClient {
    *   The promise has a method named "cancel" which cancels the ongoing API
    * call.
    *
-   * @example
-   * ```
-   * const client = longrunning.operationsClient();
-   * await client.deleteOperation({name: ''});
-   * ```
+   * @example <caption>include:samples/spanner.js</caption>
+   * region_tag:spanner_read_only_transaction
    */
   deleteOperation(
     request: protos.google.longrunning.DeleteOperationRequest,
