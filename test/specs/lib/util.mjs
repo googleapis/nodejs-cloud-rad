@@ -30,6 +30,12 @@ describe('get package short name', () => {
     assert.deepEqual(result, 'places')
   });
 
+  it('shortens root @google namespace', async () => {
+    const googlePackageName = '@google/developer-knowledge'
+    const result = getPackageShortName(googlePackageName)
+    assert.deepEqual(result, 'developer-knowledge')
+  });
+
   it('raises an error for non-Google namespaces', async () => {
     const nonGoogleCloudPackageName = '@other-namespace/app'
 
