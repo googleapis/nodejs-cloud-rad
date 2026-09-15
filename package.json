@@ -24,7 +24,7 @@
     "execa": "^7.0.0",
     "fs-extra": "^11.1.0",
     "glob": "^10.1.0",
-    "js-yaml": "^4.1.0",
+    "js-yaml": "^5.0.0",
     "minimatch": "^9.0.0"
   },
   "engines": {
