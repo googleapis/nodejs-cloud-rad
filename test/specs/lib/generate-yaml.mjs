@@ -19,8 +19,8 @@
 import {strict as assert} from 'assert';
 import fs from 'fs-extra';
 import {join} from 'path';
-import generate from '../../../lib/generate-yaml.mjs';
-import {mochaHooks} from '../../helpers.mjs';
+import generate, {findEntryPoint} from '../../../lib/generate-yaml.mjs';
+import {createTmpDir, mochaHooks, removeTmpDir} from '../../helpers.mjs';
 
 describe('generate-yaml', () => {
   it('clones samples repository and creates a symlink', async function () {
@@ -63,5 +63,103 @@ describe('generate-yaml', () => {
         await fs.remove(tmpDir);
       }
     }
+  });
+});
+
+describe('findEntryPoint', () => {
+  let dir;
+
+  beforeEach(async () => {
+    dir = await createTmpDir();
+  });
+
+  afterEach(async () => {
+    await removeTmpDir(dir);
+  });
+
+  const touch = async relPath => {
+    await fs.outputFile(join(dir, relPath), '');
+    return join(dir, relPath);
+  };
+
+  it('prefers build/src/index.d.ts', async () => {
+    const expected = await touch('build/src/index.d.ts');
+    await touch('build/cjs/src/index.d.ts');
+    await fs.writeJson(join(dir, 'package.json'), {types: 'types/index.d.ts'});
+    await touch('types/index.d.ts');
+
+    assert.equal(findEntryPoint(dir), expected);
+  });
+
+  it('falls back to build/cjs/src/index.d.ts', async () => {
+    const expected = await touch('build/cjs/src/index.d.ts');
+
+    assert.equal(findEntryPoint(dir), expected);
+  });
+
+  it('uses tsconfig declarationDir, including via extends', async () => {
+    const expected = await touch('build/types/src/index.d.ts');
+    // Comments and trailing commas are valid in tsconfig files.
+    await fs.writeFile(
+      join(dir, 'tsconfig.base.json'),
+      '{\n  // shared settings\n  "compilerOptions": {"declarationDir": "build/types",},\n}\n'
+    );
+    await fs.writeJson(join(dir, 'tsconfig.json'), {
+      extends: './tsconfig.base.json',
+      compilerOptions: {outDir: 'build'},
+    });
+
+    assert.equal(findEntryPoint(dir), expected);
+  });
+
+  it('uses tsconfig outDir when declarationDir is unset', async () => {
+    const expected = await touch('dist/src/index.d.ts');
+    await fs.writeJson(join(dir, 'tsconfig.json'), {
+      compilerOptions: {outDir: 'dist'},
+    });
+
+    assert.equal(findEntryPoint(dir), expected);
+  });
+
+  it('falls back to package.json types, then typings', async () => {
+    const types = await touch('lib/types.d.ts');
+    const typings = await touch('lib/typings.d.ts');
+
+    await fs.writeJson(join(dir, 'package.json'), {
+      types: 'lib/types.d.ts',
+      typings: 'lib/typings.d.ts',
+    });
+    assert.equal(findEntryPoint(dir), types);
+
+    await fs.writeJson(join(dir, 'package.json'), {
+      typings: 'lib/typings.d.ts',
+    });
+    assert.equal(findEntryPoint(dir), typings);
+  });
+
+  it('throws, listing every path checked, when nothing is found', async () => {
+    await fs.writeJson(join(dir, 'tsconfig.json'), {
+      compilerOptions: {declarationDir: 'build/types'},
+    });
+    await fs.writeJson(join(dir, 'package.json'), {types: 'types/index.d.ts'});
+
+    assert.throws(
+      () => findEntryPoint(dir),
+      err => {
+        assert.match(
+          err.message,
+          /Could not find a TypeScript declaration entry point/
+        );
+        for (const p of [
+          'build/src/index.d.ts',
+          'build/cjs/src/index.d.ts',
+          'build/types/src/index.d.ts',
+          'types/index.d.ts',
+        ]) {
+          assert.ok(err.message.includes(join(dir, p)), `missing ${p}`);
+        }
+        return true;
+      }
+    );
   });
 });
